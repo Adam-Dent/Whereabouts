@@ -55,6 +55,17 @@ def _placements(sheet_id: str) -> dict:
     return _load_json(PLACEMENTS_DIR / f"{sheet_id}.json", {})
 
 
+# Colin organises his catalogue by county -> district/dale -> village. Every
+# district processed so far is in North Yorkshire; as other counties are added,
+# map their districts here so the County dropdown can scope the district list.
+# Districts not listed default to North Yorkshire.
+_COUNTY_BY_DISTRICT: dict[str, str] = {}
+
+
+def _county_for(district: str) -> str:
+    return _COUNTY_BY_DISTRICT.get(district, "North Yorkshire")
+
+
 @app.get("/api/sheets")
 def api_sheets() -> JSONResponse:
     """Every sheet, with village name, image, and progress (placed/total)."""
@@ -74,6 +85,7 @@ def api_sheets() -> JSONResponse:
             "id": s["id"],
             "village_name": s["village_name"],
             "district": s["district"],
+            "county": _county_for(s["district"]),
             "image_path": s["image_path"],
             "image_size": s["image_size"],
             "total": by_sheet.get(s["id"], 0),
@@ -212,8 +224,8 @@ _PAGE = r"""<!doctype html>
     white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .statpct{font-size:19px;font-weight:700;color:#1b3d5f;margin-top:2px}
   select,button,input{font:inherit}
-  #district,#village,#searchq{width:100%;box-sizing:border-box}
-  #district{margin-bottom:6px;color:#555}
+  #county,#district,#village,#searchq{width:100%;box-sizing:border-box}
+  #county,#district{margin-bottom:6px;color:#555}
   .row{display:flex;gap:6px;margin-top:6px}
   #results{max-height:130px;overflow:auto}
   #results div{font-size:12px;padding:4px 12px;border-bottom:1px solid #eee;cursor:pointer}
@@ -252,6 +264,7 @@ _PAGE = r"""<!doctype html>
       <div class="statbox"><div class="statlabel">This map</div><div class="statpct" id="stat-sheet">–</div></div>
     </div>
     <div id="bar">
+      <select id="county"></select>
       <select id="district"></select>
       <select id="village"></select>
       <div class="row">
@@ -483,13 +496,34 @@ document.getElementById('warpbtn').onclick=toggleWarp;
 
 let allSheets=[];
 // Highest-value districts first, per the placement priority order — the rest fall
-// back to alphabetical. Update this if her priorities change.
+// back to alphabetical. Update this if the priority order changes.
 const DISTRICT_PRIORITY=['Wensleydale','Swaledale and Arkengarthdale','Hambleton (West)'];
+// County tier above district (Colin's own hierarchy). One county for now.
+const COUNTY_PRIORITY=['North Yorkshire'];
 
 async function loadVillages(){
   allSheets=await (await fetch('/api/sheets')).json();
+  const csel=document.getElementById('county');
+  const counties=[...new Set(allSheets.map(s=>s.county||'North Yorkshire'))].sort((a,b)=>{
+    const pa=COUNTY_PRIORITY.indexOf(a), pb=COUNTY_PRIORITY.indexOf(b);
+    if(pa!==-1||pb!==-1) return (pa===-1?999:pa)-(pb===-1?999:pb);
+    return a.localeCompare(b);
+  });
+  csel.innerHTML=counties.map(c=>{
+    const n=allSheets.filter(s=>(s.county||'North Yorkshire')===c).length;
+    return `<option value="${c}">${c} (${n})</option>`;
+  }).join('');
+  const savedCounty=localStorage.getItem('whereabouts_county');
+  if(savedCounty && counties.includes(savedCounty)) csel.value=savedCounty;
+  csel.onchange=()=>{ localStorage.setItem('whereabouts_county', csel.value); populateDistricts(); };
+  updateOverallStat();
+  populateDistricts();
+}
+
+function populateDistricts(){
+  const county=document.getElementById('county').value;
   const dsel=document.getElementById('district');
-  const districts=[...new Set(allSheets.map(s=>s.district))].sort((a,b)=>{
+  const districts=[...new Set(allSheets.filter(s=>(s.county||'North Yorkshire')===county).map(s=>s.district))].sort((a,b)=>{
     const pa=DISTRICT_PRIORITY.indexOf(a), pb=DISTRICT_PRIORITY.indexOf(b);
     if(pa!==-1||pb!==-1) return (pa===-1?999:pa)-(pb===-1?999:pb);
     return a.localeCompare(b);
@@ -501,7 +535,6 @@ async function loadVillages(){
   const savedDistrict=localStorage.getItem('whereabouts_district');
   if(savedDistrict && districts.includes(savedDistrict)) dsel.value=savedDistrict;
   dsel.onchange=()=>{ localStorage.setItem('whereabouts_district', dsel.value); populateVillages(); };
-  updateOverallStat();
   populateVillages();
 }
 
