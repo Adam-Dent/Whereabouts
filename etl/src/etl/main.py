@@ -156,7 +156,7 @@ def run_pipeline(
                     print(f"    WARN georef: {e}")
             elif raw_cp.get("points") and raw_cp.get("pdf_hash") != sheet.pdf_hash:
                 parse_notes.append(
-                    f"{sheet.id}: stale control points (hash mismatch) — re-georeference needed"
+                    f"{sheet.id}: stale control points (hash mismatch), re-georeference needed"
                 )
 
         # ── 6. Build House objects ─────────────────────────────────────────
@@ -167,7 +167,7 @@ def run_pipeline(
         outlier_count = 0
         for ph in result.houses:
             # page_pos is None when the house has no number printed on the
-            # drawing — then there is no on-map position to derive.
+            # drawing: then there is no on-map position to derive.
             image_pos = None
             if ph.page_pos is not None:
                 ix, iy = page_pos_to_image_pos(ph.page_pos.x, ph.page_pos.y, scale)

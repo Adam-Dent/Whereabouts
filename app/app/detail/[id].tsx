@@ -103,7 +103,7 @@ export default function DetailScreen() {
 
         {!hasCoords && (
           <Text style={styles.approximate}>
-            Exact location not yet confirmed — navigation targets the village centre.
+            Exact location not yet confirmed: navigation targets the village centre.
             Use the drawing above for the final approach.
           </Text>
         )}

@@ -119,7 +119,7 @@ def _pwa_payload(images: dict[str, dict] | None = None) -> dict:
 
     Sheet-level metadata (image, size, village, district, centroid) is stored
     once per sheet instead of repeated on every house, and house records carry
-    only what the app needs — including *unplaced* houses in slim form, so they
+    only what the app needs, including *unplaced* houses in slim form, so they
     are searchable with the village-centroid navigation fallback (SPEC §6.1).
     ``districts`` carries placed/total counts for the in-app progress bars and
     groups the per-district offline download packs.
@@ -232,7 +232,7 @@ def _build_images(out_images: Path) -> dict[str, dict]:
             f.unlink()
             pruned += 1
     if converted or pruned:
-        print(f"  images/      — {converted} converted, {pruned} stale files pruned")
+        print(f"  images/      : {converted} converted, {pruned} stale files pruned")
     return mapping
 
 
@@ -251,9 +251,9 @@ def build_static(out_dir: Path) -> None:
     placed = sum(d["placed"] for d in payload["districts"].values())
     (out_dir / "houses.json").write_text(json.dumps(payload))
     mb = sum(e["bytes"] for e in images.values()) / 1e6
-    print(f"  houses.json  — {len(payload['houses'])} houses, {placed} placed, "
+    print(f"  houses.json  : {len(payload['houses'])} houses, {placed} placed, "
           f"{len(payload['districts'])} districts")
-    print(f"  images/      — {len(images)} WebP maps, {mb:.0f} MB total")
+    print(f"  images/      : {len(images)} WebP maps, {mb:.0f} MB total")
 
     # 3. Bundle Fuse.js locally (no CDN dependency)
     import urllib.request
@@ -262,9 +262,9 @@ def build_static(out_dir: Path) -> None:
         urllib.request.urlretrieve(
             "https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js", fuse_dst
         )
-        print("  fuse.min.js  — downloaded")
+        print("  fuse.min.js  : downloaded")
     else:
-        print("  fuse.min.js  — already present")
+        print("  fuse.min.js  : already present")
 
     # 4. Write app files
     (out_dir / "manifest.json").write_text(json.dumps(_MANIFEST, indent=2))
@@ -280,7 +280,7 @@ def build_static(out_dir: Path) -> None:
         "/sw.js\n  Cache-Control: no-cache\n"
         "/index.html\n  Cache-Control: no-cache\n"
     )
-    print("  index.html, how-it-works.html, sw.js, manifest.json, _headers  — written")
+    print("  index.html, how-it-works.html, sw.js, manifest.json, _headers  : written")
 
     # 5. House rule: no em dashes anywhere user-facing. Fail the build, not a warning.
     for fname in ("index.html", "how-it-works.html", "privacy.html", "sw.js"):
@@ -305,7 +305,7 @@ def main() -> None:
     print(f"\nDeploy:  npx wrangler pages deploy {args.out.name}/ --project-name whereabouts-app")
 
 
-# ── Shared assets (relative paths — work both when served at /pwa/ and at /) ──
+# ── Shared assets (relative paths: work both when served at /pwa/ and at /) ──
 
 _MANIFEST = {
     "name": "Whereabouts",
@@ -399,7 +399,7 @@ async function networkFirst(req, name) {
 }
 """
 
-# Fuse.js is bundled locally (./fuse.min.js) — no CDN dependency.
+# Fuse.js is bundled locally (./fuse.min.js), no CDN dependency.
 _PWA_PAGE = r"""<!doctype html>
 <html lang="en">
 <head>
@@ -1306,7 +1306,7 @@ function esc(s) {
 # ── "How it works" explainer page (static, deployed at /how-it-works.html) ────
 # Standalone, not linked from the app UI. A high-level, three-stage walkthrough
 # for anyone curious how Whereabouts turns Colin Day's drawings into a findable
-# house — written to be readable by a non-specialist but honest about the mechanics.
+# house, written to be readable by a non-specialist but honest about the mechanics.
 
 _HOW_PAGE = r"""<!doctype html>
 <html lang="en">

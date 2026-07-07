@@ -2,13 +2,13 @@
 
 Each sheet has three zones of integer text that must be told apart:
 
-1. The *numbered legend* — a left column of right-aligned numbers, each
+1. The *numbered legend*: a left column of right-aligned numbers, each
    followed by a house name (names may themselves begin with a digit, e.g.
    "6 1 Eryholme Lane").
-2. The *alphabetical cross-reference* — "Name ....dot leaders.... Number",
+2. The *alphabetical cross-reference*: "Name ....dot leaders.... Number",
    numbers right-aligned at the page's right margin. Supplies extra aliases
    (Eryholme lists both "Church" and "St Mary's Church" for 9).
-3. The *map labels* — isolated numbers scattered across the drawing; their
+3. The *map labels*: isolated numbers scattered across the drawing; their
    centroid is the house's page position.
 
 Whole-page line clustering conflates these (a scattered map label sharing a
@@ -88,7 +88,7 @@ def _reconstruct(chars: list[dict], max_gap: float | None = None) -> str:
 
     Drops dot-leader characters, inserts a space on any gap wider than a normal
     inter-letter kern, and (if `max_gap` is set) stops at the first oversized
-    gap — used to trim a stray map label that merged into a legend row.
+    gap: used to trim a stray map label that merged into a legend row.
     """
     tokens = [c for c in sorted(chars, key=lambda c: c["x0"]) if c["text"] != "." and c["text"].strip()]
     out = ""
@@ -110,7 +110,7 @@ def _legend_like(
     words: list[dict],
     chars: list[dict] | None = None,
 ) -> list[dict]:
-    """Integers immediately followed by a name word — i.e. legend entries.
+    """Integers immediately followed by a name word, i.e. legend entries.
 
     A legend number has its name just to the right ("12 White Swan Inn", or
     "6 1 Eryholme Lane" where the next word is itself a digit). Map labels are
@@ -118,7 +118,7 @@ def _legend_like(
     so neither has a word butting up against its right edge.
 
     When `chars` is supplied, also accepts numbers whose immediate right
-    neighbour is a space character — blank legend entries like entry 4 in
+    neighbour is a space character: blank legend entries like entry 4 in
     Croft-on-Tees that have no house name but must not break the sequence.
     """
     out: list[dict] = []
@@ -191,7 +191,7 @@ def _find_legend_column(
 def _legend_columns_x0(legend_col: dict[int, dict]) -> list[float]:
     """Left edge of each legend number column (a legend may wrap into several
     side-by-side columns). Number x0 varies a little within a column (1- vs
-    2-digit width), so cluster nearby values and return one edge per column —
+    2-digit width), so cluster nearby values and return one edge per column,
     otherwise that jitter creates false column boundaries that truncate names."""
     xs = sorted(round(w["x0"]) for w in legend_col.values())
     cols: list[float] = []
@@ -203,7 +203,7 @@ def _legend_columns_x0(legend_col: dict[int, dict]) -> list[float]:
 
 def _is_junk_name(name: str) -> bool:
     """A primary name with no readable content: empty, or nothing but digits,
-    spaces, dots and dashes — the debris a mis-parsed legend leaves behind
+    spaces, dots and dashes: the debris a mis-parsed legend leaves behind
     (e.g. ".0 1 .- 2"). A real numeric address ("7 Manor Way") keeps its letters
     and so is not junk."""
     return not re.sub(r"[\s.\-\d]", "", name)
@@ -333,7 +333,7 @@ def _date_integer_ids(words: list[dict]) -> set[int]:
 
 
 def _has_name_to_right(w: dict, words: list[dict]) -> bool:
-    """True if a name word butts up to the right of integer `w` — i.e. `w` is the
+    """True if a name word butts up to the right of integer `w`, i.e. `w` is the
     leading house number of an address like "7 Manor Way", not a standalone map
     label. Such a digit appears both in the legend and in the alphabetical
     cross-reference ("7 Manor Way .... 45"), and must never be taken as the map
@@ -418,7 +418,7 @@ def parse_sheet(pdf_path: Path, sheet_id: str) -> ParseResult:
     Returns ParseResult with one ParsedHouse per legend entry."""
     notes: list[str] = []
 
-    # Manual fixture for raster PDFs (e.g. Stapleton) — lives at
+    # Manual fixture for raster PDFs (e.g. Stapleton): lives at
     # data/fixtures/<sheet_id>.json, two levels above the PDF cache dir.
     fixture_path = pdf_path.parent.parent.parent / "fixtures" / f"{sheet_id}.json"
     if fixture_path.exists():
@@ -467,7 +467,7 @@ def parse_sheet(pdf_path: Path, sheet_id: str) -> ParseResult:
         return spaced / len(primaries) > 0.5
 
     # A legend gap smaller than the default extraction tolerance (~2-3pt, vs. Eppleby's
-    # 1.7pt) can merge the number straight into the name — "1Spion Cop" — so the number
+    # 1.7pt) can merge the number straight into the name ("1Spion Cop"), so the number
     # never appears as its own word at all (Angram, Ivelet: default pass finds 0-1
     # entries, not "many duplicates", so _names_suspicious alone never catches it). Retry
     # whenever the legend is missing or implausibly small, not just when names look wrong.
@@ -477,7 +477,7 @@ def parse_sheet(pdf_path: Path, sheet_id: str) -> ParseResult:
         )
         tight_int = [w for w in tight_words if _INT.match(w["text"].strip())]
         tight_col = _find_legend_column(tight_int, tight_words, chars)
-        # Only switch if the tighter pass actually found more — otherwise a real
+        # Only switch if the tighter pass actually found more, otherwise a real
         # 1-2 house legend would get discarded in favour of an equally-thin false start.
         if tight_col and not _names_suspicious(tight_col, tight_words) and len(tight_col) > len(legend_col):
             words, int_words, legend_col = tight_words, tight_int, tight_col
@@ -507,7 +507,7 @@ def parse_sheet(pdf_path: Path, sheet_id: str) -> ParseResult:
             # Reject tokens that look like concatenated number+name ("59MoorRoad", "6ScotsDyke")
             if any(re.search(r"\d[A-Z][a-z]", t) for t in tokens):
                 continue
-            # A real alias is short ("Church", "St Mary's Church", "1 Eryholme Lane" — at
+            # A real alias is short ("Church", "St Mary's Church", "1 Eryholme Lane": at
             # most 3 words). Longer ones are almost always two dot-leader lines merged by
             # tight row spacing (densely-set sheets like Carlton, Ivelet), producing
             # garbage like "2 Baygante Carlton Boarding Kennels" or "11 Thirley Cottage
@@ -581,7 +581,7 @@ def parse_sheet(pdf_path: Path, sheet_id: str) -> ParseResult:
         notes.append(
             f"Parse likely failed: {len(junk)}/{len(named)} names are unreadable"
             + (f" (e.g. {example!r})" if example else "")
-            + f". This sheet's legend template isn't supported — add a manual "
+            + f". This sheet's legend template isn't supported: add a manual "
             f"fixture at data/fixtures/{sheet_id}.json (see stapleton.json / "
             f"west-witton.json for the format)."
         )

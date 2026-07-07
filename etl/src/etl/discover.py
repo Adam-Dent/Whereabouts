@@ -15,7 +15,7 @@ from .slugs import slugify
 
 # Default discovery index URLs (one per district).
 # All North Yorkshire districts, per https://colinday.co.uk/maps/NorthYorks.shtml.
-# Coverage is being rolled out one district at a time (see data/dist/coverage.md) —
+# Coverage is being rolled out one district at a time (see data/dist/coverage.md);
 # a district appearing here doesn't mean it's been processed yet; run with
 # `--district "<name>"` to process a single one, then check the report before
 # moving to the next.
@@ -79,7 +79,7 @@ def discover_sheets(
 
     `existing_ids` are sheet ids already emitted by *other* districts (passed by
     main.py from the current data/dist/sheets.json). Village names aren't unique
-    across North Yorkshire — Newby, Carlton, Kirkby etc. all recur — so without
+    across North Yorkshire (Newby, Carlton, Kirkby etc. all recur), so without
     this check a same-named village in a second district silently overwrites the
     first one's sheet under the shared un-discriminated id (this happened to
     Craven's Newby when Hambleton (East) was processed next, both slugifying to
@@ -126,7 +126,7 @@ def discover_sheets(
             if sheet_id in seen_ids:
                 sheet_id = f"{sheet_id}-{slugify(district)}"
                 village_id = f"{village_id}-{slugify(district)}"
-                print(f"  NOTE: '{village_name}' collides with an existing sheet id — "
+                print(f"  NOTE: '{village_name}' collides with an existing sheet id, "
                       f"disambiguated to '{sheet_id}'")
             seen_ids.add(sheet_id)
 

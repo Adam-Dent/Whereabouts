@@ -8,12 +8,12 @@ number. See the [README](README.md) for how it all fits together.
 
 - **Report a wrong or missing location.** Open an issue with the house name and
   village. Please do not include anyone's personal details.
-- **Code.** Fixes and improvements to the ETL pipeline, the placement tool, or the
-  app are welcome by pull request.
-- **House placements** (the latitude and longitude for each house) are added by hand
-  and reviewed by the maintainer before they reach the live app, so that quality and
-  provenance stay clear. If you would like to help place houses, open an issue first
-  to discuss.
+
+This is a one-person project, and I maintain it solo, including all the house
+placements. I'm not looking for code contributions or collaborators, so please
+don't open a pull request or get in touch offering to help with code or placement
+work; I won't be able to take it up. Location reports (above) are the one thing
+that's genuinely useful from anyone else.
 
 ## Running it locally
 

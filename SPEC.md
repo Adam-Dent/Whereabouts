@@ -1,4 +1,4 @@
-# SPEC: Whereabouts — Named House Finder (North Yorkshire)
+# SPEC: Whereabouts, Named House Finder (North Yorkshire)
 
 A living specification. Sections marked **[done]** reflect what has been built; others reflect the current plan. Update this file when decisions change.
 
@@ -6,7 +6,7 @@ A living specification. Sections marked **[done]** reflect what has been built; 
 
 ## 1. Problem and goal
 
-Many rural properties in North Yorkshire are identified by name only — "Rose Cottage", "The Old Vicarage", "Manor House Farm" — with no street number. This data is largely absent from Google and Apple Maps. Anyone who needs to find a named property has no reliable way to turn the house name into a map pin.
+Many rural properties in North Yorkshire are identified by name only (things like "Rose Cottage", "The Old Vicarage", "Manor House Farm") with no street number. This data is largely absent from Google and Apple Maps. Anyone who needs to find a named property has no reliable way to turn the house name into a map pin.
 
 Dr A Colin Day publishes free village maps as PDFs ([colinday.co.uk/maps/](https://colinday.co.uk/maps/)), each a hand-drawn village plan with every named property numbered on the map and listed in a printed legend. The drawings are vector PDFs, not scans, so legend text and on-map number positions are machine-readable. The roads are traced from Ordnance Survey data, so the drawing geometry is geometrically close to reality.
 
@@ -135,7 +135,7 @@ For raster PDFs where text extraction is impossible (currently only Stapleton), 
 
 ### Name overrides (`data/fixtures/name_overrides.json`)
 
-Per-house name corrections applied on top of the parsed legend when the dataset is merged (`_merged_houses` in `pwa.py`) — for rare one-off parse artifacts where a parser change isn't worth the regression risk, and later for user-reported wrong names. Key = house id, value = corrected `names` array. First entry: `reeth-south-west-121`, where column-chaining glued "Chisel Cottage" (a separate house, number 43) onto "Wayside Cottage, 15 Silver Street". A comma-address-with-trailing-text scan found no other artifact *of that shape* (the 13 other comma-address entries parsed cleanly) — but mangled names with different signatures may exist; no one has manually reviewed all 42,284 names. Additional artifacts get corrected here as they're found.
+Per-house name corrections applied on top of the parsed legend when the dataset is merged (`_merged_houses` in `pwa.py`), for rare one-off parse artifacts where a parser change isn't worth the regression risk, and later for user-reported wrong names. Key = house id, value = corrected `names` array. First entry: `reeth-south-west-121`, where column-chaining glued "Chisel Cottage" (a separate house, number 43) onto "Wayside Cottage, 15 Silver Street". A comma-address-with-trailing-text scan found no other artifact *of that shape* (the 13 other comma-address entries parsed cleanly), but mangled names with different signatures may exist; no one has manually reviewed all 42,284 names. Additional artifacts get corrected here as they're found.
 
 ---
 
@@ -143,12 +143,12 @@ Per-house name corrections applied on top of the parsed legend when the dataset 
 
 ### 5.1 Discovery [done]
 
-Scrapes a district index page for PDF links, normalises URLs, downloads PDFs with SHA-256 caching. Handles multi-sheet villages (Catterick, Melsonby, Middleton Tyas, etc.) by extracting sheet discriminators from anchor text. `discover.py`'s `DISTRICT_INDEXES` lists all 11 North Yorkshire districts (per [colinday.co.uk/maps/NorthYorks.shtml](https://colinday.co.uk/maps/NorthYorks.shtml)) — a district appearing there doesn't mean it's been processed, only that its URL is known. `whereabouts-etl --district "<name>"` scopes a run to one district (repeatable for several); the emit step merges the result with whatever was already in `data/dist/` for other districts, so a scoped run never drops previously-processed data. `data/dist/coverage.md` (git-tracked) is regenerated on every run and shows discovery/parse/placement status per district — the source of truth for "what's done and what's left" (see §8 Phase 8).
+Scrapes a district index page for PDF links, normalises URLs, downloads PDFs with SHA-256 caching. Handles multi-sheet villages (Catterick, Melsonby, Middleton Tyas, etc.) by extracting sheet discriminators from anchor text. `discover.py`'s `DISTRICT_INDEXES` lists all 11 North Yorkshire districts (per [colinday.co.uk/maps/NorthYorks.shtml](https://colinday.co.uk/maps/NorthYorks.shtml)); a district appearing there doesn't mean it's been processed, only that its URL is known. `whereabouts-etl --district "<name>"` scopes a run to one district (repeatable for several); the emit step merges the result with whatever was already in `data/dist/` for other districts, so a scoped run never drops previously-processed data. `data/dist/coverage.md` (git-tracked) is regenerated on every run and shows discovery/parse/placement status per district: the source of truth for "what's done and what's left" (see §8 Phase 8).
 
-**Scope and expansion.** North Yorkshire is the launch scope, and the app copy says "North Yorkshire for now". Widening to Colin Day's wider catalogue (colinday.co.uk also covers Cumbria, Durham, Lancashire, Lincolnshire, Norfolk, and others, and Colin supports georeferencing all of it — see the long-term-scope note) is a planned direction, not a non-goal. The pipeline is built to widen without a rewrite; these are the only region-specific assumptions to generalise when it does:
+**Scope and expansion.** North Yorkshire is the launch scope, and the app copy says "North Yorkshire for now". Widening to Colin Day's wider catalogue (colinday.co.uk also covers Cumbria, Durham, Lancashire, Lincolnshire, Norfolk, and others, and Colin supports georeferencing all of it; see the long-term-scope note) is a planned direction, not a non-goal. The pipeline is built to widen without a rewrite; these are the only region-specific assumptions to generalise when it does:
 
 - `DISTRICT_INDEXES` (discover.py) is a plain config dict of region → index URL. Adding a region means adding entries; nothing else in discovery is North-Yorkshire-specific. (Consider renaming the concept from "district" to "region/area" if the hierarchy stops being NY districts.)
-- `coords_in_north_yorkshire` / `NY_BOUNDS` (transform.py) is a bounding-box sanity check on *derived* coordinates. It is currently dormant — no sheet is affine-georeferenced, so positions come only from manual placement — but on expansion it must widen to per-region or GB-wide bounds, or be dropped in favour of the region-agnostic village-centroid radius check (`coords_within_radius`).
+- `coords_in_north_yorkshire` / `NY_BOUNDS` (transform.py) is a bounding-box sanity check on *derived* coordinates. It is currently dormant (no sheet is affine-georeferenced, so positions come only from manual placement), but on expansion it must widen to per-region or GB-wide bounds, or be dropped in favour of the region-agnostic village-centroid radius check (`coords_within_radius`).
 - Village-name collisions grow with area. `discover.py` already de-dupes within North Yorkshire; geocoding and slugs may need a region qualifier so same-named villages in different counties stay distinct.
 - User-facing copy is scoped to North Yorkshire (info-panel lead, how-it-works, the SPEC title). Update it when the covered area changes, and keep `hub-site/SPEC.md` and the hub project list in step per the portfolio convention.
 
@@ -156,9 +156,9 @@ Scrapes a district index page for PDF links, normalises URLs, downloads PDFs wit
 
 Uses `pdfplumber`. Each sheet has three zones of integer text:
 
-1. **Numbered legend** — right-aligned column of integers each immediately followed by a house name. Identified by column geometry (`x1` clustering), not line-by-line text.
-2. **Cross-reference** — alphabetical list with dot-leaders; integers right-aligned at the page margin. Used for aliases (houses listed under two names).
-3. **On-map labels** — isolated integers scattered across the drawing. Used for label positions (no longer critical since coordinates come from the placement tool, but still parsed for the `image_pos` highlight ring).
+1. **Numbered legend**: right-aligned column of integers each immediately followed by a house name. Identified by column geometry (`x1` clustering), not line-by-line text.
+2. **Cross-reference**: alphabetical list with dot-leaders; integers right-aligned at the page margin. Used for aliases (houses listed under two names).
+3. **On-map labels**: isolated integers scattered across the drawing. Used for label positions (no longer critical since coordinates come from the placement tool, but still parsed for the `image_pos` highlight ring).
 
 **Key parsing hardening applied:**
 
@@ -170,7 +170,7 @@ Uses `pdfplumber`. Each sheet has three zones of integer text:
 - Section-header rows in table-style legends (bare street names with no house number) are removed by checking if the name appears as a suffix of ten or more sibling entries.
 - Raster PDFs (zero extractable characters) fall back to `data/fixtures/<sheet_id>.json` if present.
 
-**Current state:** 865 sheets, 42,336 houses across all 11 North Yorkshire districts (see §8 Phase 8). Richmondshire alone (the original, most-hardened district) is 56 sheets, 3,225 houses, 44 villages, 11 sheets with label/legend mismatches. Stapleton uses a manually-transcribed fixture. Two more parser fixes (thin/missing legends, over-long cross-reference aliases) landed during the Swaledale pass — see §8 progress notes. Per-district sheet/house counts and parse-quality notes: `data/dist/coverage.md` and `data/dist/report.md`.
+**Current state:** 865 sheets, 42,336 houses across all 11 North Yorkshire districts (see §8 Phase 8). Richmondshire alone (the original, most-hardened district) is 56 sheets, 3,225 houses, 44 villages, 11 sheets with label/legend mismatches. Stapleton uses a manually-transcribed fixture. Two more parser fixes (thin/missing legends, over-long cross-reference aliases) landed during the Swaledale pass; see §8 progress notes. Per-district sheet/house counts and parse-quality notes: `data/dist/coverage.md` and `data/dist/report.md`.
 
 ### 5.3 Rendering [done]
 
@@ -182,15 +182,15 @@ A FastAPI app (`place_tool.py`) serving a Leaflet page. The village drawing is o
 
 **Controls:**
 - County dropdown, then District, then Village, cascading. County groups districts by Colin's county hierarchy (one county, North Yorkshire, for now; extend `_COUNTY_BY_DISTRICT` in `place_tool.py` as other counties are processed). District lists the three priority districts for placement first (`DISTRICT_PRIORITY` in `place_tool.py`: Wensleydale, Swaledale and Arkengarthdale, Hambleton (West)), then the rest alphabetically. Village dropdown is sorted by count of non-numbered houses descending within the selected district, so the most useful villages come first. Last-viewed district/village is remembered per-browser via `localStorage`.
-- Three percent-complete stat boxes above the dropdowns: **Overall** (all districts), **Area** (the selected district, labelled with its name), **This map** (the currently open sheet, live — updates on every click, not just on Save). Overall/Area reflect the last-*saved* state; This map is live including unsaved in-progress placements.
+- Three percent-complete stat boxes above the dropdowns: **Overall** (all districts), **Area** (the selected district, labelled with its name), **This map** (the currently open sheet, live: updates on every click, not just on Save). Overall/Area reflect the last-*saved* state; This map is live including unsaved in-progress placements.
 - Drag the overlay to position it over the village
 - Scale with a single resize handle (bottom-right corner) or scroll wheel
 - The overlay corners can be stretched/skewed independently (a "Stretch corners" mode) to fit the drawing to the real streets. Colin's maps are drawn by hand and are not geometrically square against the satellite view, so scale-and-translate alone often cannot line up every rooftop; position and scale are the coarse controls, corner-stretch is the fine one
 - Click a building to place a house (records lat/lng + image pixel position)
 - Searching a place name pans both the map and the overlay to that location
-- Save button writes `data/placements/<sheet_id>.json` atomically (temp file + rename), then auto-commits the file to git and fires a best-effort background push — placement work can never be lost to a crash, a disk failure, or a forgotten commit
+- Save button writes `data/placements/<sheet_id>.json` atomically (temp file + rename), then auto-commits the file to git and fires a best-effort background push, so placement work can never be lost to a crash, a disk failure, or a forgotten commit
 
-**Current state:** live progress is per-district in `data/dist/coverage.md`, regenerated on each `whereabouts-etl` run — note this can lag behind placement work done directly in the tool between ETL runs, since the tool reads/writes `data/placements/*.json` directly. The stat boxes in the placement tool itself are always live. Richmondshire is 100% placed; Wensleydale (top placement priority) is ~44% placed; the other 9 districts are parsed but not yet started. The shipped app also shows per-district progress bars in its ⓘ sheet, computed from the dataset at build time.
+**Current state:** live progress is per-district in `data/dist/coverage.md`, regenerated on each `whereabouts-etl` run; note this can lag behind placement work done directly in the tool between ETL runs, since the tool reads/writes `data/placements/*.json` directly. The stat boxes in the placement tool itself are always live. Richmondshire is 100% placed; Wensleydale (top placement priority) is ~44% placed; the other 9 districts are parsed but not yet started. The shipped app also shows per-district progress bars in its ⓘ sheet, computed from the dataset at build time.
 
 ### 5.5 Browser prototype [done]
 
@@ -208,17 +208,17 @@ A Progressive Web App (PWA) served from the same FastAPI process as the placemen
 
 ### 6.1 Search
 
-Text input with Fuse.js fuzzy search over a single combined name-plus-village string per house (v1.9: separate weighted name/village keys meant a narrowing query like "rose cottage dalton" scored *worse* than "rose cottage" on both keys and returned no Dalton results — fatal once the dataset held 313 exact Rose Cottages; against the combined string the village word narrows as users expect). Threshold tuned so "rose cot" and "joiners cottage" both match. Results are plain match-relevance order — an earlier "numbered addresses always rank below named houses" rule was removed because it buried an exact numbered-address match (e.g. searching "123 Street Farm") under unrelated named houses. Each result row shows house name, village, and a dot (green = coordinate placed, grey = not yet placed).
+Text input with Fuse.js fuzzy search over a single combined name-plus-village string per house (v1.9: separate weighted name/village keys meant a narrowing query like "rose cottage dalton" scored *worse* than "rose cottage" on both keys and returned no Dalton results (fatal once the dataset held 313 exact Rose Cottages); against the combined string the village word narrows as users expect). Threshold tuned so "rose cot" and "joiners cottage" both match. Results are plain match-relevance order: an earlier "numbered addresses always rank below named houses" rule was removed because it buried an exact numbered-address match (e.g. searching "123 Street Farm") under unrelated named houses. Each result row shows house name, village, and a dot (green = coordinate placed, grey = not yet placed).
 
 ### 6.2 Detail
 
-The sheet image full-width with a ring at the house position — using `image_x/image_y` from the placement tool click if available, falling back to `image_pos` from the parsed label position. A hand-placed house gets a solid red pulsing ring; an unplaced house gets an **amber dashed ring** so the two are visually distinct, and its status text explains that the circle comes from the drawing while directions go to the village centre. House name(s), village name, and a Navigate button below the image.
+The sheet image full-width with a ring at the house position, using `image_x/image_y` from the placement tool click if available, falling back to `image_pos` from the parsed label position. A hand-placed house gets a solid red pulsing ring; an unplaced house gets an **amber dashed ring** so the two are visually distinct, and its status text explains that the circle comes from the drawing while directions go to the village centre. House name(s), village name, and a Navigate button below the image.
 
 If the house has coordinates, Navigate targets them. If not, it targets the village centroid and the UI says so.
 
 **Ring positioning (v1.6 bugfix):** the ring is placed by a single always-bound `img.onload` handler that reads the *currently open* house, never by a per-visit closure. A per-visit closure left stale handlers behind, and a slow or cached image load could fire late and redraw the ring at the previous house's position (first seen switching between the two Manor Farms in Aldborough St John). The smoke test replays this scenario.
 
-**Duplicate names (v1.7/v1.8 decisions):** the dataset has 283 groups of houses whose result rows read identically (same name, village, district) — 156 of the 865 maps have at least one duplicated name (Dalton has four Rose Cottages). Colin's legend numbers were briefly shown to disambiguate (v1.6) but removed at Adam's request: they read like house numbers. Instead (v1.8), an amber warning appears on affected result rows ("2 places with this name in Aldborough St John") and below the village line in the detail view ("There are 2 places named … Check the circle on the map…"). The counts are computed from the dataset at load, so duplicates in newly parsed districts get the warnings automatically. Don't re-add visible map numbers without a new decision.
+**Duplicate names (v1.7/v1.8 decisions):** the dataset has 283 groups of houses whose result rows read identically (same name, village, district); 156 of the 865 maps have at least one duplicated name (Dalton has four Rose Cottages). Colin's legend numbers were briefly shown to disambiguate (v1.6) but removed at Adam's request: they read like house numbers. Instead (v1.8), an amber warning appears on affected result rows ("2 places with this name in Aldborough St John") and below the village line in the detail view ("There are 2 places named … Check the circle on the map…"). The counts are computed from the dataset at load, so duplicates in newly parsed districts get the warnings automatically. Don't re-add visible map numbers without a new decision.
 
 ### 6.3 Navigate
 
@@ -236,7 +236,7 @@ A service worker (`/pwa/sw.js`) provides offline capability:
 
 - **Shell**: `index.html` and `fuse.min.js` (bundled locally) pre-cached on SW install.
 - **Data**: `houses.json` cached with network-first (stale data served when offline).
-- **Images**: cached selectively, never in bulk. Any map the user views is cached automatically (cache-first in the SW). Whole districts can be saved explicitly from the ⓘ sheet ("Save 63 maps for offline use (10.3 MB)", with per-map progress) and removed the same way — tapping a saved area offers to delete its maps and free the space (v1.11). Genuinely-saved areas are tracked in localStorage so "Update X maps" only appears for areas the user saved, never ones with a few browse-cached maps (v1.15). Image filenames are content-hashed (`eryholme.<hash>.webp`), so cached entries are immutable; when Colin revises a map the filename changes, the app fetches the new one, and a startup prune deletes orphaned cache entries. This replaced v1.4's download-all-maps-on-first-visit behaviour, which stopped scaling past one district (865 maps). An explicit, opt-in **"Save all maps for offline use"** button (below the per-district list in the ⓘ sheet) was later re-added for users who want blanket coverage: it confirms the size (~123 MB today), nudges towards wi-fi, and caches every map plus the house list and shell. It is a deliberate one-tap choice, not the old automatic bulk download. Note the whole-catalogue size scales with expansion (§5.1), so this stays opt-in with a size warning.
+- **Images**: cached selectively, never in bulk. Any map the user views is cached automatically (cache-first in the SW). Whole districts can be saved explicitly from the ⓘ sheet ("Save 63 maps for offline use (10.3 MB)", with per-map progress) and removed the same way: tapping a saved area offers to delete its maps and free the space (v1.11). Genuinely-saved areas are tracked in localStorage so "Update X maps" only appears for areas the user saved, never ones with a few browse-cached maps (v1.15). Image filenames are content-hashed (`eryholme.<hash>.webp`), so cached entries are immutable; when Colin revises a map the filename changes, the app fetches the new one, and a startup prune deletes orphaned cache entries. This replaced v1.4's download-all-maps-on-first-visit behaviour, which stopped scaling past one district (865 maps). An explicit, opt-in **"Save all maps for offline use"** button (below the per-district list in the ⓘ sheet) was later re-added for users who want blanket coverage: it confirms the size (~123 MB today), nudges towards wi-fi, and caches every map plus the house list and shell. It is a deliberate one-tap choice, not the old automatic bulk download. Note the whole-catalogue size scales with expansion (§5.1), so this stays opt-in with a size warning.
 
 After an explicit area download the app calls `navigator.storage.persist()` to ask the browser to protect the cache from disk-pressure eviction. On iOS the "Add to Home Screen" nudge further reduces eviction risk.
 
@@ -255,13 +255,13 @@ After an explicit area download the app calls `navigator.storage.persist()` to a
 }
 ```
 
-Sheet-level metadata lives once per sheet instead of on every house, names are normalised client-side, and unplaced houses ship in slim form (searchable, grey dot, village-centroid navigation fallback per §6.1). All 42k houses: ~3.4 MB raw, ~660 KB gzipped — versus 16 MB for the old flat format. The client derives `sheet_id` from the house id (`id` minus the trailing `-<map_number>`).
+Sheet-level metadata lives once per sheet instead of on every house, names are normalised client-side, and unplaced houses ship in slim form (searchable, grey dot, village-centroid navigation fallback per §6.1). All 42k houses: ~3.4 MB raw, ~660 KB gzipped, versus 16 MB for the old flat format. The client derives `sheet_id` from the house id (`id` minus the trailing `-<map_number>`).
 
 ### 6.6 Deployment
 
 Static build generated by `uv run whereabouts-build-pwa`, deployed to Cloudflare Pages (`whereabouts-app.pages.dev`) with `npx wrangler pages deploy docs/ --project-name whereabouts-app`.
 
-**House rule: no em dashes in user-facing pages.** The build fails (`BUILD BLOCKED`) if an em dash (`—`, `&mdash;`, `&#8212;`) appears in `index.html`, `how-it-works.html`, or `sw.js`. Use commas, colons, semicolons, parentheses, or plain hyphens. Deploys are incremental — only changed files upload, so a redeploy after a placement session takes seconds. A `_headers` file gives the content-hashed images immutable CDN caching; `index.html`, `sw.js`, and `houses.json` revalidate on every visit. No server required at runtime — the PWA is entirely client-side.
+**House rule: no em dashes in user-facing pages.** The build fails (`BUILD BLOCKED`) if an em dash (`—`, `&mdash;`, `&#8212;`) appears in `index.html`, `how-it-works.html`, or `sw.js`. Use commas, colons, semicolons, parentheses, or plain hyphens. Deploys are incremental: only changed files upload, so a redeploy after a placement session takes seconds. A `_headers` file gives the content-hashed images immutable CDN caching; `index.html`, `sw.js`, and `houses.json` revalidate on every visit. No server required at runtime; the PWA is entirely client-side.
 
 ---
 
@@ -298,50 +298,50 @@ Center and mpp are the coarse controls for position and scale. Because Colin's h
 
 ## 8. Build phases
 
-### Phase 0 — Scaffold [done]
+### Phase 0: Scaffold [done]
 Monorepo with `/etl`, `/app`, `/data`. Pin Eryholme as the golden fixture.
 
-### Phase 1 — Parse Eryholme [done]
+### Phase 1: Parse Eryholme [done]
 13 houses with correct names including aliases and numeric names, page positions, pixel positions, PNG rendered and validated by eye.
 
-### Phase 2 — Parse all Richmondshire [done]
+### Phase 2: Parse all Richmondshire [done]
 56 sheets, 3,225 houses, 44 villages. Parser hardened for multi-column legends, concatenated tokens, letter-spaced fragments, section headers, blank entries, and raster PDFs. Review report generated.
 
-### Phase 3 — Placement tool [done]
+### Phase 3: Placement tool [done]
 FastAPI + Leaflet overlay tool. Houses placed by clicking on satellite imagery. Saves lat/lng and drawing pixel position per house. ~43% of houses placed.
 
-### Phase 4 — Complete house placements [in progress]
+### Phase 4: Complete house placements [in progress]
 Work through remaining villages in the placement tool. Prioritising non-numbered houses (the ones hardest to find by other means). Estimated 50-100 hours of placement work for full coverage.
 
-### Phase 5 — PWA: search, detail, navigate [done]
+### Phase 5: PWA: search, detail, navigate [done]
 Build the PWA served at `/pwa`. Vanilla JS SPA with Fuse.js fuzzy search, detail view (village map image with ring overlay), and native maps deep link. Service worker caches all data and images for offline use. Acceptance: load once on wifi, go offline, search "rose cottage", pick Eryholme, see house ringed on the map, Navigate opens native maps to the correct pin.
 
-### Phase 6 — Test on device and ship internally [in progress]
+### Phase 6: Test on device and ship internally [in progress]
 The PWA replaced the sideload/TestFlight plan: users install from the URL. Live at whereabouts-app.pages.dev; tested on real iOS/Android devices, and by Colin Day himself. Feedback loop ongoing.
 
-### Phase 7 — OTA updates [obsolete]
+### Phase 7: OTA updates [obsolete]
 The Expo Updates plan is unnecessary: the PWA self-updates (see §6.4 update model). Publishing is one double-click (`Publish App Update.command`).
 
-### Phase 8 — Additional North Yorkshire districts [discovery/parse done; placement ongoing]
-Richmondshire first, now expanding to the rest of North Yorkshire district by district: Swaledale and Arkengarthdale, Craven, Hambleton (East/West), Harrogate, Ryedale (East/West), Scarborough, Selby, Wensleydale — the full list lives in `discover.py`'s `DISTRICT_INDEXES`. Each district is discovered/parsed/rendered with `whereabouts-etl --district "<name>"`, its `report.md` output checked for parse-quality issues before moving to the next (mirrors how Richmondshire's per-village parser fixes were found — see §5.2). `data/dist/coverage.md` tracks status per district. The placement tool's District dropdown (above the Village dropdown) scopes the village list to one district at a time for the manual placement pass.
+### Phase 8: Additional North Yorkshire districts [discovery/parse done; placement ongoing]
+Richmondshire first, now expanding to the rest of North Yorkshire district by district: Swaledale and Arkengarthdale, Craven, Hambleton (East/West), Harrogate, Ryedale (East/West), Scarborough, Selby, Wensleydale; the full list lives in `discover.py`'s `DISTRICT_INDEXES`. Each district is discovered/parsed/rendered with `whereabouts-etl --district "<name>"`, its `report.md` output checked for parse-quality issues before moving to the next (mirrors how Richmondshire's per-village parser fixes were found; see §5.2). `data/dist/coverage.md` tracks status per district. The placement tool's District dropdown (above the Village dropdown) scopes the village list to one district at a time for the manual placement pass.
 
 **Rollout checklist** (processing order; check `data/dist/coverage.md` for live counts):
 
-- [x] Richmondshire — baseline (56 sheets, 3,225 houses; 100% placed)
-- [x] Swaledale and Arkengarthdale — 24 sheets, 1,029 houses; parsed, not yet placed
-- [x] Craven — 96 sheets, 3,944 houses; parsed, not yet placed
-- [x] Hambleton (East) — 68 sheets, 3,351 houses; parsed, not yet placed
-- [x] Hambleton (West) — 106 sheets, 5,686 houses; parsed, not yet placed
-- [x] Harrogate — 164 sheets, 8,223 houses; parsed, not yet placed
-- [x] Ryedale (East) — 55 sheets, 2,123 houses; parsed, not yet placed
-- [x] Ryedale (West) — 86 sheets, 4,159 houses; parsed, not yet placed
-- [x] Scarborough — 88 sheets, 3,492 houses; parsed, not yet placed
-- [x] Selby — 59 sheets, 3,471 houses; parsed, not yet placed
-- [x] Wensleydale — 63 sheets, 3,633 houses; ~44% placed
+- [x] Richmondshire: baseline (56 sheets, 3,225 houses; 100% placed)
+- [x] Swaledale and Arkengarthdale: 24 sheets, 1,029 houses; parsed, not yet placed
+- [x] Craven: 96 sheets, 3,944 houses; parsed, not yet placed
+- [x] Hambleton (East): 68 sheets, 3,351 houses; parsed, not yet placed
+- [x] Hambleton (West): 106 sheets, 5,686 houses; parsed, not yet placed
+- [x] Harrogate: 164 sheets, 8,223 houses; parsed, not yet placed
+- [x] Ryedale (East): 55 sheets, 2,123 houses; parsed, not yet placed
+- [x] Ryedale (West): 86 sheets, 4,159 houses; parsed, not yet placed
+- [x] Scarborough: 88 sheets, 3,492 houses; parsed, not yet placed
+- [x] Selby: 59 sheets, 3,471 houses; parsed, not yet placed
+- [x] Wensleydale: 63 sheets, 3,633 houses; ~44% placed
 
-All 11 North Yorkshire districts discovered, parsed and rendered: **865 sheets, 42,336 houses** total (4,780 placed: Richmondshire complete, Wensleydale ~44%). Remaining work is placement — the manual, per-house pass in the placement tool, district by district via the dropdown.
+All 11 North Yorkshire districts discovered, parsed and rendered: **865 sheets, 42,336 houses** total (4,780 placed: Richmondshire complete, Wensleydale ~44%). Remaining work is placement: the manual, per-house pass in the placement tool, district by district via the dropdown.
 
-**Placement priority** (distinct from the processing order above — this is the order the actual manual placement work should happen in, most-needed areas first):
+**Placement priority** (distinct from the processing order above; this is the order the actual manual placement work should happen in, most-needed areas first):
 
 1. Wensleydale
 2. Swaledale and Arkengarthdale
@@ -352,12 +352,12 @@ The placement tool's District dropdown lists these three first for exactly this 
 
 **Progress notes:**
 - Swaledale and Arkengarthdale: two parser bugs found and fixed during this pass, applied retroactively to the whole dataset:
-  - Legend numbers with too small a gap to the house name (Angram, Ivelet) could fail to register as legend entries at all, rather than just merging into a suspicious duplicate — the retry-at-tighter-tolerance logic now triggers on a missing/thin legend, not just on duplicate names.
-  - Cross-reference alias parsing on densely-set sheets could merge two dot-leader lines into one, producing garbage aliases (e.g. Carlton, Ivelet: "2 Baygante Carlton Boarding Kennels"). Aliases longer than 3 words are now rejected — real aliases in this dataset are short ("Church", "St Mary's Church", "1 Eryholme Lane").
-- Hambleton (East): village names aren't unique across North Yorkshire (Newby, Carlton, Kirkby, etc. all recur). Sheet/village ids aren't namespaced by district — for backward compatibility with 3,054 already-placed Richmondshire houses, they can't be, retroactively — so a same-named village in a second district was silently overwriting the first district's sheet under the shared id (Craven's Newby vanished when Hambleton (East)'s Newby was processed next). Fixed: `discover_sheets` now takes the existing sheet ids from other districts and appends the district slug to disambiguate a colliding one (`newby` / `newby-craven`); logged to the console when it fires. Craven's Newby was recovered by reprocessing.
+  - Legend numbers with too small a gap to the house name (Angram, Ivelet) could fail to register as legend entries at all, rather than just merging into a suspicious duplicate; the retry-at-tighter-tolerance logic now triggers on a missing/thin legend, not just on duplicate names.
+  - Cross-reference alias parsing on densely-set sheets could merge two dot-leader lines into one, producing garbage aliases (e.g. Carlton, Ivelet: "2 Baygante Carlton Boarding Kennels"). Aliases longer than 3 words are now rejected: real aliases in this dataset are short ("Church", "St Mary's Church", "1 Eryholme Lane").
+- Hambleton (East): village names aren't unique across North Yorkshire (Newby, Carlton, Kirkby, etc. all recur). Sheet/village ids aren't namespaced by district: for backward compatibility with 3,054 already-placed Richmondshire houses, they can't be, retroactively, so a same-named village in a second district was silently overwriting the first district's sheet under the shared id (Craven's Newby vanished when Hambleton (East)'s Newby was processed next). Fixed: `discover_sheets` now takes the existing sheet ids from other districts and appends the district slug to disambiguate a colliding one (`newby` / `newby-craven`); logged to the console when it fires. Craven's Newby was recovered by reprocessing.
 
-### Phase 9 (optional) — Authoritative data source
-OS AddressBase contains maintained coordinates for registered properties. If accessible, a postcode plus house name could resolve to a precise coordinate — making the PDF-derived placements a fallback rather than the primary source.
+### Phase 9 (optional): Authoritative data source
+OS AddressBase contains maintained coordinates for registered properties. If accessible, a postcode plus house name could resolve to a precise coordinate, making the PDF-derived placements a fallback rather than the primary source.
 
 ---
 
@@ -375,11 +375,11 @@ In practice this approach had two problems:
 
 Direct placement removes both problems: the user clicks the actual building. The placement tool makes this fast enough to be practical (a village of 30 houses takes around 10 minutes once the overlay is aligned).
 
-The trade-off is that full coverage requires significant manual work — but the work can be done incrementally, the least-tractable houses are done first, and the placement quality is exact rather than estimated.
+The trade-off is that full coverage requires significant manual work, but the work can be done incrementally, the least-tractable houses are done first, and the placement quality is exact rather than estimated.
 
 ### Why a browser prototype rather than the Expo app directly
 
-Building the Expo app before the data was complete would have meant testing with sparse coverage. The browser prototype at `/app` let me verify the search and display logic end-to-end using the server's live data, without the bundling cycle of a native app. It also revealed the need to sort non-numbered houses first in search results — something that wasn't obvious until a real user tried it.
+Building the Expo app before the data was complete would have meant testing with sparse coverage. The browser prototype at `/app` let me verify the search and display logic end-to-end using the server's live data, without the bundling cycle of a native app. It also revealed the need to sort non-numbered houses first in search results, something that wasn't obvious until a real user tried it.
 
 ---
 
@@ -399,7 +399,7 @@ Colin Day's maps are published "available for copying without charge". Attributi
 
 ### Ordnance Survey
 
-The app previously displayed a blanket "Contains OS data © Crown copyright…" attribution. Removed in July 2026 on Colin Day's own advice: only his older maps were made under his former OS contract — newer ones are built from Google Maps, OpenStreetMap, and residents' knowledge — so an app-wide OS attribution wrongly implied all maps rely on an OS contract. Each drawing carries its own attribution line (OS / Google Maps / OpenStreetMap as applicable), and the app always shows the drawing in full, so the per-map attribution is what users see. The ⓘ panel credits Colin and notes that maps are shown in full with their own attributions.
+The app previously displayed a blanket "Contains OS data © Crown copyright…" attribution. Removed in July 2026 on Colin Day's own advice: only his older maps were made under his former OS contract; newer ones are built from Google Maps, OpenStreetMap, and residents' knowledge, so an app-wide OS attribution wrongly implied all maps rely on an OS contract. Each drawing carries its own attribution line (OS / Google Maps / OpenStreetMap as applicable), and the app always shows the drawing in full, so the per-map attribution is what users see. The ⓘ panel credits Colin and notes that maps are shown in full with their own attributions.
 
 The derived house coordinates come from the author's own observation of satellite imagery, not from the PDF geometry. This avoids the OS database-rights question that applies to coordinates derived directly from OS-traced geometry.
 
@@ -423,7 +423,7 @@ The app is a navigation aid only, not a clinical tool. It is deliberately framed
 - **PWA deploy scope.** Resolved (v1.5): all districts ship, but nothing bulk-downloads. Images are cached only on view or by explicit per-district "save offline" packs, so shipping all 865 sheets costs users nothing until they ask for an area. Unplaced houses are now searchable (grey dot, centroid fallback), so partial districts are useful the day their first villages are placed.
 - **Village centroid quality.** Nominatim geocoding can pick a same-named village elsewhere in the country (e.g. Angram, Swaledale geocoded to the Angram near York). Only affects the navigation fallback for unplaced houses. Worth a sanity pass: flag centroids that fall outside a district bounding box.
 - **Shareable links.** Each house already has a stable URL hash (`#/detail/<id>`). Verify a texted link opens correctly (including from a home-screen install), then consider a share button on the detail view.
-- **Recent searches.** A localStorage-backed list on the empty search screen — users often revisit the same places, so the last few houses viewed are the likeliest next search.
+- **Recent searches.** A localStorage-backed list on the empty search screen: users often revisit the same places, so the last few houses viewed are the likeliest next search.
 - **Analytics.** Interest in usage data (visits, most-searched areas) without cookies/consent banners. GoatCounter (current) is already cookieless; Cloudflare Web Analytics is a cookieless complement. Caution before logging house-level searches: a log of searched houses can be sensitive (it can reveal who someone is visiting), so aggregate to village/district level or don't collect it.
 
 ---

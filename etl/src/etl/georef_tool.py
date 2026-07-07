@@ -122,7 +122,7 @@ async def georeference_page(sheet_id: str) -> str:
 </style>
 </head><body>
 <div id="toolbar">
-  <strong>{sheet_id}</strong> — {village_name}
+  <strong>{sheet_id}</strong>: {village_name}
   <button onclick="solve()">Solve</button>
   <button onclick="savePoints()">Save</button>
   <button onclick="clearLast()">Undo last</button>

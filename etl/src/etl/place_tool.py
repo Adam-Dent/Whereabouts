@@ -7,7 +7,7 @@ is aligned over the real village, clicking the building for a named house record
 both its lat/lng (for navigation) and its pixel on the drawing (for the app's
 highlight ring), derived from the alignment.
 
-Per-village results are saved to ``data/placements/<sheet_id>.json`` — the source
+Per-village results are saved to ``data/placements/<sheet_id>.json``: the source
 of truth, version-controlled and merged into the dataset by the ETL.
 
 Run:  uv run uvicorn etl.place_tool:app --reload   (then open http://127.0.0.1:8000)
@@ -28,7 +28,7 @@ DATA_DIR = Path(__file__).parent.parent.parent.parent / "data"
 DIST_DIR = DATA_DIR / "dist"
 PLACEMENTS_DIR = DATA_DIR / "placements"
 
-app = FastAPI(title="Whereabouts — House Placement Tool")
+app = FastAPI(title="Whereabouts: House Placement Tool")
 app.mount("/images", StaticFiles(directory=str(DIST_DIR / "images")), name="images")
 
 from .pwa import router as _pwa_router  # noqa: E402
@@ -188,7 +188,7 @@ def _autocommit(path: Path, placed: int) -> bool:
 
 @app.get("/api/app/houses")
 def api_app_houses() -> JSONResponse:
-    """All houses merged with placement data — for the front-end app."""
+    """All houses merged with placement data, for the front-end app."""
     from .pwa import _merged_houses
     return JSONResponse(_merged_houses())
 
@@ -208,7 +208,7 @@ _PAGE = r"""<!doctype html>
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whereabouts — Place Houses</title>
+<title>Whereabouts: Place Houses</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <style>
   html,body{margin:0;height:100%;font-family:system-ui,sans-serif}
@@ -257,7 +257,7 @@ _PAGE = r"""<!doctype html>
 <body>
 <div id="app">
   <div id="side">
-    <h1>Whereabouts — Place Houses</h1>
+    <h1>Whereabouts: Place Houses</h1>
     <div id="stats">
       <div class="statbox"><div class="statlabel">Overall</div><div class="statpct" id="stat-overall">–</div></div>
       <div class="statbox"><div class="statlabel" id="stat-area-label">Area</div><div class="statpct" id="stat-area">–</div></div>
@@ -274,7 +274,7 @@ _PAGE = r"""<!doctype html>
     </div>
     <div id="results"></div>
     <div id="step">
-      <div id="stepttl">Step 1 — Align the drawing</div>
+      <div id="stepttl">Step 1: Align the drawing</div>
       <div class="hint" style="padding:4px 0">Drag the drawing to reposition it. Drag the red square handle (bottom-right) or scroll on the drawing to resize it. Switch to Streets basemap (top-right) if that helps.</div>
       <input type="range" id="opacity" min="0" max="100" value="55"/> opacity
       <button id="stepbtn">Confirm alignment →</button>
@@ -332,7 +332,7 @@ function matrix3d(h){
 // Stretch mode: warpCorners holds 4 independent lat/lng corners; corners() returns those directly.
 const warp = {
   img: null, handle: null, warpHandles: [], warpCorners: null,
-  center: null,   // L.LatLng — geographic centre of the drawing
+  center: null,   // L.LatLng: geographic centre of the drawing
   mpp: 0,         // metres per image pixel
 
   corners(){
@@ -465,7 +465,7 @@ document.getElementById('opacity').oninput=setOpacity;
 
 function applyMode(){
   const al = mode==='align';
-  document.getElementById('stepttl').textContent = al ? 'Step 1 — Align the drawing' : 'Step 2 — Click each house';
+  document.getElementById('stepttl').textContent = al ? 'Step 1: Align the drawing' : 'Step 2: Click each house';
   document.getElementById('stepbtn').textContent = al ? 'Confirm alignment →' : '← Re-align drawing';
   document.getElementById('list').classList.toggle('dim', al);
   const wb=document.getElementById('warpbtn');
@@ -495,7 +495,7 @@ function toggleWarp(){
 document.getElementById('warpbtn').onclick=toggleWarp;
 
 let allSheets=[];
-// Highest-value districts first, per the placement priority order — the rest fall
+// Highest-value districts first, per the placement priority order; the rest fall
 // back to alphabetical. Update this if the priority order changes.
 const DISTRICT_PRIORITY=['Wensleydale','Swaledale and Arkengarthdale','Hambleton (West)'];
 // County tier above district (Colin's own hierarchy). One county for now.
@@ -542,7 +542,7 @@ function populateVillages(){
   const district=document.getElementById('district').value;
   const filtered=allSheets.filter(s=>s.district===district);
   const sel=document.getElementById('village');
-  sel.innerHTML=filtered.map(v=>`<option value="${v.id}">${v.village_name} — ${v.placed}/${v.total}</option>`).join('');
+  sel.innerHTML=filtered.map(v=>`<option value="${v.id}">${v.village_name}: ${v.placed}/${v.total}</option>`).join('');
   sel.onchange=()=>{ localStorage.setItem('whereabouts_village::'+district, sel.value); loadSheet(sel.value); };
   const savedVillage=localStorage.getItem('whereabouts_village::'+district);
   const target=(savedVillage && filtered.some(v=>v.id===savedVillage)) ? savedVillage : (filtered[0] && filtered[0].id);
@@ -551,7 +551,7 @@ function populateVillages(){
 }
 
 // Percent-complete stats. Overall/area reflect the last *saved* state (allSheets is
-// only refreshed on Save, matching the dropdown option text) — the current-map stat
+// only refreshed on Save, matching the dropdown option text); the current-map stat
 // is live, counting in-progress unsaved placements too, since that's the figure
 // that's actually useful while you're mid-village.
 function pct(placed,total){ return total ? Math.round(100*placed/total)+'%' : '–'; }
@@ -660,7 +660,7 @@ async function save(){
               body:JSON.stringify(body)})).json();
   document.getElementById('status').textContent=`Saved ${r.placed} houses ✓`;
   const o=document.getElementById('village').querySelector(`option[value="${sheet.id}"]`);
-  if(o) o.textContent=`${sheet.village_name} — ${r.placed}/${houses.length}`;
+  if(o) o.textContent=`${sheet.village_name}: ${r.placed}/${houses.length}`;
   const cached=allSheets.find(s=>s.id===sheet.id);
   if(cached) cached.placed=r.placed;
   updateOverallStat(); updateAreaStat();
@@ -716,7 +716,7 @@ header p{font-size:11px;opacity:.65;margin-top:2px}
 <body>
 <header>
   <h1>Whereabouts</h1>
-  <p>Named house finder — North Yorkshire</p>
+  <p>Named house finder, North Yorkshire</p>
 </header>
 <div id="search-wrap">
   <input id="searchq" type="search" placeholder="Search by house name…" autocomplete="off"/>
@@ -775,7 +775,7 @@ function showDetail(h){
       ${hasImg?'<div id="ring"></div>':''}
     </div>
     ${hasCoords?`<button id="navbtn" onclick="navigate(${h.lat},${h.lng})">Navigate →</button>`:''}
-    ${!hasCoords?'<div id="nocoords">Not yet placed — no coordinates available</div>':''}
+    ${!hasCoords?'<div id="nocoords">Not yet placed: no coordinates available</div>':''}
   `;
   if(hasImg){
     const img=document.getElementById('dimg');
