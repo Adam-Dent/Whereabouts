@@ -1,0 +1,315 @@
+{
+  "sheet_id": "askrigg-north",
+  "pdf_hash": "7a7a769226d31721cabd622532c364e877d368fa6dc0255025cb8effbe6b5aa6",
+  "alignment": {
+    "corners": [
+      [
+        54.32032805303807,
+        -2.081469297409058
+      ],
+      [
+        54.32007148955564,
+        -2.0757186412811284
+      ],
+      [
+        54.315440556529175,
+        -2.075407505035401
+      ],
+      [
+        54.31535293925889,
+        -2.0815336704254155
+      ]
+    ],
+    "center": [
+      54.31779825959545,
+      -2.0785322785377507
+    ],
+    "mpp": 0.21710008272508358,
+    "zoom": 19,
+    "stretched": true
+  },
+  "houses": {
+    "askrigg-north-1": {
+      "lat": 54.3158427,
+      "lng": -2.0792645,
+      "image_x": 586,
+      "image_y": 2131
+    },
+    "askrigg-north-2": {
+      "lat": 54.3160335,
+      "lng": -2.0792806,
+      "image_x": 582,
+      "image_y": 2044
+    },
+    "askrigg-north-3": {
+      "lat": 54.3162463,
+      "lng": -2.0791331,
+      "image_x": 623,
+      "image_y": 1946
+    },
+    "askrigg-north-4": {
+      "lat": 54.3163762,
+      "lng": -2.0792028,
+      "image_x": 605,
+      "image_y": 1885
+    },
+    "askrigg-north-5": {
+      "lat": 54.3165248,
+      "lng": -2.0795435,
+      "image_x": 514,
+      "image_y": 1816
+    },
+    "askrigg-north-6": {
+      "lat": 54.3165342,
+      "lng": -2.0791921,
+      "image_x": 608,
+      "image_y": 1812
+    },
+    "askrigg-north-7": {
+      "lat": 54.3166703,
+      "lng": -2.0792431,
+      "image_x": 595,
+      "image_y": 1748
+    },
+    "askrigg-north-8": {
+      "lat": 54.3167955,
+      "lng": -2.0794737,
+      "image_x": 534,
+      "image_y": 1690
+    },
+    "askrigg-north-9": {
+      "lat": 54.316808,
+      "lng": -2.0789829,
+      "image_x": 666,
+      "image_y": 1684
+    },
+    "askrigg-north-10": {
+      "lat": 54.316844,
+      "lng": -2.0791572,
+      "image_x": 619,
+      "image_y": 1667
+    },
+    "askrigg-north-11": {
+      "lat": 54.316894,
+      "lng": -2.0789722,
+      "image_x": 669,
+      "image_y": 1643
+    },
+    "askrigg-north-12": {
+      "lat": 54.3174573,
+      "lng": -2.0794281,
+      "image_x": 549,
+      "image_y": 1377
+    },
+    "askrigg-north-13": {
+      "lat": 54.317487,
+      "lng": -2.0790231,
+      "image_x": 659,
+      "image_y": 1361
+    },
+    "askrigg-north-14": {
+      "lat": 54.3180048,
+      "lng": -2.0790178,
+      "image_x": 663,
+      "image_y": 1111
+    },
+    "askrigg-north-15": {
+      "lat": 54.3186541,
+      "lng": -2.07894,
+      "image_x": 689,
+      "image_y": 791
+    },
+    "askrigg-north-16": {
+      "lat": 54.3177514,
+      "lng": -2.0782506,
+      "image_x": 875,
+      "image_y": 1228
+    },
+    "askrigg-north-17": {
+      "lat": 54.3176028,
+      "lng": -2.0783123,
+      "image_x": 856,
+      "image_y": 1301
+    },
+    "askrigg-north-18": {
+      "lat": 54.3175214,
+      "lng": -2.0783821,
+      "image_x": 836,
+      "image_y": 1341
+    },
+    "askrigg-north-19": {
+      "lat": 54.317268,
+      "lng": -2.0785645,
+      "image_x": 783,
+      "image_y": 1464
+    },
+    "askrigg-north-20": {
+      "lat": 54.3171694,
+      "lng": -2.0786288,
+      "image_x": 765,
+      "image_y": 1511
+    },
+    "askrigg-north-21": {
+      "lat": 54.3170802,
+      "lng": -2.0783928,
+      "image_x": 829,
+      "image_y": 1553
+    },
+    "askrigg-north-22": {
+      "lat": 54.3170098,
+      "lng": -2.0778295,
+      "image_x": 985,
+      "image_y": 1585
+    },
+    "askrigg-north-23": {
+      "lat": 54.3168158,
+      "lng": -2.0787495,
+      "image_x": 730,
+      "image_y": 1679
+    },
+    "askrigg-north-24": {
+      "lat": 54.3167955,
+      "lng": -2.0786476,
+      "image_x": 757,
+      "image_y": 1689
+    },
+    "askrigg-north-25": {
+      "lat": 54.3166719,
+      "lng": -2.0787549,
+      "image_x": 727,
+      "image_y": 1747
+    },
+    "askrigg-north-26": {
+      "lat": 54.3165749,
+      "lng": -2.0787817,
+      "image_x": 719,
+      "image_y": 1793
+    },
+    "askrigg-north-27": {
+      "lat": 54.3164826,
+      "lng": -2.0788005,
+      "image_x": 714,
+      "image_y": 1836
+    },
+    "askrigg-north-28": {
+      "lat": 54.3164043,
+      "lng": -2.0788488,
+      "image_x": 700,
+      "image_y": 1873
+    },
+    "askrigg-north-29": {
+      "lat": 54.3163558,
+      "lng": -2.0788622,
+      "image_x": 696,
+      "image_y": 1895
+    },
+    "askrigg-north-30": {
+      "lat": 54.3163042,
+      "lng": -2.0788729,
+      "image_x": 693,
+      "image_y": 1919
+    },
+    "askrigg-north-31": {
+      "lat": 54.3162979,
+      "lng": -2.078771,
+      "image_x": 720,
+      "image_y": 1922
+    },
+    "askrigg-north-32": {
+      "lat": 54.3162776,
+      "lng": -2.0786208,
+      "image_x": 761,
+      "image_y": 1932
+    },
+    "askrigg-north-33": {
+      "lat": 54.3162463,
+      "lng": -2.0784518,
+      "image_x": 807,
+      "image_y": 1947
+    },
+    "askrigg-north-34": {
+      "lat": 54.3164654,
+      "lng": -2.0778242,
+      "image_x": 981,
+      "image_y": 1845
+    },
+    "askrigg-north-35": {
+      "lat": 54.3163981,
+      "lng": -2.0771134,
+      "image_x": 1180,
+      "image_y": 1877
+    },
+    "askrigg-north-36": {
+      "lat": 54.316384,
+      "lng": -2.0762014,
+      "image_x": 1440,
+      "image_y": 1885
+    },
+    "askrigg-north-37": {
+      "lat": 54.3159146,
+      "lng": -2.0771912,
+      "image_x": 1152,
+      "image_y": 2106
+    },
+    "askrigg-north-38": {
+      "lat": 54.3159334,
+      "lng": -2.0774406,
+      "image_x": 1082,
+      "image_y": 2096
+    },
+    "askrigg-north-39": {
+      "lat": 54.3159975,
+      "lng": -2.0776981,
+      "image_x": 1012,
+      "image_y": 2065
+    },
+    "askrigg-north-40": {
+      "lat": 54.3160069,
+      "lng": -2.0778751,
+      "image_x": 963,
+      "image_y": 2060
+    },
+    "askrigg-north-41": {
+      "lat": 54.3160351,
+      "lng": -2.0780441,
+      "image_x": 917,
+      "image_y": 2047
+    },
+    "askrigg-north-42": {
+      "lat": 54.315985,
+      "lng": -2.0783499,
+      "image_x": 833,
+      "image_y": 2069
+    },
+    "askrigg-north-43": {
+      "lat": 54.3160288,
+      "lng": -2.0787603,
+      "image_x": 722,
+      "image_y": 2047
+    },
+    "askrigg-north-44": {
+      "lat": 54.3159303,
+      "lng": -2.078889,
+      "image_x": 686,
+      "image_y": 2092
+    },
+    "askrigg-north-45": {
+      "lat": 54.3158552,
+      "lng": -2.0789668,
+      "image_x": 665,
+      "image_y": 2127
+    },
+    "askrigg-north-46": {
+      "lat": 54.315791,
+      "lng": -2.0790392,
+      "image_x": 645,
+      "image_y": 2156
+    },
+    "askrigg-north-47": {
+      "lat": 54.3157488,
+      "lng": -2.0788729,
+      "image_x": 690,
+      "image_y": 2176
+    }
+  }
+}

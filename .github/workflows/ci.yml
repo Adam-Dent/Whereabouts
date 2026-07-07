@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sync dependencies
+        working-directory: etl
+        run: uv sync
+
+      - name: Lint (ruff)
+        working-directory: etl
+        run: uvx ruff check .
+
+      - name: No em dashes in user-facing pages
+        run: |
+          if grep -lP '\x{2014}|&mdash;|&#8212;' docs/index.html docs/how-it-works.html docs/privacy.html docs/sw.js; then
+            echo "BUILD BLOCKED: em dash found in a user-facing page"
+            exit 1
+          fi
+          echo "No em dashes found."
+
+      - name: Validate generated pages (no image artifacts needed)
+        working-directory: etl
+        run: |
+          uv run python <<'PY'
+          from etl import pwa
+          pages = {
+              "index.html": pwa._page_html(),
+              "how-it-works.html": pwa._HOW_PAGE,
+              "privacy.html": pwa._PRIVACY_PAGE,
+              "sw.js": pwa._SW_JS,
+          }
+          for name, html in pages.items():
+              assert html, f"{name} generated empty"
+              for bad in ("\u2014", "&mdash;", "&#8212;"):
+                  assert bad not in html, f"em dash in {name}"
+          print("Pages generate and pass the em-dash guard.")
+          PY

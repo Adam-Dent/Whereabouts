@@ -1,0 +1,267 @@
+{
+  "sheet_id": "castle-bolton",
+  "pdf_hash": "ffbfcea44d3a2e8f5e2598f7eb7d2589caf85c81f46f285b950b8d7401e5b2c6",
+  "alignment": {
+    "corners": [
+      [
+        54.32339053133898,
+        -1.951168396366938
+      ],
+      [
+        54.32341920434355,
+        -1.9414365291595461
+      ],
+      [
+        54.31939216794979,
+        -1.9414679027663633
+      ],
+      [
+        54.31939216794979,
+        -1.951168396366938
+      ]
+    ],
+    "center": [
+      54.321398517895524,
+      -1.9463103061649463
+    ],
+    "mpp": 0.26926667421949096,
+    "zoom": 17,
+    "stretched": true
+  },
+  "houses": {
+    "castle-bolton-1": {
+      "lat": 54.3220895,
+      "lng": -1.949687,
+      "image_x": 359,
+      "image_y": 538
+    },
+    "castle-bolton-2": {
+      "lat": 54.3220848,
+      "lng": -1.9487831,
+      "image_x": 577,
+      "image_y": 541
+    },
+    "castle-bolton-3": {
+      "lat": 54.3221005,
+      "lng": -1.9486329,
+      "image_x": 613,
+      "image_y": 534
+    },
+    "castle-bolton-4": {
+      "lat": 54.3222694,
+      "lng": -1.9479704,
+      "image_x": 773,
+      "image_y": 465
+    },
+    "castle-bolton-5": {
+      "lat": 54.3222773,
+      "lng": -1.9473508,
+      "image_x": 922,
+      "image_y": 463
+    },
+    "castle-bolton-6": {
+      "lat": 54.3224102,
+      "lng": -1.9463584,
+      "image_x": 1161,
+      "image_y": 409
+    },
+    "castle-bolton-7": {
+      "lat": 54.3224697,
+      "lng": -1.9459534,
+      "image_x": 1258,
+      "image_y": 385
+    },
+    "castle-bolton-8": {
+      "lat": 54.3224978,
+      "lng": -1.9455001,
+      "image_x": 1367,
+      "image_y": 373
+    },
+    "castle-bolton-9": {
+      "lat": 54.3223821,
+      "lng": -1.9455618,
+      "image_x": 1353,
+      "image_y": 421
+    },
+    "castle-bolton-10": {
+      "lat": 54.3223883,
+      "lng": -1.9454089,
+      "image_x": 1389,
+      "image_y": 419
+    },
+    "castle-bolton-11": {
+      "lat": 54.3224055,
+      "lng": -1.9451782,
+      "image_x": 1445,
+      "image_y": 412
+    },
+    "castle-bolton-12": {
+      "lat": 54.3218252,
+      "lng": -1.9449073,
+      "image_x": 1511,
+      "image_y": 651
+    },
+    "castle-bolton-13": {
+      "lat": 54.3224446,
+      "lng": -1.9447088,
+      "image_x": 1557,
+      "image_y": 396
+    },
+    "castle-bolton-14": {
+      "lat": 54.322501,
+      "lng": -1.9443226,
+      "image_x": 1650,
+      "image_y": 373
+    },
+    "castle-bolton-15": {
+      "lat": 54.3225964,
+      "lng": -1.9445103,
+      "image_x": 1605,
+      "image_y": 334
+    },
+    "castle-bolton-16": {
+      "lat": 54.3226058,
+      "lng": -1.9450361,
+      "image_x": 1479,
+      "image_y": 330
+    },
+    "castle-bolton-17": {
+      "lat": 54.3226464,
+      "lng": -1.9452238,
+      "image_x": 1434,
+      "image_y": 313
+    },
+    "castle-bolton-18": {
+      "lat": 54.3227028,
+      "lng": -1.9452332,
+      "image_x": 1431,
+      "image_y": 290
+    },
+    "castle-bolton-19": {
+      "lat": 54.3230813,
+      "lng": -1.9444567,
+      "image_x": 1617,
+      "image_y": 135
+    },
+    "castle-bolton-20": {
+      "lat": 54.3228842,
+      "lng": -1.9455725,
+      "image_x": 1350,
+      "image_y": 215
+    },
+    "castle-bolton-21": {
+      "lat": 54.3228529,
+      "lng": -1.9457603,
+      "image_x": 1305,
+      "image_y": 227
+    },
+    "castle-bolton-22": {
+      "lat": 54.3227638,
+      "lng": -1.9464093,
+      "image_x": 1149,
+      "image_y": 263
+    },
+    "castle-bolton-23": {
+      "lat": 54.322745,
+      "lng": -1.9465864,
+      "image_x": 1106,
+      "image_y": 271
+    },
+    "castle-bolton-24": {
+      "lat": 54.3226934,
+      "lng": -1.9469833,
+      "image_x": 1011,
+      "image_y": 292
+    },
+    "castle-bolton-25": {
+      "lat": 54.3226371,
+      "lng": -1.9471201,
+      "image_x": 978,
+      "image_y": 315
+    },
+    "castle-bolton-26": {
+      "lat": 54.3226699,
+      "lng": -1.9472194,
+      "image_x": 954,
+      "image_y": 301
+    },
+    "castle-bolton-27": {
+      "lat": 54.3226621,
+      "lng": -1.9473106,
+      "image_x": 932,
+      "image_y": 304
+    },
+    "castle-bolton-28": {
+      "lat": 54.3226371,
+      "lng": -1.947552,
+      "image_x": 874,
+      "image_y": 314
+    },
+    "castle-bolton-29": {
+      "lat": 54.3226198,
+      "lng": -1.9476539,
+      "image_x": 849,
+      "image_y": 321
+    },
+    "castle-bolton-30": {
+      "lat": 54.3226152,
+      "lng": -1.9477558,
+      "image_x": 825,
+      "image_y": 323
+    },
+    "castle-bolton-31": {
+      "lat": 54.3226089,
+      "lng": -1.9478336,
+      "image_x": 806,
+      "image_y": 326
+    },
+    "castle-bolton-32": {
+      "lat": 54.3226073,
+      "lng": -1.9479302,
+      "image_x": 783,
+      "image_y": 326
+    },
+    "castle-bolton-33": {
+      "lat": 54.322612,
+      "lng": -1.9483083,
+      "image_x": 691,
+      "image_y": 324
+    },
+    "castle-bolton-34": {
+      "lat": 54.3226292,
+      "lng": -1.9487,
+      "image_x": 597,
+      "image_y": 316
+    },
+    "castle-bolton-35": {
+      "lat": 54.3225526,
+      "lng": -1.9494027,
+      "image_x": 427,
+      "image_y": 347
+    },
+    "castle-bolton-36": {
+      "lat": 54.3224525,
+      "lng": -1.9497889,
+      "image_x": 334,
+      "image_y": 388
+    },
+    "castle-bolton-37": {
+      "lat": 54.3223805,
+      "lng": -1.9506741,
+      "image_x": 120,
+      "image_y": 417
+    },
+    "castle-bolton-38": {
+      "lat": 54.3183428,
+      "lng": -1.9484103,
+      "image_x": 669,
+      "image_y": 2088
+    },
+    "castle-bolton-39": {
+      "lat": 54.318155,
+      "lng": -1.9488475,
+      "image_x": 563,
+      "image_y": 2166
+    }
+  }
+}

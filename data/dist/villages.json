@@ -1,0 +1,9108 @@
+[
+  {
+    "id": "aldborough-st-john",
+    "name": "Aldborough St John",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "aldborough-st-john-north",
+      "aldborough-st-john-s"
+    ],
+    "centroid": {
+      "lat": 54.4956667,
+      "lng": -1.6844785
+    }
+  },
+  {
+    "id": "arrathorne",
+    "name": "Arrathorne",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "arrathorne"
+    ],
+    "centroid": {
+      "lat": 54.3346411,
+      "lng": -1.691727
+    }
+  },
+  {
+    "id": "barton",
+    "name": "Barton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "barton-north",
+      "barton-south"
+    ],
+    "centroid": {
+      "lat": 54.4755915,
+      "lng": -1.6464814
+    }
+  },
+  {
+    "id": "bolton-on-swale",
+    "name": "Bolton-on-Swale",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "bolton-on-swale"
+    ],
+    "centroid": {
+      "lat": 54.3876007,
+      "lng": -1.6135482
+    }
+  },
+  {
+    "id": "brompton-on-swale",
+    "name": "Brompton-on-Swale",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "brompton-on-swale-n",
+      "brompton-on-swale-s"
+    ],
+    "centroid": {
+      "lat": 54.4051903,
+      "lng": -1.6630365
+    }
+  },
+  {
+    "id": "caldwell",
+    "name": "Caldwell",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "caldwell"
+    ],
+    "centroid": {
+      "lat": 54.5166552,
+      "lng": -1.7524142
+    }
+  },
+  {
+    "id": "carlton",
+    "name": "Carlton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "carlton"
+    ],
+    "centroid": {
+      "lat": 53.7147183,
+      "lng": -1.0174965
+    }
+  },
+  {
+    "id": "catterick-village",
+    "name": "Catterick Village",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "catterick-village-c",
+      "catterick-village-ne",
+      "catterick-village-nw",
+      "catterick-village-s"
+    ],
+    "centroid": {
+      "lat": 54.377013,
+      "lng": -1.6308424
+    }
+  },
+  {
+    "id": "cleasby",
+    "name": "Cleasby",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "cleasby"
+    ],
+    "centroid": {
+      "lat": 54.5123357,
+      "lng": -1.6139111
+    }
+  },
+  {
+    "id": "constable-burton",
+    "name": "Constable Burton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "constable-burton"
+    ],
+    "centroid": {
+      "lat": 54.3129765,
+      "lng": -1.7518237
+    }
+  },
+  {
+    "id": "croft-on-tees",
+    "name": "Croft-on-Tees",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "croft-on-tees"
+    ],
+    "centroid": {
+      "lat": 54.4835138,
+      "lng": -1.5558252
+    }
+  },
+  {
+    "id": "dalton",
+    "name": "Dalton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "dalton"
+    ],
+    "centroid": {
+      "lat": 54.1855566,
+      "lng": -1.3320383
+    }
+  },
+  {
+    "id": "dalton-on-tees",
+    "name": "Dalton-on-Tees",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "dalton-on-tees"
+    ],
+    "centroid": {
+      "lat": 54.4664517,
+      "lng": -1.54328
+    }
+  },
+  {
+    "id": "east-appleton",
+    "name": "East Appleton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "east-appleton"
+    ],
+    "centroid": {
+      "lat": 54.3573529,
+      "lng": -1.6350405
+    }
+  },
+  {
+    "id": "east-hauxwell",
+    "name": "East Hauxwell",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "east-hauxwell"
+    ],
+    "centroid": {
+      "lat": 54.3392402,
+      "lng": -1.7438583
+    }
+  },
+  {
+    "id": "east-layton",
+    "name": "East Layton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "east-layton"
+    ],
+    "centroid": {
+      "lat": 54.484333,
+      "lng": -1.7487337
+    }
+  },
+  {
+    "id": "ellerton",
+    "name": "Ellerton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "ellerton"
+    ],
+    "centroid": {
+      "lat": 54.3758314,
+      "lng": -1.6067815
+    }
+  },
+  {
+    "id": "eppleby",
+    "name": "Eppleby",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "eppleby"
+    ],
+    "centroid": {
+      "lat": 54.515036,
+      "lng": -1.7267605
+    }
+  },
+  {
+    "id": "eryholme",
+    "name": "Eryholme",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "eryholme"
+    ],
+    "centroid": {
+      "lat": 54.4669136,
+      "lng": -1.4951651
+    }
+  },
+  {
+    "id": "forcett",
+    "name": "Forcett",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "forcett"
+    ],
+    "centroid": {
+      "lat": 54.5020232,
+      "lng": -1.738156
+    }
+  },
+  {
+    "id": "forest",
+    "name": "Forest",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "forest"
+    ],
+    "centroid": {
+      "lat": 54.3990974,
+      "lng": -1.575472
+    }
+  },
+  {
+    "id": "gayles",
+    "name": "Gayles",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "gayles"
+    ],
+    "centroid": {
+      "lat": 54.453692,
+      "lng": -1.8284628
+    }
+  },
+  {
+    "id": "gilling-west",
+    "name": "Gilling West",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "gilling-west"
+    ],
+    "centroid": {
+      "lat": 54.4415296,
+      "lng": -1.7189712
+    }
+  },
+  {
+    "id": "hartforth",
+    "name": "Hartforth",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "hartforth"
+    ],
+    "centroid": {
+      "lat": 54.4515058,
+      "lng": -1.7352998
+    }
+  },
+  {
+    "id": "hornby",
+    "name": "Hornby",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "hornby"
+    ],
+    "centroid": {
+      "lat": 54.4443469,
+      "lng": -1.4408688
+    }
+  },
+  {
+    "id": "hunton",
+    "name": "Hunton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "hunton-east",
+      "hunton-west"
+    ],
+    "centroid": {
+      "lat": 54.3361865,
+      "lng": -1.7123225
+    }
+  },
+  {
+    "id": "kirby-hill",
+    "name": "Kirby Hill",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "kirby-hill"
+    ],
+    "centroid": {
+      "lat": 54.4520689,
+      "lng": -1.7903374
+    }
+  },
+  {
+    "id": "manfield",
+    "name": "Manfield",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "manfield"
+    ],
+    "centroid": {
+      "lat": 54.5118512,
+      "lng": -1.6456227
+    }
+  },
+  {
+    "id": "melsonby",
+    "name": "Melsonby",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "melsonby-north",
+      "melsonby-south-east",
+      "melsonby-south-west"
+    ],
+    "centroid": {
+      "lat": 54.470982,
+      "lng": -1.7017352
+    }
+  },
+  {
+    "id": "middleton-tyas",
+    "name": "Middleton Tyas",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "middleton-tyas-central",
+      "middleton-tyas-east",
+      "middleton-tyas-west"
+    ],
+    "centroid": {
+      "lat": 54.4473306,
+      "lng": -1.6513539
+    }
+  },
+  {
+    "id": "moulton",
+    "name": "Moulton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "moulton"
+    ],
+    "centroid": {
+      "lat": 54.4294607,
+      "lng": -1.6386458
+    }
+  },
+  {
+    "id": "newsham",
+    "name": "Newsham",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "newsham"
+    ],
+    "centroid": {
+      "lat": 54.4779065,
+      "lng": -1.8565597
+    }
+  },
+  {
+    "id": "newton-morrell",
+    "name": "Newton Morrell",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "newton-morrell"
+    ],
+    "centroid": {
+      "lat": 54.4791313,
+      "lng": -1.6312198
+    }
+  },
+  {
+    "id": "north-cowton",
+    "name": "North Cowton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "north-cowton"
+    ],
+    "centroid": {
+      "lat": 54.4323453,
+      "lng": -1.567718
+    }
+  },
+  {
+    "id": "patrick-brompton",
+    "name": "Patrick Brompton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "patrick-brompton"
+    ],
+    "centroid": {
+      "lat": 54.3128965,
+      "lng": -1.6600381
+    }
+  },
+  {
+    "id": "ravensworth",
+    "name": "Ravensworth",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "ravensworth"
+    ],
+    "centroid": {
+      "lat": 54.4612901,
+      "lng": -1.7800384
+    }
+  },
+  {
+    "id": "scorton",
+    "name": "Scorton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "scorton-northwest",
+      "scorton-southeast"
+    ],
+    "centroid": {
+      "lat": 54.405589,
+      "lng": -1.6081716
+    }
+  },
+  {
+    "id": "skeeby",
+    "name": "Skeeby",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "skeeby"
+    ],
+    "centroid": {
+      "lat": 54.4179728,
+      "lng": -1.6932493
+    }
+  },
+  {
+    "id": "stanwick-st-john",
+    "name": "Stanwick St John",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "stanwick-st-john"
+    ],
+    "centroid": {
+      "lat": 54.5043353,
+      "lng": -1.7068254
+    }
+  },
+  {
+    "id": "stapleton",
+    "name": "Stapleton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "stapleton"
+    ],
+    "centroid": {
+      "lat": 54.5035106,
+      "lng": -1.594392
+    }
+  },
+  {
+    "id": "tunstall",
+    "name": "Tunstall",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "tunstall"
+    ],
+    "centroid": {
+      "lat": 54.3597412,
+      "lng": -1.6729773
+    }
+  },
+  {
+    "id": "uckerby",
+    "name": "Uckerby",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "uckerby"
+    ],
+    "centroid": {
+      "lat": 54.4153241,
+      "lng": -1.6222187
+    }
+  },
+  {
+    "id": "west-layton",
+    "name": "West Layton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "west-layton"
+    ],
+    "centroid": {
+      "lat": 54.4852082,
+      "lng": -1.7804472
+    }
+  },
+  {
+    "id": "whashton",
+    "name": "Whashton",
+    "district": "Richmondshire",
+    "sheet_ids": [
+      "whashton"
+    ],
+    "centroid": {
+      "lat": 54.4502644,
+      "lng": -1.7687063
+    }
+  },
+  {
+    "id": "angram",
+    "name": "Angram",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "angram"
+    ],
+    "centroid": {
+      "lat": 53.9311663,
+      "lng": -1.2096078
+    }
+  },
+  {
+    "id": "arkle-town",
+    "name": "Arkle Town",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "arkle-town"
+    ],
+    "centroid": {
+      "lat": 54.4131956,
+      "lng": -1.9895941
+    }
+  },
+  {
+    "id": "blades",
+    "name": "Blades",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "blades"
+    ],
+    "centroid": {
+      "lat": 54.3819827,
+      "lng": -2.0319566
+    }
+  },
+  {
+    "id": "booze",
+    "name": "Booze",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "booze"
+    ],
+    "centroid": {
+      "lat": 54.4176184,
+      "lng": -1.9788303
+    }
+  },
+  {
+    "id": "crackpot",
+    "name": "Crackpot",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "crackpot"
+    ],
+    "centroid": {
+      "lat": 54.3651878,
+      "lng": -2.0427483
+    }
+  },
+  {
+    "id": "downholme",
+    "name": "Downholme",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "downholme"
+    ],
+    "centroid": {
+      "lat": 54.3766895,
+      "lng": -1.8270588
+    }
+  },
+  {
+    "id": "feetham",
+    "name": "Feetham",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "feetham"
+    ],
+    "centroid": {
+      "lat": 54.3812472,
+      "lng": -2.0214507
+    }
+  },
+  {
+    "id": "fremington",
+    "name": "Fremington",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "fremington"
+    ],
+    "centroid": {
+      "lat": 54.3856499,
+      "lng": -1.9302838
+    }
+  },
+  {
+    "id": "grinton",
+    "name": "Grinton",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "grinton"
+    ],
+    "centroid": {
+      "lat": 54.3641823,
+      "lng": -1.9960017
+    }
+  },
+  {
+    "id": "gunnerside",
+    "name": "Gunnerside",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "gunnerside"
+    ],
+    "centroid": {
+      "lat": 54.3791973,
+      "lng": -2.0772344
+    }
+  },
+  {
+    "id": "healaugh",
+    "name": "Healaugh",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "healaugh"
+    ],
+    "centroid": {
+      "lat": 54.3871042,
+      "lng": -1.9750164
+    }
+  },
+  {
+    "id": "hudswell",
+    "name": "Hudswell",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "hudswell"
+    ],
+    "centroid": {
+      "lat": 54.3971067,
+      "lng": -1.7773285
+    }
+  },
+  {
+    "id": "ivelet",
+    "name": "Ivelet",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "ivelet"
+    ],
+    "centroid": {
+      "lat": 54.3774549,
+      "lng": -2.1000335
+    }
+  },
+  {
+    "id": "kearton",
+    "name": "Kearton",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "kearton"
+    ],
+    "centroid": {
+      "lat": 54.3865255,
+      "lng": -2.0076438
+    }
+  },
+  {
+    "id": "keld",
+    "name": "Keld",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "keld"
+    ],
+    "centroid": {
+      "lat": 54.405855,
+      "lng": -2.1664319
+    }
+  },
+  {
+    "id": "langthwaite",
+    "name": "Langthwaite",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "langthwaite"
+    ],
+    "centroid": {
+      "lat": 54.4178141,
+      "lng": -1.9937274
+    }
+  },
+  {
+    "id": "low-row",
+    "name": "Low Row",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "low-row"
+    ],
+    "centroid": {
+      "lat": 54.3789071,
+      "lng": -2.0257464
+    }
+  },
+  {
+    "id": "marrick",
+    "name": "Marrick",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "marrick"
+    ],
+    "centroid": {
+      "lat": 54.3801778,
+      "lng": -1.8807237
+    }
+  },
+  {
+    "id": "marske",
+    "name": "Marske",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "marske"
+    ],
+    "centroid": {
+      "lat": 54.3992322,
+      "lng": -1.8414019
+    }
+  },
+  {
+    "id": "muker",
+    "name": "Muker",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "muker"
+    ],
+    "centroid": {
+      "lat": 54.3767955,
+      "lng": -2.1396541
+    }
+  },
+  {
+    "id": "reeth",
+    "name": "Reeth",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "reeth-east",
+      "reeth-north-west",
+      "reeth-south-west"
+    ],
+    "centroid": {
+      "lat": 54.3892681,
+      "lng": -1.942143
+    }
+  },
+  {
+    "id": "thwaite",
+    "name": "Thwaite",
+    "district": "Swaledale and Arkengarthdale",
+    "sheet_ids": [
+      "thwaite"
+    ],
+    "centroid": {
+      "lat": 54.3792187,
+      "lng": -2.1678759
+    }
+  },
+  {
+    "id": "bagby",
+    "name": "Bagby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "bagby"
+    ],
+    "centroid": {
+      "lat": 54.2168672,
+      "lng": -1.3000881
+    }
+  },
+  {
+    "id": "balk",
+    "name": "Balk",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "balk"
+    ],
+    "centroid": {
+      "lat": 54.2214293,
+      "lng": -1.2723805
+    }
+  },
+  {
+    "id": "battersby",
+    "name": "Battersby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "battersby"
+    ],
+    "centroid": {
+      "lat": 54.4575551,
+      "lng": -1.0933566
+    }
+  },
+  {
+    "id": "boltby",
+    "name": "Boltby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "boltby"
+    ],
+    "centroid": {
+      "lat": 54.2727109,
+      "lng": -1.2482836
+    }
+  },
+  {
+    "id": "brandsby",
+    "name": "Brandsby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "brandsby"
+    ],
+    "centroid": {
+      "lat": 54.1439901,
+      "lng": -1.0992761
+    }
+  },
+  {
+    "id": "carlton-husthwaite",
+    "name": "Carlton Husthwaite",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "carlton-husthwaite"
+    ],
+    "centroid": {
+      "lat": 54.1835489,
+      "lng": -1.2381799
+    }
+  },
+  {
+    "id": "carlton-in-cleveland",
+    "name": "Carlton in Cleveland",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "carlton-in-cleveland"
+    ],
+    "centroid": {
+      "lat": 54.432078,
+      "lng": -1.2177655
+    }
+  },
+  {
+    "id": "chop-gate",
+    "name": "Chop Gate",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "chop-gate"
+    ],
+    "centroid": {
+      "lat": 54.3905559,
+      "lng": -1.140299
+    }
+  },
+  {
+    "id": "cowesby",
+    "name": "Cowesby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "cowesby"
+    ],
+    "centroid": {
+      "lat": 54.3024366,
+      "lng": -1.2860563
+    }
+  },
+  {
+    "id": "coxwold",
+    "name": "Coxwold",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "coxwold"
+    ],
+    "centroid": {
+      "lat": 54.1873095,
+      "lng": -1.1818002
+    }
+  },
+  {
+    "id": "crathorne",
+    "name": "Crathorne",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "crathorne"
+    ],
+    "centroid": {
+      "lat": 54.460403,
+      "lng": -1.3212063
+    }
+  },
+  {
+    "id": "crayke",
+    "name": "Crayke",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "crayke"
+    ],
+    "centroid": {
+      "lat": 54.1273993,
+      "lng": -1.1423469
+    }
+  },
+  {
+    "id": "easby",
+    "name": "Easby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "easby"
+    ],
+    "centroid": {
+      "lat": 54.4697882,
+      "lng": -1.1103575
+    }
+  },
+  {
+    "id": "faceby",
+    "name": "Faceby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "faceby"
+    ],
+    "centroid": {
+      "lat": 54.4213977,
+      "lng": -1.2369992
+    }
+  },
+  {
+    "id": "fangdale-beck",
+    "name": "Fangdale Beck",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "fangdale-beck"
+    ],
+    "centroid": {
+      "lat": 54.3443322,
+      "lng": -1.1256095
+    }
+  },
+  {
+    "id": "farlington",
+    "name": "Farlington",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "farlington"
+    ],
+    "centroid": {
+      "lat": 54.1019287,
+      "lng": -1.0612258
+    }
+  },
+  {
+    "id": "felixkirk",
+    "name": "Felixkirk",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "felixkirk"
+    ],
+    "centroid": {
+      "lat": 54.255616,
+      "lng": -1.2836819
+    }
+  },
+  {
+    "id": "great-broughton",
+    "name": "Great Broughton",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "great-broughton-north",
+      "great-broughton-south"
+    ],
+    "centroid": {
+      "lat": 54.44935,
+      "lng": -1.1576543
+    }
+  },
+  {
+    "id": "great-busby",
+    "name": "Great Busby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "great-busby"
+    ],
+    "centroid": {
+      "lat": 54.4439162,
+      "lng": -1.199134
+    }
+  },
+  {
+    "id": "great-thirkleby",
+    "name": "Great Thirkleby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "great-thirkleby"
+    ],
+    "centroid": {
+      "lat": 54.2035777,
+      "lng": -1.2726395
+    }
+  },
+  {
+    "id": "high-kilburn",
+    "name": "High Kilburn",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "high-kilburn"
+    ],
+    "centroid": {
+      "lat": 54.2099136,
+      "lng": -1.208612
+    }
+  },
+  {
+    "id": "huby",
+    "name": "Huby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "huby-central",
+      "huby-north",
+      "huby-south"
+    ],
+    "centroid": {
+      "lat": 54.0839068,
+      "lng": -1.13527
+    }
+  },
+  {
+    "id": "husthwaite",
+    "name": "Husthwaite",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "husthwaite"
+    ],
+    "centroid": {
+      "lat": 54.1687601,
+      "lng": -1.2062223
+    }
+  },
+  {
+    "id": "hutton-rudby",
+    "name": "Hutton Rudby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "hutton-rudby-central",
+      "hutton-rudby-east",
+      "hutton-rudby-north",
+      "hutton-rudby-south"
+    ],
+    "centroid": {
+      "lat": 54.4491204,
+      "lng": -1.2782101
+    }
+  },
+  {
+    "id": "ingleby-arncliffe",
+    "name": "Ingleby Arncliffe",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "ingleby-arncliffe"
+    ],
+    "centroid": {
+      "lat": 54.4013728,
+      "lng": -1.3132968
+    }
+  },
+  {
+    "id": "ingleby-cross",
+    "name": "Ingleby Cross",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "ingleby-cross"
+    ],
+    "centroid": {
+      "lat": 54.3993352,
+      "lng": -1.3089903
+    }
+  },
+  {
+    "id": "ingleby-greenhow",
+    "name": "Ingleby Greenhow",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "ingleby-greenhow"
+    ],
+    "centroid": {
+      "lat": 54.4498241,
+      "lng": -1.1050234
+    }
+  },
+  {
+    "id": "kepwick",
+    "name": "Kepwick",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "kepwick"
+    ],
+    "centroid": {
+      "lat": 54.3119573,
+      "lng": -1.2805926
+    }
+  },
+  {
+    "id": "kilburn",
+    "name": "Kilburn",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "kilburn"
+    ],
+    "centroid": {
+      "lat": 54.2091636,
+      "lng": -1.2139246
+    }
+  },
+  {
+    "id": "kildale",
+    "name": "Kildale",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "kildale"
+    ],
+    "centroid": {
+      "lat": 54.4763329,
+      "lng": -1.063748
+    }
+  },
+  {
+    "id": "kirby-knowle",
+    "name": "Kirby Knowle",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "kirby-knowle"
+    ],
+    "centroid": {
+      "lat": 54.2795811,
+      "lng": -1.2802046
+    }
+  },
+  {
+    "id": "kirkby",
+    "name": "Kirkby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "kirkby"
+    ],
+    "centroid": {
+      "lat": 54.4461006,
+      "lng": -1.1704416
+    }
+  },
+  {
+    "id": "knayton",
+    "name": "Knayton",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "knayton-north",
+      "knayton-south",
+      "knayton-west"
+    ],
+    "centroid": {
+      "lat": 54.2857283,
+      "lng": -1.337026
+    }
+  },
+  {
+    "id": "little-ayton",
+    "name": "Little Ayton",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "little-ayton"
+    ],
+    "centroid": {
+      "lat": 54.4841719,
+      "lng": -1.122436
+    }
+  },
+  {
+    "id": "little-thirkleby",
+    "name": "Little Thirkleby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "little-thirkleby"
+    ],
+    "centroid": {
+      "lat": 54.2017704,
+      "lng": -1.2685411
+    }
+  },
+  {
+    "id": "middleton-on-leven",
+    "name": "Middleton-on-Leven",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "middleton-on-leven"
+    ],
+    "centroid": {
+      "lat": 54.482449,
+      "lng": -1.2818051
+    }
+  },
+  {
+    "id": "nether-silton",
+    "name": "Nether Silton",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "nether-silton"
+    ],
+    "centroid": {
+      "lat": 54.3248033,
+      "lng": -1.3003741
+    }
+  },
+  {
+    "id": "newby",
+    "name": "Newby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "newby"
+    ],
+    "centroid": {
+      "lat": 54.4997998,
+      "lng": -1.2088369
+    }
+  },
+  {
+    "id": "new-row",
+    "name": "New Row",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "new-row"
+    ],
+    "centroid": {
+      "lat": 54.0919292,
+      "lng": -1.3963273
+    }
+  },
+  {
+    "id": "oulston",
+    "name": "Oulston",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "oulston"
+    ],
+    "centroid": {
+      "lat": 54.1629369,
+      "lng": -1.1637558
+    }
+  },
+  {
+    "id": "over-silton",
+    "name": "Over Silton",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "over-silton"
+    ],
+    "centroid": {
+      "lat": 54.3333501,
+      "lng": -1.3068269
+    }
+  },
+  {
+    "id": "potto",
+    "name": "Potto",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "potto"
+    ],
+    "centroid": {
+      "lat": 54.4260299,
+      "lng": -1.2700436
+    }
+  },
+  {
+    "id": "seamer",
+    "name": "Seamer",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "seamer"
+    ],
+    "centroid": {
+      "lat": 54.4807183,
+      "lng": -1.2320254
+    }
+  },
+  {
+    "id": "seave-green",
+    "name": "Seave Green",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "seave-green"
+    ],
+    "centroid": {
+      "lat": 54.3946092,
+      "lng": -1.1357286
+    }
+  },
+  {
+    "id": "skewsby",
+    "name": "Skewsby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "skewsby"
+    ],
+    "centroid": {
+      "lat": 54.131556,
+      "lng": -1.0439583
+    }
+  },
+  {
+    "id": "stearsby",
+    "name": "Stearsby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "stearsby"
+    ],
+    "centroid": {
+      "lat": 54.1357347,
+      "lng": -1.0672368
+    }
+  },
+  {
+    "id": "stillington",
+    "name": "Stillington",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "stillington-east",
+      "stillington-north",
+      "stillington-west"
+    ],
+    "centroid": {
+      "lat": 54.105853,
+      "lng": -1.1303107
+    }
+  },
+  {
+    "id": "sutton-on-the-forest",
+    "name": "Sutton-on-the-Forest",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "sutton-on-the-forest-nth",
+      "sutton-on-the-forest-sth"
+    ],
+    "centroid": {
+      "lat": 54.0629396,
+      "lng": -1.1031488
+    }
+  },
+  {
+    "id": "sutton-under-whitestonecliffe",
+    "name": "Sutton-under-Whitestonecliffe",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "sutton-under-whitestonecliffe"
+    ],
+    "centroid": {
+      "lat": 54.2367219,
+      "lng": -1.2598421
+    }
+  },
+  {
+    "id": "the-grange",
+    "name": "The Grange",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "the-grange"
+    ],
+    "centroid": {
+      "lat": 54.3564994,
+      "lng": -1.1223453
+    }
+  },
+  {
+    "id": "thimbleby",
+    "name": "Thimbleby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "thimbleby"
+    ],
+    "centroid": {
+      "lat": 54.3523425,
+      "lng": -1.3092338
+    }
+  },
+  {
+    "id": "thirlby",
+    "name": "Thirlby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "thirlby"
+    ],
+    "centroid": {
+      "lat": 54.2498566,
+      "lng": -1.2502826
+    }
+  },
+  {
+    "id": "upsall",
+    "name": "Upsall",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "upsall"
+    ],
+    "centroid": {
+      "lat": 54.2775793,
+      "lng": -1.3055165
+    }
+  },
+  {
+    "id": "urra",
+    "name": "Urra",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "urra"
+    ],
+    "centroid": {
+      "lat": 54.4100404,
+      "lng": -1.1215195
+    }
+  },
+  {
+    "id": "whenby",
+    "name": "Whenby",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "whenby"
+    ],
+    "centroid": {
+      "lat": 54.1215082,
+      "lng": -1.0386479
+    }
+  },
+  {
+    "id": "whorlton",
+    "name": "Whorlton",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "whorlton"
+    ],
+    "centroid": {
+      "lat": 54.4143591,
+      "lng": -1.2535305
+    }
+  },
+  {
+    "id": "yearsley",
+    "name": "Yearsley",
+    "district": "Hambleton (East)",
+    "sheet_ids": [
+      "yearsley"
+    ],
+    "centroid": {
+      "lat": 54.1624685,
+      "lng": -1.1044417
+    }
+  },
+  {
+    "id": "airton",
+    "name": "Airton",
+    "district": "Craven",
+    "sheet_ids": [
+      "airton"
+    ],
+    "centroid": {
+      "lat": 54.0295321,
+      "lng": -2.1505235
+    }
+  },
+  {
+    "id": "appletreewick",
+    "name": "Appletreewick",
+    "district": "Craven",
+    "sheet_ids": [
+      "appletreewick"
+    ],
+    "centroid": {
+      "lat": 54.0364783,
+      "lng": -1.9201632
+    }
+  },
+  {
+    "id": "arncliffe",
+    "name": "Arncliffe",
+    "district": "Craven",
+    "sheet_ids": [
+      "arncliffe"
+    ],
+    "centroid": {
+      "lat": 54.1421543,
+      "lng": -2.105976
+    }
+  },
+  {
+    "id": "austwick",
+    "name": "Austwick",
+    "district": "Craven",
+    "sheet_ids": [
+      "austwick-east",
+      "austwick-west"
+    ],
+    "centroid": {
+      "lat": 54.1293998,
+      "lng": -2.3396696
+    }
+  },
+  {
+    "id": "bank-newton",
+    "name": "Bank Newton",
+    "district": "Craven",
+    "sheet_ids": [
+      "bank-newton"
+    ],
+    "centroid": {
+      "lat": 53.9738474,
+      "lng": -2.13752
+    }
+  },
+  {
+    "id": "beamsley",
+    "name": "Beamsley",
+    "district": "Craven",
+    "sheet_ids": [
+      "beamsley"
+    ],
+    "centroid": {
+      "lat": 53.9682481,
+      "lng": -1.8825243
+    }
+  },
+  {
+    "id": "bell-busk",
+    "name": "Bell Busk",
+    "district": "Craven",
+    "sheet_ids": [
+      "bell-busk"
+    ],
+    "centroid": {
+      "lat": 54.006111,
+      "lng": -2.1510625
+    }
+  },
+  {
+    "id": "bolton-abbey",
+    "name": "Bolton Abbey",
+    "district": "Craven",
+    "sheet_ids": [
+      "bolton-abbey"
+    ],
+    "centroid": {
+      "lat": 53.9822931,
+      "lng": -1.8912314
+    }
+  },
+  {
+    "id": "buckden",
+    "name": "Buckden",
+    "district": "Craven",
+    "sheet_ids": [
+      "buckden"
+    ],
+    "centroid": {
+      "lat": 54.1904497,
+      "lng": -2.0902961
+    }
+  },
+  {
+    "id": "burnsall",
+    "name": "Burnsall",
+    "district": "Craven",
+    "sheet_ids": [
+      "burnsall"
+    ],
+    "centroid": {
+      "lat": 54.0474704,
+      "lng": -1.9523342
+    }
+  },
+  {
+    "id": "burton-in-lonsdale",
+    "name": "Burton in Lonsdale",
+    "district": "Craven",
+    "sheet_ids": [
+      "burton-in-lonsdale-north",
+      "burton-in-lonsdale-south"
+    ],
+    "centroid": {
+      "lat": 54.1516035,
+      "lng": -2.536051
+    }
+  },
+  {
+    "id": "calton",
+    "name": "Calton",
+    "district": "Craven",
+    "sheet_ids": [
+      "calton"
+    ],
+    "centroid": {
+      "lat": 54.0288454,
+      "lng": -2.1397032
+    }
+  },
+  {
+    "id": "chapel-le-dale",
+    "name": "Chapel-le-Dale",
+    "district": "Craven",
+    "sheet_ids": [
+      "chapel-le-dale"
+    ],
+    "centroid": {
+      "lat": 54.1892432,
+      "lng": -2.4047234
+    }
+  },
+  {
+    "id": "clapham",
+    "name": "Clapham",
+    "district": "Craven",
+    "sheet_ids": [
+      "clapham-east",
+      "clapham-west"
+    ],
+    "centroid": {
+      "lat": 54.105416,
+      "lng": -2.4104509
+    }
+  },
+  {
+    "id": "cold-cotes",
+    "name": "Cold Cotes",
+    "district": "Craven",
+    "sheet_ids": [
+      "cold-cotes"
+    ],
+    "centroid": {
+      "lat": 54.1359949,
+      "lng": -2.4349489
+    }
+  },
+  {
+    "id": "coniston-cold",
+    "name": "Coniston Cold",
+    "district": "Craven",
+    "sheet_ids": [
+      "coniston-cold"
+    ],
+    "centroid": {
+      "lat": 53.9905839,
+      "lng": -2.1508313
+    }
+  },
+  {
+    "id": "conistone",
+    "name": "Conistone",
+    "district": "Craven",
+    "sheet_ids": [
+      "conistone"
+    ],
+    "centroid": {
+      "lat": 54.1029968,
+      "lng": -2.0296754
+    }
+  },
+  {
+    "id": "cracoe",
+    "name": "Cracoe",
+    "district": "Craven",
+    "sheet_ids": [
+      "cracoe"
+    ],
+    "centroid": {
+      "lat": 54.0368137,
+      "lng": -2.0359266
+    }
+  },
+  {
+    "id": "draughton",
+    "name": "Draughton",
+    "district": "Craven",
+    "sheet_ids": [
+      "draughton"
+    ],
+    "centroid": {
+      "lat": 53.9638071,
+      "lng": -1.9297818
+    }
+  },
+  {
+    "id": "drebley",
+    "name": "Drebley",
+    "district": "Craven",
+    "sheet_ids": [
+      "drebley"
+    ],
+    "centroid": {
+      "lat": 54.028542,
+      "lng": -1.9205369
+    }
+  },
+  {
+    "id": "eastby",
+    "name": "Eastby",
+    "district": "Craven",
+    "sheet_ids": [
+      "eastby"
+    ],
+    "centroid": {
+      "lat": 53.9861337,
+      "lng": -1.9733841
+    }
+  },
+  {
+    "id": "east-marton",
+    "name": "East Marton",
+    "district": "Craven",
+    "sheet_ids": [
+      "east-marton"
+    ],
+    "centroid": {
+      "lat": 53.954103,
+      "lng": -2.141264
+    }
+  },
+  {
+    "id": "eldroth",
+    "name": "Eldroth",
+    "district": "Craven",
+    "sheet_ids": [
+      "eldroth"
+    ],
+    "centroid": {
+      "lat": 54.0834606,
+      "lng": -2.362331
+    }
+  },
+  {
+    "id": "elslack",
+    "name": "Elslack",
+    "district": "Craven",
+    "sheet_ids": [
+      "elslack"
+    ],
+    "centroid": {
+      "lat": 53.936697,
+      "lng": -2.1078787
+    }
+  },
+  {
+    "id": "eshton",
+    "name": "Eshton",
+    "district": "Craven",
+    "sheet_ids": [
+      "eshton"
+    ],
+    "centroid": {
+      "lat": 54.001049,
+      "lng": -2.09879
+    }
+  },
+  {
+    "id": "far-westhouse",
+    "name": "Far Westhouse",
+    "district": "Craven",
+    "sheet_ids": [
+      "far-westhouse"
+    ],
+    "centroid": {
+      "lat": 54.1618227,
+      "lng": -2.4993739
+    }
+  },
+  {
+    "id": "feizor",
+    "name": "Feizor",
+    "district": "Craven",
+    "sheet_ids": [
+      "feizor"
+    ],
+    "centroid": {
+      "lat": 54.1041604,
+      "lng": -2.3231643
+    }
+  },
+  {
+    "id": "flasby",
+    "name": "Flasby",
+    "district": "Craven",
+    "sheet_ids": [
+      "flasby"
+    ],
+    "centroid": {
+      "lat": 54.0056671,
+      "lng": -2.0812221
+    }
+  },
+  {
+    "id": "foxup",
+    "name": "Foxup",
+    "district": "Craven",
+    "sheet_ids": [
+      "foxup"
+    ],
+    "centroid": {
+      "lat": 54.1858286,
+      "lng": -2.2015819
+    }
+  },
+  {
+    "id": "gargrave",
+    "name": "Gargrave",
+    "district": "Craven",
+    "sheet_ids": [
+      "gargrave-northeast",
+      "gargrave-northwest",
+      "gargrave-southeast",
+      "gargrave-southwest"
+    ],
+    "centroid": {
+      "lat": 53.9862692,
+      "lng": -2.1105185
+    }
+  },
+  {
+    "id": "grassington",
+    "name": "Grassington",
+    "district": "Craven",
+    "sheet_ids": [
+      "grassington-central",
+      "grassington-east",
+      "grassington-north",
+      "grassington-west"
+    ],
+    "centroid": {
+      "lat": 54.0722223,
+      "lng": -1.9975016
+    }
+  },
+  {
+    "id": "halton-east",
+    "name": "Halton East",
+    "district": "Craven",
+    "sheet_ids": [
+      "halton-east"
+    ],
+    "centroid": {
+      "lat": 53.9843422,
+      "lng": -1.9383432
+    }
+  },
+  {
+    "id": "halton-gill",
+    "name": "Halton Gill",
+    "district": "Craven",
+    "sheet_ids": [
+      "halton-gill"
+    ],
+    "centroid": {
+      "lat": 54.1845534,
+      "lng": -2.185009
+    }
+  },
+  {
+    "id": "halton-west",
+    "name": "Halton West",
+    "district": "Craven",
+    "sheet_ids": [
+      "halton-west"
+    ],
+    "centroid": {
+      "lat": 53.9852132,
+      "lng": -2.2618371
+    }
+  },
+  {
+    "id": "hanlith",
+    "name": "Hanlith",
+    "district": "Craven",
+    "sheet_ids": [
+      "hanlith"
+    ],
+    "centroid": {
+      "lat": 54.0477394,
+      "lng": -2.1531042
+    }
+  },
+  {
+    "id": "hawkswick",
+    "name": "Hawkswick",
+    "district": "Craven",
+    "sheet_ids": [
+      "hawkswick"
+    ],
+    "centroid": {
+      "lat": 54.1314405,
+      "lng": -2.0701306
+    }
+  },
+  {
+    "id": "hazlewood",
+    "name": "Hazlewood",
+    "district": "Craven",
+    "sheet_ids": [
+      "hazlewood"
+    ],
+    "centroid": {
+      "lat": 53.9808143,
+      "lng": -1.8650873
+    }
+  },
+  {
+    "id": "hebden",
+    "name": "Hebden",
+    "district": "Craven",
+    "sheet_ids": [
+      "hebden"
+    ],
+    "centroid": {
+      "lat": 54.0636569,
+      "lng": -1.9623022
+    }
+  },
+  {
+    "id": "hellifield-green",
+    "name": "Hellifield Green",
+    "district": "Craven",
+    "sheet_ids": [
+      "hellifield-green"
+    ],
+    "centroid": {
+      "lat": 53.9959727,
+      "lng": -2.215832
+    }
+  },
+  {
+    "id": "helwith-bridge",
+    "name": "Helwith Bridge",
+    "district": "Craven",
+    "sheet_ids": [
+      "helwith-bridge"
+    ],
+    "centroid": {
+      "lat": 54.1211275,
+      "lng": -2.2906942
+    }
+  },
+  {
+    "id": "hetton",
+    "name": "Hetton",
+    "district": "Craven",
+    "sheet_ids": [
+      "hetton"
+    ],
+    "centroid": {
+      "lat": 54.0247454,
+      "lng": -2.0618758
+    }
+  },
+  {
+    "id": "higher-westhouse",
+    "name": "Higher Westhouse",
+    "district": "Craven",
+    "sheet_ids": [
+      "higher-westhouse"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "horton-in-ribblesdale",
+    "name": "Horton in Ribblesdale",
+    "district": "Craven",
+    "sheet_ids": [
+      "horton-in-ribblesdale-east",
+      "horton-in-ribblesdale-west"
+    ],
+    "centroid": {
+      "lat": 54.1455978,
+      "lng": -2.2928539
+    }
+  },
+  {
+    "id": "hubberholme",
+    "name": "Hubberholme",
+    "district": "Craven",
+    "sheet_ids": [
+      "hubberholme"
+    ],
+    "centroid": {
+      "lat": 54.1999335,
+      "lng": -2.1142135
+    }
+  },
+  {
+    "id": "keasden",
+    "name": "Keasden",
+    "district": "Craven",
+    "sheet_ids": [
+      "keasden"
+    ],
+    "centroid": {
+      "lat": 54.0943917,
+      "lng": -2.4237555
+    }
+  },
+  {
+    "id": "kettlewell",
+    "name": "Kettlewell",
+    "district": "Craven",
+    "sheet_ids": [
+      "kettlewell-east",
+      "kettlewell-west"
+    ],
+    "centroid": {
+      "lat": 54.1466579,
+      "lng": -2.0492297
+    }
+  },
+  {
+    "id": "kilnsey",
+    "name": "Kilnsey",
+    "district": "Craven",
+    "sheet_ids": [
+      "kilnsey"
+    ],
+    "centroid": {
+      "lat": 54.1065319,
+      "lng": -2.0410809
+    }
+  },
+  {
+    "id": "kirkby-malham",
+    "name": "Kirkby Malham",
+    "district": "Craven",
+    "sheet_ids": [
+      "kirkby-malham"
+    ],
+    "centroid": {
+      "lat": 54.0453094,
+      "lng": -2.1617595
+    }
+  },
+  {
+    "id": "langcliffe",
+    "name": "Langcliffe",
+    "district": "Craven",
+    "sheet_ids": [
+      "langcliffe"
+    ],
+    "centroid": {
+      "lat": 54.0809672,
+      "lng": -2.273792
+    }
+  },
+  {
+    "id": "lawkland-green",
+    "name": "Lawkland Green",
+    "district": "Craven",
+    "sheet_ids": [
+      "lawkland-green"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "linton",
+    "name": "Linton",
+    "district": "Craven",
+    "sheet_ids": [
+      "linton"
+    ],
+    "centroid": {
+      "lat": 54.0566713,
+      "lng": -2.0091203
+    }
+  },
+  {
+    "id": "little-stainforth",
+    "name": "Little Stainforth",
+    "district": "Craven",
+    "sheet_ids": [
+      "little-stainforth"
+    ],
+    "centroid": {
+      "lat": 54.1006372,
+      "lng": -2.2854617
+    }
+  },
+  {
+    "id": "litton",
+    "name": "Litton",
+    "district": "Craven",
+    "sheet_ids": [
+      "litton"
+    ],
+    "centroid": {
+      "lat": 54.1625746,
+      "lng": -2.1463279
+    }
+  },
+  {
+    "id": "long-preston",
+    "name": "Long Preston",
+    "district": "Craven",
+    "sheet_ids": [
+      "long-preston-north",
+      "long-preston-south"
+    ],
+    "centroid": {
+      "lat": 54.0290339,
+      "lng": -2.2511401
+    }
+  },
+  {
+    "id": "lothersdale",
+    "name": "Lothersdale",
+    "district": "Craven",
+    "sheet_ids": [
+      "lothersdale-east",
+      "lothersdale-west"
+    ],
+    "centroid": {
+      "lat": 53.9060954,
+      "lng": -2.0731227
+    }
+  },
+  {
+    "id": "lower-westhouse",
+    "name": "Lower Westhouse",
+    "district": "Craven",
+    "sheet_ids": [
+      "lower-westhouse"
+    ],
+    "centroid": {
+      "lat": 54.1589893,
+      "lng": -2.5076377
+    }
+  },
+  {
+    "id": "malham",
+    "name": "Malham",
+    "district": "Craven",
+    "sheet_ids": [
+      "malham"
+    ],
+    "centroid": {
+      "lat": 54.0612719,
+      "lng": -2.1529001
+    }
+  },
+  {
+    "id": "masongill",
+    "name": "Masongill",
+    "district": "Craven",
+    "sheet_ids": [
+      "masongill"
+    ],
+    "centroid": {
+      "lat": 54.1723143,
+      "lng": -2.515593
+    }
+  },
+  {
+    "id": "mearbeck",
+    "name": "Mearbeck",
+    "district": "Craven",
+    "sheet_ids": [
+      "mearbeck"
+    ],
+    "centroid": {
+      "lat": 54.0409739,
+      "lng": -2.2781562
+    }
+  },
+  {
+    "id": "newby-craven",
+    "name": "Newby",
+    "district": "Craven",
+    "sheet_ids": [
+      "newby-craven"
+    ],
+    "centroid": {
+      "lat": 54.4997998,
+      "lng": -1.2088369
+    }
+  },
+  {
+    "id": "oughtershaw",
+    "name": "Oughtershaw",
+    "district": "Craven",
+    "sheet_ids": [
+      "oughtershaw"
+    ],
+    "centroid": {
+      "lat": 54.2288411,
+      "lng": -2.2017712
+    }
+  },
+  {
+    "id": "otterburn",
+    "name": "Otterburn",
+    "district": "Craven",
+    "sheet_ids": [
+      "otterburn"
+    ],
+    "centroid": {
+      "lat": 54.0159422,
+      "lng": -2.1798518
+    }
+  },
+  {
+    "id": "rathmell",
+    "name": "Rathmell",
+    "district": "Craven",
+    "sheet_ids": [
+      "rathmell"
+    ],
+    "centroid": {
+      "lat": 54.0366112,
+      "lng": -2.3250809
+    }
+  },
+  {
+    "id": "rylstone",
+    "name": "Rylstone",
+    "district": "Craven",
+    "sheet_ids": [
+      "rylstone"
+    ],
+    "centroid": {
+      "lat": 54.0301002,
+      "lng": -2.0519708
+    }
+  },
+  {
+    "id": "selside",
+    "name": "Selside",
+    "district": "Craven",
+    "sheet_ids": [
+      "selside"
+    ],
+    "centroid": {
+      "lat": 54.1767478,
+      "lng": -2.3318912
+    }
+  },
+  {
+    "id": "skirethorns",
+    "name": "Skirethorns",
+    "district": "Craven",
+    "sheet_ids": [
+      "skirethorns"
+    ],
+    "centroid": {
+      "lat": 54.075276,
+      "lng": -2.0437808
+    }
+  },
+  {
+    "id": "stackhouse",
+    "name": "Stackhouse",
+    "district": "Craven",
+    "sheet_ids": [
+      "stackhouse"
+    ],
+    "centroid": {
+      "lat": 54.0858688,
+      "lng": -2.2851321
+    }
+  },
+  {
+    "id": "stainforth",
+    "name": "Stainforth",
+    "district": "Craven",
+    "sheet_ids": [
+      "stainforth"
+    ],
+    "centroid": {
+      "lat": 54.101956,
+      "lng": -2.2749464
+    }
+  },
+  {
+    "id": "starbotton",
+    "name": "Starbotton",
+    "district": "Craven",
+    "sheet_ids": [
+      "starbotton"
+    ],
+    "centroid": {
+      "lat": 54.1688923,
+      "lng": -2.0733872
+    }
+  },
+  {
+    "id": "stirton",
+    "name": "Stirton",
+    "district": "Craven",
+    "sheet_ids": [
+      "stirton"
+    ],
+    "centroid": {
+      "lat": 53.9703497,
+      "lng": -2.0452523
+    }
+  },
+  {
+    "id": "storiths",
+    "name": "Storiths",
+    "district": "Craven",
+    "sheet_ids": [
+      "storiths"
+    ],
+    "centroid": {
+      "lat": 53.9853065,
+      "lng": -1.8774018
+    }
+  },
+  {
+    "id": "thorlby",
+    "name": "Thorlby",
+    "district": "Craven",
+    "sheet_ids": [
+      "thorlby"
+    ],
+    "centroid": {
+      "lat": 53.9716198,
+      "lng": -2.0536527
+    }
+  },
+  {
+    "id": "thornton-in-craven",
+    "name": "Thornton in Craven",
+    "district": "Craven",
+    "sheet_ids": [
+      "thornton-in-craven"
+    ],
+    "centroid": {
+      "lat": 53.9280618,
+      "lng": -2.1254152
+    }
+  },
+  {
+    "id": "thornton-in-lonsdale",
+    "name": "Thornton in Lonsdale",
+    "district": "Craven",
+    "sheet_ids": [
+      "thornton-in-lonsdale"
+    ],
+    "centroid": {
+      "lat": 54.187273,
+      "lng": -2.472903
+    }
+  },
+  {
+    "id": "thorpe",
+    "name": "Thorpe",
+    "district": "Craven",
+    "sheet_ids": [
+      "thorpe"
+    ],
+    "centroid": {
+      "lat": 54.0516118,
+      "lng": -1.982028
+    }
+  },
+  {
+    "id": "threapland",
+    "name": "Threapland",
+    "district": "Craven",
+    "sheet_ids": [
+      "threapland"
+    ],
+    "centroid": {
+      "lat": 54.0420456,
+      "lng": -2.0236499
+    }
+  },
+  {
+    "id": "threshfield",
+    "name": "Threshfield",
+    "district": "Craven",
+    "sheet_ids": [
+      "threshfield-east",
+      "threshfield-north",
+      "threshfield-west"
+    ],
+    "centroid": {
+      "lat": 54.0683104,
+      "lng": -2.0173312
+    }
+  },
+  {
+    "id": "west-marton",
+    "name": "West Marton",
+    "district": "Craven",
+    "sheet_ids": [
+      "west-marton"
+    ],
+    "centroid": {
+      "lat": 53.9509849,
+      "lng": -2.1640426
+    }
+  },
+  {
+    "id": "wharfe",
+    "name": "Wharfe",
+    "district": "Craven",
+    "sheet_ids": [
+      "wharfe"
+    ],
+    "centroid": {
+      "lat": 53.910881,
+      "lng": -1.6910531
+    }
+  },
+  {
+    "id": "wigglesworth",
+    "name": "Wigglesworth",
+    "district": "Craven",
+    "sheet_ids": [
+      "wigglesworth"
+    ],
+    "centroid": {
+      "lat": 54.0080496,
+      "lng": -2.2916364
+    }
+  },
+  {
+    "id": "winterburn",
+    "name": "Winterburn",
+    "district": "Craven",
+    "sheet_ids": [
+      "winterburn"
+    ],
+    "centroid": {
+      "lat": 54.023621,
+      "lng": -2.1013064
+    }
+  },
+  {
+    "id": "ainderby-quernhow",
+    "name": "Ainderby Quernhow",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "ainderby-quernhow"
+    ],
+    "centroid": {
+      "lat": 54.2230686,
+      "lng": -1.4669098
+    }
+  },
+  {
+    "id": "ainderby-steeple",
+    "name": "Ainderby Steeple",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "ainderby-steeple"
+    ],
+    "centroid": {
+      "lat": 54.3241605,
+      "lng": -1.4884471
+    }
+  },
+  {
+    "id": "aldwark",
+    "name": "Aldwark",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "aldwark"
+    ],
+    "centroid": {
+      "lat": 54.0689002,
+      "lng": -1.28041
+    }
+  },
+  {
+    "id": "alne",
+    "name": "Alne",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "alne-east",
+      "alne-west"
+    ],
+    "centroid": {
+      "lat": 54.0818256,
+      "lng": -1.2428111
+    }
+  },
+  {
+    "id": "appleton-wiske",
+    "name": "Appleton Wiske",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "appleton-wiske-east",
+      "appleton-wiske-west"
+    ],
+    "centroid": {
+      "lat": 54.4360729,
+      "lng": -1.3996073
+    }
+  },
+  {
+    "id": "beningbrough",
+    "name": "Beningbrough",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "beningbrough"
+    ],
+    "centroid": {
+      "lat": 54.0125957,
+      "lng": -1.1934109
+    }
+  },
+  {
+    "id": "birkby",
+    "name": "Birkby",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "birkby"
+    ],
+    "centroid": {
+      "lat": 54.4151924,
+      "lng": -1.4906704
+    }
+  },
+  {
+    "id": "borrowby",
+    "name": "Borrowby",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "borrowby"
+    ],
+    "centroid": {
+      "lat": 54.2975299,
+      "lng": -1.3438938
+    }
+  },
+  {
+    "id": "brafferton",
+    "name": "Brafferton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "brafferton"
+    ],
+    "centroid": {
+      "lat": 54.1262701,
+      "lng": -1.3321774
+    }
+  },
+  {
+    "id": "bullamoor",
+    "name": "Bullamoor",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "bullamoor"
+    ],
+    "centroid": {
+      "lat": 54.3422851,
+      "lng": -1.3921812
+    }
+  },
+  {
+    "id": "burneston",
+    "name": "Burneston",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "burneston"
+    ],
+    "centroid": {
+      "lat": 54.2608859,
+      "lng": -1.528211
+    }
+  },
+  {
+    "id": "burrill",
+    "name": "Burrill",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "burrill"
+    ],
+    "centroid": {
+      "lat": 54.2802754,
+      "lng": -1.6333717
+    }
+  },
+  {
+    "id": "carlton-miniott",
+    "name": "Carlton Miniott",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "carlton-miniott-east",
+      "carlton-miniott-west"
+    ],
+    "centroid": {
+      "lat": 54.2234137,
+      "lng": -1.3917222
+    }
+  },
+  {
+    "id": "carthorpe",
+    "name": "Carthorpe",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "carthorpe"
+    ],
+    "centroid": {
+      "lat": 54.241992,
+      "lng": -1.530338
+    }
+  },
+  {
+    "id": "catton",
+    "name": "Catton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "catton"
+    ],
+    "centroid": {
+      "lat": 54.1978072,
+      "lng": -1.4344919
+    }
+  },
+  {
+    "id": "cowling",
+    "name": "Cowling",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "cowling"
+    ],
+    "centroid": {
+      "lat": 53.8843537,
+      "lng": -2.0435082
+    }
+  },
+  {
+    "id": "dalton-hambleton-west",
+    "name": "Dalton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "dalton-hambleton-west"
+    ],
+    "centroid": {
+      "lat": 54.1855566,
+      "lng": -1.3320383
+    }
+  },
+  {
+    "id": "danby-wiske",
+    "name": "Danby Wiske",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "danby-wiske"
+    ],
+    "centroid": {
+      "lat": 54.3817393,
+      "lng": -1.4831622
+    }
+  },
+  {
+    "id": "deighton",
+    "name": "Deighton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "deighton"
+    ],
+    "centroid": {
+      "lat": 54.4096165,
+      "lng": -1.4145624
+    }
+  },
+  {
+    "id": "east-cowton",
+    "name": "East Cowton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "east-cowton-east",
+      "east-cowton-west"
+    ],
+    "centroid": {
+      "lat": 54.4226253,
+      "lng": -1.5254046
+    }
+  },
+  {
+    "id": "east-harlsey",
+    "name": "East Harlsey",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "east-harlsey"
+    ],
+    "centroid": {
+      "lat": 54.3917017,
+      "lng": -1.349384
+    }
+  },
+  {
+    "id": "east-rounton",
+    "name": "East Rounton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "east-rounton"
+    ],
+    "centroid": {
+      "lat": 54.4231028,
+      "lng": -1.3495074
+    }
+  },
+  {
+    "id": "ellerbeck",
+    "name": "Ellerbeck",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "ellerbeck"
+    ],
+    "centroid": {
+      "lat": 54.3641219,
+      "lng": -1.3357036
+    }
+  },
+  {
+    "id": "exelby",
+    "name": "Exelby",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "exelby"
+    ],
+    "centroid": {
+      "lat": 54.2768483,
+      "lng": -1.5520468
+    }
+  },
+  {
+    "id": "firby",
+    "name": "Firby",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "firby"
+    ],
+    "centroid": {
+      "lat": 54.2731978,
+      "lng": -1.5892021
+    }
+  },
+  {
+    "id": "flawith",
+    "name": "Flawith",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "flawith"
+    ],
+    "centroid": {
+      "lat": 54.082264,
+      "lng": -1.2687943
+    }
+  },
+  {
+    "id": "gatenby",
+    "name": "Gatenby",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "gatenby"
+    ],
+    "centroid": {
+      "lat": 54.2860465,
+      "lng": -1.5020447
+    }
+  },
+  {
+    "id": "girsby",
+    "name": "Girsby",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "girsby"
+    ],
+    "centroid": {
+      "lat": 54.4697677,
+      "lng": -1.4544264
+    }
+  },
+  {
+    "id": "great-crakehall",
+    "name": "Great Crakehall",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "great-crakehall"
+    ],
+    "centroid": {
+      "lat": 54.3044998,
+      "lng": -1.6258437
+    }
+  },
+  {
+    "id": "great-fencote",
+    "name": "Great Fencote",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "great-fencote"
+    ],
+    "centroid": {
+      "lat": 54.3372231,
+      "lng": -1.5660145
+    }
+  },
+  {
+    "id": "great-langton",
+    "name": "Great Langton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "great-langton"
+    ],
+    "centroid": {
+      "lat": 54.3695294,
+      "lng": -1.5347103
+    }
+  },
+  {
+    "id": "great-smeaton",
+    "name": "Great Smeaton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "great-smeaton"
+    ],
+    "centroid": {
+      "lat": 54.4345884,
+      "lng": -1.4663498
+    }
+  },
+  {
+    "id": "hackforth",
+    "name": "Hackforth",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "hackforth"
+    ],
+    "centroid": {
+      "lat": 54.3343499,
+      "lng": -1.6254387
+    }
+  },
+  {
+    "id": "helperby",
+    "name": "Helperby",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "helperby-east",
+      "helperby-west"
+    ],
+    "centroid": {
+      "lat": 54.1237165,
+      "lng": -1.328974
+    }
+  },
+  {
+    "id": "high-worsall",
+    "name": "High Worsall",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "high-worsall"
+    ],
+    "centroid": {
+      "lat": 54.4794812,
+      "lng": -1.4061502
+    }
+  },
+  {
+    "id": "holme",
+    "name": "Holme",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "holme"
+    ],
+    "centroid": {
+      "lat": 54.2349804,
+      "lng": -1.4553994
+    }
+  },
+  {
+    "id": "hornby-hambleton-west",
+    "name": "Hornby",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "hornby-hambleton-west"
+    ],
+    "centroid": {
+      "lat": 54.4443469,
+      "lng": -1.4408688
+    }
+  },
+  {
+    "id": "howe",
+    "name": "Howe",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "howe"
+    ],
+    "centroid": {
+      "lat": 54.2176051,
+      "lng": -1.4536256
+    }
+  },
+  {
+    "id": "hutton-sessay",
+    "name": "Hutton Sessay",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "hutton-sessay"
+    ],
+    "centroid": {
+      "lat": 54.1806947,
+      "lng": -1.2801062
+    }
+  },
+  {
+    "id": "kirby-fleetham",
+    "name": "Kirby Fleetham",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "kirby-fleetham"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "kirby-sigston",
+    "name": "Kirby Sigston",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "kirby-sigston"
+    ],
+    "centroid": {
+      "lat": 54.3474395,
+      "lng": -1.3617253
+    }
+  },
+  {
+    "id": "kirby-wiske",
+    "name": "Kirby Wiske",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "kirby-wiske"
+    ],
+    "centroid": {
+      "lat": 54.2584788,
+      "lng": -1.4398546
+    }
+  },
+  {
+    "id": "kirkbridge",
+    "name": "Kirkbridge",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "kirkbridge"
+    ],
+    "centroid": {
+      "lat": 54.5025721,
+      "lng": -1.713986
+    }
+  },
+  {
+    "id": "kirklington",
+    "name": "Kirklington",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "kirklington"
+    ],
+    "centroid": {
+      "lat": 54.2257498,
+      "lng": -1.5124897
+    }
+  },
+  {
+    "id": "langthorne",
+    "name": "Langthorne",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "langthorne"
+    ],
+    "centroid": {
+      "lat": 54.3200078,
+      "lng": -1.6158076
+    }
+  },
+  {
+    "id": "leeming",
+    "name": "Leeming",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "leeming"
+    ],
+    "centroid": {
+      "lat": 54.2984091,
+      "lng": -1.5497583
+    }
+  },
+  {
+    "id": "linton-on-ouse",
+    "name": "Linton-on-Ouse",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "linton-on-ouse"
+    ],
+    "centroid": {
+      "lat": 54.0410706,
+      "lng": -1.2485742
+    }
+  },
+  {
+    "id": "little-crakehall",
+    "name": "Little Crakehall",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "little-crakehall"
+    ],
+    "centroid": {
+      "lat": 54.3061712,
+      "lng": -1.6296632
+    }
+  },
+  {
+    "id": "little-fencote",
+    "name": "Little Fencote",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "little-fencote"
+    ],
+    "centroid": {
+      "lat": 54.3336256,
+      "lng": -1.5644599
+    }
+  },
+  {
+    "id": "londonderry",
+    "name": "Londonderry",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "londonderry"
+    ],
+    "centroid": {
+      "lat": 54.2833311,
+      "lng": -1.5360182
+    }
+  },
+  {
+    "id": "low-worsall",
+    "name": "Low Worsall",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "low-worsall"
+    ],
+    "centroid": {
+      "lat": 54.4829933,
+      "lng": -1.3951832
+    }
+  },
+  {
+    "id": "maunby",
+    "name": "Maunby",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "maunby"
+    ],
+    "centroid": {
+      "lat": 54.2800323,
+      "lng": -1.4646685
+    }
+  },
+  {
+    "id": "morton-on-swale",
+    "name": "Morton-on-Swale",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "morton-on-swale-north",
+      "morton-on-swale-south"
+    ],
+    "centroid": {
+      "lat": 54.3226271,
+      "lng": -1.4991726
+    }
+  },
+  {
+    "id": "myton-on-swale",
+    "name": "Myton-on-Swale",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "myton-on-swale"
+    ],
+    "centroid": {
+      "lat": 54.0928225,
+      "lng": -1.3306632
+    }
+  },
+  {
+    "id": "newby-wiske",
+    "name": "Newby Wiske",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "newby-wiske"
+    ],
+    "centroid": {
+      "lat": 54.2876879,
+      "lng": -1.4465558
+    }
+  },
+  {
+    "id": "newton-on-ouse",
+    "name": "Newton-on-Ouse",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "newton-on-ouse"
+    ],
+    "centroid": {
+      "lat": 54.0326721,
+      "lng": -1.2201224
+    }
+  },
+  {
+    "id": "newsham-hambleton-west",
+    "name": "Newsham",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "newsham-hambleton-west"
+    ],
+    "centroid": {
+      "lat": 54.4779065,
+      "lng": -1.8565597
+    }
+  },
+  {
+    "id": "north-otterington",
+    "name": "North Otterington",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "north-otterington"
+    ],
+    "centroid": {
+      "lat": 54.3098318,
+      "lng": -1.4398472
+    }
+  },
+  {
+    "id": "nosterfield",
+    "name": "Nosterfield",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "nosterfield"
+    ],
+    "centroid": {
+      "lat": 54.218647,
+      "lng": -1.5755478
+    }
+  },
+  {
+    "id": "pepper-arden",
+    "name": "Pepper Arden",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "pepper-arden"
+    ],
+    "centroid": {
+      "lat": 54.4195576,
+      "lng": -1.54398
+    }
+  },
+  {
+    "id": "pickhill",
+    "name": "Pickhill",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "pickhill"
+    ],
+    "centroid": {
+      "lat": 54.2457094,
+      "lng": -1.4720512
+    }
+  },
+  {
+    "id": "picton",
+    "name": "Picton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "picton"
+    ],
+    "centroid": {
+      "lat": 54.4606239,
+      "lng": -1.359728
+    }
+  },
+  {
+    "id": "raskelf",
+    "name": "Raskelf",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "raskelf"
+    ],
+    "centroid": {
+      "lat": 54.1324566,
+      "lng": -1.2635075
+    }
+  },
+  {
+    "id": "saltergill",
+    "name": "Saltergill",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "saltergill"
+    ],
+    "centroid": {
+      "lat": 54.4858517,
+      "lng": -1.3745861
+    }
+  },
+  {
+    "id": "sandhutton",
+    "name": "Sandhutton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "sandhutton"
+    ],
+    "centroid": {
+      "lat": 54.2324003,
+      "lng": -1.4147642
+    }
+  },
+  {
+    "id": "scruton",
+    "name": "Scruton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "scruton"
+    ],
+    "centroid": {
+      "lat": 54.3211214,
+      "lng": -1.5385287
+    }
+  },
+  {
+    "id": "sessay",
+    "name": "Sessay",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "sessay-north",
+      "sessay-south"
+    ],
+    "centroid": {
+      "lat": 54.1684504,
+      "lng": -1.2935242
+    }
+  },
+  {
+    "id": "shipton",
+    "name": "Shipton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "shipton-east",
+      "shipton-west"
+    ],
+    "centroid": {
+      "lat": 54.0269233,
+      "lng": -1.1610461
+    }
+  },
+  {
+    "id": "sinderby",
+    "name": "Sinderby",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "sinderby"
+    ],
+    "centroid": {
+      "lat": 54.2311693,
+      "lng": -1.47232
+    }
+  },
+  {
+    "id": "skipton-on-swale",
+    "name": "Skipton-on-Swale",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "skipton-on-swale"
+    ],
+    "centroid": {
+      "lat": 54.2151505,
+      "lng": -1.4304506
+    }
+  },
+  {
+    "id": "snape",
+    "name": "Snape",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "snape"
+    ],
+    "centroid": {
+      "lat": 54.2532147,
+      "lng": -1.5875921
+    }
+  },
+  {
+    "id": "south-kilvington",
+    "name": "South Kilvington",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "south-kilvington"
+    ],
+    "centroid": {
+      "lat": 54.2509428,
+      "lng": -1.3486552
+    }
+  },
+  {
+    "id": "south-otterington",
+    "name": "South Otterington",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "south-otterington"
+    ],
+    "centroid": {
+      "lat": 54.2841965,
+      "lng": -1.4223844
+    }
+  },
+  {
+    "id": "streetlam",
+    "name": "Streetlam",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "streetlam"
+    ],
+    "centroid": {
+      "lat": 54.3847078,
+      "lng": -1.5243217
+    }
+  },
+  {
+    "id": "sutton-howgrave",
+    "name": "Sutton Howgrave",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "sutton-howgrave"
+    ],
+    "centroid": {
+      "lat": 54.2055772,
+      "lng": -1.5160885
+    }
+  },
+  {
+    "id": "theakston",
+    "name": "Theakston",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "theakston"
+    ],
+    "centroid": {
+      "lat": 54.2659305,
+      "lng": -1.5375107
+    }
+  },
+  {
+    "id": "thirn",
+    "name": "Thirn",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "thirn"
+    ],
+    "centroid": {
+      "lat": 54.2677887,
+      "lng": -1.6703802
+    }
+  },
+  {
+    "id": "thormanby",
+    "name": "Thormanby",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "thormanby"
+    ],
+    "centroid": {
+      "lat": 54.1677618,
+      "lng": -1.2450263
+    }
+  },
+  {
+    "id": "tholthorpe",
+    "name": "Tholthorpe",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "tholthorpe"
+    ],
+    "centroid": {
+      "lat": 54.0984635,
+      "lng": -1.2688417
+    }
+  },
+  {
+    "id": "thornborough",
+    "name": "Thornborough",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "thornborough"
+    ],
+    "centroid": {
+      "lat": 54.212798,
+      "lng": -1.5536877
+    }
+  },
+  {
+    "id": "thornton-le-beans",
+    "name": "Thornton-le-Beans",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "thornton-le-beans"
+    ],
+    "centroid": {
+      "lat": 54.3084062,
+      "lng": -1.3904914
+    }
+  },
+  {
+    "id": "thornton-le-moor",
+    "name": "Thornton-le-Moor",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "thornton-le-moor"
+    ],
+    "centroid": {
+      "lat": 54.2874721,
+      "lng": -1.4011833
+    }
+  },
+  {
+    "id": "thornton-le-street",
+    "name": "Thornton-le-Street",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "thornton-le-street"
+    ],
+    "centroid": {
+      "lat": 54.2702662,
+      "lng": -1.3662558
+    }
+  },
+  {
+    "id": "thornton-watlass",
+    "name": "Thornton Watlass",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "thornton-watlass"
+    ],
+    "centroid": {
+      "lat": 54.2650412,
+      "lng": -1.640256
+    }
+  },
+  {
+    "id": "thrintoft",
+    "name": "Thrintoft",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "thrintoft"
+    ],
+    "centroid": {
+      "lat": 54.3430614,
+      "lng": -1.5118884
+    }
+  },
+  {
+    "id": "tollerton",
+    "name": "Tollerton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "tollerton-east",
+      "tollerton-north",
+      "tollerton-south",
+      "tollerton-west"
+    ],
+    "centroid": {
+      "lat": 54.0708056,
+      "lng": -1.2084174
+    }
+  },
+  {
+    "id": "topcliffe",
+    "name": "Topcliffe",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "topcliffe-north",
+      "topcliffe-south"
+    ],
+    "centroid": {
+      "lat": 54.1781348,
+      "lng": -1.3871054
+    }
+  },
+  {
+    "id": "warlaby",
+    "name": "Warlaby",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "warlaby"
+    ],
+    "centroid": {
+      "lat": 54.3181443,
+      "lng": -1.4630816
+    }
+  },
+  {
+    "id": "well",
+    "name": "Well",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "well"
+    ],
+    "centroid": {
+      "lat": 54.2318948,
+      "lng": -1.5913607
+    }
+  },
+  {
+    "id": "welbury",
+    "name": "Welbury",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "welbury"
+    ],
+    "centroid": {
+      "lat": 54.4153642,
+      "lng": -1.3866298
+    }
+  },
+  {
+    "id": "west-rounton",
+    "name": "West Rounton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "west-rounton"
+    ],
+    "centroid": {
+      "lat": 54.4249878,
+      "lng": -1.3637833
+    }
+  },
+  {
+    "id": "west-tanfield",
+    "name": "West Tanfield",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "west-tanfield"
+    ],
+    "centroid": {
+      "lat": 54.2060955,
+      "lng": -1.5894526
+    }
+  },
+  {
+    "id": "yafforth",
+    "name": "Yafforth",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "yafforth"
+    ],
+    "centroid": {
+      "lat": 54.3470918,
+      "lng": -1.4824551
+    }
+  },
+  {
+    "id": "youlton",
+    "name": "Youlton",
+    "district": "Hambleton (West)",
+    "sheet_ids": [
+      "youlton"
+    ],
+    "centroid": {
+      "lat": 54.0653662,
+      "lng": -1.2508958
+    }
+  },
+  {
+    "id": "aldborough",
+    "name": "Aldborough",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "aldborough"
+    ],
+    "centroid": {
+      "lat": 54.0911361,
+      "lng": -1.3804879
+    }
+  },
+  {
+    "id": "aldfield",
+    "name": "Aldfield",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "aldfield"
+    ],
+    "centroid": {
+      "lat": 54.119527,
+      "lng": -1.6008924
+    }
+  },
+  {
+    "id": "allerton-mauleverer",
+    "name": "Allerton Mauleverer",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "allerton-mauleverer"
+    ],
+    "centroid": {
+      "lat": 54.0162063,
+      "lng": -1.366128
+    }
+  },
+  {
+    "id": "angram-harrogate",
+    "name": "Angram",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "angram-harrogate"
+    ],
+    "centroid": {
+      "lat": 53.9311663,
+      "lng": -1.2096078
+    }
+  },
+  {
+    "id": "arkendale",
+    "name": "Arkendale",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "arkendale"
+    ],
+    "centroid": {
+      "lat": 54.0433635,
+      "lng": -1.4075448
+    }
+  },
+  {
+    "id": "asenby",
+    "name": "Asenby",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "asenby"
+    ],
+    "centroid": {
+      "lat": 54.1728916,
+      "lng": -1.3901406
+    }
+  },
+  {
+    "id": "askwith",
+    "name": "Askwith",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "askwith"
+    ],
+    "centroid": {
+      "lat": 53.9304395,
+      "lng": -1.7426203
+    }
+  },
+  {
+    "id": "baldersby",
+    "name": "Baldersby",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "baldersby"
+    ],
+    "centroid": {
+      "lat": 54.1968997,
+      "lng": -1.4524141
+    }
+  },
+  {
+    "id": "baldersby-st-james",
+    "name": "Baldersby St James",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "baldersby-st-james"
+    ],
+    "centroid": {
+      "lat": 54.186884,
+      "lng": -1.4410307
+    }
+  },
+  {
+    "id": "beckwithshaw",
+    "name": "Beckwithshaw",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "beckwithshaw"
+    ],
+    "centroid": {
+      "lat": 53.9735613,
+      "lng": -1.589029
+    }
+  },
+  {
+    "id": "bedlam",
+    "name": "Bedlam",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "bedlam"
+    ],
+    "centroid": {
+      "lat": 54.0489933,
+      "lng": -1.5925865
+    }
+  },
+  {
+    "id": "bewerley",
+    "name": "Bewerley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "bewerley"
+    ],
+    "centroid": {
+      "lat": 54.0784953,
+      "lng": -1.8025895
+    }
+  },
+  {
+    "id": "bickerton",
+    "name": "Bickerton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "bickerton"
+    ],
+    "centroid": {
+      "lat": 53.9496301,
+      "lng": -1.3147304
+    }
+  },
+  {
+    "id": "bilton-in-ainsty",
+    "name": "Bilton in Ainsty",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "bilton-in-ainsty"
+    ],
+    "centroid": {
+      "lat": 53.9459485,
+      "lng": -1.2762378
+    }
+  },
+  {
+    "id": "birstwith",
+    "name": "Birstwith",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "birstwith"
+    ],
+    "centroid": {
+      "lat": 54.0316263,
+      "lng": -1.6316334
+    }
+  },
+  {
+    "id": "bishop-monkton",
+    "name": "Bishop Monkton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "bishop-monkton-central",
+      "bishop-monkton-east",
+      "bishop-monkton-north",
+      "bishop-monkton-west"
+    ],
+    "centroid": {
+      "lat": 54.0905349,
+      "lng": -1.5011071
+    }
+  },
+  {
+    "id": "bishop-thornton",
+    "name": "Bishop Thornton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "bishop-thornton"
+    ],
+    "centroid": {
+      "lat": 54.0651188,
+      "lng": -1.6025691
+    }
+  },
+  {
+    "id": "bland-hill",
+    "name": "Bland Hill",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "bland-hill"
+    ],
+    "centroid": {
+      "lat": 53.9735219,
+      "lng": -1.6856875
+    }
+  },
+  {
+    "id": "blubberhouses",
+    "name": "Blubberhouses",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "blubberhouses"
+    ],
+    "centroid": {
+      "lat": 53.9889804,
+      "lng": -1.7777242
+    }
+  },
+  {
+    "id": "bouthwaite",
+    "name": "Bouthwaite",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "bouthwaite"
+    ],
+    "centroid": {
+      "lat": 54.1368954,
+      "lng": -1.8130884
+    }
+  },
+  {
+    "id": "branton-green",
+    "name": "Branton Green",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "branton-green"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "braythorne",
+    "name": "Braythorne",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "braythorne"
+    ],
+    "centroid": {
+      "lat": 53.9435691,
+      "lng": -1.6231315
+    }
+  },
+  {
+    "id": "brearton",
+    "name": "Brearton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "brearton"
+    ],
+    "centroid": {
+      "lat": 54.044574,
+      "lng": -1.5074186
+    }
+  },
+  {
+    "id": "bridge-hewick",
+    "name": "Bridge Hewick",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "bridge-hewick"
+    ],
+    "centroid": {
+      "lat": 54.1299037,
+      "lng": -1.4848621
+    }
+  },
+  {
+    "id": "burnt-yates",
+    "name": "Burnt Yates",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "burnt-yates"
+    ],
+    "centroid": {
+      "lat": 54.0453486,
+      "lng": -1.6180329
+    }
+  },
+  {
+    "id": "burton-leonard",
+    "name": "Burton Leonard",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "burton-leonard-north",
+      "burton-leonard-south"
+    ],
+    "centroid": {
+      "lat": 54.0713128,
+      "lng": -1.4978725
+    }
+  },
+  {
+    "id": "castley",
+    "name": "Castley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "castley"
+    ],
+    "centroid": {
+      "lat": 53.9082229,
+      "lng": -1.5948251
+    }
+  },
+  {
+    "id": "cattal",
+    "name": "Cattal",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "cattal"
+    ],
+    "centroid": {
+      "lat": 53.985841,
+      "lng": -1.3271926
+    }
+  },
+  {
+    "id": "clifton",
+    "name": "Clifton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "clifton"
+    ],
+    "centroid": {
+      "lat": 53.9301028,
+      "lng": -1.7080544
+    }
+  },
+  {
+    "id": "clint",
+    "name": "Clint",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "clint"
+    ],
+    "centroid": {
+      "lat": 54.033011,
+      "lng": -1.6005814
+    }
+  },
+  {
+    "id": "coneythorpe",
+    "name": "Coneythorpe",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "coneythorpe"
+    ],
+    "centroid": {
+      "lat": 54.0246389,
+      "lng": -1.4008706
+    }
+  },
+  {
+    "id": "copgrove",
+    "name": "Copgrove",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "copgrove"
+    ],
+    "centroid": {
+      "lat": 54.0644894,
+      "lng": -1.4746356
+    }
+  },
+  {
+    "id": "copt-hewick",
+    "name": "Copt Hewick",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "copt-hewick"
+    ],
+    "centroid": {
+      "lat": 54.1402746,
+      "lng": -1.4782145
+    }
+  },
+  {
+    "id": "cowthorpe",
+    "name": "Cowthorpe",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "cowthorpe"
+    ],
+    "centroid": {
+      "lat": 53.9661279,
+      "lng": -1.3507307
+    }
+  },
+  {
+    "id": "cundall",
+    "name": "Cundall",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "cundall"
+    ],
+    "centroid": {
+      "lat": 54.1477775,
+      "lng": -1.3524627
+    }
+  },
+  {
+    "id": "dacre",
+    "name": "Dacre",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "dacre"
+    ],
+    "centroid": {
+      "lat": 54.0435314,
+      "lng": -1.7079637
+    }
+  },
+  {
+    "id": "dacre-banks",
+    "name": "Dacre Banks",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "dacre-banks"
+    ],
+    "centroid": {
+      "lat": 54.0535729,
+      "lng": -1.701331
+    }
+  },
+  {
+    "id": "darley",
+    "name": "Darley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "darley"
+    ],
+    "centroid": {
+      "lat": 54.0325192,
+      "lng": -1.6942687
+    }
+  },
+  {
+    "id": "darley-head",
+    "name": "Darley Head",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "darley-head"
+    ],
+    "centroid": {
+      "lat": 54.0313099,
+      "lng": -1.701135
+    }
+  },
+  {
+    "id": "denton",
+    "name": "Denton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "denton"
+    ],
+    "centroid": {
+      "lat": 53.9367932,
+      "lng": -1.7833462
+    }
+  },
+  {
+    "id": "dishforth",
+    "name": "Dishforth",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "dishforth-north",
+      "dishforth-south"
+    ],
+    "centroid": {
+      "lat": 54.1455501,
+      "lng": -1.4088868
+    }
+  },
+  {
+    "id": "dunkeswick",
+    "name": "Dunkeswick",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "dunkeswick"
+    ],
+    "centroid": {
+      "lat": 53.9178203,
+      "lng": -1.5354967
+    }
+  },
+  {
+    "id": "ellingstring",
+    "name": "Ellingstring",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "ellingstring"
+    ],
+    "centroid": {
+      "lat": 54.2493068,
+      "lng": -1.7332412
+    }
+  },
+  {
+    "id": "farnham",
+    "name": "Farnham",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "farnham"
+    ],
+    "centroid": {
+      "lat": 54.0408064,
+      "lng": -1.4684412
+    }
+  },
+  {
+    "id": "farnley",
+    "name": "Farnley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "farnley"
+    ],
+    "centroid": {
+      "lat": 53.9281369,
+      "lng": -1.674917
+    }
+  },
+  {
+    "id": "fearby",
+    "name": "Fearby",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "fearby"
+    ],
+    "centroid": {
+      "lat": 54.225165,
+      "lng": -1.7040763
+    }
+  },
+  {
+    "id": "fell-beck",
+    "name": "Fell Beck",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "fell-beck"
+    ],
+    "centroid": {
+      "lat": 54.15976,
+      "lng": -2.3787657
+    }
+  },
+  {
+    "id": "ferrensby",
+    "name": "Ferrensby",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "ferrensby"
+    ],
+    "centroid": {
+      "lat": 54.0399541,
+      "lng": -1.4375668
+    }
+  },
+  {
+    "id": "fewston",
+    "name": "Fewston",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "fewston"
+    ],
+    "centroid": {
+      "lat": 53.9839986,
+      "lng": -1.7048693
+    }
+  },
+  {
+    "id": "fishpool",
+    "name": "Fishpool",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "fishpool"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "flaxby",
+    "name": "Flaxby",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "flaxby"
+    ],
+    "centroid": {
+      "lat": 54.0153768,
+      "lng": -1.3977964
+    }
+  },
+  {
+    "id": "follifoot",
+    "name": "Follifoot",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "follifoot"
+    ],
+    "centroid": {
+      "lat": 53.9698889,
+      "lng": -1.4899254
+    }
+  },
+  {
+    "id": "galphay",
+    "name": "Galphay",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "galphay"
+    ],
+    "centroid": {
+      "lat": 54.1491242,
+      "lng": -1.6145905
+    }
+  },
+  {
+    "id": "glasshouses",
+    "name": "Glasshouses",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "glasshouses"
+    ],
+    "centroid": {
+      "lat": 54.0765599,
+      "lng": -1.7376629
+    }
+  },
+  {
+    "id": "goldsborough",
+    "name": "Goldsborough",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "goldsborough"
+    ],
+    "centroid": {
+      "lat": 54.0001434,
+      "lng": -1.4195503
+    }
+  },
+  {
+    "id": "grafton",
+    "name": "Grafton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "grafton"
+    ],
+    "centroid": {
+      "lat": 54.0580335,
+      "lng": -1.3655779
+    }
+  },
+  {
+    "id": "great-ouseburn",
+    "name": "Great Ouseburn",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "great-ouseburn"
+    ],
+    "centroid": {
+      "lat": 54.0505546,
+      "lng": -1.3150113
+    }
+  },
+  {
+    "id": "green-hammerton",
+    "name": "Green Hammerton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "green-hammerton-north",
+      "green-hammerton-south"
+    ],
+    "centroid": {
+      "lat": 54.0081379,
+      "lng": -1.2871525
+    }
+  },
+  {
+    "id": "greenhow",
+    "name": "Greenhow",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "greenhow"
+    ],
+    "centroid": {
+      "lat": 54.4498241,
+      "lng": -1.1050234
+    }
+  },
+  {
+    "id": "grewelthorpe",
+    "name": "Grewelthorpe",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "grewelthorpe-east",
+      "grewelthorpe-west"
+    ],
+    "centroid": {
+      "lat": 54.1815512,
+      "lng": -1.6488336
+    }
+  },
+  {
+    "id": "hampsthwaite-hollins",
+    "name": "Hampsthwaite Hollins",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "hampsthwaite-hollins"
+    ],
+    "centroid": {
+      "lat": 54.0169517,
+      "lng": -1.5959996
+    }
+  },
+  {
+    "id": "hampsthwaite",
+    "name": "Hampsthwaite",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "hampsthwaite-north",
+      "hampsthwaite-south"
+    ],
+    "centroid": {
+      "lat": 54.0116062,
+      "lng": -1.6034204
+    }
+  },
+  {
+    "id": "healey",
+    "name": "Healey",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "healey"
+    ],
+    "centroid": {
+      "lat": 54.2207854,
+      "lng": -1.7233651
+    }
+  },
+  {
+    "id": "high-ellington",
+    "name": "High Ellington",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "high-ellington"
+    ],
+    "centroid": {
+      "lat": 54.2451892,
+      "lng": -1.7015653
+    }
+  },
+  {
+    "id": "high-grantley",
+    "name": "High Grantley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "high-grantley"
+    ],
+    "centroid": {
+      "lat": 54.1255416,
+      "lng": -1.643673
+    }
+  },
+  {
+    "id": "hopperton",
+    "name": "Hopperton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "hopperton"
+    ],
+    "centroid": {
+      "lat": 54.0039041,
+      "lng": -1.3569352
+    }
+  },
+  {
+    "id": "hunsingore",
+    "name": "Hunsingore",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "hunsingore"
+    ],
+    "centroid": {
+      "lat": 53.9756857,
+      "lng": -1.3474176
+    }
+  },
+  {
+    "id": "hutton-conyers",
+    "name": "Hutton Conyers",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "hutton-conyers"
+    ],
+    "centroid": {
+      "lat": 54.1554141,
+      "lng": -1.5031614
+    }
+  },
+  {
+    "id": "hutton-wandesley",
+    "name": "Hutton Wandesley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "hutton-wandesley"
+    ],
+    "centroid": {
+      "lat": 53.9479539,
+      "lng": -1.2281394
+    }
+  },
+  {
+    "id": "ilton",
+    "name": "Ilton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "ilton"
+    ],
+    "centroid": {
+      "lat": 54.1982134,
+      "lng": -1.7092605
+    }
+  },
+  {
+    "id": "jack-hill",
+    "name": "Jack Hill",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "jack-hill"
+    ],
+    "centroid": {
+      "lat": 53.9629963,
+      "lng": -1.6990291
+    }
+  },
+  {
+    "id": "kettlesing",
+    "name": "Kettlesing",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "kettlesing"
+    ],
+    "centroid": {
+      "lat": 54.0057956,
+      "lng": -1.6592484
+    }
+  },
+  {
+    "id": "kettlesing-bottom",
+    "name": "Kettlesing Bottom",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "kettlesing-bottom"
+    ],
+    "centroid": {
+      "lat": 54.0103527,
+      "lng": -1.6547244
+    }
+  },
+  {
+    "id": "killinghall",
+    "name": "Killinghall",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "killinghall-east",
+      "killinghall-west"
+    ],
+    "centroid": {
+      "lat": 54.0225442,
+      "lng": -1.5659644
+    }
+  },
+  {
+    "id": "kirby-hill-harrogate",
+    "name": "Kirby Hill",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "kirby-hill-harrogate"
+    ],
+    "centroid": {
+      "lat": 54.4520689,
+      "lng": -1.7903374
+    }
+  },
+  {
+    "id": "kirkby-malzeard",
+    "name": "Kirkby Malzeard",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "kirkby-malzeard-north",
+      "kirkby-malzeard-south"
+    ],
+    "centroid": {
+      "lat": 54.1643909,
+      "lng": -1.6445455
+    }
+  },
+  {
+    "id": "kirkby-overblow",
+    "name": "Kirkby Overblow",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "kirkby-overblow"
+    ],
+    "centroid": {
+      "lat": 53.9324322,
+      "lng": -1.5215604
+    }
+  },
+  {
+    "id": "kirk-deighton",
+    "name": "Kirk Deighton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "kirk-deighton"
+    ],
+    "centroid": {
+      "lat": 53.9534461,
+      "lng": -1.3692671
+    }
+  },
+  {
+    "id": "kirk-hammerton",
+    "name": "Kirk Hammerton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "kirk-hammerton-east",
+      "kirk-hammerton-west"
+    ],
+    "centroid": {
+      "lat": 53.991421,
+      "lng": -1.2935054
+    }
+  },
+  {
+    "id": "kirk-hammerton-moor",
+    "name": "Kirk Hammerton Moor",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "kirk-hammerton-moor"
+    ],
+    "centroid": {
+      "lat": 53.9971058,
+      "lng": -1.2781314
+    }
+  },
+  {
+    "id": "langbar",
+    "name": "Langbar",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "langbar"
+    ],
+    "centroid": {
+      "lat": 53.9596791,
+      "lng": -1.8624715
+    }
+  },
+  {
+    "id": "langthorpe",
+    "name": "Langthorpe",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "langthorpe"
+    ],
+    "centroid": {
+      "lat": 54.1007018,
+      "lng": -1.4062438
+    }
+  },
+  {
+    "id": "laverton",
+    "name": "Laverton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "laverton"
+    ],
+    "centroid": {
+      "lat": 54.1550758,
+      "lng": -1.6521104
+    }
+  },
+  {
+    "id": "leathley",
+    "name": "Leathley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "leathley"
+    ],
+    "centroid": {
+      "lat": 53.9185524,
+      "lng": -1.6477363
+    }
+  },
+  {
+    "id": "little-ouseburn",
+    "name": "Little Ouseburn",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "little-ouseburn"
+    ],
+    "centroid": {
+      "lat": 54.04087,
+      "lng": -1.3170865
+    }
+  },
+  {
+    "id": "little-ribston",
+    "name": "Little Ribston",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "little-ribston"
+    ],
+    "centroid": {
+      "lat": 53.9756384,
+      "lng": -1.4122154
+    }
+  },
+  {
+    "id": "littlethorpe",
+    "name": "Littlethorpe",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "littlethorpe"
+    ],
+    "centroid": {
+      "lat": 54.1176669,
+      "lng": -1.5063712
+    }
+  },
+  {
+    "id": "lofthouse",
+    "name": "Lofthouse",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "lofthouse"
+    ],
+    "centroid": {
+      "lat": 54.1571476,
+      "lng": -1.8455167
+    }
+  },
+  {
+    "id": "long-marston",
+    "name": "Long Marston",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "long-marston-north",
+      "long-marston-south"
+    ],
+    "centroid": {
+      "lat": 53.9544241,
+      "lng": -1.2365961
+    }
+  },
+  {
+    "id": "lower-dunsforth",
+    "name": "Lower Dunsforth",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "lower-dunsforth"
+    ],
+    "centroid": {
+      "lat": 54.0767145,
+      "lng": -1.3276543
+    }
+  },
+  {
+    "id": "low-grantley",
+    "name": "Low Grantley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "low-grantley"
+    ],
+    "centroid": {
+      "lat": 54.1288212,
+      "lng": -1.6376171
+    }
+  },
+  {
+    "id": "low-green",
+    "name": "Low Green",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "low-green"
+    ],
+    "centroid": {
+      "lat": 54.0299519,
+      "lng": -1.686356
+    }
+  },
+  {
+    "id": "maltkiln-hill",
+    "name": "Maltkiln Hill",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "maltkiln-hill"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "markington",
+    "name": "Markington",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "markington"
+    ],
+    "centroid": {
+      "lat": 54.0797928,
+      "lng": -1.5618766
+    }
+  },
+  {
+    "id": "marton",
+    "name": "Marton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "marton"
+    ],
+    "centroid": {
+      "lat": 54.2391536,
+      "lng": -0.8764564
+    }
+  },
+  {
+    "id": "marton-le-moor",
+    "name": "Marton-le-Moor",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "marton-le-moor"
+    ],
+    "centroid": {
+      "lat": 54.1301272,
+      "lng": -1.4339974
+    }
+  },
+  {
+    "id": "melmerby",
+    "name": "Melmerby",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "melmerby"
+    ],
+    "centroid": {
+      "lat": 54.1834941,
+      "lng": -1.4758243
+    }
+  },
+  {
+    "id": "mickley",
+    "name": "Mickley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "mickley"
+    ],
+    "centroid": {
+      "lat": 54.1875034,
+      "lng": -1.6101705
+    }
+  },
+  {
+    "id": "middlesmoor",
+    "name": "Middlesmoor",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "middlesmoor"
+    ],
+    "centroid": {
+      "lat": 54.1635878,
+      "lng": -1.8610047
+    }
+  },
+  {
+    "id": "middleton-quernhow",
+    "name": "Middleton Quernhow",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "middleton-quernhow"
+    ],
+    "centroid": {
+      "lat": 54.2000842,
+      "lng": -1.4877712
+    }
+  },
+  {
+    "id": "milby",
+    "name": "Milby",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "milby"
+    ],
+    "centroid": {
+      "lat": 54.1037443,
+      "lng": -1.3867535
+    }
+  },
+  {
+    "id": "minskip",
+    "name": "Minskip",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "minskip"
+    ],
+    "centroid": {
+      "lat": 54.0776433,
+      "lng": -1.4071577
+    }
+  },
+  {
+    "id": "moor-monkton",
+    "name": "Moor Monkton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "moor-monkton"
+    ],
+    "centroid": {
+      "lat": 54.0057485,
+      "lng": -1.2246924
+    }
+  },
+  {
+    "id": "nesfield",
+    "name": "Nesfield",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "nesfield"
+    ],
+    "centroid": {
+      "lat": 53.9424842,
+      "lng": -1.8593402
+    }
+  },
+  {
+    "id": "nidd",
+    "name": "Nidd",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "nidd"
+    ],
+    "centroid": {
+      "lat": 54.0427178,
+      "lng": -1.54175
+    }
+  },
+  {
+    "id": "north-deighton",
+    "name": "North Deighton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "north-deighton"
+    ],
+    "centroid": {
+      "lat": 53.9594858,
+      "lng": -1.4056696
+    }
+  },
+  {
+    "id": "north-lees",
+    "name": "North Lees",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "north-lees"
+    ],
+    "centroid": {
+      "lat": 54.1602981,
+      "lng": -1.5413474
+    }
+  },
+  {
+    "id": "north-rigton",
+    "name": "North Rigton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "north-rigton"
+    ],
+    "centroid": {
+      "lat": 53.9449183,
+      "lng": -1.5713012
+    }
+  },
+  {
+    "id": "north-stainley",
+    "name": "North Stainley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "north-stainley"
+    ],
+    "centroid": {
+      "lat": 54.1881933,
+      "lng": -1.5623539
+    }
+  },
+  {
+    "id": "norton-le-clay",
+    "name": "Norton-le-Clay",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "norton-le-clay"
+    ],
+    "centroid": {
+      "lat": 54.1342069,
+      "lng": -1.3856466
+    }
+  },
+  {
+    "id": "nun-monkton",
+    "name": "Nun Monkton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "nun-monkton"
+    ],
+    "centroid": {
+      "lat": 54.0131358,
+      "lng": -1.2280334
+    }
+  },
+  {
+    "id": "nunwick",
+    "name": "Nunwick",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "nunwick"
+    ],
+    "centroid": {
+      "lat": 54.1654938,
+      "lng": -1.5082653
+    }
+  },
+  {
+    "id": "padside",
+    "name": "Padside",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "padside"
+    ],
+    "centroid": {
+      "lat": 54.0416423,
+      "lng": -1.8015502
+    }
+  },
+  {
+    "id": "rainton",
+    "name": "Rainton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "rainton"
+    ],
+    "centroid": {
+      "lat": 54.1715744,
+      "lng": -1.4343499
+    }
+  },
+  {
+    "id": "ramsgill",
+    "name": "Ramsgill",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "ramsgill"
+    ],
+    "centroid": {
+      "lat": 54.1350145,
+      "lng": -1.8191884
+    }
+  },
+  {
+    "id": "ripley",
+    "name": "Ripley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "ripley"
+    ],
+    "centroid": {
+      "lat": 54.0467187,
+      "lng": -1.5647551
+    }
+  },
+  {
+    "id": "risplith",
+    "name": "Risplith",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "risplith"
+    ],
+    "centroid": {
+      "lat": 54.1141764,
+      "lng": -1.6286886
+    }
+  },
+  {
+    "id": "roecliffe",
+    "name": "Roecliffe",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "roecliffe"
+    ],
+    "centroid": {
+      "lat": 54.0892015,
+      "lng": -1.4277173
+    }
+  },
+  {
+    "id": "sawley",
+    "name": "Sawley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "sawley"
+    ],
+    "centroid": {
+      "lat": 54.1054609,
+      "lng": -1.6211684
+    }
+  },
+  {
+    "id": "scotton",
+    "name": "Scotton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "scotton"
+    ],
+    "centroid": {
+      "lat": 54.0301717,
+      "lng": -1.4954116
+    }
+  },
+  {
+    "id": "scriven",
+    "name": "Scriven",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "scriven"
+    ],
+    "centroid": {
+      "lat": 54.0208538,
+      "lng": -1.4699715
+    }
+  },
+  {
+    "id": "sharow",
+    "name": "Sharow",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "sharow-north",
+      "sharow-south"
+    ],
+    "centroid": {
+      "lat": 54.1425916,
+      "lng": -1.4988845
+    }
+  },
+  {
+    "id": "shaw-mills",
+    "name": "Shaw Mills",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "shaw-mills"
+    ],
+    "centroid": {
+      "lat": 54.0574345,
+      "lng": -1.6100952
+    }
+  },
+  {
+    "id": "sicklinghall",
+    "name": "Sicklinghall",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "sicklinghall"
+    ],
+    "centroid": {
+      "lat": 53.9300957,
+      "lng": -1.452355
+    }
+  },
+  {
+    "id": "skelton-on-ure",
+    "name": "Skelton-on-Ure",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "skelton-on-ure"
+    ],
+    "centroid": {
+      "lat": 54.108787,
+      "lng": -1.4483733
+    }
+  },
+  {
+    "id": "south-stainley",
+    "name": "South Stainley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "south-stainley"
+    ],
+    "centroid": {
+      "lat": 54.0646266,
+      "lng": -1.5351806
+    }
+  },
+  {
+    "id": "stainburn",
+    "name": "Stainburn",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "stainburn"
+    ],
+    "centroid": {
+      "lat": 53.9449875,
+      "lng": -1.6229654
+    }
+  },
+  {
+    "id": "staveley",
+    "name": "Staveley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "staveley"
+    ],
+    "centroid": {
+      "lat": 54.0584751,
+      "lng": -1.4343388
+    }
+  },
+  {
+    "id": "stean",
+    "name": "Stean",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "stean"
+    ],
+    "centroid": {
+      "lat": 54.1569624,
+      "lng": -1.8678393
+    }
+  },
+  {
+    "id": "studley-roger",
+    "name": "Studley Roger",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "studley-roger"
+    ],
+    "centroid": {
+      "lat": 54.1268949,
+      "lng": -1.5571852
+    }
+  },
+  {
+    "id": "summerbridge",
+    "name": "Summerbridge",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "summerbridge"
+    ],
+    "centroid": {
+      "lat": 54.0573493,
+      "lng": -1.6929373
+    }
+  },
+  {
+    "id": "sutton-grange",
+    "name": "Sutton Grange",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "sutton-grange"
+    ],
+    "centroid": {
+      "lat": 54.1597167,
+      "lng": -1.5664152
+    }
+  },
+  {
+    "id": "swincliffe",
+    "name": "Swincliffe",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "swincliffe"
+    ],
+    "centroid": {
+      "lat": 54.0186204,
+      "lng": -1.6199414
+    }
+  },
+  {
+    "id": "swinton",
+    "name": "Swinton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "swinton"
+    ],
+    "centroid": {
+      "lat": 54.1493314,
+      "lng": -0.8393934
+    }
+  },
+  {
+    "id": "thornthwaite",
+    "name": "Thornthwaite",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "thornthwaite"
+    ],
+    "centroid": {
+      "lat": 54.0260528,
+      "lng": -1.7334087
+    }
+  },
+  {
+    "id": "thorpe-underwood",
+    "name": "Thorpe Underwood",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "thorpe-underwood"
+    ],
+    "centroid": {
+      "lat": 54.0245911,
+      "lng": -1.2952539
+    }
+  },
+  {
+    "id": "timble",
+    "name": "Timble",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "timble"
+    ],
+    "centroid": {
+      "lat": 53.9720733,
+      "lng": -1.7264308
+    }
+  },
+  {
+    "id": "tockwith",
+    "name": "Tockwith",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "tockwith-central",
+      "tockwith-east",
+      "tockwith-west"
+    ],
+    "centroid": {
+      "lat": 53.968003,
+      "lng": -1.3120666
+    }
+  },
+  {
+    "id": "upper-dunsforth",
+    "name": "Upper Dunsforth",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "upper-dunsforth"
+    ],
+    "centroid": {
+      "lat": 54.0619729,
+      "lng": -1.3250311
+    }
+  },
+  {
+    "id": "walshford",
+    "name": "Walshford",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "walshford"
+    ],
+    "centroid": {
+      "lat": 53.975102,
+      "lng": -1.3689298
+    }
+  },
+  {
+    "id": "warthermarske",
+    "name": "Warthermarske",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "warthermarske"
+    ],
+    "centroid": {
+      "lat": 54.2064696,
+      "lng": -1.6838804
+    }
+  },
+  {
+    "id": "wath",
+    "name": "Wath",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "wath-nr-pately-bridge",
+      "wath-nr-ripon"
+    ],
+    "centroid": {
+      "lat": 54.1884425,
+      "lng": -1.5045961
+    }
+  },
+  {
+    "id": "weeton",
+    "name": "Weeton",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "weeton"
+    ],
+    "centroid": {
+      "lat": 53.916844,
+      "lng": -1.5650796
+    }
+  },
+  {
+    "id": "wilsill",
+    "name": "Wilsill",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "wilsill"
+    ],
+    "centroid": {
+      "lat": 54.0773209,
+      "lng": -1.7227572
+    }
+  },
+  {
+    "id": "whixley",
+    "name": "Whixley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "whixley-north",
+      "whixley-south"
+    ],
+    "centroid": {
+      "lat": 54.015348,
+      "lng": -1.3230634
+    }
+  },
+  {
+    "id": "wighill",
+    "name": "Wighill",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "wighill"
+    ],
+    "centroid": {
+      "lat": 53.9165687,
+      "lng": -1.2780705
+    }
+  },
+  {
+    "id": "winksley",
+    "name": "Winksley",
+    "district": "Harrogate",
+    "sheet_ids": [
+      "winksley"
+    ],
+    "centroid": {
+      "lat": 54.1365275,
+      "lng": -1.6181022
+    }
+  },
+  {
+    "id": "acklam",
+    "name": "Acklam",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "acklam"
+    ],
+    "centroid": {
+      "lat": 54.045221,
+      "lng": -0.8069315
+    }
+  },
+  {
+    "id": "allerston",
+    "name": "Allerston",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "allerston"
+    ],
+    "centroid": {
+      "lat": 54.2867071,
+      "lng": -0.6358945
+    }
+  },
+  {
+    "id": "barton-hill",
+    "name": "Barton Hill",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "barton-hill"
+    ],
+    "centroid": {
+      "lat": 54.0714821,
+      "lng": -0.9197144
+    }
+  },
+  {
+    "id": "barton-le-willows",
+    "name": "Barton-le-Willows",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "barton-le-willows"
+    ],
+    "centroid": {
+      "lat": 54.0611634,
+      "lng": -0.9109166
+    }
+  },
+  {
+    "id": "birdsall",
+    "name": "Birdsall",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "birdsall"
+    ],
+    "centroid": {
+      "lat": 54.0742016,
+      "lng": -0.7514517
+    }
+  },
+  {
+    "id": "burythorpe",
+    "name": "Burythorpe",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "burythorpe"
+    ],
+    "centroid": {
+      "lat": 54.073806,
+      "lng": -0.7929207
+    }
+  },
+  {
+    "id": "buttercrambe",
+    "name": "Buttercrambe",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "buttercrambe"
+    ],
+    "centroid": {
+      "lat": 54.0159448,
+      "lng": -0.8809974
+    }
+  },
+  {
+    "id": "butterwick",
+    "name": "Butterwick",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "butterwick"
+    ],
+    "centroid": {
+      "lat": 54.1284098,
+      "lng": -0.4866446
+    }
+  },
+  {
+    "id": "claxton",
+    "name": "Claxton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "claxton"
+    ],
+    "centroid": {
+      "lat": 54.0319364,
+      "lng": -0.940536
+    }
+  },
+  {
+    "id": "crambe",
+    "name": "Crambe",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "crambe"
+    ],
+    "centroid": {
+      "lat": 54.0747533,
+      "lng": -0.8816238
+    }
+  },
+  {
+    "id": "crambeck",
+    "name": "Crambeck",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "crambeck"
+    ],
+    "centroid": {
+      "lat": 54.0968191,
+      "lng": -0.876346
+    }
+  },
+  {
+    "id": "duggleby",
+    "name": "Duggleby",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "duggleby"
+    ],
+    "centroid": {
+      "lat": 54.0915634,
+      "lng": -0.6599539
+    }
+  },
+  {
+    "id": "east-heslerton",
+    "name": "East Heslerton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "east-heslerton"
+    ],
+    "centroid": {
+      "lat": 54.1776114,
+      "lng": -0.5807964
+    }
+  },
+  {
+    "id": "east-knapton",
+    "name": "East Knapton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "east-knapton"
+    ],
+    "centroid": {
+      "lat": 54.172946,
+      "lng": -0.6484945
+    }
+  },
+  {
+    "id": "east-lutton",
+    "name": "East Lutton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "east-lutton"
+    ],
+    "centroid": {
+      "lat": 54.1141547,
+      "lng": -0.5600196
+    }
+  },
+  {
+    "id": "firby-ryedale-east",
+    "name": "Firby",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "firby-ryedale-east"
+    ],
+    "centroid": {
+      "lat": 54.2731978,
+      "lng": -1.5892021
+    }
+  },
+  {
+    "id": "foxholes",
+    "name": "Foxholes",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "foxholes"
+    ],
+    "centroid": {
+      "lat": 54.1341065,
+      "lng": -0.469308
+    }
+  },
+  {
+    "id": "ganton",
+    "name": "Ganton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "ganton"
+    ],
+    "centroid": {
+      "lat": 54.1778422,
+      "lng": -0.4917451
+    }
+  },
+  {
+    "id": "gate-helmsley",
+    "name": "Gate Helmsley",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "gate-helmsley"
+    ],
+    "centroid": {
+      "lat": 53.9893033,
+      "lng": -0.9476017
+    }
+  },
+  {
+    "id": "harton",
+    "name": "Harton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "harton"
+    ],
+    "centroid": {
+      "lat": 54.0489488,
+      "lng": -0.9245606
+    }
+  },
+  {
+    "id": "helperthorpe",
+    "name": "Helperthorpe",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "helperthorpe"
+    ],
+    "centroid": {
+      "lat": 54.1188626,
+      "lng": -0.5467666
+    }
+  },
+  {
+    "id": "high-hutton",
+    "name": "High Hutton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "high-hutton"
+    ],
+    "centroid": {
+      "lat": 54.1059937,
+      "lng": -0.8500718
+    }
+  },
+  {
+    "id": "high-marishes",
+    "name": "High Marishes",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "high-marishes"
+    ],
+    "centroid": {
+      "lat": 54.1930895,
+      "lng": -0.7589042
+    }
+  },
+  {
+    "id": "howsham",
+    "name": "Howsham",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "howsham"
+    ],
+    "centroid": {
+      "lat": 54.0567397,
+      "lng": -0.8750397
+    }
+  },
+  {
+    "id": "kennythorpe",
+    "name": "Kennythorpe",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "kennythorpe"
+    ],
+    "centroid": {
+      "lat": 54.0838167,
+      "lng": -0.795554
+    }
+  },
+  {
+    "id": "kirby-grindalythe",
+    "name": "Kirby Grindalythe",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "kirby-grindalythe"
+    ],
+    "centroid": {
+      "lat": 54.095086,
+      "lng": -0.6174454
+    }
+  },
+  {
+    "id": "kirkham",
+    "name": "Kirkham",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "kirkham"
+    ],
+    "centroid": {
+      "lat": 54.0835368,
+      "lng": -0.8732582
+    }
+  },
+  {
+    "id": "langton",
+    "name": "Langton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "langton"
+    ],
+    "centroid": {
+      "lat": 54.1004046,
+      "lng": -0.7664998
+    }
+  },
+  {
+    "id": "leavening",
+    "name": "Leavening",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "leavening"
+    ],
+    "centroid": {
+      "lat": 54.0571201,
+      "lng": -0.8015351
+    }
+  },
+  {
+    "id": "leppington",
+    "name": "Leppington",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "leppington"
+    ],
+    "centroid": {
+      "lat": 54.0412296,
+      "lng": -0.835554
+    }
+  },
+  {
+    "id": "low-dalby",
+    "name": "Low Dalby",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "low-dalby"
+    ],
+    "centroid": {
+      "lat": 54.2748522,
+      "lng": -0.6867448
+    }
+  },
+  {
+    "id": "low-hutton",
+    "name": "Low Hutton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "low-hutton-huttons-ambo"
+    ],
+    "centroid": {
+      "lat": 54.0993633,
+      "lng": -0.8357586
+    }
+  },
+  {
+    "id": "menethorpe",
+    "name": "Menethorpe",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "menethorpe"
+    ],
+    "centroid": {
+      "lat": 54.0993781,
+      "lng": -0.8261532
+    }
+  },
+  {
+    "id": "north-grimston",
+    "name": "North Grimston",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "north-grimston"
+    ],
+    "centroid": {
+      "lat": 54.0980053,
+      "lng": -0.7118422
+    }
+  },
+  {
+    "id": "potter-brompton",
+    "name": "Potter Brompton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "potter-brompton"
+    ],
+    "centroid": {
+      "lat": 54.1793901,
+      "lng": -0.5011217
+    }
+  },
+  {
+    "id": "sand-hutton",
+    "name": "Sand Hutton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "sand-hutton"
+    ],
+    "centroid": {
+      "lat": 54.0177625,
+      "lng": -0.9383244
+    }
+  },
+  {
+    "id": "scagglethorpe",
+    "name": "Scagglethorpe",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "scagglethorpe"
+    ],
+    "centroid": {
+      "lat": 54.1424706,
+      "lng": -0.7230729
+    }
+  },
+  {
+    "id": "scampston",
+    "name": "Scampston",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "scampston"
+    ],
+    "centroid": {
+      "lat": 54.1764072,
+      "lng": -0.6673669
+    }
+  },
+  {
+    "id": "scrayingham",
+    "name": "Scrayingham",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "scrayingham"
+    ],
+    "centroid": {
+      "lat": 54.0356977,
+      "lng": -0.8604976
+    }
+  },
+  {
+    "id": "settrington",
+    "name": "Settrington",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "settrington"
+    ],
+    "centroid": {
+      "lat": 54.1255714,
+      "lng": -0.72532
+    }
+  },
+  {
+    "id": "staxton",
+    "name": "Staxton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "staxton-east",
+      "staxton-west"
+    ],
+    "centroid": {
+      "lat": 54.1977551,
+      "lng": -0.4441521
+    }
+  },
+  {
+    "id": "thixendale",
+    "name": "Thixendale",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "thixendale"
+    ],
+    "centroid": {
+      "lat": 54.039068,
+      "lng": -0.7157989
+    }
+  },
+  {
+    "id": "thorpe-bassett",
+    "name": "Thorpe Bassett",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "thorpe-bassett"
+    ],
+    "centroid": {
+      "lat": 54.1391909,
+      "lng": -0.6834612
+    }
+  },
+  {
+    "id": "upper-helmsley",
+    "name": "Upper Helmsley",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "upper-helmsley"
+    ],
+    "centroid": {
+      "lat": 54.0038052,
+      "lng": -0.9412526
+    }
+  },
+  {
+    "id": "warthill",
+    "name": "Warthill",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "warthill"
+    ],
+    "centroid": {
+      "lat": 53.9905558,
+      "lng": -0.9719958
+    }
+  },
+  {
+    "id": "weaverthorpe",
+    "name": "Weaverthorpe",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "weaverthorpe"
+    ],
+    "centroid": {
+      "lat": 54.1193864,
+      "lng": -0.5118096
+    }
+  },
+  {
+    "id": "west-heslerton",
+    "name": "West Heslerton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "west-heslerton"
+    ],
+    "centroid": {
+      "lat": 54.1711188,
+      "lng": -0.6067543
+    }
+  },
+  {
+    "id": "west-knapton",
+    "name": "West Knapton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "west-knapton"
+    ],
+    "centroid": {
+      "lat": 54.1684791,
+      "lng": -0.6586194
+    }
+  },
+  {
+    "id": "west-lutton",
+    "name": "West Lutton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "west-lutton"
+    ],
+    "centroid": {
+      "lat": 54.1098314,
+      "lng": -0.5777058
+    }
+  },
+  {
+    "id": "wharram-le-street",
+    "name": "Wharram-le-Street",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "wharram-le-street"
+    ],
+    "centroid": {
+      "lat": 54.0828719,
+      "lng": -0.6797649
+    }
+  },
+  {
+    "id": "westow",
+    "name": "Westow",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "westow"
+    ],
+    "centroid": {
+      "lat": 54.0776537,
+      "lng": -0.8476091
+    }
+  },
+  {
+    "id": "wilton",
+    "name": "Wilton",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "wilton"
+    ],
+    "centroid": {
+      "lat": 54.2335645,
+      "lng": -0.6795653
+    }
+  },
+  {
+    "id": "wintringham",
+    "name": "Wintringham",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "wintringham"
+    ],
+    "centroid": {
+      "lat": 54.1391976,
+      "lng": -0.6278515
+    }
+  },
+  {
+    "id": "yedingham",
+    "name": "Yedingham",
+    "district": "Ryedale (East)",
+    "sheet_ids": [
+      "yedingham"
+    ],
+    "centroid": {
+      "lat": 54.2028936,
+      "lng": -0.6318708
+    }
+  },
+  {
+    "id": "aislaby",
+    "name": "Aislaby",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "aislaby"
+    ],
+    "centroid": {
+      "lat": 54.4652143,
+      "lng": -0.6816616
+    }
+  },
+  {
+    "id": "amotherby",
+    "name": "Amotherby",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "amotherby"
+    ],
+    "centroid": {
+      "lat": 54.1549477,
+      "lng": -0.8550007
+    }
+  },
+  {
+    "id": "ampleforth",
+    "name": "Ampleforth",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "ampleforth-east",
+      "ampleforth-south",
+      "ampleforth-west"
+    ],
+    "centroid": {
+      "lat": 54.2010438,
+      "lng": -1.1071261
+    }
+  },
+  {
+    "id": "ampleforth-college",
+    "name": "Ampleforth College",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "ampleforth-college"
+    ],
+    "centroid": {
+      "lat": 54.196653,
+      "lng": -1.0829799
+    }
+  },
+  {
+    "id": "appleton-le-moors",
+    "name": "Appleton-le-Moors",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "appleton-le-moors"
+    ],
+    "centroid": {
+      "lat": 54.2793985,
+      "lng": -0.8773924
+    }
+  },
+  {
+    "id": "appleton-le-street",
+    "name": "Appleton-le-Street",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "appleton-le-street"
+    ],
+    "centroid": {
+      "lat": 54.1521552,
+      "lng": -0.8733571
+    }
+  },
+  {
+    "id": "barton-le-street",
+    "name": "Barton-le-Street",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "barton-le-street"
+    ],
+    "centroid": {
+      "lat": 54.1592277,
+      "lng": -0.8970414
+    }
+  },
+  {
+    "id": "beadlam",
+    "name": "Beadlam",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "beadlam"
+    ],
+    "centroid": {
+      "lat": 54.2779158,
+      "lng": -1.0210766
+    }
+  },
+  {
+    "id": "bell-end",
+    "name": "Bell End",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "bell-end"
+    ],
+    "centroid": {
+      "lat": 54.3631235,
+      "lng": -0.8999034
+    }
+  },
+  {
+    "id": "brawby",
+    "name": "Brawby",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "brawby"
+    ],
+    "centroid": {
+      "lat": 54.1934567,
+      "lng": -0.8705709
+    }
+  },
+  {
+    "id": "broughton",
+    "name": "Broughton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "broughton"
+    ],
+    "centroid": {
+      "lat": 53.9609703,
+      "lng": -2.0952045
+    }
+  },
+  {
+    "id": "bulmer",
+    "name": "Bulmer",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "bulmer"
+    ],
+    "centroid": {
+      "lat": 54.1014339,
+      "lng": -0.9277472
+    }
+  },
+  {
+    "id": "butterwick-ryedale-west",
+    "name": "Butterwick",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "butterwick-ryedale-west"
+    ],
+    "centroid": {
+      "lat": 54.1284098,
+      "lng": -0.4866446
+    }
+  },
+  {
+    "id": "byland-abbey",
+    "name": "Byland Abbey",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "byland-abbey"
+    ],
+    "centroid": {
+      "lat": 54.2031873,
+      "lng": -1.1589774
+    }
+  },
+  {
+    "id": "carlton-ryedale-west",
+    "name": "Carlton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "carlton-ryedale-west"
+    ],
+    "centroid": {
+      "lat": 53.7147183,
+      "lng": -1.0174965
+    }
+  },
+  {
+    "id": "cawton",
+    "name": "Cawton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "cawton"
+    ],
+    "centroid": {
+      "lat": 54.1824846,
+      "lng": -1.0180488
+    }
+  },
+  {
+    "id": "church-houses",
+    "name": "Church Houses",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "church-houses"
+    ],
+    "centroid": {
+      "lat": 54.3687713,
+      "lng": -0.9707152
+    }
+  },
+  {
+    "id": "cold-kirby",
+    "name": "Cold Kirby",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "cold-kirby"
+    ],
+    "centroid": {
+      "lat": 54.25392,
+      "lng": -1.184171
+    }
+  },
+  {
+    "id": "coneysthorpe",
+    "name": "Coneysthorpe",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "coneysthorpe"
+    ],
+    "centroid": {
+      "lat": 54.1335684,
+      "lng": -0.9115898
+    }
+  },
+  {
+    "id": "coulton",
+    "name": "Coulton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "coulton"
+    ],
+    "centroid": {
+      "lat": 54.15889,
+      "lng": -1.0275399
+    }
+  },
+  {
+    "id": "cropton",
+    "name": "Cropton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "cropton"
+    ],
+    "centroid": {
+      "lat": 54.3054229,
+      "lng": -0.8256253
+    }
+  },
+  {
+    "id": "fadmoor",
+    "name": "Fadmoor",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "fadmoor"
+    ],
+    "centroid": {
+      "lat": 54.2954575,
+      "lng": -0.9640192
+    }
+  },
+  {
+    "id": "flaxton",
+    "name": "Flaxton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "flaxton"
+    ],
+    "centroid": {
+      "lat": 54.0522406,
+      "lng": -0.9631987
+    }
+  },
+  {
+    "id": "foston",
+    "name": "Foston",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "foston"
+    ],
+    "centroid": {
+      "lat": 54.0784657,
+      "lng": -0.9380983
+    }
+  },
+  {
+    "id": "fryton",
+    "name": "Fryton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "fryton"
+    ],
+    "centroid": {
+      "lat": 54.1664887,
+      "lng": -0.9479984
+    }
+  },
+  {
+    "id": "ganthorpe",
+    "name": "Ganthorpe",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "ganthorpe"
+    ],
+    "centroid": {
+      "lat": 54.124522,
+      "lng": -0.9473141
+    }
+  },
+  {
+    "id": "gillamoor",
+    "name": "Gillamoor",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "gillamoor"
+    ],
+    "centroid": {
+      "lat": 54.3049601,
+      "lng": -0.9554037
+    }
+  },
+  {
+    "id": "gilling-east",
+    "name": "Gilling East",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "gilling-east"
+    ],
+    "centroid": {
+      "lat": 54.1853162,
+      "lng": -1.0591295
+    }
+  },
+  {
+    "id": "great-barugh",
+    "name": "Great Barugh",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "great-barugh"
+    ],
+    "centroid": {
+      "lat": 54.2017483,
+      "lng": -0.8547966
+    }
+  },
+  {
+    "id": "great-edstone",
+    "name": "Great Edstone",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "great-edstone"
+    ],
+    "centroid": {
+      "lat": 54.2472869,
+      "lng": -0.9170365
+    }
+  },
+  {
+    "id": "great-habton",
+    "name": "Great Habton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "great-habton"
+    ],
+    "centroid": {
+      "lat": 54.1768734,
+      "lng": -0.8397638
+    }
+  },
+  {
+    "id": "harome",
+    "name": "Harome",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "harome"
+    ],
+    "centroid": {
+      "lat": 54.2292531,
+      "lng": -1.0087048
+    }
+  },
+  {
+    "id": "hawnby",
+    "name": "Hawnby",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "hawnby"
+    ],
+    "centroid": {
+      "lat": 54.3010375,
+      "lng": -1.1675173
+    }
+  },
+  {
+    "id": "hovingham",
+    "name": "Hovingham",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "hovingham"
+    ],
+    "centroid": {
+      "lat": 54.1721036,
+      "lng": -0.9793277
+    }
+  },
+  {
+    "id": "hutton-le-hole",
+    "name": "Hutton-le-Hole",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "hutton-le-hole"
+    ],
+    "centroid": {
+      "lat": 54.3005955,
+      "lng": -0.9184121
+    }
+  },
+  {
+    "id": "keldholme",
+    "name": "Keldholme",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "keldholme"
+    ],
+    "centroid": {
+      "lat": 54.2660508,
+      "lng": -0.9128134
+    }
+  },
+  {
+    "id": "lastingham",
+    "name": "Lastingham",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "lastingham"
+    ],
+    "centroid": {
+      "lat": 54.3171226,
+      "lng": -0.8688081
+    }
+  },
+  {
+    "id": "levisham",
+    "name": "Levisham",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "levisham"
+    ],
+    "centroid": {
+      "lat": 54.3154161,
+      "lng": -0.7318452
+    }
+  },
+  {
+    "id": "little-barugh",
+    "name": "Little Barugh",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "little-barugh"
+    ],
+    "centroid": {
+      "lat": 54.2078434,
+      "lng": -0.8347148
+    }
+  },
+  {
+    "id": "little-habton",
+    "name": "Little Habton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "little-habton"
+    ],
+    "centroid": {
+      "lat": 54.1856647,
+      "lng": -0.8610486
+    }
+  },
+  {
+    "id": "lockton",
+    "name": "Lockton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "lockton"
+    ],
+    "centroid": {
+      "lat": 54.3147185,
+      "lng": -0.6838196
+    }
+  },
+  {
+    "id": "low-mill",
+    "name": "Low Mill",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "low-mill"
+    ],
+    "centroid": {
+      "lat": 54.3478411,
+      "lng": -0.9664377
+    }
+  },
+  {
+    "id": "marton-ryedale-west",
+    "name": "Marton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "marton-ryedale-west"
+    ],
+    "centroid": {
+      "lat": 54.2391536,
+      "lng": -0.8764564
+    }
+  },
+  {
+    "id": "nawton",
+    "name": "Nawton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "nawton-north",
+      "nawton-south"
+    ],
+    "centroid": {
+      "lat": 54.2805357,
+      "lng": -1.0106469
+    }
+  },
+  {
+    "id": "newton-on-rawcliffe",
+    "name": "Newton-on-Rawcliffe",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "newton-on-rawcliffe"
+    ],
+    "centroid": {
+      "lat": 54.3039301,
+      "lng": -0.7533471
+    }
+  },
+  {
+    "id": "normanby",
+    "name": "Normanby",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "normanby"
+    ],
+    "centroid": {
+      "lat": 54.22912,
+      "lng": -0.8575634
+    }
+  },
+  {
+    "id": "nunnington",
+    "name": "Nunnington",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "nunnington"
+    ],
+    "centroid": {
+      "lat": 54.2053652,
+      "lng": -0.9785318
+    }
+  },
+  {
+    "id": "old-byland",
+    "name": "Old Byland",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "old-byland"
+    ],
+    "centroid": {
+      "lat": 54.2661829,
+      "lng": -1.1569605
+    }
+  },
+  {
+    "id": "oldstead",
+    "name": "Oldstead",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "oldstead"
+    ],
+    "centroid": {
+      "lat": 54.2219567,
+      "lng": -1.1819355
+    }
+  },
+  {
+    "id": "oswaldkirk",
+    "name": "Oswaldkirk",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "oswaldkirk"
+    ],
+    "centroid": {
+      "lat": 54.2034826,
+      "lng": -1.0461289
+    }
+  },
+  {
+    "id": "pockley",
+    "name": "Pockley",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "pockley"
+    ],
+    "centroid": {
+      "lat": 54.2671278,
+      "lng": -1.0228174
+    }
+  },
+  {
+    "id": "rievaulx",
+    "name": "Rievaulx",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "rievaulx"
+    ],
+    "centroid": {
+      "lat": 54.2586584,
+      "lng": -1.1166881
+    }
+  },
+  {
+    "id": "rosedale-abbey",
+    "name": "Rosedale Abbey",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "rosedale-abbey"
+    ],
+    "centroid": {
+      "lat": 54.3539824,
+      "lng": -0.8876091
+    }
+  },
+  {
+    "id": "rosedale-east",
+    "name": "Rosedale East",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "rosedale-east"
+    ],
+    "centroid": {
+      "lat": 54.3689338,
+      "lng": -0.9072529
+    }
+  },
+  {
+    "id": "ryton",
+    "name": "Ryton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "ryton"
+    ],
+    "centroid": {
+      "lat": 54.1704091,
+      "lng": -0.7845532
+    }
+  },
+  {
+    "id": "salton",
+    "name": "Salton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "salton"
+    ],
+    "centroid": {
+      "lat": 54.2117365,
+      "lng": -0.9029673
+    }
+  },
+  {
+    "id": "scackleton",
+    "name": "Scackleton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "scackleton"
+    ],
+    "centroid": {
+      "lat": 54.1484806,
+      "lng": -1.0185802
+    }
+  },
+  {
+    "id": "scawton",
+    "name": "Scawton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "scawton"
+    ],
+    "centroid": {
+      "lat": 54.2448006,
+      "lng": -1.1594986
+    }
+  },
+  {
+    "id": "sheriff-hutton",
+    "name": "Sheriff Hutton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "sheriff-hutton-northeast",
+      "sheriff-hutton-northwest",
+      "sheriff-hutton-southeast",
+      "sheriff-hutton-southwest"
+    ],
+    "centroid": {
+      "lat": 54.0872971,
+      "lng": -1.003085
+    }
+  },
+  {
+    "id": "sinnington",
+    "name": "Sinnington",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "sinnington"
+    ],
+    "centroid": {
+      "lat": 54.2585019,
+      "lng": -0.87247
+    }
+  },
+  {
+    "id": "slingsby",
+    "name": "Slingsby",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "slingsby-north",
+      "slingsby-south"
+    ],
+    "centroid": {
+      "lat": 54.1650022,
+      "lng": -0.9320706
+    }
+  },
+  {
+    "id": "south-holme",
+    "name": "South Holme",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "south-holme"
+    ],
+    "centroid": {
+      "lat": 54.1891528,
+      "lng": -0.9268007
+    }
+  },
+  {
+    "id": "spaunton",
+    "name": "Spaunton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "spaunton"
+    ],
+    "centroid": {
+      "lat": 54.2993519,
+      "lng": -0.8904092
+    }
+  },
+  {
+    "id": "sproxton",
+    "name": "Sproxton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "sproxton"
+    ],
+    "centroid": {
+      "lat": 54.226145,
+      "lng": -1.0584327
+    }
+  },
+  {
+    "id": "stape",
+    "name": "Stape",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "stape"
+    ],
+    "centroid": {
+      "lat": 54.3282705,
+      "lng": -0.7811343
+    }
+  },
+  {
+    "id": "stonegrave",
+    "name": "Stonegrave",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "stonegrave"
+    ],
+    "centroid": {
+      "lat": 54.191768,
+      "lng": -0.9941986
+    }
+  },
+  {
+    "id": "swinton-ryedale-west",
+    "name": "Swinton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "swinton-ryedale-west"
+    ],
+    "centroid": {
+      "lat": 54.1493314,
+      "lng": -0.8393934
+    }
+  },
+  {
+    "id": "terrington",
+    "name": "Terrington",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "terrington-north",
+      "terrington-south"
+    ],
+    "centroid": {
+      "lat": 54.1277992,
+      "lng": -0.9749245
+    }
+  },
+  {
+    "id": "thorgill",
+    "name": "Thorgill",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "thorgill"
+    ],
+    "centroid": {
+      "lat": 54.3582317,
+      "lng": -0.9105703
+    }
+  },
+  {
+    "id": "thornton-le-clay",
+    "name": "Thornton-le-Clay",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "thornton-le-clay"
+    ],
+    "centroid": {
+      "lat": 54.0721297,
+      "lng": -0.9651347
+    }
+  },
+  {
+    "id": "wass",
+    "name": "Wass",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "wass"
+    ],
+    "centroid": {
+      "lat": 54.2068369,
+      "lng": -1.1508628
+    }
+  },
+  {
+    "id": "welburn",
+    "name": "Welburn",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "welburn-near-kirbymoorside",
+      "welburn-near-malton"
+    ],
+    "centroid": {
+      "lat": 54.1027349,
+      "lng": -0.8981075
+    }
+  },
+  {
+    "id": "west-lilling",
+    "name": "West Lilling",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "west-lilling"
+    ],
+    "centroid": {
+      "lat": 54.0776875,
+      "lng": -1.0112188
+    }
+  },
+  {
+    "id": "west-ness",
+    "name": "West Ness",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "west-ness"
+    ],
+    "centroid": {
+      "lat": 54.2039879,
+      "lng": -0.9435573
+    }
+  },
+  {
+    "id": "whitwell-on-the-hill",
+    "name": "Whitwell-on-the-Hill",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "whitwell-on-the-hill"
+    ],
+    "centroid": {
+      "lat": 54.0839961,
+      "lng": -0.8966183
+    }
+  },
+  {
+    "id": "wombleton",
+    "name": "Wombleton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "wombleton"
+    ],
+    "centroid": {
+      "lat": 54.2468436,
+      "lng": -0.9745006
+    }
+  },
+  {
+    "id": "wrelton",
+    "name": "Wrelton",
+    "district": "Ryedale (West)",
+    "sheet_ids": [
+      "wrelton"
+    ],
+    "centroid": {
+      "lat": 54.2636249,
+      "lng": -0.8292351
+    }
+  },
+  {
+    "id": "ainthorpe",
+    "name": "Ainthorpe",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "ainthorpe"
+    ],
+    "centroid": {
+      "lat": 54.4620884,
+      "lng": -0.9173592
+    }
+  },
+  {
+    "id": "beck-hole",
+    "name": "Beck Hole",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "beck-hole"
+    ],
+    "centroid": {
+      "lat": 54.4093608,
+      "lng": -0.7366481
+    }
+  },
+  {
+    "id": "borrowby-scarborough",
+    "name": "Borrowby",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "borrowby-scarborough"
+    ],
+    "centroid": {
+      "lat": 54.2975299,
+      "lng": -1.3438938
+    }
+  },
+  {
+    "id": "botton",
+    "name": "Botton",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "botton-danby-botton"
+    ],
+    "centroid": {
+      "lat": 54.4275049,
+      "lng": -0.9288366
+    }
+  },
+  {
+    "id": "brompton-by-sawdon",
+    "name": "Brompton-by-Sawdon",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "brompton-by-sawdon-east",
+      "brompton-by-sawdon-north",
+      "brompton-by-sawdon-south"
+    ],
+    "centroid": {
+      "lat": 54.2264904,
+      "lng": -0.5513822
+    }
+  },
+  {
+    "id": "broxa",
+    "name": "Broxa",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "broxa"
+    ],
+    "centroid": {
+      "lat": 54.3103994,
+      "lng": -0.548897
+    }
+  },
+  {
+    "id": "carr-end",
+    "name": "Carr End",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "carr-end"
+    ],
+    "centroid": {
+      "lat": 54.436523,
+      "lng": -0.79816
+    }
+  },
+  {
+    "id": "castleton",
+    "name": "Castleton",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "castleton"
+    ],
+    "centroid": {
+      "lat": 54.4634401,
+      "lng": -0.9403183
+    }
+  },
+  {
+    "id": "cloughton-newlands",
+    "name": "Cloughton Newlands",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "cloughton-newlands"
+    ],
+    "centroid": {
+      "lat": 54.349381,
+      "lng": -0.4449656
+    }
+  },
+  {
+    "id": "commondale",
+    "name": "Commondale",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "commondale"
+    ],
+    "centroid": {
+      "lat": 54.4814367,
+      "lng": -0.991297
+    }
+  },
+  {
+    "id": "dalehouse",
+    "name": "Dalehouse",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "dalehouse"
+    ],
+    "centroid": {
+      "lat": 54.5505188,
+      "lng": -0.8008985
+    }
+  },
+  {
+    "id": "danby",
+    "name": "Danby",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "danby"
+    ],
+    "centroid": {
+      "lat": 54.4484449,
+      "lng": -0.9034852
+    }
+  },
+  {
+    "id": "dunsley",
+    "name": "Dunsley",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "dunsley"
+    ],
+    "centroid": {
+      "lat": 54.4886171,
+      "lng": -0.677605
+    }
+  },
+  {
+    "id": "east-ayton",
+    "name": "East Ayton",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "east-ayton-east",
+      "east-ayton-west"
+    ],
+    "centroid": {
+      "lat": 54.2476337,
+      "lng": -0.4733146
+    }
+  },
+  {
+    "id": "east-barnby",
+    "name": "East Barnby",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "east-barnby"
+    ],
+    "centroid": {
+      "lat": 54.5021656,
+      "lng": -0.7241282
+    }
+  },
+  {
+    "id": "east-row",
+    "name": "East Row",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "east-row"
+    ],
+    "centroid": {
+      "lat": 54.5009115,
+      "lng": -0.6693263
+    }
+  },
+  {
+    "id": "ebberston",
+    "name": "Ebberston",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "ebberston-north",
+      "ebberston-south"
+    ],
+    "centroid": {
+      "lat": 54.2327163,
+      "lng": -0.6233988
+    }
+  },
+  {
+    "id": "egton",
+    "name": "Egton",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "egton"
+    ],
+    "centroid": {
+      "lat": 54.4175536,
+      "lng": -0.7739838
+    }
+  },
+  {
+    "id": "egton-bridge",
+    "name": "Egton Bridge",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "egton-bridge"
+    ],
+    "centroid": {
+      "lat": 54.4368901,
+      "lng": -0.7611446
+    }
+  },
+  {
+    "id": "ellerby",
+    "name": "Ellerby",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "ellerby"
+    ],
+    "centroid": {
+      "lat": 54.5200851,
+      "lng": -0.767382
+    }
+  },
+  {
+    "id": "esk-valley",
+    "name": "Esk Valley",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "esk-valley"
+    ],
+    "centroid": {
+      "lat": 54.4589968,
+      "lng": -0.8359253
+    }
+  },
+  {
+    "id": "flixton",
+    "name": "Flixton",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "flixton"
+    ],
+    "centroid": {
+      "lat": 54.2024475,
+      "lng": -0.4022141
+    }
+  },
+  {
+    "id": "folkton",
+    "name": "Folkton",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "folkton"
+    ],
+    "centroid": {
+      "lat": 54.2028182,
+      "lng": -0.383751
+    }
+  },
+  {
+    "id": "fowthorpe-closes",
+    "name": "Fowthorpe Closes",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "fowthorpe-closes"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "fylingthorpe",
+    "name": "Fylingthorpe",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "fylingthorpe-north",
+      "fylingthorpe-south"
+    ],
+    "centroid": {
+      "lat": 54.4312015,
+      "lng": -0.5481303
+    }
+  },
+  {
+    "id": "glaisdale",
+    "name": "Glaisdale",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "glaisdale-north",
+      "glaisdale-south"
+    ],
+    "centroid": {
+      "lat": 54.4408076,
+      "lng": -0.8077982
+    }
+  },
+  {
+    "id": "golden-grove",
+    "name": "Golden Grove",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "golden-grove"
+    ],
+    "centroid": {
+      "lat": 54.4679023,
+      "lng": -0.6169858
+    }
+  },
+  {
+    "id": "goldsborough-scarborough",
+    "name": "Goldsborough",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "goldsborough-scarborough"
+    ],
+    "centroid": {
+      "lat": 54.0001434,
+      "lng": -1.4195503
+    }
+  },
+  {
+    "id": "gristhorpe",
+    "name": "Gristhorpe",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "gristhorpe"
+    ],
+    "centroid": {
+      "lat": 54.2219216,
+      "lng": -0.3358722
+    }
+  },
+  {
+    "id": "grosmont",
+    "name": "Grosmont",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "grosmont"
+    ],
+    "centroid": {
+      "lat": 54.4359097,
+      "lng": -0.7245145
+    }
+  },
+  {
+    "id": "hackness",
+    "name": "Hackness",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "hackness"
+    ],
+    "centroid": {
+      "lat": 54.2966438,
+      "lng": -0.5167311
+    }
+  },
+  {
+    "id": "harwood-dale",
+    "name": "Harwood Dale",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "harwood-dale"
+    ],
+    "centroid": {
+      "lat": 54.349132,
+      "lng": -0.5184811
+    }
+  },
+  {
+    "id": "high-hawsker",
+    "name": "High Hawsker",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "high-hawsker"
+    ],
+    "centroid": {
+      "lat": 54.4549903,
+      "lng": -0.5711149
+    }
+  },
+  {
+    "id": "houlsyke",
+    "name": "Houlsyke",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "houlsyke"
+    ],
+    "centroid": {
+      "lat": 54.461511,
+      "lng": -0.8650924
+    }
+  },
+  {
+    "id": "hunmanby-moor",
+    "name": "Hunmanby Moor",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "hunmanby-moor"
+    ],
+    "centroid": {
+      "lat": 54.1768061,
+      "lng": -0.2828284
+    }
+  },
+  {
+    "id": "hunmanby-sands",
+    "name": "Hunmanby Sands",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "hunmanby-sands"
+    ],
+    "centroid": {
+      "lat": 54.1861061,
+      "lng": -0.2746654
+    }
+  },
+  {
+    "id": "hutton-buscel",
+    "name": "Hutton Buscel",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "hutton-buscel"
+    ],
+    "centroid": {
+      "lat": 54.248302,
+      "lng": -0.5072749
+    }
+  },
+  {
+    "id": "hutton-mulgrave",
+    "name": "Hutton Mulgrave",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "hutton-mulgrave"
+    ],
+    "centroid": {
+      "lat": 54.480133,
+      "lng": -0.7110881
+    }
+  },
+  {
+    "id": "irton",
+    "name": "Irton",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "irton"
+    ],
+    "centroid": {
+      "lat": 54.2492474,
+      "lng": -0.4533915
+    }
+  },
+  {
+    "id": "kettleness",
+    "name": "Kettleness",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "kettleness"
+    ],
+    "centroid": {
+      "lat": 54.5291571,
+      "lng": -0.7175133
+    }
+  },
+  {
+    "id": "key-green",
+    "name": "Key Green",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "key-green"
+    ],
+    "centroid": {
+      "lat": 54.4307423,
+      "lng": -0.7627335
+    }
+  },
+  {
+    "id": "langdale-end",
+    "name": "Langdale End",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "langdale-end"
+    ],
+    "centroid": {
+      "lat": 54.3085308,
+      "lng": -0.5580228
+    }
+  },
+  {
+    "id": "lealholm",
+    "name": "Lealholm",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "lealholm"
+    ],
+    "centroid": {
+      "lat": 54.4604593,
+      "lng": -0.8255112
+    }
+  },
+  {
+    "id": "lealholmside",
+    "name": "Lealholmside",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "lealholmside"
+    ],
+    "centroid": {
+      "lat": 54.4623396,
+      "lng": -0.8190604
+    }
+  },
+  {
+    "id": "lebberston",
+    "name": "Lebberston",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "lebberston"
+    ],
+    "centroid": {
+      "lat": 54.22663,
+      "lng": -0.348291
+    }
+  },
+  {
+    "id": "long-lease",
+    "name": "Long Lease",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "long-lease"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "low-hawsker",
+    "name": "Low Hawsker",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "low-hawsker"
+    ],
+    "centroid": {
+      "lat": 54.4550482,
+      "lng": -0.5780759
+    }
+  },
+  {
+    "id": "lythe",
+    "name": "Lythe",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "lythe"
+    ],
+    "centroid": {
+      "lat": 54.5057966,
+      "lng": -0.6941357
+    }
+  },
+  {
+    "id": "mickleby",
+    "name": "Mickleby",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "mickleby"
+    ],
+    "centroid": {
+      "lat": 54.5057283,
+      "lng": -0.7621679
+    }
+  },
+  {
+    "id": "muston",
+    "name": "Muston",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "muston"
+    ],
+    "centroid": {
+      "lat": 54.2006148,
+      "lng": -0.3230914
+    }
+  },
+  {
+    "id": "newholm",
+    "name": "Newholm",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "newholm"
+    ],
+    "centroid": {
+      "lat": 54.4830069,
+      "lng": -0.6634832
+    }
+  },
+  {
+    "id": "newton-mulgrave",
+    "name": "Newton Mulgrave",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "newton-mulgrave"
+    ],
+    "centroid": {
+      "lat": 54.5289766,
+      "lng": -0.7832506
+    }
+  },
+  {
+    "id": "primrose-valley",
+    "name": "Primrose Valley",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "primrose-valley"
+    ],
+    "centroid": {
+      "lat": 54.1930885,
+      "lng": -0.2858356
+    }
+  },
+  {
+    "id": "ravenscar",
+    "name": "Ravenscar",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "ravenscar"
+    ],
+    "centroid": {
+      "lat": 54.3975847,
+      "lng": -0.4930728
+    }
+  },
+  {
+    "id": "raw",
+    "name": "Raw",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "raw"
+    ],
+    "centroid": {
+      "lat": 54.4365792,
+      "lng": -0.5591641
+    }
+  },
+  {
+    "id": "reighton",
+    "name": "Reighton",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "reighton"
+    ],
+    "centroid": {
+      "lat": 54.1550789,
+      "lng": -0.2511662
+    }
+  },
+  {
+    "id": "robin-hood-s-bay",
+    "name": "Robin Hood's Bay",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "robin-hood-s-bay-east",
+      "robin-hood-s-bay-south",
+      "robin-hood-s-bay-west"
+    ],
+    "centroid": {
+      "lat": 54.433222,
+      "lng": -0.5344748
+    }
+  },
+  {
+    "id": "roxby",
+    "name": "Roxby",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "roxby"
+    ],
+    "centroid": {
+      "lat": 54.5190931,
+      "lng": -0.8351639
+    }
+  },
+  {
+    "id": "royal-oak",
+    "name": "Royal Oak",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "royal-oak"
+    ],
+    "centroid": {
+      "lat": 54.1906115,
+      "lng": -0.2996636
+    }
+  },
+  {
+    "id": "ruston",
+    "name": "Ruston",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "ruston"
+    ],
+    "centroid": {
+      "lat": 54.2344048,
+      "lng": -0.5315468
+    }
+  },
+  {
+    "id": "sandsend",
+    "name": "Sandsend",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "sandsend"
+    ],
+    "centroid": {
+      "lat": 54.5026287,
+      "lng": -0.6706598
+    }
+  },
+  {
+    "id": "sawdon",
+    "name": "Sawdon",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "sawdon"
+    ],
+    "centroid": {
+      "lat": 54.2510482,
+      "lng": -0.5540227
+    }
+  },
+  {
+    "id": "silpho",
+    "name": "Silpho",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "silpho"
+    ],
+    "centroid": {
+      "lat": 54.3156741,
+      "lng": -0.5179558
+    }
+  },
+  {
+    "id": "snainton",
+    "name": "Snainton",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "snainton-east",
+      "snainton-north",
+      "snainton-west"
+    ],
+    "centroid": {
+      "lat": 54.2383528,
+      "lng": -0.5831556
+    }
+  },
+  {
+    "id": "sneaton",
+    "name": "Sneaton",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "sneaton"
+    ],
+    "centroid": {
+      "lat": 54.4252085,
+      "lng": -0.6167024
+    }
+  },
+  {
+    "id": "sneatonthorpe",
+    "name": "Sneatonthorpe",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "sneatonthorpe"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "speeton",
+    "name": "Speeton",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "speeton"
+    ],
+    "centroid": {
+      "lat": 54.1543459,
+      "lng": -0.2395664
+    }
+  },
+  {
+    "id": "stainsacre",
+    "name": "Stainsacre",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "stainsacre"
+    ],
+    "centroid": {
+      "lat": 54.4625007,
+      "lng": -0.5921864
+    }
+  },
+  {
+    "id": "staintondale",
+    "name": "Staintondale",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "staintondale"
+    ],
+    "centroid": {
+      "lat": 54.3719113,
+      "lng": -0.4776725
+    }
+  },
+  {
+    "id": "stonegate",
+    "name": "Stonegate",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "stonegate"
+    ],
+    "centroid": {
+      "lat": 54.4710876,
+      "lng": -0.8042703
+    }
+  },
+  {
+    "id": "suffield",
+    "name": "Suffield",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "suffield"
+    ],
+    "centroid": {
+      "lat": 54.3022189,
+      "lng": -0.4874358
+    }
+  },
+  {
+    "id": "ugglebamby",
+    "name": "Ugglebamby",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "ugglebamby"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "ugthorpe",
+    "name": "Ugthorpe",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "ugthorpe"
+    ],
+    "centroid": {
+      "lat": 54.4894059,
+      "lng": -0.7697942
+    }
+  },
+  {
+    "id": "west-ayton",
+    "name": "West Ayton",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "west-ayton-east",
+      "west-ayton-west"
+    ],
+    "centroid": {
+      "lat": 54.2491392,
+      "lng": -0.4914543
+    }
+  },
+  {
+    "id": "west-barnby",
+    "name": "West Barnby",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "west-barnby"
+    ],
+    "centroid": {
+      "lat": 54.5017019,
+      "lng": -0.7360783
+    }
+  },
+  {
+    "id": "westerdale",
+    "name": "Westerdale",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "westerdale"
+    ],
+    "centroid": {
+      "lat": 54.4440019,
+      "lng": -0.9761782
+    }
+  },
+  {
+    "id": "wykeham",
+    "name": "Wykeham",
+    "district": "Scarborough",
+    "sheet_ids": [
+      "wykeham"
+    ],
+    "centroid": {
+      "lat": 54.2474101,
+      "lng": -0.5302997
+    }
+  },
+  {
+    "id": "acaster-selby",
+    "name": "Acaster Selby",
+    "district": "Selby",
+    "sheet_ids": [
+      "acaster-selby"
+    ],
+    "centroid": {
+      "lat": 53.8660881,
+      "lng": -1.1277294
+    }
+  },
+  {
+    "id": "bilbrough",
+    "name": "Bilbrough",
+    "district": "Selby",
+    "sheet_ids": [
+      "bilbrough"
+    ],
+    "centroid": {
+      "lat": 53.9125989,
+      "lng": -1.1924158
+    }
+  },
+  {
+    "id": "beal",
+    "name": "Beal",
+    "district": "Selby",
+    "sheet_ids": [
+      "beal"
+    ],
+    "centroid": {
+      "lat": 53.7215547,
+      "lng": -1.192029
+    }
+  },
+  {
+    "id": "biggin",
+    "name": "Biggin",
+    "district": "Selby",
+    "sheet_ids": [
+      "biggin"
+    ],
+    "centroid": {
+      "lat": 53.808064,
+      "lng": -1.1750279
+    }
+  },
+  {
+    "id": "birkin",
+    "name": "Birkin",
+    "district": "Selby",
+    "sheet_ids": [
+      "birkin"
+    ],
+    "centroid": {
+      "lat": 53.7347095,
+      "lng": -1.1965476
+    }
+  },
+  {
+    "id": "bolton-percy",
+    "name": "Bolton Percy",
+    "district": "Selby",
+    "sheet_ids": [
+      "bolton-percy"
+    ],
+    "centroid": {
+      "lat": 53.8629675,
+      "lng": -1.1924227
+    }
+  },
+  {
+    "id": "burn",
+    "name": "Burn",
+    "district": "Selby",
+    "sheet_ids": [
+      "burn"
+    ],
+    "centroid": {
+      "lat": 53.7504226,
+      "lng": -1.1002235
+    }
+  },
+  {
+    "id": "burton-salmon",
+    "name": "Burton Salmon",
+    "district": "Selby",
+    "sheet_ids": [
+      "burton-salmon"
+    ],
+    "centroid": {
+      "lat": 53.7405581,
+      "lng": -1.2568784
+    }
+  },
+  {
+    "id": "catterton",
+    "name": "Catterton",
+    "district": "Selby",
+    "sheet_ids": [
+      "catterton"
+    ],
+    "centroid": {
+      "lat": 53.9068521,
+      "lng": -1.2241693
+    }
+  },
+  {
+    "id": "chapel-haddlesey",
+    "name": "Chapel Haddlesey",
+    "district": "Selby",
+    "sheet_ids": [
+      "chapel-haddlesey"
+    ],
+    "centroid": {
+      "lat": 53.7286974,
+      "lng": -1.1210411
+    }
+  },
+  {
+    "id": "cliffe",
+    "name": "Cliffe",
+    "district": "Selby",
+    "sheet_ids": [
+      "cliffe-north",
+      "cliffe-south"
+    ],
+    "centroid": {
+      "lat": 53.7908163,
+      "lng": -0.97869
+    }
+  },
+  {
+    "id": "colton",
+    "name": "Colton",
+    "district": "Selby",
+    "sheet_ids": [
+      "colton"
+    ],
+    "centroid": {
+      "lat": 53.897499,
+      "lng": -1.1721531
+    }
+  },
+  {
+    "id": "cridling-stubbs",
+    "name": "Cridling Stubbs",
+    "district": "Selby",
+    "sheet_ids": [
+      "cridling-stubbs"
+    ],
+    "centroid": {
+      "lat": 53.6854809,
+      "lng": -1.2142934
+    }
+  },
+  {
+    "id": "drax",
+    "name": "Drax",
+    "district": "Selby",
+    "sheet_ids": [
+      "drax"
+    ],
+    "centroid": {
+      "lat": 53.7254974,
+      "lng": -0.9815376
+    }
+  },
+  {
+    "id": "escrick",
+    "name": "Escrick",
+    "district": "Selby",
+    "sheet_ids": [
+      "escrick-north",
+      "escrick-south"
+    ],
+    "centroid": {
+      "lat": 53.879321,
+      "lng": -1.0410841
+    }
+  },
+  {
+    "id": "gateforth",
+    "name": "Gateforth",
+    "district": "Selby",
+    "sheet_ids": [
+      "gateforth"
+    ],
+    "centroid": {
+      "lat": 53.7503441,
+      "lng": -1.149684
+    }
+  },
+  {
+    "id": "great-heck",
+    "name": "Great Heck",
+    "district": "Selby",
+    "sheet_ids": [
+      "great-heck"
+    ],
+    "centroid": {
+      "lat": 53.6826155,
+      "lng": -1.1127723
+    }
+  },
+  {
+    "id": "healaugh-selby",
+    "name": "Healaugh",
+    "district": "Selby",
+    "sheet_ids": [
+      "healaugh-selby"
+    ],
+    "centroid": {
+      "lat": 54.3871042,
+      "lng": -1.9750164
+    }
+  },
+  {
+    "id": "hensall",
+    "name": "Hensall",
+    "district": "Selby",
+    "sheet_ids": [
+      "hensall-east",
+      "hensall-west"
+    ],
+    "centroid": {
+      "lat": 53.703245,
+      "lng": -1.1041639
+    }
+  },
+  {
+    "id": "high-eggborough",
+    "name": "High Eggborough",
+    "district": "Selby",
+    "sheet_ids": [
+      "high-eggborough"
+    ],
+    "centroid": {
+      "lat": 53.6909338,
+      "lng": -1.1338562
+    }
+  },
+  {
+    "id": "hirst-courtney",
+    "name": "Hirst Courtney",
+    "district": "Selby",
+    "sheet_ids": [
+      "hirst-courtney"
+    ],
+    "centroid": {
+      "lat": 53.7136428,
+      "lng": -1.076452
+    }
+  },
+  {
+    "id": "kelfield",
+    "name": "Kelfield",
+    "district": "Selby",
+    "sheet_ids": [
+      "kelfield"
+    ],
+    "centroid": {
+      "lat": 53.8387608,
+      "lng": -1.0977807
+    }
+  },
+  {
+    "id": "kellington",
+    "name": "Kellington",
+    "district": "Selby",
+    "sheet_ids": [
+      "kellington-north",
+      "kellington-south"
+    ],
+    "centroid": {
+      "lat": 53.7167639,
+      "lng": -1.1651442
+    }
+  },
+  {
+    "id": "kirkby-wharfe",
+    "name": "Kirkby Wharfe",
+    "district": "Selby",
+    "sheet_ids": [
+      "kirkby-wharfe"
+    ],
+    "centroid": {
+      "lat": 53.8621704,
+      "lng": -1.2310273
+    }
+  },
+  {
+    "id": "kirk-smeaton",
+    "name": "Kirk Smeaton",
+    "district": "Selby",
+    "sheet_ids": [
+      "kirk-smeaton"
+    ],
+    "centroid": {
+      "lat": 53.6435114,
+      "lng": -1.2196118
+    }
+  },
+  {
+    "id": "little-fenton",
+    "name": "Little Fenton",
+    "district": "Selby",
+    "sheet_ids": [
+      "little-fenton"
+    ],
+    "centroid": {
+      "lat": 53.8088289,
+      "lng": -1.2115505
+    }
+  },
+  {
+    "id": "little-smeaton",
+    "name": "Little Smeaton",
+    "district": "Selby",
+    "sheet_ids": [
+      "little-smeaton"
+    ],
+    "centroid": {
+      "lat": 54.425695,
+      "lng": -1.4595745
+    }
+  },
+  {
+    "id": "long-drax",
+    "name": "Long Drax",
+    "district": "Selby",
+    "sheet_ids": [
+      "long-drax-langrick"
+    ],
+    "centroid": {
+      "lat": 53.7480183,
+      "lng": -0.968263
+    }
+  },
+  {
+    "id": "lumby",
+    "name": "Lumby",
+    "district": "Selby",
+    "sheet_ids": [
+      "lumby"
+    ],
+    "centroid": {
+      "lat": 53.7677751,
+      "lng": -1.2632964
+    }
+  },
+  {
+    "id": "lund",
+    "name": "Lund",
+    "district": "Selby",
+    "sheet_ids": [
+      "lund"
+    ],
+    "centroid": {
+      "lat": 53.7867468,
+      "lng": -1.0119256
+    }
+  },
+  {
+    "id": "newland",
+    "name": "Newland",
+    "district": "Selby",
+    "sheet_ids": [
+      "newland"
+    ],
+    "centroid": {
+      "lat": 53.7162015,
+      "lng": -0.9560297
+    }
+  },
+  {
+    "id": "newthorpe",
+    "name": "Newthorpe",
+    "district": "Selby",
+    "sheet_ids": [
+      "newthorpe"
+    ],
+    "centroid": {
+      "lat": 53.784532,
+      "lng": -1.2867026
+    }
+  },
+  {
+    "id": "newton-kyme",
+    "name": "Newton Kyme",
+    "district": "Selby",
+    "sheet_ids": [
+      "newton-kyme"
+    ],
+    "centroid": {
+      "lat": 53.8984388,
+      "lng": -1.2952849
+    }
+  },
+  {
+    "id": "osgodby",
+    "name": "Osgodby",
+    "district": "Selby",
+    "sheet_ids": [
+      "osgodby-east",
+      "osgodby-south",
+      "osgodby-west"
+    ],
+    "centroid": {
+      "lat": 54.2482625,
+      "lng": -0.3736042
+    }
+  },
+  {
+    "id": "oxton",
+    "name": "Oxton",
+    "district": "Selby",
+    "sheet_ids": [
+      "oxton"
+    ],
+    "centroid": {
+      "lat": 53.8814667,
+      "lng": -1.2349823
+    }
+  },
+  {
+    "id": "poole",
+    "name": "Poole",
+    "district": "Selby",
+    "sheet_ids": [
+      "poole"
+    ],
+    "centroid": {
+      "lat": 53.735779,
+      "lng": -1.2549885
+    }
+  },
+  {
+    "id": "ryther",
+    "name": "Ryther",
+    "district": "Selby",
+    "sheet_ids": [
+      "ryther"
+    ],
+    "centroid": {
+      "lat": 53.846726,
+      "lng": -1.1644653
+    }
+  },
+  {
+    "id": "saxton",
+    "name": "Saxton",
+    "district": "Selby",
+    "sheet_ids": [
+      "saxton"
+    ],
+    "centroid": {
+      "lat": 53.8254783,
+      "lng": -1.2770117
+    }
+  },
+  {
+    "id": "skipwith",
+    "name": "Skipwith",
+    "district": "Selby",
+    "sheet_ids": [
+      "skipwith"
+    ],
+    "centroid": {
+      "lat": 53.8386506,
+      "lng": -0.9934778
+    }
+  },
+  {
+    "id": "stillingfleet",
+    "name": "Stillingfleet",
+    "district": "Selby",
+    "sheet_ids": [
+      "stillingfleet"
+    ],
+    "centroid": {
+      "lat": 53.8675075,
+      "lng": -1.0920511
+    }
+  },
+  {
+    "id": "stubbs-walden",
+    "name": "Stubbs Walden",
+    "district": "Selby",
+    "sheet_ids": [
+      "stubbs-walden"
+    ],
+    "centroid": {
+      "lat": 53.6443195,
+      "lng": -1.1692457
+    }
+  },
+  {
+    "id": "stutton",
+    "name": "Stutton",
+    "district": "Selby",
+    "sheet_ids": [
+      "stutton"
+    ],
+    "centroid": {
+      "lat": 53.8667511,
+      "lng": -1.2724396
+    }
+  },
+  {
+    "id": "south-duffield",
+    "name": "South Duffield",
+    "district": "Selby",
+    "sheet_ids": [
+      "south-duffield"
+    ],
+    "centroid": {
+      "lat": 53.7927712,
+      "lng": -0.969051
+    }
+  },
+  {
+    "id": "temple-hirst",
+    "name": "Temple Hirst",
+    "district": "Selby",
+    "sheet_ids": [
+      "temple-hirst"
+    ],
+    "centroid": {
+      "lat": 53.7173936,
+      "lng": -1.0834287
+    }
+  },
+  {
+    "id": "thorganby",
+    "name": "Thorganby",
+    "district": "Selby",
+    "sheet_ids": [
+      "thorganby-north",
+      "thorganby-south"
+    ],
+    "centroid": {
+      "lat": 53.8673447,
+      "lng": -0.9665653
+    }
+  },
+  {
+    "id": "towton",
+    "name": "Towton",
+    "district": "Selby",
+    "sheet_ids": [
+      "towton"
+    ],
+    "centroid": {
+      "lat": 53.8492612,
+      "lng": -1.2684599
+    }
+  },
+  {
+    "id": "ulleskelf",
+    "name": "Ulleskelf",
+    "district": "Selby",
+    "sheet_ids": [
+      "ulleskelf"
+    ],
+    "centroid": {
+      "lat": 53.8541405,
+      "lng": -1.2112643
+    }
+  },
+  {
+    "id": "west-haddlesey",
+    "name": "West Haddlesey",
+    "district": "Selby",
+    "sheet_ids": [
+      "west-haddlesey-east",
+      "west-haddlesey-west"
+    ],
+    "centroid": {
+      "lat": 53.7335926,
+      "lng": -1.1468516
+    }
+  },
+  {
+    "id": "whitley",
+    "name": "Whitley",
+    "district": "Selby",
+    "sheet_ids": [
+      "whitley-north",
+      "whitley-south"
+    ],
+    "centroid": {
+      "lat": 53.6897783,
+      "lng": -1.154178
+    }
+  },
+  {
+    "id": "womersley",
+    "name": "Womersley",
+    "district": "Selby",
+    "sheet_ids": [
+      "womersley"
+    ],
+    "centroid": {
+      "lat": 53.671442,
+      "lng": -1.1881157
+    }
+  },
+  {
+    "id": "appersett",
+    "name": "Appersett",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "appersett"
+    ],
+    "centroid": {
+      "lat": 54.312013,
+      "lng": -2.2189608
+    }
+  },
+  {
+    "id": "askrigg-central",
+    "name": "Askrigg Central",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "askrigg-central"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "askrigg-lodge-yard",
+    "name": "Askrigg Lodge Yard",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "askrigg-lodge-yard"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "askrigg-north",
+    "name": "Askrigg North",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "askrigg-north"
+    ],
+    "centroid": {
+      "lat": 54.3149081,
+      "lng": -2.0811403
+    }
+  },
+  {
+    "id": "askrigg-west",
+    "name": "Askrigg West",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "askrigg-west"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "aysgarth-east",
+    "name": "Aysgarth East",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "aysgarth-east"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "aysgarth-west",
+    "name": "Aysgarth West",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "aysgarth-west"
+    ],
+    "centroid": {
+      "lat": 54.2938232,
+      "lng": -1.9820935
+    }
+  },
+  {
+    "id": "bainbridge",
+    "name": "Bainbridge",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "bainbridge-north",
+      "bainbridge-south"
+    ],
+    "centroid": {
+      "lat": 54.3075892,
+      "lng": -2.1029831
+    }
+  },
+  {
+    "id": "bellerby-east",
+    "name": "Bellerby East",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "bellerby-east"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "bellerby-west",
+    "name": "Bellerby West",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "bellerby-west"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "breconbar",
+    "name": "Breconbar",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "breconbar"
+    ],
+    "centroid": {
+      "lat": 54.3138854,
+      "lng": -2.1134794
+    }
+  },
+  {
+    "id": "burtersett",
+    "name": "Burtersett",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "burtersett"
+    ],
+    "centroid": {
+      "lat": 54.2995599,
+      "lng": -2.16892
+    }
+  },
+  {
+    "id": "caldbergh",
+    "name": "Caldbergh",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "caldbergh"
+    ],
+    "centroid": {
+      "lat": 54.2612522,
+      "lng": -1.8575381
+    }
+  },
+  {
+    "id": "carlton-wensleydale",
+    "name": "Carlton",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "carlton-wensleydale"
+    ],
+    "centroid": {
+      "lat": 53.7147183,
+      "lng": -1.0174965
+    }
+  },
+  {
+    "id": "carperby",
+    "name": "Carperby",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "carperby"
+    ],
+    "centroid": {
+      "lat": 54.303984,
+      "lng": -1.9896747
+    }
+  },
+  {
+    "id": "castle-bolton",
+    "name": "Castle Bolton",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "castle-bolton"
+    ],
+    "centroid": {
+      "lat": 54.3224724,
+      "lng": -1.9478258
+    }
+  },
+  {
+    "id": "countersett",
+    "name": "Countersett",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "countersett"
+    ],
+    "centroid": {
+      "lat": 54.286642,
+      "lng": -2.1255159
+    }
+  },
+  {
+    "id": "east-witton",
+    "name": "East Witton",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "east-witton"
+    ],
+    "centroid": {
+      "lat": 54.2612086,
+      "lng": -1.758317
+    }
+  },
+  {
+    "id": "finghall",
+    "name": "Finghall",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "finghall"
+    ],
+    "centroid": {
+      "lat": 54.3033694,
+      "lng": -1.7177678
+    }
+  },
+  {
+    "id": "gayle",
+    "name": "Gayle",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "gayle"
+    ],
+    "centroid": {
+      "lat": 54.2990601,
+      "lng": -2.2003907
+    }
+  },
+  {
+    "id": "hardraw",
+    "name": "Hardraw",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "hardraw"
+    ],
+    "centroid": {
+      "lat": 54.3164368,
+      "lng": -2.2052585
+    }
+  },
+  {
+    "id": "harmby-north",
+    "name": "Harmby North",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "harmby-north"
+    ],
+    "centroid": {
+      "lat": 54.3023763,
+      "lng": -1.8053204
+    }
+  },
+  {
+    "id": "harmby-south",
+    "name": "Harmby South",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "harmby-south"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "hawes-north-central",
+    "name": "Hawes North Central",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "hawes-north-central"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "hawes-south-central",
+    "name": "Hawes South Central",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "hawes-south-central"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "hawes-east",
+    "name": "Hawes East",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "hawes-east"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "hawes-west",
+    "name": "Hawes West",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "hawes-west"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "horsehouse",
+    "name": "Horsehouse",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "horsehouse"
+    ],
+    "centroid": {
+      "lat": 54.2274137,
+      "lng": -1.92858
+    }
+  },
+  {
+    "id": "leyburn",
+    "name": "Leyburn",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "leyburn-central",
+      "leyburn-east",
+      "leyburn-north",
+      "leyburn-south",
+      "leyburn-west"
+    ],
+    "centroid": {
+      "lat": 54.3098083,
+      "lng": -1.8295708
+    }
+  },
+  {
+    "id": "marsett",
+    "name": "Marsett",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "marsett"
+    ],
+    "centroid": {
+      "lat": 54.27129,
+      "lng": -2.1503613
+    }
+  },
+  {
+    "id": "melmerby-wensleydale",
+    "name": "Melmerby",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "melmerby-wensleydale"
+    ],
+    "centroid": {
+      "lat": 54.1834941,
+      "lng": -1.4758243
+    }
+  },
+  {
+    "id": "middleham-central",
+    "name": "Middleham Central",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "middleham-central"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "middleham-east",
+    "name": "Middleham East",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "middleham-east"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "middleham-northwest",
+    "name": "Middleham Northwest",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "middleham-northwest"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "middleham-south",
+    "name": "Middleham South",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "middleham-south"
+    ],
+    "centroid": null
+  },
+  {
+    "id": "newbiggin",
+    "name": "Newbiggin",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "newbiggin-bishopdale",
+      "newbiggin-wensleydale"
+    ],
+    "centroid": {
+      "lat": 54.2672321,
+      "lng": -2.0025449
+    }
+  },
+  {
+    "id": "newton-le-willows",
+    "name": "Newton-le-Willows",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "newton-le-willows",
+      "newton-le-willows-aysgarth-schl"
+    ],
+    "centroid": {
+      "lat": 54.2970219,
+      "lng": -1.6771463
+    }
+  },
+  {
+    "id": "preston-under-scar",
+    "name": "Preston under Scar",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "preston-under-scar"
+    ],
+    "centroid": {
+      "lat": 54.3283398,
+      "lng": -1.8927007
+    }
+  },
+  {
+    "id": "redmire",
+    "name": "Redmire",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "redmire-north",
+      "redmire-southeast",
+      "redmire-southwest"
+    ],
+    "centroid": {
+      "lat": 54.3272037,
+      "lng": -1.9204752
+    }
+  },
+  {
+    "id": "sedbusk",
+    "name": "Sedbusk",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "sedbusk"
+    ],
+    "centroid": {
+      "lat": 54.3160593,
+      "lng": -2.1810351
+    }
+  },
+  {
+    "id": "simonstone",
+    "name": "Simonstone",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "simonstone"
+    ],
+    "centroid": {
+      "lat": 54.3199768,
+      "lng": -2.1999011
+    }
+  },
+  {
+    "id": "spennithorne",
+    "name": "Spennithorne",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "spennithorne"
+    ],
+    "centroid": {
+      "lat": 54.2971064,
+      "lng": -1.7917079
+    }
+  },
+  {
+    "id": "swinithwaite",
+    "name": "Swinithwaite",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "swinithwaite"
+    ],
+    "centroid": {
+      "lat": 54.2989165,
+      "lng": -1.933006
+    }
+  },
+  {
+    "id": "stalling-busk",
+    "name": "Stalling Busk",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "stalling-busk"
+    ],
+    "centroid": {
+      "lat": 54.2682085,
+      "lng": -2.1298666
+    }
+  },
+  {
+    "id": "thoralby",
+    "name": "Thoralby",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "thoralby-east",
+      "thoralby-west"
+    ],
+    "centroid": {
+      "lat": 54.2767071,
+      "lng": -1.9998595
+    }
+  },
+  {
+    "id": "thornton-rust",
+    "name": "Thornton Rust",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "thornton-rust"
+    ],
+    "centroid": {
+      "lat": 54.295793,
+      "lng": -2.0437173
+    }
+  },
+  {
+    "id": "thornton-steward",
+    "name": "Thornton Steward",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "thornton-steward"
+    ],
+    "centroid": {
+      "lat": 54.2791869,
+      "lng": -1.7293781
+    }
+  },
+  {
+    "id": "wensley",
+    "name": "Wensley",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "wensley"
+    ],
+    "centroid": {
+      "lat": 54.303133,
+      "lng": -1.8594198
+    }
+  },
+  {
+    "id": "west-burton",
+    "name": "West Burton",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "west-burton"
+    ],
+    "centroid": {
+      "lat": 54.2762387,
+      "lng": -1.9736583
+    }
+  },
+  {
+    "id": "west-scrafton",
+    "name": "West Scrafton",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "west-scrafton"
+    ],
+    "centroid": {
+      "lat": 54.2340364,
+      "lng": -1.8854799
+    }
+  },
+  {
+    "id": "woodhall",
+    "name": "Woodhall",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "woodhall"
+    ],
+    "centroid": {
+      "lat": 54.3078785,
+      "lng": -2.0363639
+    }
+  },
+  {
+    "id": "worton",
+    "name": "Worton",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "worton"
+    ],
+    "centroid": {
+      "lat": 54.3057969,
+      "lng": -2.0706186
+    }
+  },
+  {
+    "id": "west-witton",
+    "name": "West Witton",
+    "district": "Wensleydale",
+    "sheet_ids": [
+      "west-witton"
+    ],
+    "centroid": {
+      "lat": 54.290931,
+      "lng": -1.9090744
+    }
+  }
+]

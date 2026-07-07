@@ -1,0 +1,368 @@
+{
+  "sheet_id": "patrick-brompton",
+  "pdf_hash": "d1625b9a16dc6883e489983ffca09d52cc34f3e42db73feb6a789a2eff082037",
+  "alignment": {
+    "corners": [
+      [
+        54.317815787602626,
+        -1.6696010809426174
+      ],
+      [
+        54.317815787602626,
+        -1.6503943223471775
+      ],
+      [
+        54.30989766836956,
+        -1.6503943223471775
+      ],
+      [
+        54.30989766836956,
+        -1.6696010809426174
+      ]
+    ],
+    "center": [
+      54.31385672798609,
+      -1.6599977016448975
+    ],
+    "mpp": 0.5332395844068819,
+    "zoom": 18
+  },
+  "houses": {
+    "patrick-brompton-1": {
+      "lat": 54.3111033,
+      "lng": -1.668275,
+      "image_x": 161,
+      "image_y": 1401
+    },
+    "patrick-brompton-2": {
+      "lat": 54.3112754,
+      "lng": -1.665507,
+      "image_x": 499,
+      "image_y": 1365
+    },
+    "patrick-brompton-3": {
+      "lat": 54.3114319,
+      "lng": -1.6647559,
+      "image_x": 590,
+      "image_y": 1333
+    },
+    "patrick-brompton-4": {
+      "lat": 54.311507,
+      "lng": -1.6638011,
+      "image_x": 706,
+      "image_y": 1317
+    },
+    "patrick-brompton-5": {
+      "lat": 54.31187,
+      "lng": -1.6641605,
+      "image_x": 663,
+      "image_y": 1241
+    },
+    "patrick-brompton-6": {
+      "lat": 54.3118856,
+      "lng": -1.6636106,
+      "image_x": 730,
+      "image_y": 1238
+    },
+    "patrick-brompton-7": {
+      "lat": 54.3117699,
+      "lng": -1.6634068,
+      "image_x": 754,
+      "image_y": 1262
+    },
+    "patrick-brompton-8": {
+      "lat": 54.3116478,
+      "lng": -1.6632324,
+      "image_x": 776,
+      "image_y": 1288
+    },
+    "patrick-brompton-9": {
+      "lat": 54.3116979,
+      "lng": -1.6630957,
+      "image_x": 792,
+      "image_y": 1277
+    },
+    "patrick-brompton-10": {
+      "lat": 54.3117511,
+      "lng": -1.6629294,
+      "image_x": 812,
+      "image_y": 1266
+    },
+    "patrick-brompton-11": {
+      "lat": 54.312147,
+      "lng": -1.6618752,
+      "image_x": 941,
+      "image_y": 1183
+    },
+    "patrick-brompton-12": {
+      "lat": 54.3122221,
+      "lng": -1.6615775,
+      "image_x": 977,
+      "image_y": 1168
+    },
+    "patrick-brompton-13": {
+      "lat": 54.3125616,
+      "lng": -1.661261,
+      "image_x": 1016,
+      "image_y": 1097
+    },
+    "patrick-brompton-14": {
+      "lat": 54.3125788,
+      "lng": -1.6607514,
+      "image_x": 1078,
+      "image_y": 1093
+    },
+    "patrick-brompton-15": {
+      "lat": 54.3126571,
+      "lng": -1.6605824,
+      "image_x": 1098,
+      "image_y": 1077
+    },
+    "patrick-brompton-16": {
+      "lat": 54.3128386,
+      "lng": -1.6604429,
+      "image_x": 1115,
+      "image_y": 1039
+    },
+    "patrick-brompton-17": {
+      "lat": 54.3129559,
+      "lng": -1.6601586,
+      "image_x": 1150,
+      "image_y": 1015
+    },
+    "patrick-brompton-18": {
+      "lat": 54.3132125,
+      "lng": -1.6601238,
+      "image_x": 1154,
+      "image_y": 961
+    },
+    "patrick-brompton-19": {
+      "lat": 54.3133095,
+      "lng": -1.6600111,
+      "image_x": 1168,
+      "image_y": 941
+    },
+    "patrick-brompton-20": {
+      "lat": 54.3134488,
+      "lng": -1.6599655,
+      "image_x": 1173,
+      "image_y": 912
+    },
+    "patrick-brompton-21": {
+      "lat": 54.3136052,
+      "lng": -1.6599655,
+      "image_x": 1173,
+      "image_y": 879
+    },
+    "patrick-brompton-22": {
+      "lat": 54.3137304,
+      "lng": -1.6599414,
+      "image_x": 1176,
+      "image_y": 853
+    },
+    "patrick-brompton-23": {
+      "lat": 54.3142405,
+      "lng": -1.6598341,
+      "image_x": 1189,
+      "image_y": 746
+    },
+    "patrick-brompton-24": {
+      "lat": 54.3144032,
+      "lng": -1.6597912,
+      "image_x": 1195,
+      "image_y": 712
+    },
+    "patrick-brompton-25": {
+      "lat": 54.3148178,
+      "lng": -1.6597912,
+      "image_x": 1195,
+      "image_y": 626
+    },
+    "patrick-brompton-26": {
+      "lat": 54.3148366,
+      "lng": -1.6589758,
+      "image_x": 1294,
+      "image_y": 622
+    },
+    "patrick-brompton-27": {
+      "lat": 54.3161962,
+      "lng": -1.6585439,
+      "image_x": 1347,
+      "image_y": 338
+    },
+    "patrick-brompton-28": {
+      "lat": 54.3149352,
+      "lng": -1.6581202,
+      "image_x": 1398,
+      "image_y": 601
+    },
+    "patrick-brompton-29": {
+      "lat": 54.3145597,
+      "lng": -1.6585842,
+      "image_x": 1342,
+      "image_y": 680
+    },
+    "patrick-brompton-30": {
+      "lat": 54.3143876,
+      "lng": -1.6588739,
+      "image_x": 1306,
+      "image_y": 716
+    },
+    "patrick-brompton-31": {
+      "lat": 54.3141826,
+      "lng": -1.6586941,
+      "image_x": 1328,
+      "image_y": 758
+    },
+    "patrick-brompton-32": {
+      "lat": 54.3141998,
+      "lng": -1.6592064,
+      "image_x": 1266,
+      "image_y": 755
+    },
+    "patrick-brompton-33": {
+      "lat": 54.3140434,
+      "lng": -1.6593459,
+      "image_x": 1249,
+      "image_y": 788
+    },
+    "patrick-brompton-34": {
+      "lat": 54.313635,
+      "lng": -1.6594023,
+      "image_x": 1242,
+      "image_y": 873
+    },
+    "patrick-brompton-35": {
+      "lat": 54.3133502,
+      "lng": -1.6591313,
+      "image_x": 1275,
+      "image_y": 932
+    },
+    "patrick-brompton-36": {
+      "lat": 54.3131578,
+      "lng": -1.659539,
+      "image_x": 1225,
+      "image_y": 972
+    },
+    "patrick-brompton-37": {
+      "lat": 54.3123504,
+      "lng": -1.6589731,
+      "image_x": 1294,
+      "image_y": 1141
+    },
+    "patrick-brompton-38": {
+      "lat": 54.3121923,
+      "lng": -1.6587237,
+      "image_x": 1325,
+      "image_y": 1174
+    },
+    "patrick-brompton-39": {
+      "lat": 54.3117761,
+      "lng": -1.6589785,
+      "image_x": 1294,
+      "image_y": 1261
+    },
+    "patrick-brompton-40": {
+      "lat": 54.3118731,
+      "lng": -1.659421,
+      "image_x": 1240,
+      "image_y": 1241
+    },
+    "patrick-brompton-41": {
+      "lat": 54.3117871,
+      "lng": -1.6598502,
+      "image_x": 1187,
+      "image_y": 1259
+    },
+    "patrick-brompton-42": {
+      "lat": 54.3120578,
+      "lng": -1.6594774,
+      "image_x": 1233,
+      "image_y": 1202
+    },
+    "patrick-brompton-43": {
+      "lat": 54.3121376,
+      "lng": -1.6598153,
+      "image_x": 1192,
+      "image_y": 1185
+    },
+    "patrick-brompton-44": {
+      "lat": 54.311881,
+      "lng": -1.6601774,
+      "image_x": 1148,
+      "image_y": 1239
+    },
+    "patrick-brompton-45": {
+      "lat": 54.3126258,
+      "lng": -1.6598985,
+      "image_x": 1182,
+      "image_y": 1083
+    },
+    "patrick-brompton-46": {
+      "lat": 54.3124004,
+      "lng": -1.6601399,
+      "image_x": 1152,
+      "image_y": 1131
+    },
+    "patrick-brompton-47": {
+      "lat": 54.3113693,
+      "lng": -1.6628462,
+      "image_x": 823,
+      "image_y": 1346
+    },
+    "patrick-brompton-48": {
+      "lat": 54.3109374,
+      "lng": -1.6641122,
+      "image_x": 668,
+      "image_y": 1436
+    },
+    "patrick-brompton-49": {
+      "lat": 54.3107434,
+      "lng": -1.6643858,
+      "image_x": 635,
+      "image_y": 1476
+    },
+    "patrick-brompton-50": {
+      "lat": 54.3107434,
+      "lng": -1.6646969,
+      "image_x": 597,
+      "image_y": 1476
+    },
+    "patrick-brompton-51": {
+      "lat": 54.3108122,
+      "lng": -1.6650242,
+      "image_x": 557,
+      "image_y": 1462
+    },
+    "patrick-brompton-52": {
+      "lat": 54.3109405,
+      "lng": -1.6651314,
+      "image_x": 544,
+      "image_y": 1435
+    },
+    "patrick-brompton-53": {
+      "lat": 54.3108686,
+      "lng": -1.6655606,
+      "image_x": 492,
+      "image_y": 1450
+    },
+    "patrick-brompton-54": {
+      "lat": 54.3108498,
+      "lng": -1.6657484,
+      "image_x": 469,
+      "image_y": 1454
+    },
+    "patrick-brompton-55": {
+      "lat": 54.3110407,
+      "lng": -1.6659039,
+      "image_x": 450,
+      "image_y": 1414
+    },
+    "patrick-brompton-56": {
+      "lat": 54.3110501,
+      "lng": -1.6665262,
+      "image_x": 374,
+      "image_y": 1412
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "sheet_id": "east-layton",
+  "pdf_hash": "19013901248a0f4883fc67739d9184ebbe14d57f0224480b90aff629958e2681",
+  "alignment": {
+    "corners": [
+      [
+        54.48733453902079,
+        -1.7563705753280163
+      ],
+      [
+        54.48733453902079,
+        -1.741466014485217
+      ],
+      [
+        54.481215504449835,
+        -1.741466014485217
+      ],
+      [
+        54.481215504449835,
+        -1.7563705753280163
+      ]
+    ],
+    "center": [
+      54.484275021735314,
+      -1.7489182949066167
+    ],
+    "mpp": 0.4120816263999552,
+    "zoom": 18
+  },
+  "houses": {
+    "east-layton-1": {
+      "lat": 54.4819351,
+      "lng": -1.743114,
+      "image_x": 2080,
+      "image_y": 1459
+    },
+    "east-layton-2": {
+      "lat": 54.4821657,
+      "lng": -1.7434627,
+      "image_x": 2026,
+      "image_y": 1396
+    },
+    "east-layton-3": {
+      "lat": 54.4822467,
+      "lng": -1.7436022,
+      "image_x": 2004,
+      "image_y": 1374
+    },
+    "east-layton-4": {
+      "lat": 54.4826659,
+      "lng": -1.7443934,
+      "image_x": 1880,
+      "image_y": 1261
+    },
+    "east-layton-5": {
+      "lat": 54.482697,
+      "lng": -1.7445007,
+      "image_x": 1863,
+      "image_y": 1253
+    },
+    "east-layton-6": {
+      "lat": 54.4827531,
+      "lng": -1.7446777,
+      "image_x": 1835,
+      "image_y": 1238
+    },
+    "east-layton-7": {
+      "lat": 54.4828108,
+      "lng": -1.7448279,
+      "image_x": 1811,
+      "image_y": 1222
+    },
+    "east-layton-8": {
+      "lat": 54.4830866,
+      "lng": -1.7458498,
+      "image_x": 1651,
+      "image_y": 1148
+    },
+    "east-layton-9": {
+      "lat": 54.4831131,
+      "lng": -1.7459464,
+      "image_x": 1636,
+      "image_y": 1140
+    },
+    "east-layton-10": {
+      "lat": 54.4832393,
+      "lng": -1.7461851,
+      "image_x": 1598,
+      "image_y": 1106
+    },
+    "east-layton-11": {
+      "lat": 54.4839997,
+      "lng": -1.7467538,
+      "image_x": 1509,
+      "image_y": 901
+    },
+    "east-layton-12": {
+      "lat": 54.484048,
+      "lng": -1.7470086,
+      "image_x": 1469,
+      "image_y": 888
+    },
+    "east-layton-13": {
+      "lat": 54.484076,
+      "lng": -1.7472017,
+      "image_x": 1439,
+      "image_y": 880
+    },
+    "east-layton-14": {
+      "lat": 54.4837177,
+      "lng": -1.7475048,
+      "image_x": 1391,
+      "image_y": 977
+    },
+    "east-layton-15": {
+      "lat": 54.4837036,
+      "lng": -1.747317,
+      "image_x": 1421,
+      "image_y": 981
+    },
+    "east-layton-16": {
+      "lat": 54.4836912,
+      "lng": -1.7470595,
+      "image_x": 1461,
+      "image_y": 984
+    },
+    "east-layton-17": {
+      "lat": 54.4838392,
+      "lng": -1.7469656,
+      "image_x": 1476,
+      "image_y": 944
+    },
+    "east-layton-18": {
+      "lat": 54.4838221,
+      "lng": -1.7476791,
+      "image_x": 1364,
+      "image_y": 949
+    },
+    "east-layton-19": {
+      "lat": 54.4842646,
+      "lng": -1.74784,
+      "image_x": 1339,
+      "image_y": 829
+    },
+    "east-layton-20": {
+      "lat": 54.4841181,
+      "lng": -1.7479715,
+      "image_x": 1318,
+      "image_y": 869
+    },
+    "east-layton-21": {
+      "lat": 54.4839389,
+      "lng": -1.7482156,
+      "image_x": 1280,
+      "image_y": 917
+    },
+    "east-layton-22": {
+      "lat": 54.4850639,
+      "lng": -1.7517722,
+      "image_x": 722,
+      "image_y": 613
+    },
+    "east-layton-23": {
+      "lat": 54.4854067,
+      "lng": -1.7520189,
+      "image_x": 683,
+      "image_y": 521
+    },
+    "east-layton-24": {
+      "lat": 54.4850857,
+      "lng": -1.7527378,
+      "image_x": 570,
+      "image_y": 607
+    },
+    "east-layton-25": {
+      "lat": 54.4851262,
+      "lng": -1.7529684,
+      "image_x": 534,
+      "image_y": 597
+    },
+    "east-layton-26": {
+      "lat": 54.4852353,
+      "lng": -1.7527539,
+      "image_x": 568,
+      "image_y": 567
+    },
+    "east-layton-27": {
+      "lat": 54.4851075,
+      "lng": -1.7533118,
+      "image_x": 480,
+      "image_y": 602
+    },
+    "east-layton-28": {
+      "lat": 54.4854628,
+      "lng": -1.7534727,
+      "image_x": 455,
+      "image_y": 506
+    },
+    "east-layton-29": {
+      "lat": 54.4853288,
+      "lng": -1.7540038,
+      "image_x": 371,
+      "image_y": 542
+    },
+    "east-layton-30": {
+      "lat": 54.4858975,
+      "lng": -1.755133,
+      "image_x": 194,
+      "image_y": 388
+    },
+    "east-layton-31": {
+      "lat": 54.4858305,
+      "lng": -1.7555353,
+      "image_x": 131,
+      "image_y": 406
+    },
+    "east-layton-32": {
+      "lat": 54.4839919,
+      "lng": -1.7512304,
+      "image_x": 807,
+      "image_y": 903
+    },
+    "east-layton-33": {
+      "lat": 54.4839078,
+      "lng": -1.7496157,
+      "image_x": 1060,
+      "image_y": 926
+    },
+    "east-layton-34": {
+      "lat": 54.4839389,
+      "lng": -1.749326,
+      "image_x": 1106,
+      "image_y": 917
+    },
+    "east-layton-35": {
+      "lat": 54.4836522,
+      "lng": -1.7488164,
+      "image_x": 1185,
+      "image_y": 995
+    },
+    "east-layton-36": {
+      "lat": 54.4835151,
+      "lng": -1.7478025,
+      "image_x": 1345,
+      "image_y": 1032
+    },
+    "east-layton-37": {
+      "lat": 54.4831567,
+      "lng": -1.7466331,
+      "image_x": 1528,
+      "image_y": 1129
+    }
+  }
+}

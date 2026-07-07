@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#0f4c5c"/>
+<title>How Whereabouts Works</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --hdr:#0f4c5c;
+  --ink:#1c1e16;
+  --paper:#faf9f6;
+  --border:#e7e3da;
+  --muted:#6b675f;
+  --accent:#a5610f;
+  --placed:#217a2e;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);line-height:1.72;-webkit-font-smoothing:antialiased;font-size:18px}
+:focus-visible{outline:2px solid var(--hdr);outline-offset:2px;border-radius:2px}
+.topbar :focus-visible{outline-color:#fff}
+
+/* App-style top bar, so this reads as part of Whereabouts */
+.topbar{background:var(--hdr);color:#fff;position:sticky;top:0;z-index:5}
+.topbar-in{max-width:960px;margin:0 auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between}
+.wordmark{font-family:var(--serif);font-weight:800;font-size:21px;letter-spacing:.2px;color:#fff;text-decoration:none}
+.topbar a.back{color:rgba(255,255,255,.82);text-decoration:none;font-size:14px;font-weight:600}
+.topbar a.back:hover{color:#fff}
+
+.col{max-width:640px;margin:0 auto;padding:0 22px}
+
+.masthead{padding:46px 0 8px}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--serif);font-weight:800;font-size:clamp(32px,7vw,46px);line-height:1.08;letter-spacing:-.5px;margin:14px 0 0}
+.byline{margin-top:16px;font-size:15px;color:var(--muted)}
+.byline b{color:var(--ink);font-weight:600}
+
+.body p{margin-top:22px}
+.body p.lede{font-size:20px;line-height:1.6}
+.body p.lede:first-of-type{margin-top:30px}
+
+h2{font-family:var(--serif);font-weight:700;font-size:clamp(24px,4.6vw,30px);line-height:1.18;margin:52px 0 0;letter-spacing:-.3px}
+
+figure{margin:30px 0 6px}
+figure img{display:block;width:100%;height:auto;border:1px solid var(--border);border-radius:6px}
+figcaption{margin-top:11px;font-size:14.5px;line-height:1.5;color:var(--muted)}
+figcaption em{color:var(--ink);font-style:italic}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.pair figure{margin:30px 0 6px}
+@media(max-width:520px){.pair{grid-template-columns:1fr}}
+
+/* the tuck-away technical note */
+details.hood{margin:26px 0 4px;border-left:2px solid var(--border);padding-left:18px}
+details.hood>summary{cursor:pointer;list-style:none;font-size:14px;font-weight:600;color:var(--accent);display:inline-flex;align-items:center;gap:7px}
+details.hood>summary::-webkit-details-marker{display:none}
+details.hood>summary .tw{font-size:12px;transition:transform .15s;display:inline-block}
+details.hood[open]>summary .tw{transform:rotate(90deg)}
+details.hood p{margin-top:12px;font-size:15.5px;line-height:1.62;color:#4c4a41}
+details.hood p:first-of-type{margin-top:12px}
+
+.rule{height:1px;background:var(--border);border:0;margin:56px 0 0}
+
+footer{margin-top:30px;padding-bottom:70px}
+footer .go{display:inline-block;background:var(--hdr);color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:12px 24px;border-radius:8px}
+footer .go:hover{background:#0c3d4a}
+footer .fine{margin-top:24px;font-size:13.5px;line-height:1.7;color:var(--muted)}
+footer .fine a{color:var(--muted)}
+a{color:var(--accent)}
+.body a{text-decoration:none;border-bottom:1px solid rgba(185,106,23,.35)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <a class="wordmark" href="./">Whereabouts</a>
+    <a class="back" href="./">Open the app &rarr;</a>
+  </div>
+</div>
+
+<div class="col">
+
+  <div class="masthead">
+    <div class="kicker">How it works</div>
+    <h1>Finding a house that has a name but no number</h1>
+    <div class="byline">by <b>Adam Dent</b></div>
+  </div>
+
+  <div class="body">
+
+    <p class="lede">A great many houses in rural North Yorkshire have a name but no number. Rose Cottage, The Old Vicarage, Garden Cottage. Addresses that mean everything to a postman who has worked the round for years and nothing at all to a satnav. Type one into a mapping app and you tend to get either no result or a pin dropped confidently in the wrong village.</p>
+
+    <p>For anyone who has to actually turn up, that gap costs time. A delivery driver working through a full van, an ambulance crew, a carer, a first-time visitor with only a name to go on: all of them lose minutes, sometimes a lot more, to houses that no mainstream map can place.</p>
+
+    <p>These places are not undocumented, though. For more than twenty years, Dr A Colin Day has been drawing village maps by hand and publishing them free, each one naming every property against a numbered key. His maps are how a great many of these front doors already get found. The limitation is only in the format. They are individual PDFs, dozens upon dozens of them, and they help most when you already know which sheet to open. Standing at a junction with a house name and no idea which of his maps it belongs to, a folder of PDFs is slow going.</p>
+
+    <p>Whereabouts takes those maps and makes them work like a modern address book. It reads every one of Colin's PDFs, fixes each named house to its exact position on the ground, and puts the whole collection behind a single search that runs on a phone, offline, wherever you happen to be. His maps do the hard part; this makes them instant to reach. Colin knows the project well and gives it his full support.</p>
+
+    <p>What follows is one house traced through the whole process, so the pieces are easy to see: Garden Cottage in Middleham, number 43 on Colin's map.</p>
+
+    <h2>Reading the maps</h2>
+
+    <p>Colin publishes each map as a PDF. A program I wrote works through his website, downloads every one, and reads the numbered key printed beside the drawing, turning it into a plain list of names. Garden Cottage becomes "43, Garden Cottage", in sequence with the other sixty-one houses in the village. The drawing itself is kept as an image, since it is what you will see when you look a house up.</p>
+
+    <figure>
+      <img src="./assets/stage1-map.webp" alt="Colin Day's hand-drawn map of Middleham (East). A numbered key of house names runs down the left, beside the village plan." loading="lazy" width="1400" height="1082"/>
+      <figcaption>Colin's map of Middleham (East). <em>Garden Cottage is number 43</em> in the key on the left. Every one of his maps follows this same clear layout.</figcaption>
+    </figure>
+
+    <details class="hood">
+      <summary><span class="tw">&#9656;</span> Under the hood</summary>
+      <p>The difficulty is that every sheet carries three different kinds of number, and to a computer they look alike. The one worth having is the key. The other two are an alphabetical cross-reference and the loose numbers scattered over the drawing itself, and most of the work here is getting the program to tell them apart and read only the key. It is all Python: <b>pdfplumber</b>, which can pick out text by exactly where it sits on the page, does the reading, and <b>PyMuPDF</b> renders the drawing to an image.</p>
+    </details>
+
+    <h2>Placing each house by hand</h2>
+
+    <p>A name is not a location. Colin's drawing shows where Garden Cottage sits within the village, but not the latitude and longitude a phone needs to route to it. Deriving those reliably is not something a computer can be trusted to do, so I do it by hand, one house at a time.</p>
+
+    <p>The tool I built for it lays Colin's drawing, half-transparent, over satellite imagery of the same village. Because his maps are drawn by hand, they never align perfectly with the real streets; a lane that runs straight in life might carry a slight bend on the page, and a row of cottages might sit at a subtly different angle. Rather than accept a loose fit, the tool lets me take the drawing by its corners and skew and stretch it until it sits true over the actual rooftops. Once Garden Cottage on the drawing rests over Garden Cottage in the imagery, a single click fixes its real-world position. I repeat that for every house in the village. Each pin in the app was set this way, by me.</p>
+
+    <figure>
+      <img src="./assets/middleham-pinned.webp" alt="The placement tool: all sixty-two houses of Middleham East marked with pins on a satellite photograph, with Colin's drawing faded over the top." loading="lazy" width="1500" height="760"/>
+      <figcaption>Middleham (East) complete: all sixty-two houses fixed to their own rooftops on the satellite imagery, with Colin's drawing faded over the top and stretched to fit.</figcaption>
+    </figure>
+
+    <details class="hood">
+      <summary><span class="tw">&#9656;</span> Why by hand, and not automatically</summary>
+      <p>In principle the drawing could be aligned automatically and each house inferred from it. In practice, terraces, barns and outbuildings sit close enough together that an automated guess would misplace a meaningful fraction of them, and a house pinned in the wrong place is worse than one left unpinned, because it looks reliable right up until it sends you somewhere wrong. By hand is slower, but every location is exact rather than estimated. The tool is a small <b>Python</b> server (FastAPI) driving a browser map (<b>Leaflet</b>) over Esri's satellite imagery, with the overlay positioned using the projection maths that web maps rely on.</p>
+    </details>
+
+    <h2>Finding a house</h2>
+
+    <p>The finished data becomes a small, plain website. You type a house name and a tolerant search finds it even from a rough spelling or half a name. Enter "garden cottage middleh" and Garden Cottage in Middleham East rises to the top, its village shown beneath it so it is easy to tell from the other Garden Cottages, of which there are several. Select it and the house appears ringed on Colin's original drawing. Press "Get directions" and the exact spot opens in Google Maps, ready to navigate (or Apple Maps if you are on an iPhone).</p>
+
+    <div class="pair">
+      <figure>
+        <img src="./assets/search-garden-cottage.webp" alt="The app's search screen with 'garden cottage middleh' typed in, Garden Cottage in Middleham East at the top of the results." loading="lazy" width="760" height="922"/>
+        <figcaption>Half a name is enough. The village under each result separates the Garden Cottages.</figcaption>
+      </figure>
+      <figure>
+        <img src="./assets/found-garden-cottage.webp" alt="The app showing Garden Cottage ringed in red on Colin's Middleham East drawing, with a Get directions button." loading="lazy" width="760" height="922"/>
+        <figcaption>Number 43, ringed on Colin's drawing, one press from directions in Google Maps.</figcaption>
+      </figure>
+    </div>
+
+    <p>The detail that earns its place in the dales is that all of this works with no signal. The first time you open the app on wifi it stores everything on the phone, and after that it asks nothing of the network. Mobile coverage out there is unreliable; GPS is not, and once the app is loaded, GPS is all it needs.</p>
+
+    <details class="hood">
+      <summary><span class="tw">&#9656;</span> Under the hood</summary>
+      <p>The app is a single web page in plain JavaScript, with no accounts and no login. <b>Fuse.js</b> handles the tolerant search, a <b>service worker</b> keeps everything on the phone for offline use, and the directions button opens Google or Apple Maps depending on the device. Nothing runs on a server while you use it, which is also why it keeps working when there is no server to reach.</p>
+    </details>
+
+    <hr class="rule"/>
+
+    <h2>Built on Colin Day's maps</h2>
+
+    <p>Whereabouts rests entirely on Colin's work and could not exist without it. He drew the maps and named the houses; what this adds is reach, turning a shelf of separate PDFs into something you can search in a second from the roadside and follow to the door. He follows the project closely and backs it fully, which counts for a great deal.</p>
+
+    <p>It is still growing. I am placing houses across North Yorkshire a dale at a time, so some villages are complete while others are still names waiting on their coordinates. Where I have not yet reached, the app says so plainly and points you to the centre of the village rather than guessing at the exact door.</p>
+
+  </div>
+
+  <footer>
+    <a class="go" href="./">Open Whereabouts &rarr;</a>
+    <div class="fine">
+      Maps by <a href="https://colinday.co.uk/maps/" target="_blank" rel="noopener">Dr A Colin Day</a>, shown in full with their own attributions.<br/>
+      The Whereabouts code is open source under the MIT licence. The house locations I have placed by hand are shared under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.<br/>
+      More on <a href="./privacy.html">privacy and how your data is handled</a>.
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

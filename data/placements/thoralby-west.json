@@ -1,0 +1,225 @@
+{
+  "sheet_id": "thoralby-west",
+  "pdf_hash": "f0963f4993dd063442364a1e8526a7c6c4df61a7df7f0a5fda6725f706cbf54e",
+  "alignment": {
+    "corners": [
+      [
+        54.27962207172544,
+        -2.010670723513833
+      ],
+      [
+        54.27962207172544,
+        -1.9976957183501804
+      ],
+      [
+        54.27426823904206,
+        -1.9976957183501804
+      ],
+      [
+        54.27426823904206,
+        -2.010670723513833
+      ]
+    ],
+    "center": [
+      54.27694515538375,
+      -2.0041832209320067
+    ],
+    "mpp": 0.36054970012923954,
+    "zoom": 18,
+    "stretched": false
+  },
+  "houses": {
+    "thoralby-west-1": {
+      "lat": 54.2750104,
+      "lng": -2.0089531,
+      "image_x": 310,
+      "image_y": 1424
+    },
+    "thoralby-west-2": {
+      "lat": 54.2750543,
+      "lng": -2.0085561,
+      "image_x": 381,
+      "image_y": 1410
+    },
+    "thoralby-west-3": {
+      "lat": 54.2758686,
+      "lng": -2.0080626,
+      "image_x": 470,
+      "image_y": 1159
+    },
+    "thoralby-west-4": {
+      "lat": 54.2756682,
+      "lng": -2.0080197,
+      "image_x": 478,
+      "image_y": 1221
+    },
+    "thoralby-west-5": {
+      "lat": 54.2753048,
+      "lng": -2.007848,
+      "image_x": 509,
+      "image_y": 1333
+    },
+    "thoralby-west-6": {
+      "lat": 54.2752806,
+      "lng": -2.0062628,
+      "image_x": 795,
+      "image_y": 1340
+    },
+    "thoralby-west-7": {
+      "lat": 54.275521,
+      "lng": -2.0057237,
+      "image_x": 892,
+      "image_y": 1266
+    },
+    "thoralby-west-8": {
+      "lat": 54.2759939,
+      "lng": -2.0043504,
+      "image_x": 1139,
+      "image_y": 1120
+    },
+    "thoralby-west-9": {
+      "lat": 54.2760503,
+      "lng": -2.004227,
+      "image_x": 1162,
+      "image_y": 1103
+    },
+    "thoralby-west-10": {
+      "lat": 54.2761255,
+      "lng": -2.0034975,
+      "image_x": 1293,
+      "image_y": 1080
+    },
+    "thoralby-west-11": {
+      "lat": 54.2763134,
+      "lng": -2.0032132,
+      "image_x": 1344,
+      "image_y": 1022
+    },
+    "thoralby-west-12": {
+      "lat": 54.2762633,
+      "lng": -2.0027411,
+      "image_x": 1429,
+      "image_y": 1037
+    },
+    "thoralby-west-13": {
+      "lat": 54.2763228,
+      "lng": -2.0025158,
+      "image_x": 1470,
+      "image_y": 1019
+    },
+    "thoralby-west-14": {
+      "lat": 54.2763949,
+      "lng": -2.0023441,
+      "image_x": 1501,
+      "image_y": 996
+    },
+    "thoralby-west-15": {
+      "lat": 54.2765045,
+      "lng": -2.0020759,
+      "image_x": 1549,
+      "image_y": 963
+    },
+    "thoralby-west-16": {
+      "lat": 54.276589,
+      "lng": -2.0018452,
+      "image_x": 1591,
+      "image_y": 936
+    },
+    "thoralby-west-17": {
+      "lat": 54.276636,
+      "lng": -2.0014805,
+      "image_x": 1657,
+      "image_y": 922
+    },
+    "thoralby-west-18": {
+      "lat": 54.2767237,
+      "lng": -2.0012873,
+      "image_x": 1692,
+      "image_y": 895
+    },
+    "thoralby-west-19": {
+      "lat": 54.276802,
+      "lng": -2.001003,
+      "image_x": 1743,
+      "image_y": 871
+    },
+    "thoralby-west-20": {
+      "lat": 54.2765922,
+      "lng": -2.000767,
+      "image_x": 1785,
+      "image_y": 935
+    },
+    "thoralby-west-21": {
+      "lat": 54.2765233,
+      "lng": -2.0012659,
+      "image_x": 1695,
+      "image_y": 957
+    },
+    "thoralby-west-22": {
+      "lat": 54.2764732,
+      "lng": -2.0014912,
+      "image_x": 1655,
+      "image_y": 972
+    },
+    "thoralby-west-23": {
+      "lat": 54.2764042,
+      "lng": -2.0017433,
+      "image_x": 1609,
+      "image_y": 994
+    },
+    "thoralby-west-24": {
+      "lat": 54.2762664,
+      "lng": -2.0021081,
+      "image_x": 1544,
+      "image_y": 1036
+    },
+    "thoralby-west-25": {
+      "lat": 54.2762288,
+      "lng": -2.0022368,
+      "image_x": 1520,
+      "image_y": 1048
+    },
+    "thoralby-west-26": {
+      "lat": 54.2761662,
+      "lng": -2.0024729,
+      "image_x": 1478,
+      "image_y": 1067
+    },
+    "thoralby-west-27": {
+      "lat": 54.2761224,
+      "lng": -2.0025963,
+      "image_x": 1456,
+      "image_y": 1081
+    },
+    "thoralby-west-28": {
+      "lat": 54.2760347,
+      "lng": -2.0027894,
+      "image_x": 1421,
+      "image_y": 1108
+    },
+    "thoralby-west-29": {
+      "lat": 54.2759939,
+      "lng": -2.0031488,
+      "image_x": 1356,
+      "image_y": 1120
+    },
+    "thoralby-west-30": {
+      "lat": 54.2758373,
+      "lng": -2.0035779,
+      "image_x": 1279,
+      "image_y": 1169
+    },
+    "thoralby-west-31": {
+      "lat": 54.2757966,
+      "lng": -2.0037013,
+      "image_x": 1256,
+      "image_y": 1181
+    },
+    "thoralby-west-32": {
+      "lat": 54.2723667,
+      "lng": -2.0099455,
+      "image_x": 131,
+      "image_y": 2240
+    }
+  }
+}

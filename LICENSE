@@ -1,0 +1,52 @@
+MIT License
+
+Copyright (c) 2026 Adam Dent
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+DATA NOTICE
+
+The MIT licence above covers the software (code) in this repository only.
+
+The village map drawings displayed in the app are the work of Dr A Colin Day
+(colinday.co.uk) and are made freely available for copying without charge.
+They are not covered by the MIT licence.
+
+The maps are derived from Ordnance Survey data.
+Contains OS data © Crown copyright and database rights 2024.
+Licensed under the Open Government Licence v3.0.
+See https://www.nationalarchives.gov.uk/doc/open-government-licence/
+
+The house coordinates in docs/houses.json were derived by the author from
+personal observation of Esri World Imagery satellite imagery and are original
+work of the author. This coordinate dataset (the hand-placed latitude/longitude
+and drawing-pixel positions, in docs/houses.json and data/placements/) is
+licensed under the Creative Commons Attribution-ShareAlike 4.0 International
+Licence (CC BY-SA 4.0): https://creativecommons.org/licenses/by-sa/4.0/
+
+You may copy, share and adapt it, including for commercial use, provided you
+credit "Adam Dent, Whereabouts (whereabouts-app.pages.dev)" and release any
+adapted dataset under the same licence. This covers the coordinate data only,
+not Colin Day's map drawings (see above), which carry their own terms.
+
+This application is a navigation aid only. It is not a clinical tool and
+must not be used as a substitute for clinical judgement. Coordinates may be
+inaccurate. Always verify your destination before visiting.

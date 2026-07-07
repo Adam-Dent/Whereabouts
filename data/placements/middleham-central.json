@@ -1,0 +1,825 @@
+{
+  "sheet_id": "middleham-central",
+  "pdf_hash": "7b0894e0bbc02882f1d6faa246359231dfd141b87edb695eb6095f2ad6c286a4",
+  "alignment": {
+    "corners": [
+      [
+        54.28970435409808,
+        -1.8141925334930422
+      ],
+      [
+        54.2902080890183,
+        -1.8019592569846858
+      ],
+      [
+        54.28398649240871,
+        -1.8012106418609621
+      ],
+      [
+        54.284237017760844,
+        -1.8147826194763186
+      ]
+    ],
+    "center": [
+      54.28703398832148,
+      -1.808036262953752
+    ],
+    "mpp": 0.39515077335043364,
+    "zoom": 19,
+    "stretched": true
+  },
+  "houses": {
+    "middleham-central-1": {
+      "lat": 54.2876691,
+      "lng": -1.8080744,
+      "image_x": 1167,
+      "image_y": 708
+    },
+    "middleham-central-2": {
+      "lat": 54.2865731,
+      "lng": -1.8064785,
+      "image_x": 1430,
+      "image_y": 1030
+    },
+    "middleham-central-3": {
+      "lat": 54.2864087,
+      "lng": -1.8074682,
+      "image_x": 1267,
+      "image_y": 1074
+    },
+    "middleham-central-4": {
+      "lat": 54.2860689,
+      "lng": -1.8071008,
+      "image_x": 1291,
+      "image_y": 1149
+    },
+    "middleham-central-5": {
+      "lat": 54.2862318,
+      "lng": -1.8069023,
+      "image_x": 1359,
+      "image_y": 1125
+    },
+    "middleham-central-6": {
+      "lat": 54.2862427,
+      "lng": -1.8067816,
+      "image_x": 1379,
+      "image_y": 1122
+    },
+    "middleham-central-7": {
+      "lat": 54.2862286,
+      "lng": -1.8066314,
+      "image_x": 1404,
+      "image_y": 1126
+    },
+    "middleham-central-8": {
+      "lat": 54.2862208,
+      "lng": -1.806457,
+      "image_x": 1432,
+      "image_y": 1128
+    },
+    "middleham-central-9": {
+      "lat": 54.2861895,
+      "lng": -1.8061486,
+      "image_x": 1482,
+      "image_y": 1137
+    },
+    "middleham-central-10": {
+      "lat": 54.2861222,
+      "lng": -1.806111,
+      "image_x": 1487,
+      "image_y": 1156
+    },
+    "middleham-central-11": {
+      "lat": 54.2860658,
+      "lng": -1.806111,
+      "image_x": 1487,
+      "image_y": 1171
+    },
+    "middleham-central-12": {
+      "lat": 54.2859593,
+      "lng": -1.8060467,
+      "image_x": 1496,
+      "image_y": 1200
+    },
+    "middleham-central-13": {
+      "lat": 54.2857589,
+      "lng": -1.806154,
+      "image_x": 1478,
+      "image_y": 1255
+    },
+    "middleham-central-14": {
+      "lat": 54.2856587,
+      "lng": -1.8061647,
+      "image_x": 1476,
+      "image_y": 1282
+    },
+    "middleham-central-15": {
+      "lat": 54.2855507,
+      "lng": -1.806221,
+      "image_x": 1466,
+      "image_y": 1312
+    },
+    "middleham-central-16": {
+      "lat": 54.2854536,
+      "lng": -1.8066743,
+      "image_x": 1393,
+      "image_y": 1338
+    },
+    "middleham-central-17": {
+      "lat": 54.2854442,
+      "lng": -1.806331,
+      "image_x": 1448,
+      "image_y": 1340
+    },
+    "middleham-central-18": {
+      "lat": 54.285438,
+      "lng": -1.8061727,
+      "image_x": 1473,
+      "image_y": 1342
+    },
+    "middleham-central-19": {
+      "lat": 54.285438,
+      "lng": -1.805926,
+      "image_x": 1512,
+      "image_y": 1342
+    },
+    "middleham-central-20": {
+      "lat": 54.2852908,
+      "lng": -1.8061298,
+      "image_x": 1479,
+      "image_y": 1381
+    },
+    "middleham-central-21": {
+      "lat": 54.2852485,
+      "lng": -1.8062425,
+      "image_x": 1461,
+      "image_y": 1393
+    },
+    "middleham-central-22": {
+      "lat": 54.2851608,
+      "lng": -1.8062773,
+      "image_x": 1455,
+      "image_y": 1416
+    },
+    "middleham-central-23": {
+      "lat": 54.28507,
+      "lng": -1.8064758,
+      "image_x": 1423,
+      "image_y": 1441
+    },
+    "middleham-central-24": {
+      "lat": 54.2852736,
+      "lng": -1.8067494,
+      "image_x": 1380,
+      "image_y": 1387
+    },
+    "middleham-central-25": {
+      "lat": 54.2850089,
+      "lng": -1.8066984,
+      "image_x": 1387,
+      "image_y": 1458
+    },
+    "middleham-central-26": {
+      "lat": 54.2850089,
+      "lng": -1.806787,
+      "image_x": 1373,
+      "image_y": 1458
+    },
+    "middleham-central-27": {
+      "lat": 54.2850465,
+      "lng": -1.8069881,
+      "image_x": 1341,
+      "image_y": 1449
+    },
+    "middleham-central-28": {
+      "lat": 54.2849526,
+      "lng": -1.8070471,
+      "image_x": 1331,
+      "image_y": 1474
+    },
+    "middleham-central-29": {
+      "lat": 54.2852391,
+      "lng": -1.8075567,
+      "image_x": 1249,
+      "image_y": 1398
+    },
+    "middleham-central-30": {
+      "lat": 54.2849197,
+      "lng": -1.8074736,
+      "image_x": 1262,
+      "image_y": 1484
+    },
+    "middleham-central-31": {
+      "lat": 54.2848931,
+      "lng": -1.8076748,
+      "image_x": 1229,
+      "image_y": 1491
+    },
+    "middleham-central-32": {
+      "lat": 54.2848821,
+      "lng": -1.8079591,
+      "image_x": 1183,
+      "image_y": 1495
+    },
+    "middleham-central-33": {
+      "lat": 54.2850763,
+      "lng": -1.8081737,
+      "image_x": 1148,
+      "image_y": 1443
+    },
+    "middleham-central-34": {
+      "lat": 54.2852172,
+      "lng": -1.8080556,
+      "image_x": 1168,
+      "image_y": 1405
+    },
+    "middleham-central-35": {
+      "lat": 54.2852234,
+      "lng": -1.8084124,
+      "image_x": 1109,
+      "image_y": 1404
+    },
+    "middleham-central-36": {
+      "lat": 54.2852203,
+      "lng": -1.808525,
+      "image_x": 1090,
+      "image_y": 1405
+    },
+    "middleham-central-37": {
+      "lat": 54.2852172,
+      "lng": -1.8086511,
+      "image_x": 1069,
+      "image_y": 1406
+    },
+    "middleham-central-38": {
+      "lat": 54.2851953,
+      "lng": -1.8088254,
+      "image_x": 1040,
+      "image_y": 1412
+    },
+    "middleham-central-39": {
+      "lat": 54.2851812,
+      "lng": -1.8089676,
+      "image_x": 1016,
+      "image_y": 1416
+    },
+    "middleham-central-40": {
+      "lat": 54.2851624,
+      "lng": -1.8091473,
+      "image_x": 986,
+      "image_y": 1422
+    },
+    "middleham-central-41": {
+      "lat": 54.285117,
+      "lng": -1.8093243,
+      "image_x": 956,
+      "image_y": 1435
+    },
+    "middleham-central-42": {
+      "lat": 54.2850998,
+      "lng": -1.8094745,
+      "image_x": 931,
+      "image_y": 1440
+    },
+    "middleham-central-43": {
+      "lat": 54.2852579,
+      "lng": -1.8096596,
+      "image_x": 899,
+      "image_y": 1397
+    },
+    "middleham-central-44": {
+      "lat": 54.2853424,
+      "lng": -1.8096355,
+      "image_x": 903,
+      "image_y": 1373
+    },
+    "middleham-central-45": {
+      "lat": 54.285499,
+      "lng": -1.8095952,
+      "image_x": 909,
+      "image_y": 1329
+    },
+    "middleham-central-46": {
+      "lat": 54.2855898,
+      "lng": -1.8095335,
+      "image_x": 919,
+      "image_y": 1304
+    },
+    "middleham-central-47": {
+      "lat": 54.2856619,
+      "lng": -1.8095121,
+      "image_x": 923,
+      "image_y": 1284
+    },
+    "middleham-central-48": {
+      "lat": 54.2857495,
+      "lng": -1.8094826,
+      "image_x": 928,
+      "image_y": 1259
+    },
+    "middleham-central-49": {
+      "lat": 54.2858278,
+      "lng": -1.8094692,
+      "image_x": 930,
+      "image_y": 1237
+    },
+    "middleham-central-50": {
+      "lat": 54.2859147,
+      "lng": -1.8094169,
+      "image_x": 938,
+      "image_y": 1213
+    },
+    "middleham-central-51": {
+      "lat": 54.2859679,
+      "lng": -1.8093994,
+      "image_x": 941,
+      "image_y": 1197
+    },
+    "middleham-central-52": {
+      "lat": 54.2859249,
+      "lng": -1.8091486,
+      "image_x": 984,
+      "image_y": 1210
+    },
+    "middleham-central-53": {
+      "lat": 54.2858701,
+      "lng": -1.8091621,
+      "image_x": 982,
+      "image_y": 1225
+    },
+    "middleham-central-54": {
+      "lat": 54.2858176,
+      "lng": -1.8091835,
+      "image_x": 978,
+      "image_y": 1240
+    },
+    "middleham-central-55": {
+      "lat": 54.2857464,
+      "lng": -1.8092278,
+      "image_x": 971,
+      "image_y": 1260
+    },
+    "middleham-central-56": {
+      "lat": 54.2856532,
+      "lng": -1.8092385,
+      "image_x": 969,
+      "image_y": 1286
+    },
+    "middleham-central-57": {
+      "lat": 54.285582,
+      "lng": -1.8092519,
+      "image_x": 967,
+      "image_y": 1306
+    },
+    "middleham-central-58": {
+      "lat": 54.285463,
+      "lng": -1.8092787,
+      "image_x": 963,
+      "image_y": 1339
+    },
+    "middleham-central-59": {
+      "lat": 54.2854082,
+      "lng": -1.8092264,
+      "image_x": 972,
+      "image_y": 1354
+    },
+    "middleham-central-60": {
+      "lat": 54.2854912,
+      "lng": -1.808584,
+      "image_x": 1080,
+      "image_y": 1330
+    },
+    "middleham-central-61": {
+      "lat": 54.2855554,
+      "lng": -1.8085626,
+      "image_x": 1084,
+      "image_y": 1313
+    },
+    "middleham-central-62": {
+      "lat": 54.2856431,
+      "lng": -1.8085478,
+      "image_x": 1086,
+      "image_y": 1288
+    },
+    "middleham-central-63": {
+      "lat": 54.2857127,
+      "lng": -1.8085492,
+      "image_x": 1086,
+      "image_y": 1269
+    },
+    "middleham-central-64": {
+      "lat": 54.2857996,
+      "lng": -1.8085478,
+      "image_x": 1086,
+      "image_y": 1245
+    },
+    "middleham-central-65": {
+      "lat": 54.2858834,
+      "lng": -1.8085116,
+      "image_x": 1092,
+      "image_y": 1221
+    },
+    "middleham-central-66": {
+      "lat": 54.2859664,
+      "lng": -1.8085116,
+      "image_x": 1092,
+      "image_y": 1198
+    },
+    "middleham-central-67": {
+      "lat": 54.2860525,
+      "lng": -1.8084955,
+      "image_x": 1095,
+      "image_y": 1174
+    },
+    "middleham-central-68": {
+      "lat": 54.2861981,
+      "lng": -1.8088174,
+      "image_x": 1040,
+      "image_y": 1132
+    },
+    "middleham-central-69": {
+      "lat": 54.2862083,
+      "lng": -1.8089595,
+      "image_x": 1016,
+      "image_y": 1129
+    },
+    "middleham-central-70": {
+      "lat": 54.2861441,
+      "lng": -1.8091688,
+      "image_x": 980,
+      "image_y": 1148
+    },
+    "middleham-central-71": {
+      "lat": 54.286148,
+      "lng": -1.8092412,
+      "image_x": 968,
+      "image_y": 1146
+    },
+    "middleham-central-72": {
+      "lat": 54.286177,
+      "lng": -1.8094209,
+      "image_x": 937,
+      "image_y": 1138
+    },
+    "middleham-central-73": {
+      "lat": 54.2861981,
+      "lng": -1.8095818,
+      "image_x": 909,
+      "image_y": 1132
+    },
+    "middleham-central-74": {
+      "lat": 54.2862083,
+      "lng": -1.809677,
+      "image_x": 893,
+      "image_y": 1129
+    },
+    "middleham-central-75": {
+      "lat": 54.2862192,
+      "lng": -1.8097749,
+      "image_x": 875,
+      "image_y": 1126
+    },
+    "middleham-central-76": {
+      "lat": 54.2862349,
+      "lng": -1.8098997,
+      "image_x": 854,
+      "image_y": 1121
+    },
+    "middleham-central-77": {
+      "lat": 54.2862506,
+      "lng": -1.8099855,
+      "image_x": 839,
+      "image_y": 1116
+    },
+    "middleham-central-78": {
+      "lat": 54.2862513,
+      "lng": -1.8100794,
+      "image_x": 822,
+      "image_y": 1116
+    },
+    "middleham-central-79": {
+      "lat": 54.2862709,
+      "lng": -1.8101719,
+      "image_x": 806,
+      "image_y": 1110
+    },
+    "middleham-central-80": {
+      "lat": 54.2862294,
+      "lng": -1.8104187,
+      "image_x": 763,
+      "image_y": 1122
+    },
+    "middleham-central-81": {
+      "lat": 54.2861754,
+      "lng": -1.8104589,
+      "image_x": 756,
+      "image_y": 1138
+    },
+    "middleham-central-82": {
+      "lat": 54.2860971,
+      "lng": -1.8104871,
+      "image_x": 752,
+      "image_y": 1160
+    },
+    "middleham-central-83": {
+      "lat": 54.2860181,
+      "lng": -1.8105206,
+      "image_x": 746,
+      "image_y": 1183
+    },
+    "middleham-central-84": {
+      "lat": 54.2859225,
+      "lng": -1.8105702,
+      "image_x": 738,
+      "image_y": 1210
+    },
+    "middleham-central-85": {
+      "lat": 54.2858356,
+      "lng": -1.8106145,
+      "image_x": 731,
+      "image_y": 1235
+    },
+    "middleham-central-86": {
+      "lat": 54.2857801,
+      "lng": -1.8106185,
+      "image_x": 731,
+      "image_y": 1251
+    },
+    "middleham-central-87": {
+      "lat": 54.285701,
+      "lng": -1.8106802,
+      "image_x": 721,
+      "image_y": 1274
+    },
+    "middleham-central-88": {
+      "lat": 54.2855898,
+      "lng": -1.8106024,
+      "image_x": 735,
+      "image_y": 1305
+    },
+    "middleham-central-89": {
+      "lat": 54.2855562,
+      "lng": -1.8104777,
+      "image_x": 757,
+      "image_y": 1314
+    },
+    "middleham-central-90": {
+      "lat": 54.2855295,
+      "lng": -1.8103382,
+      "image_x": 781,
+      "image_y": 1322
+    },
+    "middleham-central-91": {
+      "lat": 54.2854693,
+      "lng": -1.8102081,
+      "image_x": 804,
+      "image_y": 1339
+    },
+    "middleham-central-92": {
+      "lat": 54.2853315,
+      "lng": -1.8101048,
+      "image_x": 823,
+      "image_y": 1377
+    },
+    "middleham-central-93": {
+      "lat": 54.285254,
+      "lng": -1.8101022,
+      "image_x": 824,
+      "image_y": 1399
+    },
+    "middleham-central-94": {
+      "lat": 54.2850794,
+      "lng": -1.8103436,
+      "image_x": 783,
+      "image_y": 1448
+    },
+    "middleham-central-95": {
+      "lat": 54.2850747,
+      "lng": -1.8104455,
+      "image_x": 765,
+      "image_y": 1449
+    },
+    "middleham-central-96": {
+      "lat": 54.2850966,
+      "lng": -1.8106399,
+      "image_x": 732,
+      "image_y": 1444
+    },
+    "middleham-central-97": {
+      "lat": 54.2851005,
+      "lng": -1.8107848,
+      "image_x": 707,
+      "image_y": 1443
+    },
+    "middleham-central-98": {
+      "lat": 54.2851436,
+      "lng": -1.8109377,
+      "image_x": 680,
+      "image_y": 1431
+    },
+    "middleham-central-99": {
+      "lat": 54.2851827,
+      "lng": -1.8110651,
+      "image_x": 657,
+      "image_y": 1421
+    },
+    "middleham-central-100": {
+      "lat": 54.2852689,
+      "lng": -1.811163,
+      "image_x": 639,
+      "image_y": 1397
+    },
+    "middleham-central-101": {
+      "lat": 54.2853284,
+      "lng": -1.8112274,
+      "image_x": 627,
+      "image_y": 1380
+    },
+    "middleham-central-102": {
+      "lat": 54.2857589,
+      "lng": -1.8118429,
+      "image_x": 514,
+      "image_y": 1258
+    },
+    "middleham-central-103": {
+      "lat": 54.2859907,
+      "lng": -1.8123204,
+      "image_x": 425,
+      "image_y": 1190
+    },
+    "middleham-central-104": {
+      "lat": 54.2859813,
+      "lng": -1.8122265,
+      "image_x": 442,
+      "image_y": 1193
+    },
+    "middleham-central-105": {
+      "lat": 54.2862067,
+      "lng": -1.8122533,
+      "image_x": 434,
+      "image_y": 1127
+    },
+    "middleham-central-106": {
+      "lat": 54.2862099,
+      "lng": -1.8121514,
+      "image_x": 453,
+      "image_y": 1126
+    },
+    "middleham-central-107": {
+      "lat": 54.2863602,
+      "lng": -1.8120414,
+      "image_x": 471,
+      "image_y": 1082
+    },
+    "middleham-central-108": {
+      "lat": 54.2865903,
+      "lng": -1.8115988,
+      "image_x": 549,
+      "image_y": 1015
+    },
+    "middleham-central-109": {
+      "lat": 54.2865496,
+      "lng": -1.8112823,
+      "image_x": 607,
+      "image_y": 1027
+    },
+    "middleham-central-110": {
+      "lat": 54.2865574,
+      "lng": -1.8112099,
+      "image_x": 620,
+      "image_y": 1025
+    },
+    "middleham-central-111": {
+      "lat": 54.2865715,
+      "lng": -1.8110543,
+      "image_x": 648,
+      "image_y": 1021
+    },
+    "middleham-central-112": {
+      "lat": 54.2868283,
+      "lng": -1.8103677,
+      "image_x": 768,
+      "image_y": 947
+    },
+    "middleham-central-113": {
+      "lat": 54.2869113,
+      "lng": -1.8101209,
+      "image_x": 812,
+      "image_y": 923
+    },
+    "middleham-central-114": {
+      "lat": 54.2870177,
+      "lng": -1.809909,
+      "image_x": 848,
+      "image_y": 893
+    },
+    "middleham-central-115": {
+      "lat": 54.2871226,
+      "lng": -1.8097454,
+      "image_x": 877,
+      "image_y": 862
+    },
+    "middleham-central-116": {
+      "lat": 54.2869191,
+      "lng": -1.8093699,
+      "image_x": 943,
+      "image_y": 923
+    },
+    "middleham-central-117": {
+      "lat": 54.2868455,
+      "lng": -1.8091446,
+      "image_x": 983,
+      "image_y": 946
+    },
+    "middleham-central-118": {
+      "lat": 54.2868189,
+      "lng": -1.8088683,
+      "image_x": 1030,
+      "image_y": 954
+    },
+    "middleham-central-119": {
+      "lat": 54.2868377,
+      "lng": -1.8085545,
+      "image_x": 1084,
+      "image_y": 949
+    },
+    "middleham-central-120": {
+      "lat": 54.2868111,
+      "lng": -1.8081871,
+      "image_x": 1147,
+      "image_y": 958
+    },
+    "middleham-central-121": {
+      "lat": 54.2869457,
+      "lng": -1.8078411,
+      "image_x": 1206,
+      "image_y": 920
+    },
+    "middleham-central-122": {
+      "lat": 54.2871399,
+      "lng": -1.8078277,
+      "image_x": 1208,
+      "image_y": 864
+    },
+    "middleham-central-123": {
+      "lat": 54.2872902,
+      "lng": -1.8079591,
+      "image_x": 1186,
+      "image_y": 820
+    },
+    "middleham-central-124": {
+      "lat": 54.2873356,
+      "lng": -1.8081415,
+      "image_x": 1155,
+      "image_y": 806
+    },
+    "middleham-central-125": {
+      "lat": 54.28737,
+      "lng": -1.8084231,
+      "image_x": 1107,
+      "image_y": 794
+    },
+    "middleham-central-126": {
+      "lat": 54.2873497,
+      "lng": -1.8087155,
+      "image_x": 1056,
+      "image_y": 799
+    },
+    "middleham-central-127": {
+      "lat": 54.2872307,
+      "lng": -1.8089837,
+      "image_x": 1010,
+      "image_y": 833
+    },
+    "middleham-central-128": {
+      "lat": 54.2873512,
+      "lng": -1.8094477,
+      "image_x": 928,
+      "image_y": 795
+    },
+    "middleham-central-129": {
+      "lat": 54.2874765,
+      "lng": -1.809158,
+      "image_x": 979,
+      "image_y": 759
+    },
+    "middleham-central-130": {
+      "lat": 54.2875861,
+      "lng": -1.808922,
+      "image_x": 1020,
+      "image_y": 728
+    },
+    "middleham-central-131": {
+      "lat": 54.2877145,
+      "lng": -1.8087772,
+      "image_x": 1045,
+      "image_y": 690
+    },
+    "middleham-central-132": {
+      "lat": 54.2878147,
+      "lng": -1.8085492,
+      "image_x": 1085,
+      "image_y": 662
+    }
+  }
+}

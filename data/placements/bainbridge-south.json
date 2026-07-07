@@ -1,0 +1,633 @@
+{
+  "sheet_id": "bainbridge-south",
+  "pdf_hash": "3502e42b934bd08fce39429b98218d875293c8419b371bf1fecfa6d966983469",
+  "alignment": {
+    "corners": [
+      [
+        54.3104818893138,
+        -2.108450214084329
+      ],
+      [
+        54.3104818893138,
+        -2.0952794154322736
+      ],
+      [
+        54.30505133280678,
+        -2.0952794154322736
+      ],
+      [
+        54.30505133280678,
+        -2.108450214084329
+      ]
+    ],
+    "center": [
+      54.30776661106029,
+      -2.1018648147583012
+    ],
+    "mpp": 0.36571660638954107,
+    "zoom": 19,
+    "stretched": false
+  },
+  "houses": {
+    "bainbridge-south-1": {
+      "lat": 54.3081896,
+      "lng": -2.1015926,
+      "image_x": 1218,
+      "image_y": 698
+    },
+    "bainbridge-south-2": {
+      "lat": 54.308224,
+      "lng": -2.1014544,
+      "image_x": 1242,
+      "image_y": 687
+    },
+    "bainbridge-south-3": {
+      "lat": 54.3068626,
+      "lng": -2.1014598,
+      "image_x": 1241,
+      "image_y": 1102
+    },
+    "bainbridge-south-4": {
+      "lat": 54.3067139,
+      "lng": -2.1015242,
+      "image_x": 1230,
+      "image_y": 1147
+    },
+    "bainbridge-south-5": {
+      "lat": 54.3066904,
+      "lng": -2.1013445,
+      "image_x": 1262,
+      "image_y": 1154
+    },
+    "bainbridge-south-6": {
+      "lat": 54.3065058,
+      "lng": -2.1012506,
+      "image_x": 1279,
+      "image_y": 1210
+    },
+    "bainbridge-south-7": {
+      "lat": 54.3060159,
+      "lng": -2.1007732,
+      "image_x": 1363,
+      "image_y": 1359
+    },
+    "bainbridge-south-8": {
+      "lat": 54.3061959,
+      "lng": -2.1011648,
+      "image_x": 1294,
+      "image_y": 1305
+    },
+    "bainbridge-south-9": {
+      "lat": 54.3064604,
+      "lng": -2.1019721,
+      "image_x": 1150,
+      "image_y": 1224
+    },
+    "bainbridge-south-10": {
+      "lat": 54.3064573,
+      "lng": -2.1021974,
+      "image_x": 1110,
+      "image_y": 1225
+    },
+    "bainbridge-south-11": {
+      "lat": 54.3063665,
+      "lng": -2.102302,
+      "image_x": 1092,
+      "image_y": 1253
+    },
+    "bainbridge-south-12": {
+      "lat": 54.3063602,
+      "lng": -2.1024039,
+      "image_x": 1074,
+      "image_y": 1255
+    },
+    "bainbridge-south-13": {
+      "lat": 54.3063461,
+      "lng": -2.102522,
+      "image_x": 1053,
+      "image_y": 1259
+    },
+    "bainbridge-south-14": {
+      "lat": 54.3062256,
+      "lng": -2.1025139,
+      "image_x": 1054,
+      "image_y": 1296
+    },
+    "bainbridge-south-15": {
+      "lat": 54.3061505,
+      "lng": -2.1024603,
+      "image_x": 1064,
+      "image_y": 1318
+    },
+    "bainbridge-south-16": {
+      "lat": 54.3061599,
+      "lng": -2.1023503,
+      "image_x": 1083,
+      "image_y": 1316
+    },
+    "bainbridge-south-17": {
+      "lat": 54.3061693,
+      "lng": -2.1022832,
+      "image_x": 1095,
+      "image_y": 1313
+    },
+    "bainbridge-south-18": {
+      "lat": 54.3061771,
+      "lng": -2.1021438,
+      "image_x": 1120,
+      "image_y": 1310
+    },
+    "bainbridge-south-19": {
+      "lat": 54.3060957,
+      "lng": -2.1018675,
+      "image_x": 1169,
+      "image_y": 1335
+    },
+    "bainbridge-south-20": {
+      "lat": 54.3058469,
+      "lng": -2.1019265,
+      "image_x": 1159,
+      "image_y": 1411
+    },
+    "bainbridge-south-21": {
+      "lat": 54.3056685,
+      "lng": -2.1020177,
+      "image_x": 1142,
+      "image_y": 1465
+    },
+    "bainbridge-south-22": {
+      "lat": 54.3055731,
+      "lng": -2.1026319,
+      "image_x": 1033,
+      "image_y": 1494
+    },
+    "bainbridge-south-23": {
+      "lat": 54.3057123,
+      "lng": -2.102243,
+      "image_x": 1102,
+      "image_y": 1452
+    },
+    "bainbridge-south-24": {
+      "lat": 54.3057984,
+      "lng": -2.102294,
+      "image_x": 1093,
+      "image_y": 1426
+    },
+    "bainbridge-south-25": {
+      "lat": 54.3059596,
+      "lng": -2.1025756,
+      "image_x": 1043,
+      "image_y": 1377
+    },
+    "bainbridge-south-26": {
+      "lat": 54.306066,
+      "lng": -2.1027231,
+      "image_x": 1017,
+      "image_y": 1344
+    },
+    "bainbridge-south-27": {
+      "lat": 54.3061255,
+      "lng": -2.1027768,
+      "image_x": 1008,
+      "image_y": 1326
+    },
+    "bainbridge-south-28": {
+      "lat": 54.3061881,
+      "lng": -2.1028224,
+      "image_x": 999,
+      "image_y": 1307
+    },
+    "bainbridge-south-29": {
+      "lat": 54.3062429,
+      "lng": -2.1029645,
+      "image_x": 974,
+      "image_y": 1290
+    },
+    "bainbridge-south-30": {
+      "lat": 54.3063101,
+      "lng": -2.1030155,
+      "image_x": 965,
+      "image_y": 1270
+    },
+    "bainbridge-south-31": {
+      "lat": 54.3063555,
+      "lng": -2.1030638,
+      "image_x": 957,
+      "image_y": 1256
+    },
+    "bainbridge-south-32": {
+      "lat": 54.3063477,
+      "lng": -2.1034044,
+      "image_x": 896,
+      "image_y": 1258
+    },
+    "bainbridge-south-33": {
+      "lat": 54.3062225,
+      "lng": -2.1037209,
+      "image_x": 840,
+      "image_y": 1297
+    },
+    "bainbridge-south-34": {
+      "lat": 54.3058579,
+      "lng": -2.1033427,
+      "image_x": 907,
+      "image_y": 1407
+    },
+    "bainbridge-south-35": {
+      "lat": 54.3060848,
+      "lng": -2.1045926,
+      "image_x": 685,
+      "image_y": 1338
+    },
+    "bainbridge-south-36": {
+      "lat": 54.3059565,
+      "lng": -2.1048394,
+      "image_x": 641,
+      "image_y": 1377
+    },
+    "bainbridge-south-37": {
+      "lat": 54.3059596,
+      "lng": -2.1050808,
+      "image_x": 598,
+      "image_y": 1377
+    },
+    "bainbridge-south-38": {
+      "lat": 54.3061177,
+      "lng": -2.1049762,
+      "image_x": 617,
+      "image_y": 1328
+    },
+    "bainbridge-south-39": {
+      "lat": 54.3060973,
+      "lng": -2.1059954,
+      "image_x": 436,
+      "image_y": 1335
+    },
+    "bainbridge-south-40": {
+      "lat": 54.3062272,
+      "lng": -2.1044263,
+      "image_x": 715,
+      "image_y": 1295
+    },
+    "bainbridge-south-41": {
+      "lat": 54.3062507,
+      "lng": -2.1046624,
+      "image_x": 673,
+      "image_y": 1288
+    },
+    "bainbridge-south-42": {
+      "lat": 54.3063039,
+      "lng": -2.1048984,
+      "image_x": 631,
+      "image_y": 1272
+    },
+    "bainbridge-south-43": {
+      "lat": 54.3063227,
+      "lng": -2.1052337,
+      "image_x": 571,
+      "image_y": 1266
+    },
+    "bainbridge-south-44": {
+      "lat": 54.3065308,
+      "lng": -2.1056119,
+      "image_x": 504,
+      "image_y": 1203
+    },
+    "bainbridge-south-45": {
+      "lat": 54.3067061,
+      "lng": -2.1054912,
+      "image_x": 525,
+      "image_y": 1149
+    },
+    "bainbridge-south-46": {
+      "lat": 54.3066341,
+      "lng": -2.1050513,
+      "image_x": 604,
+      "image_y": 1171
+    },
+    "bainbridge-south-47": {
+      "lat": 54.3064604,
+      "lng": -2.1047723,
+      "image_x": 653,
+      "image_y": 1224
+    },
+    "bainbridge-south-48": {
+      "lat": 54.3064494,
+      "lng": -2.1044853,
+      "image_x": 704,
+      "image_y": 1227
+    },
+    "bainbridge-south-49": {
+      "lat": 54.3063743,
+      "lng": -2.1045014,
+      "image_x": 701,
+      "image_y": 1250
+    },
+    "bainbridge-south-50": {
+      "lat": 54.3064306,
+      "lng": -2.1042895,
+      "image_x": 739,
+      "image_y": 1233
+    },
+    "bainbridge-south-51": {
+      "lat": 54.3066012,
+      "lng": -2.1042949,
+      "image_x": 738,
+      "image_y": 1181
+    },
+    "bainbridge-south-52": {
+      "lat": 54.3066169,
+      "lng": -2.1046114,
+      "image_x": 682,
+      "image_y": 1176
+    },
+    "bainbridge-south-53": {
+      "lat": 54.3067828,
+      "lng": -2.104547,
+      "image_x": 693,
+      "image_y": 1126
+    },
+    "bainbridge-south-54": {
+      "lat": 54.3068281,
+      "lng": -2.1043056,
+      "image_x": 736,
+      "image_y": 1112
+    },
+    "bainbridge-south-55": {
+      "lat": 54.3068281,
+      "lng": -2.1041876,
+      "image_x": 757,
+      "image_y": 1112
+    },
+    "bainbridge-south-56": {
+      "lat": 54.3069799,
+      "lng": -2.1041232,
+      "image_x": 768,
+      "image_y": 1066
+    },
+    "bainbridge-south-57": {
+      "lat": 54.3069909,
+      "lng": -2.1044746,
+      "image_x": 706,
+      "image_y": 1063
+    },
+    "bainbridge-south-58": {
+      "lat": 54.3069674,
+      "lng": -2.1048367,
+      "image_x": 642,
+      "image_y": 1070
+    },
+    "bainbridge-south-59": {
+      "lat": 54.3069111,
+      "lng": -2.1051586,
+      "image_x": 585,
+      "image_y": 1087
+    },
+    "bainbridge-south-60": {
+      "lat": 54.3072381,
+      "lng": -2.104429,
+      "image_x": 714,
+      "image_y": 987
+    },
+    "bainbridge-south-61": {
+      "lat": 54.3077092,
+      "lng": -2.1040428,
+      "image_x": 783,
+      "image_y": 844
+    },
+    "bainbridge-south-62": {
+      "lat": 54.3078782,
+      "lng": -2.1043593,
+      "image_x": 727,
+      "image_y": 793
+    },
+    "bainbridge-south-63": {
+      "lat": 54.3078938,
+      "lng": -2.1038845,
+      "image_x": 811,
+      "image_y": 788
+    },
+    "bainbridge-south-64": {
+      "lat": 54.3080268,
+      "lng": -2.1038148,
+      "image_x": 823,
+      "image_y": 747
+    },
+    "bainbridge-south-65": {
+      "lat": 54.308138,
+      "lng": -2.1038792,
+      "image_x": 812,
+      "image_y": 713
+    },
+    "bainbridge-south-66": {
+      "lat": 54.3082616,
+      "lng": -2.1041206,
+      "image_x": 769,
+      "image_y": 676
+    },
+    "bainbridge-south-67": {
+      "lat": 54.3082851,
+      "lng": -2.1038952,
+      "image_x": 809,
+      "image_y": 669
+    },
+    "bainbridge-south-68": {
+      "lat": 54.3082929,
+      "lng": -2.1035492,
+      "image_x": 870,
+      "image_y": 666
+    },
+    "bainbridge-south-69": {
+      "lat": 54.3079627,
+      "lng": -2.1036324,
+      "image_x": 856,
+      "image_y": 767
+    },
+    "bainbridge-south-70": {
+      "lat": 54.3079283,
+      "lng": -2.1036243,
+      "image_x": 857,
+      "image_y": 777
+    },
+    "bainbridge-south-71": {
+      "lat": 54.3078516,
+      "lng": -2.1035707,
+      "image_x": 867,
+      "image_y": 801
+    },
+    "bainbridge-south-72": {
+      "lat": 54.3077749,
+      "lng": -2.1036109,
+      "image_x": 859,
+      "image_y": 824
+    },
+    "bainbridge-south-73": {
+      "lat": 54.3077123,
+      "lng": -2.103627,
+      "image_x": 857,
+      "image_y": 843
+    },
+    "bainbridge-south-74": {
+      "lat": 54.3076372,
+      "lng": -2.1036083,
+      "image_x": 860,
+      "image_y": 866
+    },
+    "bainbridge-south-75": {
+      "lat": 54.3075089,
+      "lng": -2.1037048,
+      "image_x": 843,
+      "image_y": 905
+    },
+    "bainbridge-south-76": {
+      "lat": 54.3074228,
+      "lng": -2.1036673,
+      "image_x": 849,
+      "image_y": 931
+    },
+    "bainbridge-south-77": {
+      "lat": 54.3073242,
+      "lng": -2.1036404,
+      "image_x": 854,
+      "image_y": 961
+    },
+    "bainbridge-south-78": {
+      "lat": 54.3072194,
+      "lng": -2.1037906,
+      "image_x": 827,
+      "image_y": 993
+    },
+    "bainbridge-south-79": {
+      "lat": 54.3069627,
+      "lng": -2.1038416,
+      "image_x": 818,
+      "image_y": 1071
+    },
+    "bainbridge-south-80": {
+      "lat": 54.3068767,
+      "lng": -2.1038443,
+      "image_x": 818,
+      "image_y": 1097
+    },
+    "bainbridge-south-81": {
+      "lat": 54.3067671,
+      "lng": -2.1037692,
+      "image_x": 831,
+      "image_y": 1131
+    },
+    "bainbridge-south-82": {
+      "lat": 54.3067029,
+      "lng": -2.1037504,
+      "image_x": 835,
+      "image_y": 1150
+    },
+    "bainbridge-south-83": {
+      "lat": 54.3064823,
+      "lng": -2.104075,
+      "image_x": 777,
+      "image_y": 1217
+    },
+    "bainbridge-south-84": {
+      "lat": 54.3064776,
+      "lng": -2.1039408,
+      "image_x": 801,
+      "image_y": 1219
+    },
+    "bainbridge-south-85": {
+      "lat": 54.3064713,
+      "lng": -2.1038496,
+      "image_x": 817,
+      "image_y": 1221
+    },
+    "bainbridge-south-86": {
+      "lat": 54.3066388,
+      "lng": -2.10345,
+      "image_x": 888,
+      "image_y": 1170
+    },
+    "bainbridge-south-87": {
+      "lat": 54.3066403,
+      "lng": -2.1023181,
+      "image_x": 1089,
+      "image_y": 1169
+    },
+    "bainbridge-south-88": {
+      "lat": 54.3067249,
+      "lng": -2.1023905,
+      "image_x": 1076,
+      "image_y": 1144
+    },
+    "bainbridge-south-89": {
+      "lat": 54.3068047,
+      "lng": -2.1024469,
+      "image_x": 1066,
+      "image_y": 1119
+    },
+    "bainbridge-south-90": {
+      "lat": 54.3068892,
+      "lng": -2.1022537,
+      "image_x": 1100,
+      "image_y": 1094
+    },
+    "bainbridge-south-91": {
+      "lat": 54.3068626,
+      "lng": -2.1025166,
+      "image_x": 1054,
+      "image_y": 1102
+    },
+    "bainbridge-south-92": {
+      "lat": 54.3069267,
+      "lng": -2.1024764,
+      "image_x": 1061,
+      "image_y": 1082
+    },
+    "bainbridge-south-93": {
+      "lat": 54.306969,
+      "lng": -2.102538,
+      "image_x": 1050,
+      "image_y": 1069
+    },
+    "bainbridge-south-94": {
+      "lat": 54.3071036,
+      "lng": -2.1025944,
+      "image_x": 1040,
+      "image_y": 1028
+    },
+    "bainbridge-south-95": {
+      "lat": 54.3071881,
+      "lng": -2.1024978,
+      "image_x": 1057,
+      "image_y": 1003
+    },
+    "bainbridge-south-96": {
+      "lat": 54.3072945,
+      "lng": -2.1025488,
+      "image_x": 1048,
+      "image_y": 970
+    },
+    "bainbridge-south-97": {
+      "lat": 54.3074103,
+      "lng": -2.1025515,
+      "image_x": 1048,
+      "image_y": 935
+    },
+    "bainbridge-south-98": {
+      "lat": 54.3076513,
+      "lng": -2.1024495,
+      "image_x": 1066,
+      "image_y": 862
+    },
+    "bainbridge-south-99": {
+      "lat": 54.3078813,
+      "lng": -2.1020579,
+      "image_x": 1135,
+      "image_y": 792
+    },
+    "bainbridge-south-100": {
+      "lat": 54.3079596,
+      "lng": -2.1025273,
+      "image_x": 1052,
+      "image_y": 768
+    }
+  }
+}

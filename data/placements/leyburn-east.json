@@ -1,0 +1,519 @@
+{
+  "sheet_id": "leyburn-east",
+  "pdf_hash": "1bbb97664887911b66a3c626af1e717f7e5c39ca907b8fb809d8b7f4f01fe435",
+  "alignment": {
+    "corners": [
+      [
+        54.31470182733263,
+        -1.8313495855484905
+      ],
+      [
+        54.31470182733263,
+        -1.8131931085433068
+      ],
+      [
+        54.30721616687643,
+        -1.8131931085433068
+      ],
+      [
+        54.30721616687643,
+        -1.8313495855484905
+      ]
+    ],
+    "center": [
+      54.31095899710453,
+      -1.8222713470458987
+    ],
+    "mpp": 0.5041159842608522,
+    "zoom": 18,
+    "stretched": false
+  },
+  "houses": {
+    "leyburn-east-1": {
+      "lat": 54.3127588,
+      "lng": -1.8252969,
+      "image_x": 780,
+      "image_y": 429
+    },
+    "leyburn-east-2": {
+      "lat": 54.312776,
+      "lng": -1.8254444,
+      "image_x": 761,
+      "image_y": 425
+    },
+    "leyburn-east-3": {
+      "lat": 54.3127994,
+      "lng": -1.8256214,
+      "image_x": 738,
+      "image_y": 420
+    },
+    "leyburn-east-5": {
+      "lat": 54.312812,
+      "lng": -1.8257877,
+      "image_x": 717,
+      "image_y": 417
+    },
+    "leyburn-east-6": {
+      "lat": 54.3127103,
+      "lng": -1.8261981,
+      "image_x": 664,
+      "image_y": 440
+    },
+    "leyburn-east-7": {
+      "lat": 54.3122847,
+      "lng": -1.8246156,
+      "image_x": 868,
+      "image_y": 534
+    },
+    "leyburn-east-8": {
+      "lat": 54.3121767,
+      "lng": -1.8236151,
+      "image_x": 996,
+      "image_y": 558
+    },
+    "leyburn-east-9": {
+      "lat": 54.3120265,
+      "lng": -1.8227407,
+      "image_x": 1109,
+      "image_y": 591
+    },
+    "leyburn-east-10": {
+      "lat": 54.3119451,
+      "lng": -1.8232021,
+      "image_x": 1050,
+      "image_y": 609
+    },
+    "leyburn-east-11": {
+      "lat": 54.3122393,
+      "lng": -1.8250984,
+      "image_x": 805,
+      "image_y": 544
+    },
+    "leyburn-east-12": {
+      "lat": 54.3123519,
+      "lng": -1.8253452,
+      "image_x": 774,
+      "image_y": 519
+    },
+    "leyburn-east-13": {
+      "lat": 54.312438,
+      "lng": -1.8261445,
+      "image_x": 671,
+      "image_y": 500
+    },
+    "leyburn-east-14": {
+      "lat": 54.312269,
+      "lng": -1.826115,
+      "image_x": 674,
+      "image_y": 537
+    },
+    "leyburn-east-15": {
+      "lat": 54.3118872,
+      "lng": -1.8255383,
+      "image_x": 749,
+      "image_y": 622
+    },
+    "leyburn-east-16": {
+      "lat": 54.3116525,
+      "lng": -1.825144,
+      "image_x": 799,
+      "image_y": 673
+    },
+    "leyburn-east-17": {
+      "lat": 54.3108889,
+      "lng": -1.822848,
+      "image_x": 1095,
+      "image_y": 842
+    },
+    "leyburn-east-18": {
+      "lat": 54.3113646,
+      "lng": -1.823929,
+      "image_x": 956,
+      "image_y": 737
+    },
+    "leyburn-east-19": {
+      "lat": 54.3112864,
+      "lng": -1.8249992,
+      "image_x": 818,
+      "image_y": 754
+    },
+    "leyburn-east-20": {
+      "lat": 54.3111158,
+      "lng": -1.8250689,
+      "image_x": 809,
+      "image_y": 792
+    },
+    "leyburn-east-21": {
+      "lat": 54.3109218,
+      "lng": -1.8242052,
+      "image_x": 920,
+      "image_y": 835
+    },
+    "leyburn-east-22": {
+      "lat": 54.3109374,
+      "lng": -1.8234113,
+      "image_x": 1023,
+      "image_y": 831
+    },
+    "leyburn-east-23": {
+      "lat": 54.3122674,
+      "lng": -1.8266433,
+      "image_x": 606,
+      "image_y": 538
+    },
+    "leyburn-east-24": {
+      "lat": 54.3121548,
+      "lng": -1.8266219,
+      "image_x": 609,
+      "image_y": 562
+    },
+    "leyburn-east-25": {
+      "lat": 54.3120077,
+      "lng": -1.8266165,
+      "image_x": 610,
+      "image_y": 595
+    },
+    "leyburn-east-26": {
+      "lat": 54.311604,
+      "lng": -1.8258119,
+      "image_x": 713,
+      "image_y": 684
+    },
+    "leyburn-east-27": {
+      "lat": 54.3114068,
+      "lng": -1.8255329,
+      "image_x": 749,
+      "image_y": 728
+    },
+    "leyburn-east-28": {
+      "lat": 54.3106839,
+      "lng": -1.8253559,
+      "image_x": 772,
+      "image_y": 887
+    },
+    "leyburn-east-29": {
+      "lat": 54.3106213,
+      "lng": -1.8242884,
+      "image_x": 910,
+      "image_y": 901
+    },
+    "leyburn-east-30": {
+      "lat": 54.3106245,
+      "lng": -1.8232262,
+      "image_x": 1046,
+      "image_y": 900
+    },
+    "leyburn-east-31": {
+      "lat": 54.3106057,
+      "lng": -1.8230224,
+      "image_x": 1073,
+      "image_y": 905
+    },
+    "leyburn-east-32": {
+      "lat": 54.3106182,
+      "lng": -1.822781,
+      "image_x": 1104,
+      "image_y": 902
+    },
+    "leyburn-east-33": {
+      "lat": 54.3106119,
+      "lng": -1.8226093,
+      "image_x": 1126,
+      "image_y": 903
+    },
+    "leyburn-east-34": {
+      "lat": 54.3111033,
+      "lng": -1.8219978,
+      "image_x": 1205,
+      "image_y": 795
+    },
+    "leyburn-east-35": {
+      "lat": 54.3117198,
+      "lng": -1.8199003,
+      "image_x": 1475,
+      "image_y": 659
+    },
+    "leyburn-east-36": {
+      "lat": 54.3108936,
+      "lng": -1.8209249,
+      "image_x": 1343,
+      "image_y": 841
+    },
+    "leyburn-east-37": {
+      "lat": 54.3108842,
+      "lng": -1.8200505,
+      "image_x": 1456,
+      "image_y": 843
+    },
+    "leyburn-east-38": {
+      "lat": 54.3107872,
+      "lng": -1.8194926,
+      "image_x": 1527,
+      "image_y": 864
+    },
+    "leyburn-east-39": {
+      "lat": 54.3102896,
+      "lng": -1.8195516,
+      "image_x": 1520,
+      "image_y": 974
+    },
+    "leyburn-east-40": {
+      "lat": 54.309551,
+      "lng": -1.819455,
+      "image_x": 1532,
+      "image_y": 1137
+    },
+    "leyburn-east-41": {
+      "lat": 54.3093914,
+      "lng": -1.8193585,
+      "image_x": 1545,
+      "image_y": 1173
+    },
+    "leyburn-east-42": {
+      "lat": 54.3092975,
+      "lng": -1.8198574,
+      "image_x": 1480,
+      "image_y": 1193
+    },
+    "leyburn-east-43": {
+      "lat": 54.3089971,
+      "lng": -1.8204796,
+      "image_x": 1400,
+      "image_y": 1260
+    },
+    "leyburn-east-44": {
+      "lat": 54.3106213,
+      "lng": -1.8222767,
+      "image_x": 1169,
+      "image_y": 901
+    },
+    "leyburn-east-45": {
+      "lat": 54.3106276,
+      "lng": -1.8204555,
+      "image_x": 1403,
+      "image_y": 900
+    },
+    "leyburn-east-46": {
+      "lat": 54.3104586,
+      "lng": -1.8201497,
+      "image_x": 1443,
+      "image_y": 937
+    },
+    "leyburn-east-47": {
+      "lat": 54.3103021,
+      "lng": -1.8201041,
+      "image_x": 1449,
+      "image_y": 972
+    },
+    "leyburn-east-48": {
+      "lat": 54.3103412,
+      "lng": -1.8210483,
+      "image_x": 1327,
+      "image_y": 963
+    },
+    "leyburn-east-49": {
+      "lat": 54.3103428,
+      "lng": -1.8218958,
+      "image_x": 1218,
+      "image_y": 963
+    },
+    "leyburn-east-50": {
+      "lat": 54.3101801,
+      "lng": -1.8226844,
+      "image_x": 1116,
+      "image_y": 999
+    },
+    "leyburn-east-51": {
+      "lat": 54.3100924,
+      "lng": -1.8225127,
+      "image_x": 1138,
+      "image_y": 1018
+    },
+    "leyburn-east-52": {
+      "lat": 54.3100486,
+      "lng": -1.8220568,
+      "image_x": 1197,
+      "image_y": 1028
+    },
+    "leyburn-east-53": {
+      "lat": 54.3100439,
+      "lng": -1.8216196,
+      "image_x": 1253,
+      "image_y": 1029
+    },
+    "leyburn-east-54": {
+      "lat": 54.3100658,
+      "lng": -1.8212119,
+      "image_x": 1306,
+      "image_y": 1024
+    },
+    "leyburn-east-55": {
+      "lat": 54.3096574,
+      "lng": -1.8211609,
+      "image_x": 1313,
+      "image_y": 1114
+    },
+    "leyburn-east-56": {
+      "lat": 54.3099563,
+      "lng": -1.820654,
+      "image_x": 1378,
+      "image_y": 1048
+    },
+    "leyburn-east-57": {
+      "lat": 54.3100705,
+      "lng": -1.8206862,
+      "image_x": 1374,
+      "image_y": 1023
+    },
+    "leyburn-east-58": {
+      "lat": 54.3100439,
+      "lng": -1.8202356,
+      "image_x": 1432,
+      "image_y": 1029
+    },
+    "leyburn-east-59": {
+      "lat": 54.3098859,
+      "lng": -1.8201578,
+      "image_x": 1442,
+      "image_y": 1063
+    },
+    "leyburn-east-60": {
+      "lat": 54.3095854,
+      "lng": -1.8202087,
+      "image_x": 1435,
+      "image_y": 1130
+    },
+    "leyburn-east-61": {
+      "lat": 54.3093679,
+      "lng": -1.8205976,
+      "image_x": 1385,
+      "image_y": 1178
+    },
+    "leyburn-east-62": {
+      "lat": 54.3092678,
+      "lng": -1.8208927,
+      "image_x": 1347,
+      "image_y": 1200
+    },
+    "leyburn-east-63": {
+      "lat": 54.3092224,
+      "lng": -1.8220165,
+      "image_x": 1202,
+      "image_y": 1210
+    },
+    "leyburn-east-64": {
+      "lat": 54.3092271,
+      "lng": -1.8228748,
+      "image_x": 1092,
+      "image_y": 1209
+    },
+    "leyburn-east-65": {
+      "lat": 54.3093898,
+      "lng": -1.8228561,
+      "image_x": 1094,
+      "image_y": 1173
+    },
+    "leyburn-east-66": {
+      "lat": 54.3095995,
+      "lng": -1.822907,
+      "image_x": 1088,
+      "image_y": 1127
+    },
+    "leyburn-east-67": {
+      "lat": 54.3095041,
+      "lng": -1.8222901,
+      "image_x": 1167,
+      "image_y": 1148
+    },
+    "leyburn-east-68": {
+      "lat": 54.3098468,
+      "lng": -1.8228963,
+      "image_x": 1089,
+      "image_y": 1072
+    },
+    "leyburn-east-69": {
+      "lat": 54.3098295,
+      "lng": -1.8230116,
+      "image_x": 1074,
+      "image_y": 1076
+    },
+    "leyburn-east-70": {
+      "lat": 54.3102786,
+      "lng": -1.823304,
+      "image_x": 1036,
+      "image_y": 977
+    },
+    "leyburn-east-71": {
+      "lat": 54.310288,
+      "lng": -1.8236902,
+      "image_x": 987,
+      "image_y": 975
+    },
+    "leyburn-east-72": {
+      "lat": 54.3092474,
+      "lng": -1.8233496,
+      "image_x": 1031,
+      "image_y": 1204
+    },
+    "leyburn-east-73": {
+      "lat": 54.3093069,
+      "lng": -1.8243635,
+      "image_x": 900,
+      "image_y": 1191
+    },
+    "leyburn-east-74": {
+      "lat": 54.3093319,
+      "lng": -1.8246263,
+      "image_x": 866,
+      "image_y": 1186
+    },
+    "leyburn-east-75": {
+      "lat": 54.309598,
+      "lng": -1.8255651,
+      "image_x": 745,
+      "image_y": 1127
+    },
+    "leyburn-east-76": {
+      "lat": 54.309767,
+      "lng": -1.8243849,
+      "image_x": 897,
+      "image_y": 1090
+    },
+    "leyburn-east-77": {
+      "lat": 54.309936,
+      "lng": -1.8253773,
+      "image_x": 769,
+      "image_y": 1052
+    },
+    "leyburn-east-78": {
+      "lat": 54.3100893,
+      "lng": -1.8250769,
+      "image_x": 808,
+      "image_y": 1019
+    },
+    "leyburn-east-79": {
+      "lat": 54.3103522,
+      "lng": -1.8255544,
+      "image_x": 747,
+      "image_y": 960
+    },
+    "leyburn-east-80": {
+      "lat": 54.3103835,
+      "lng": -1.8259299,
+      "image_x": 698,
+      "image_y": 954
+    },
+    "leyburn-east-81": {
+      "lat": 54.310105,
+      "lng": -1.8256617,
+      "image_x": 733,
+      "image_y": 1015
+    },
+    "leyburn-east-82": {
+      "lat": 54.3099829,
+      "lng": -1.8258333,
+      "image_x": 711,
+      "image_y": 1042
+    }
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "sheet_id": "redmire-southwest",
+  "pdf_hash": "e59b795d34f4aa04eda13ff4024522f952f28073eab7e85af0becc9b2cb52c44",
+  "alignment": {
+    "corners": [
+      [
+        54.31976488615896,
+        -1.9340765476226807
+      ],
+      [
+        54.31972733972664,
+        -1.9275104999542236
+      ],
+      [
+        54.31355048488632,
+        -1.92785382270813
+      ],
+      [
+        54.31350667416895,
+        -1.9336366653442385
+      ]
+    ],
+    "center": [
+      54.31663734623522,
+      -1.9307693839073181
+    ],
+    "mpp": 0.28094769486657856,
+    "zoom": 20,
+    "stretched": true
+  },
+  "houses": {
+    "redmire-southwest-1": {
+      "lat": 54.3142483,
+      "lng": -1.930941,
+      "image_x": 768,
+      "image_y": 2036
+    },
+    "redmire-southwest-2": {
+      "lat": 54.3145988,
+      "lng": -1.9301793,
+      "image_x": 982,
+      "image_y": 1894
+    },
+    "redmire-southwest-3": {
+      "lat": 54.3145566,
+      "lng": -1.9305441,
+      "image_x": 880,
+      "image_y": 1910
+    },
+    "redmire-southwest-4": {
+      "lat": 54.3146113,
+      "lng": -1.9307962,
+      "image_x": 809,
+      "image_y": 1887
+    },
+    "redmire-southwest-5": {
+      "lat": 54.3148257,
+      "lng": -1.9307184,
+      "image_x": 831,
+      "image_y": 1800
+    },
+    "redmire-southwest-6": {
+      "lat": 54.3148695,
+      "lng": -1.9301927,
+      "image_x": 978,
+      "image_y": 1784
+    },
+    "redmire-southwest-7": {
+      "lat": 54.3149946,
+      "lng": -1.930249,
+      "image_x": 962,
+      "image_y": 1733
+    },
+    "redmire-southwest-8": {
+      "lat": 54.3149868,
+      "lng": -1.9303992,
+      "image_x": 920,
+      "image_y": 1736
+    },
+    "redmire-southwest-9": {
+      "lat": 54.315101,
+      "lng": -1.9303429,
+      "image_x": 936,
+      "image_y": 1690
+    },
+    "redmire-southwest-10": {
+      "lat": 54.3153717,
+      "lng": -1.9304314,
+      "image_x": 911,
+      "image_y": 1583
+    },
+    "redmire-southwest-11": {
+      "lat": 54.3155063,
+      "lng": -1.9306755,
+      "image_x": 844,
+      "image_y": 1529
+    },
+    "redmire-southwest-12": {
+      "lat": 54.315331,
+      "lng": -1.9308633,
+      "image_x": 793,
+      "image_y": 1598
+    },
+    "redmire-southwest-13": {
+      "lat": 54.3154953,
+      "lng": -1.9313809,
+      "image_x": 651,
+      "image_y": 1533
+    },
+    "redmire-southwest-14": {
+      "lat": 54.3155063,
+      "lng": -1.9316652,
+      "image_x": 574,
+      "image_y": 1528
+    },
+    "redmire-southwest-15": {
+      "lat": 54.3155297,
+      "lng": -1.9319013,
+      "image_x": 510,
+      "image_y": 1518
+    },
+    "redmire-southwest-16": {
+      "lat": 54.3154828,
+      "lng": -1.9319844,
+      "image_x": 486,
+      "image_y": 1537
+    },
+    "redmire-southwest-17": {
+      "lat": 54.3154327,
+      "lng": -1.9320515,
+      "image_x": 468,
+      "image_y": 1556
+    },
+    "redmire-southwest-18": {
+      "lat": 54.3153701,
+      "lng": -1.9321212,
+      "image_x": 448,
+      "image_y": 1581
+    },
+    "redmire-southwest-19": {
+      "lat": 54.3151902,
+      "lng": -1.9324216,
+      "image_x": 364,
+      "image_y": 1651
+    },
+    "redmire-southwest-20": {
+      "lat": 54.3152904,
+      "lng": -1.9328427,
+      "image_x": 250,
+      "image_y": 1611
+    },
+    "redmire-southwest-21": {
+      "lat": 54.3153498,
+      "lng": -1.9324028,
+      "image_x": 371,
+      "image_y": 1588
+    },
+    "redmire-southwest-22": {
+      "lat": 54.3154562,
+      "lng": -1.9324726,
+      "image_x": 353,
+      "image_y": 1547
+    },
+    "redmire-southwest-23": {
+      "lat": 54.3155469,
+      "lng": -1.9324458,
+      "image_x": 362,
+      "image_y": 1511
+    },
+    "redmire-southwest-24": {
+      "lat": 54.3154687,
+      "lng": -1.9330332,
+      "image_x": 201,
+      "image_y": 1541
+    },
+    "redmire-southwest-25": {
+      "lat": 54.3155782,
+      "lng": -1.9329473,
+      "image_x": 226,
+      "image_y": 1498
+    },
+    "redmire-southwest-26": {
+      "lat": 54.3157347,
+      "lng": -1.9327274,
+      "image_x": 288,
+      "image_y": 1438
+    },
+    "redmire-southwest-27": {
+      "lat": 54.3156784,
+      "lng": -1.9324511,
+      "image_x": 362,
+      "image_y": 1460
+    },
+    "redmire-southwest-28": {
+      "lat": 54.315838,
+      "lng": -1.9320059,
+      "image_x": 484,
+      "image_y": 1399
+    },
+    "redmire-southwest-29": {
+      "lat": 54.3159569,
+      "lng": -1.9319201,
+      "image_x": 508,
+      "image_y": 1353
+    },
+    "redmire-southwest-30": {
+      "lat": 54.3156643,
+      "lng": -1.9316733,
+      "image_x": 573,
+      "image_y": 1466
+    },
+    "redmire-southwest-31": {
+      "lat": 54.3157519,
+      "lng": -1.9316706,
+      "image_x": 574,
+      "image_y": 1432
+    },
+    "redmire-southwest-32": {
+      "lat": 54.3157973,
+      "lng": -1.931676,
+      "image_x": 573,
+      "image_y": 1415
+    },
+    "redmire-southwest-33": {
+      "lat": 54.3157394,
+      "lng": -1.93133,
+      "image_x": 667,
+      "image_y": 1437
+    },
+    "redmire-southwest-34": {
+      "lat": 54.3157503,
+      "lng": -1.9311208,
+      "image_x": 724,
+      "image_y": 1433
+    },
+    "redmire-southwest-35": {
+      "lat": 54.3158974,
+      "lng": -1.9307667,
+      "image_x": 820,
+      "image_y": 1377
+    },
+    "redmire-southwest-36": {
+      "lat": 54.3160586,
+      "lng": -1.9307426,
+      "image_x": 827,
+      "image_y": 1315
+    },
+    "redmire-southwest-37": {
+      "lat": 54.3161931,
+      "lng": -1.931051,
+      "image_x": 744,
+      "image_y": 1263
+    },
+    "redmire-southwest-38": {
+      "lat": 54.3160539,
+      "lng": -1.9313917,
+      "image_x": 652,
+      "image_y": 1316
+    },
+    "redmire-southwest-39": {
+      "lat": 54.3160367,
+      "lng": -1.9316036,
+      "image_x": 594,
+      "image_y": 1323
+    },
+    "redmire-southwest-40": {
+      "lat": 54.3160492,
+      "lng": -1.9317135,
+      "image_x": 565,
+      "image_y": 1318
+    },
+    "redmire-southwest-41": {
+      "lat": 54.3163856,
+      "lng": -1.9306433,
+      "image_x": 854,
+      "image_y": 1190
+    },
+    "redmire-southwest-42": {
+      "lat": 54.3163011,
+      "lng": -1.9320166,
+      "image_x": 485,
+      "image_y": 1221
+    },
+    "redmire-southwest-43": {
+      "lat": 54.3164982,
+      "lng": -1.9318865,
+      "image_x": 522,
+      "image_y": 1147
+    },
+    "redmire-southwest-44": {
+      "lat": 54.316499,
+      "lng": -1.9321869,
+      "image_x": 441,
+      "image_y": 1147
+    },
+    "redmire-southwest-45": {
+      "lat": 54.3164075,
+      "lng": -1.9324806,
+      "image_x": 362,
+      "image_y": 1181
+    },
+    "redmire-southwest-46": {
+      "lat": 54.3166093,
+      "lng": -1.9327354,
+      "image_x": 297,
+      "image_y": 1105
+    },
+    "redmire-southwest-47": {
+      "lat": 54.3166586,
+      "lng": -1.9330855,
+      "image_x": 204,
+      "image_y": 1087
+    }
+  }
+}

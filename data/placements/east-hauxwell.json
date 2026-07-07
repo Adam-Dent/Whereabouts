@@ -1,0 +1,147 @@
+{
+  "sheet_id": "east-hauxwell",
+  "pdf_hash": "028dcba3e1a1825c9b82d7aa4b5085ecd22e90a58afc813fe8e9af00dd90d699",
+  "alignment": {
+    "corners": [
+      [
+        54.34237401891555,
+        -1.7465043067932131
+      ],
+      [
+        54.34248659566913,
+        -1.7393803596496584
+      ],
+      [
+        54.33657260269852,
+        -1.739631514207011
+      ],
+      [
+        54.33657260269852,
+        -1.7465535596455277
+      ]
+    ],
+    "center": [
+      54.33950145499543,
+      -1.7430174350738525
+    ],
+    "mpp": 0.2717628681422571,
+    "zoom": 18,
+    "stretched": true
+  },
+  "houses": {
+    "east-hauxwell-1": {
+      "lat": 54.3371701,
+      "lng": -1.7435431,
+      "image_x": 723,
+      "image_y": 2094
+    },
+    "east-hauxwell-2": {
+      "lat": 54.3381709,
+      "lng": -1.7435324,
+      "image_x": 720,
+      "image_y": 1687
+    },
+    "east-hauxwell-3": {
+      "lat": 54.3383867,
+      "lng": -1.7433715,
+      "image_x": 757,
+      "image_y": 1600
+    },
+    "east-hauxwell-4": {
+      "lat": 54.3384743,
+      "lng": -1.7438114,
+      "image_x": 652,
+      "image_y": 1563
+    },
+    "east-hauxwell-5": {
+      "lat": 54.338762,
+      "lng": -1.7433876,
+      "image_x": 751,
+      "image_y": 1448
+    },
+    "east-hauxwell-6": {
+      "lat": 54.3392687,
+      "lng": -1.7433822,
+      "image_x": 750,
+      "image_y": 1245
+    },
+    "east-hauxwell-7": {
+      "lat": 54.3393922,
+      "lng": -1.7433742,
+      "image_x": 751,
+      "image_y": 1195
+    },
+    "east-hauxwell-8": {
+      "lat": 54.3396815,
+      "lng": -1.7432964,
+      "image_x": 768,
+      "image_y": 1080
+    },
+    "east-hauxwell-9": {
+      "lat": 54.3399911,
+      "lng": -1.743232,
+      "image_x": 781,
+      "image_y": 957
+    },
+    "east-hauxwell-10": {
+      "lat": 54.3403319,
+      "lng": -1.7431891,
+      "image_x": 789,
+      "image_y": 822
+    },
+    "east-hauxwell-11": {
+      "lat": 54.3405321,
+      "lng": -1.7430469,
+      "image_x": 821,
+      "image_y": 743
+    },
+    "east-hauxwell-12": {
+      "lat": 54.3403335,
+      "lng": -1.7427975,
+      "image_x": 881,
+      "image_y": 823
+    },
+    "east-hauxwell-13": {
+      "lat": 54.3402897,
+      "lng": -1.7426714,
+      "image_x": 911,
+      "image_y": 841
+    },
+    "east-hauxwell-14": {
+      "lat": 54.3401255,
+      "lng": -1.7428967,
+      "image_x": 859,
+      "image_y": 905
+    },
+    "east-hauxwell-15": {
+      "lat": 54.340027,
+      "lng": -1.7428699,
+      "image_x": 866,
+      "image_y": 944
+    },
+    "east-hauxwell-16": {
+      "lat": 54.3398331,
+      "lng": -1.742886,
+      "image_x": 863,
+      "image_y": 1021
+    },
+    "east-hauxwell-17": {
+      "lat": 54.3391389,
+      "lng": -1.7426768,
+      "image_x": 917,
+      "image_y": 1299
+    },
+    "east-hauxwell-18": {
+      "lat": 54.338626,
+      "lng": -1.7429477,
+      "image_x": 856,
+      "image_y": 1504
+    },
+    "east-hauxwell-19": {
+      "lat": 54.338368,
+      "lng": -1.7426071,
+      "image_x": 938,
+      "image_y": 1609
+    }
+  }
+}

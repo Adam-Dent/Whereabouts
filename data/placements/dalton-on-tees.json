@@ -1,0 +1,356 @@
+{
+  "sheet_id": "dalton-on-tees",
+  "pdf_hash": "bb93e30ea903c99ef1b5dbae95b32bfeb7b9c0ec1eb6ce82a0ad74a05963dcbb",
+  "alignment": {
+    "corners": [
+      [
+        54.470877685927995,
+        -1.547225015543928
+      ],
+      [
+        54.470877685927995,
+        -1.5389032193193541
+      ],
+      [
+        54.46403425156702,
+        -1.5389032193193541
+      ],
+      [
+        54.46403425156702,
+        -1.547225015543928
+      ]
+    ],
+    "center": [
+      54.46745596874751,
+      -1.543064117431641
+    ],
+    "mpp": 0.3256994925452663,
+    "zoom": 19
+  },
+  "houses": {
+    "dalton-on-tees-1": {
+      "lat": 54.4675779,
+      "lng": -1.5451133,
+      "image_x": 419,
+      "image_y": 1128
+    },
+    "dalton-on-tees-2": {
+      "lat": 54.4674002,
+      "lng": -1.5442228,
+      "image_x": 596,
+      "image_y": 1189
+    },
+    "dalton-on-tees-3": {
+      "lat": 54.4673207,
+      "lng": -1.5438366,
+      "image_x": 673,
+      "image_y": 1216
+    },
+    "dalton-on-tees-4": {
+      "lat": 54.4671679,
+      "lng": -1.5436301,
+      "image_x": 714,
+      "image_y": 1268
+    },
+    "dalton-on-tees-5": {
+      "lat": 54.4672474,
+      "lng": -1.5434691,
+      "image_x": 746,
+      "image_y": 1241
+    },
+    "dalton-on-tees-6": {
+      "lat": 54.4674127,
+      "lng": -1.543453,
+      "image_x": 749,
+      "image_y": 1184
+    },
+    "dalton-on-tees-7": {
+      "lat": 54.467687,
+      "lng": -1.5434369,
+      "image_x": 752,
+      "image_y": 1091
+    },
+    "dalton-on-tees-8": {
+      "lat": 54.4682949,
+      "lng": -1.5420663,
+      "image_x": 1025,
+      "image_y": 883
+    },
+    "dalton-on-tees-9": {
+      "lat": 54.4672568,
+      "lng": -1.5429515,
+      "image_x": 849,
+      "image_y": 1238
+    },
+    "dalton-on-tees-10": {
+      "lat": 54.4671196,
+      "lng": -1.5430212,
+      "image_x": 835,
+      "image_y": 1284
+    },
+    "dalton-on-tees-11": {
+      "lat": 54.4668671,
+      "lng": -1.5436435,
+      "image_x": 711,
+      "image_y": 1371
+    },
+    "dalton-on-tees-12": {
+      "lat": 54.4665927,
+      "lng": -1.5432572,
+      "image_x": 788,
+      "image_y": 1465
+    },
+    "dalton-on-tees-13": {
+      "lat": 54.4668016,
+      "lng": -1.5428334,
+      "image_x": 872,
+      "image_y": 1393
+    },
+    "dalton-on-tees-14": {
+      "lat": 54.4667361,
+      "lng": -1.5424392,
+      "image_x": 951,
+      "image_y": 1416
+    },
+    "dalton-on-tees-15": {
+      "lat": 54.4667252,
+      "lng": -1.5421844,
+      "image_x": 1001,
+      "image_y": 1419
+    },
+    "dalton-on-tees-16": {
+      "lat": 54.4666644,
+      "lng": -1.5419,
+      "image_x": 1058,
+      "image_y": 1440
+    },
+    "dalton-on-tees-17": {
+      "lat": 54.4664805,
+      "lng": -1.5414789,
+      "image_x": 1141,
+      "image_y": 1503
+    },
+    "dalton-on-tees-18": {
+      "lat": 54.4663807,
+      "lng": -1.541959,
+      "image_x": 1046,
+      "image_y": 1537
+    },
+    "dalton-on-tees-19": {
+      "lat": 54.466468,
+      "lng": -1.5423721,
+      "image_x": 964,
+      "image_y": 1507
+    },
+    "dalton-on-tees-20": {
+      "lat": 54.4664711,
+      "lng": -1.5428737,
+      "image_x": 864,
+      "image_y": 1506
+    },
+    "dalton-on-tees-21": {
+      "lat": 54.4662981,
+      "lng": -1.5428817,
+      "image_x": 863,
+      "image_y": 1565
+    },
+    "dalton-on-tees-22": {
+      "lat": 54.466189,
+      "lng": -1.5427476,
+      "image_x": 889,
+      "image_y": 1603
+    },
+    "dalton-on-tees-23": {
+      "lat": 54.4662669,
+      "lng": -1.5422809,
+      "image_x": 982,
+      "image_y": 1576
+    },
+    "dalton-on-tees-24": {
+      "lat": 54.4660097,
+      "lng": -1.5425169,
+      "image_x": 935,
+      "image_y": 1664
+    },
+    "dalton-on-tees-25": {
+      "lat": 54.465885,
+      "lng": -1.5422595,
+      "image_x": 986,
+      "image_y": 1706
+    },
+    "dalton-on-tees-26": {
+      "lat": 54.4656574,
+      "lng": -1.541943,
+      "image_x": 1049,
+      "image_y": 1784
+    },
+    "dalton-on-tees-27": {
+      "lat": 54.4655078,
+      "lng": -1.5416908,
+      "image_x": 1099,
+      "image_y": 1835
+    },
+    "dalton-on-tees-28": {
+      "lat": 54.4652926,
+      "lng": -1.5414789,
+      "image_x": 1141,
+      "image_y": 1909
+    },
+    "dalton-on-tees-29": {
+      "lat": 54.4652131,
+      "lng": -1.541369,
+      "image_x": 1163,
+      "image_y": 1936
+    },
+    "dalton-on-tees-30": {
+      "lat": 54.4650744,
+      "lng": -1.541149,
+      "image_x": 1207,
+      "image_y": 1983
+    },
+    "dalton-on-tees-31": {
+      "lat": 54.464825,
+      "lng": -1.5409988,
+      "image_x": 1237,
+      "image_y": 2069
+    },
+    "dalton-on-tees-32": {
+      "lat": 54.4649918,
+      "lng": -1.5415031,
+      "image_x": 1137,
+      "image_y": 2012
+    },
+    "dalton-on-tees-33": {
+      "lat": 54.4650759,
+      "lng": -1.5415674,
+      "image_x": 1124,
+      "image_y": 1983
+    },
+    "dalton-on-tees-34": {
+      "lat": 54.4651695,
+      "lng": -1.5416586,
+      "image_x": 1106,
+      "image_y": 1951
+    },
+    "dalton-on-tees-35": {
+      "lat": 54.465249,
+      "lng": -1.5417874,
+      "image_x": 1080,
+      "image_y": 1924
+    },
+    "dalton-on-tees-36": {
+      "lat": 54.4652739,
+      "lng": -1.5419698,
+      "image_x": 1044,
+      "image_y": 1915
+    },
+    "dalton-on-tees-37": {
+      "lat": 54.4653363,
+      "lng": -1.5422085,
+      "image_x": 996,
+      "image_y": 1894
+    },
+    "dalton-on-tees-38": {
+      "lat": 54.4653753,
+      "lng": -1.5423426,
+      "image_x": 970,
+      "image_y": 1881
+    },
+    "dalton-on-tees-39": {
+      "lat": 54.4654205,
+      "lng": -1.5425599,
+      "image_x": 927,
+      "image_y": 1865
+    },
+    "dalton-on-tees-40": {
+      "lat": 54.4654672,
+      "lng": -1.5427798,
+      "image_x": 883,
+      "image_y": 1849
+    },
+    "dalton-on-tees-41": {
+      "lat": 54.4655405,
+      "lng": -1.5422729,
+      "image_x": 984,
+      "image_y": 1824
+    },
+    "dalton-on-tees-42": {
+      "lat": 54.4656184,
+      "lng": -1.5424177,
+      "image_x": 955,
+      "image_y": 1798
+    },
+    "dalton-on-tees-43": {
+      "lat": 54.4657166,
+      "lng": -1.5426216,
+      "image_x": 914,
+      "image_y": 1764
+    },
+    "dalton-on-tees-44": {
+      "lat": 54.4658554,
+      "lng": -1.5434423,
+      "image_x": 751,
+      "image_y": 1717
+    },
+    "dalton-on-tees-45": {
+      "lat": 54.4649746,
+      "lng": -1.5454888,
+      "image_x": 345,
+      "image_y": 2018
+    },
+    "dalton-on-tees-46": {
+      "lat": 54.4665662,
+      "lng": -1.5443569,
+      "image_x": 570,
+      "image_y": 1474
+    },
+    "dalton-on-tees-47": {
+      "lat": 54.4667408,
+      "lng": -1.5443221,
+      "image_x": 577,
+      "image_y": 1414
+    },
+    "dalton-on-tees-48": {
+      "lat": 54.4667003,
+      "lng": -1.544129,
+      "image_x": 615,
+      "image_y": 1428
+    },
+    "dalton-on-tees-49": {
+      "lat": 54.4666504,
+      "lng": -1.5439922,
+      "image_x": 642,
+      "image_y": 1445
+    },
+    "dalton-on-tees-50": {
+      "lat": 54.4668967,
+      "lng": -1.5440378,
+      "image_x": 633,
+      "image_y": 1361
+    },
+    "dalton-on-tees-51": {
+      "lat": 54.4670853,
+      "lng": -1.5446627,
+      "image_x": 509,
+      "image_y": 1296
+    },
+    "dalton-on-tees-52": {
+      "lat": 54.4669419,
+      "lng": -1.5444106,
+      "image_x": 559,
+      "image_y": 1345
+    },
+    "dalton-on-tees-53": {
+      "lat": 54.4666364,
+      "lng": -1.5450329,
+      "image_x": 435,
+      "image_y": 1450
+    },
+    "dalton-on-tees-54": {
+      "lat": 54.4672615,
+      "lng": -1.5448719,
+      "image_x": 467,
+      "image_y": 1236
+    }
+  }
+}

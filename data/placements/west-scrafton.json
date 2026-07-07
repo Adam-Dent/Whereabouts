@@ -1,0 +1,267 @@
+{
+  "sheet_id": "west-scrafton",
+  "pdf_hash": "0ff928973633d68cbdc27fda8a2996f50540256b4dd80e6886ef704017136ee3",
+  "alignment": {
+    "corners": [
+      [
+        54.25156151727503,
+        -1.9006119429909105
+      ],
+      [
+        54.25156151727503,
+        -1.8843051942039126
+      ],
+      [
+        54.24482822462338,
+        -1.8843051942039126
+      ],
+      [
+        54.24482822462338,
+        -1.9006119429909105
+      ]
+    ],
+    "center": [
+      54.248194870949206,
+      -1.8924585685974116
+    ],
+    "mpp": 0.4534483593352312,
+    "zoom": 19,
+    "stretched": false
+  },
+  "houses": {
+    "west-scrafton-1": {
+      "lat": 54.2491863,
+      "lng": -1.9002861,
+      "image_x": 47,
+      "image_y": 583
+    },
+    "west-scrafton-2": {
+      "lat": 54.2452808,
+      "lng": -1.8955171,
+      "image_x": 731,
+      "image_y": 1542
+    },
+    "west-scrafton-3": {
+      "lat": 54.2476881,
+      "lng": -1.8914938,
+      "image_x": 1308,
+      "image_y": 951
+    },
+    "west-scrafton-4": {
+      "lat": 54.2478949,
+      "lng": -1.8914241,
+      "image_x": 1318,
+      "image_y": 900
+    },
+    "west-scrafton-5": {
+      "lat": 54.2480548,
+      "lng": -1.8908447,
+      "image_x": 1401,
+      "image_y": 861
+    },
+    "west-scrafton-6": {
+      "lat": 54.2483228,
+      "lng": -1.8901902,
+      "image_x": 1495,
+      "image_y": 795
+    },
+    "west-scrafton-7": {
+      "lat": 54.2483964,
+      "lng": -1.8899998,
+      "image_x": 1522,
+      "image_y": 777
+    },
+    "west-scrafton-8": {
+      "lat": 54.2484889,
+      "lng": -1.8898737,
+      "image_x": 1540,
+      "image_y": 754
+    },
+    "west-scrafton-9": {
+      "lat": 54.2485375,
+      "lng": -1.8897933,
+      "image_x": 1552,
+      "image_y": 742
+    },
+    "west-scrafton-10": {
+      "lat": 54.2487522,
+      "lng": -1.8904719,
+      "image_x": 1454,
+      "image_y": 690
+    },
+    "west-scrafton-11": {
+      "lat": 54.2488838,
+      "lng": -1.8904772,
+      "image_x": 1454,
+      "image_y": 657
+    },
+    "west-scrafton-12": {
+      "lat": 54.2488493,
+      "lng": -1.8897423,
+      "image_x": 1559,
+      "image_y": 666
+    },
+    "west-scrafton-13": {
+      "lat": 54.2488916,
+      "lng": -1.8895894,
+      "image_x": 1581,
+      "image_y": 655
+    },
+    "west-scrafton-14": {
+      "lat": 54.2489167,
+      "lng": -1.8898228,
+      "image_x": 1548,
+      "image_y": 649
+    },
+    "west-scrafton-15": {
+      "lat": 54.2491095,
+      "lng": -1.8896779,
+      "image_x": 1568,
+      "image_y": 602
+    },
+    "west-scrafton-16": {
+      "lat": 54.2491157,
+      "lng": -1.8892515,
+      "image_x": 1630,
+      "image_y": 600
+    },
+    "west-scrafton-17": {
+      "lat": 54.2493571,
+      "lng": -1.8894204,
+      "image_x": 1605,
+      "image_y": 541
+    },
+    "west-scrafton-18": {
+      "lat": 54.2495075,
+      "lng": -1.8893132,
+      "image_x": 1621,
+      "image_y": 504
+    },
+    "west-scrafton-19": {
+      "lat": 54.2496611,
+      "lng": -1.889289,
+      "image_x": 1624,
+      "image_y": 467
+    },
+    "west-scrafton-20": {
+      "lat": 54.249799,
+      "lng": -1.8895009,
+      "image_x": 1594,
+      "image_y": 433
+    },
+    "west-scrafton-21": {
+      "lat": 54.2511576,
+      "lng": -1.8889886,
+      "image_x": 1667,
+      "image_y": 99
+    },
+    "west-scrafton-22": {
+      "lat": 54.2502989,
+      "lng": -1.8887204,
+      "image_x": 1706,
+      "image_y": 310
+    },
+    "west-scrafton-23": {
+      "lat": 54.2487459,
+      "lng": -1.8890288,
+      "image_x": 1661,
+      "image_y": 691
+    },
+    "west-scrafton-24": {
+      "lat": 54.2486174,
+      "lng": -1.8891388,
+      "image_x": 1646,
+      "image_y": 723
+    },
+    "west-scrafton-25": {
+      "lat": 54.2485046,
+      "lng": -1.8893024,
+      "image_x": 1622,
+      "image_y": 750
+    },
+    "west-scrafton-26": {
+      "lat": 54.2482632,
+      "lng": -1.8893132,
+      "image_x": 1621,
+      "image_y": 810
+    },
+    "west-scrafton-27": {
+      "lat": 54.2486691,
+      "lng": -1.8887767,
+      "image_x": 1698,
+      "image_y": 710
+    },
+    "west-scrafton-28": {
+      "lat": 54.2484622,
+      "lng": -1.888589,
+      "image_x": 1725,
+      "image_y": 761
+    },
+    "west-scrafton-29": {
+      "lat": 54.2485155,
+      "lng": -1.8882859,
+      "image_x": 1768,
+      "image_y": 748
+    },
+    "west-scrafton-30": {
+      "lat": 54.2485829,
+      "lng": -1.8880311,
+      "image_x": 1805,
+      "image_y": 731
+    },
+    "west-scrafton-31": {
+      "lat": 54.2487349,
+      "lng": -1.8878755,
+      "image_x": 1827,
+      "image_y": 694
+    },
+    "west-scrafton-32": {
+      "lat": 54.2517374,
+      "lng": -1.8782544,
+      "image_x": 3207,
+      "image_y": -43
+    },
+    "west-scrafton-33": {
+      "lat": 54.2522075,
+      "lng": -1.8765914,
+      "image_x": 3445,
+      "image_y": -159
+    },
+    "west-scrafton-34": {
+      "lat": 54.2483619,
+      "lng": -1.8875188,
+      "image_x": 1878,
+      "image_y": 785
+    },
+    "west-scrafton-35": {
+      "lat": 54.2484497,
+      "lng": -1.8878809,
+      "image_x": 1826,
+      "image_y": 764
+    },
+    "west-scrafton-36": {
+      "lat": 54.2483259,
+      "lng": -1.8878916,
+      "image_x": 1825,
+      "image_y": 794
+    },
+    "west-scrafton-37": {
+      "lat": 54.2482209,
+      "lng": -1.8882886,
+      "image_x": 1768,
+      "image_y": 820
+    },
+    "west-scrafton-38": {
+      "lat": 54.2481096,
+      "lng": -1.8884897,
+      "image_x": 1739,
+      "image_y": 847
+    },
+    "west-scrafton-39": {
+      "lat": 54.2482366,
+      "lng": -1.8889001,
+      "image_x": 1680,
+      "image_y": 816
+    }
+  }
+}

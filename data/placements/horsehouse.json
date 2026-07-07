@@ -1,0 +1,207 @@
+{
+  "sheet_id": "horsehouse",
+  "pdf_hash": "8b468f5968243077901a04ad1f2fdfb887091e2f4cccf85b9825c45c0ffa521a",
+  "alignment": {
+    "corners": [
+      [
+        54.22960593764041,
+        -1.9340923947029276
+      ],
+      [
+        54.22960593764041,
+        -1.926947482234939
+      ],
+      [
+        54.2236957877794,
+        -1.926947482234939
+      ],
+      [
+        54.2236957877794,
+        -1.9340923947029276
+      ]
+    ],
+    "center": [
+      54.2266508627099,
+      -1.9305199384689333
+    ],
+    "mpp": 0.28128169411171633,
+    "zoom": 19,
+    "stretched": false
+  },
+  "houses": {
+    "horsehouse-1": {
+      "lat": 54.2276187,
+      "lng": -1.9286048,
+      "image_x": 1270,
+      "image_y": 786
+    },
+    "horsehouse-2": {
+      "lat": 54.2276909,
+      "lng": -1.9285539,
+      "image_x": 1281,
+      "image_y": 758
+    },
+    "horsehouse-3": {
+      "lat": 54.2277481,
+      "lng": -1.928523,
+      "image_x": 1288,
+      "image_y": 735
+    },
+    "horsehouse-4": {
+      "lat": 54.227803,
+      "lng": -1.9285056,
+      "image_x": 1293,
+      "image_y": 714
+    },
+    "horsehouse-5": {
+      "lat": 54.2278445,
+      "lng": -1.9284761,
+      "image_x": 1299,
+      "image_y": 697
+    },
+    "horsehouse-6": {
+      "lat": 54.2279809,
+      "lng": -1.9284385,
+      "image_x": 1308,
+      "image_y": 643
+    },
+    "horsehouse-7": {
+      "lat": 54.2280107,
+      "lng": -1.928397,
+      "image_x": 1318,
+      "image_y": 631
+    },
+    "horsehouse-8": {
+      "lat": 54.2282067,
+      "lng": -1.928165,
+      "image_x": 1371,
+      "image_y": 554
+    },
+    "horsehouse-9": {
+      "lat": 54.2280625,
+      "lng": -1.928055,
+      "image_x": 1397,
+      "image_y": 611
+    },
+    "horsehouse-10": {
+      "lat": 54.2275795,
+      "lng": -1.9282132,
+      "image_x": 1360,
+      "image_y": 802
+    },
+    "horsehouse-11": {
+      "lat": 54.2274353,
+      "lng": -1.9280684,
+      "image_x": 1394,
+      "image_y": 859
+    },
+    "horsehouse-12": {
+      "lat": 54.2273381,
+      "lng": -1.9282374,
+      "image_x": 1355,
+      "image_y": 898
+    },
+    "horsehouse-13": {
+      "lat": 54.2275937,
+      "lng": -1.9284171,
+      "image_x": 1313,
+      "image_y": 796
+    },
+    "horsehouse-14": {
+      "lat": 54.2272848,
+      "lng": -1.928578,
+      "image_x": 1276,
+      "image_y": 919
+    },
+    "horsehouse-15": {
+      "lat": 54.2271734,
+      "lng": -1.9283447,
+      "image_x": 1330,
+      "image_y": 963
+    },
+    "horsehouse-16": {
+      "lat": 54.2271201,
+      "lng": -1.9284171,
+      "image_x": 1313,
+      "image_y": 984
+    },
+    "horsehouse-17": {
+      "lat": 54.2270355,
+      "lng": -1.9286853,
+      "image_x": 1251,
+      "image_y": 1017
+    },
+    "horsehouse-18": {
+      "lat": 54.2269194,
+      "lng": -1.9286907,
+      "image_x": 1250,
+      "image_y": 1063
+    },
+    "horsehouse-19": {
+      "lat": 54.2255945,
+      "lng": -1.9300532,
+      "image_x": 934,
+      "image_y": 1588
+    },
+    "horsehouse-20": {
+      "lat": 54.2256478,
+      "lng": -1.9332987,
+      "image_x": 184,
+      "image_y": 1566
+    },
+    "horsehouse-21": {
+      "lat": 54.2262374,
+      "lng": -1.9314694,
+      "image_x": 607,
+      "image_y": 1333
+    },
+    "horsehouse-22": {
+      "lat": 54.2270559,
+      "lng": -1.9291145,
+      "image_x": 1152,
+      "image_y": 1009
+    },
+    "horsehouse-23": {
+      "lat": 54.2272221,
+      "lng": -1.9290286,
+      "image_x": 1172,
+      "image_y": 943
+    },
+    "horsehouse-24": {
+      "lat": 54.2273287,
+      "lng": -1.9289106,
+      "image_x": 1199,
+      "image_y": 901
+    },
+    "horsehouse-25": {
+      "lat": 54.2274604,
+      "lng": -1.9288462,
+      "image_x": 1214,
+      "image_y": 849
+    },
+    "horsehouse-26": {
+      "lat": 54.2276783,
+      "lng": -1.9291708,
+      "image_x": 1139,
+      "image_y": 763
+    },
+    "horsehouse-27": {
+      "lat": 54.227763,
+      "lng": -1.9291493,
+      "image_x": 1144,
+      "image_y": 729
+    },
+    "horsehouse-28": {
+      "lat": 54.227901,
+      "lng": -1.9292459,
+      "image_x": 1121,
+      "image_y": 675
+    },
+    "horsehouse-29": {
+      "lat": 54.2279574,
+      "lng": -1.9291466,
+      "image_x": 1144,
+      "image_y": 652
+    }
+  }
+}

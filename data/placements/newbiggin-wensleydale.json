@@ -1,0 +1,81 @@
+{
+  "sheet_id": "newbiggin-wensleydale",
+  "pdf_hash": "c2f90294464e5f63d9c5ea212f31fc66cbdab59a7c6fc8586baea520e717da83",
+  "alignment": {
+    "corners": [
+      [
+        54.320946905345565,
+        -2.0753639748172237
+      ],
+      [
+        54.320946905345565,
+        -2.067797839324622
+      ],
+      [
+        54.314702157149284,
+        -2.067797839324622
+      ],
+      [
+        54.314702157149284,
+        -2.0753639748172237
+      ]
+    ],
+    "center": [
+      54.317824531247425,
+      -2.071580907070923
+    ],
+    "mpp": 0.2972062288202572,
+    "zoom": 18,
+    "stretched": false
+  },
+  "houses": {
+    "newbiggin-wensleydale-1": {
+      "lat": 54.3190937,
+      "lng": -2.0712715,
+      "image_x": 894,
+      "image_y": 694
+    },
+    "newbiggin-wensleydale-2": {
+      "lat": 54.3191516,
+      "lng": -2.0714003,
+      "image_x": 866,
+      "image_y": 672
+    },
+    "newbiggin-wensleydale-3": {
+      "lat": 54.3192017,
+      "lng": -2.0715719,
+      "image_x": 828,
+      "image_y": 654
+    },
+    "newbiggin-wensleydale-4": {
+      "lat": 54.3192815,
+      "lng": -2.0718563,
+      "image_x": 766,
+      "image_y": 624
+    },
+    "newbiggin-wensleydale-5": {
+      "lat": 54.3194535,
+      "lng": -2.0711052,
+      "image_x": 930,
+      "image_y": 559
+    },
+    "newbiggin-wensleydale-6": {
+      "lat": 54.3192924,
+      "lng": -2.0712125,
+      "image_x": 907,
+      "image_y": 620
+    },
+    "newbiggin-wensleydale-7": {
+      "lat": 54.3193331,
+      "lng": -2.0707378,
+      "image_x": 1011,
+      "image_y": 604
+    },
+    "newbiggin-wensleydale-8": {
+      "lat": 54.3175871,
+      "lng": -2.0709282,
+      "image_x": 969,
+      "image_y": 1258
+    }
+  }
+}

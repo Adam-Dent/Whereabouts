@@ -1,0 +1,375 @@
+{
+  "sheet_id": "askrigg-central",
+  "pdf_hash": "5ada8e9a43c24383e078f7406c64ab8e71634232051c4a75bd176c00bf12ebbb",
+  "alignment": {
+    "corners": [
+      [
+        54.316445104434365,
+        -2.084590673854258
+      ],
+      [
+        54.316445104434365,
+        -2.076180696079824
+      ],
+      [
+        54.312978104887065,
+        -2.076180696079824
+      ],
+      [
+        54.312978104887065,
+        -2.084590673854258
+      ]
+    ],
+    "center": [
+      54.314711604660715,
+      -2.080385684967041
+    ],
+    "mpp": 0.23348238935600127,
+    "zoom": 19,
+    "stretched": false
+  },
+  "houses": {
+    "askrigg-central-1": {
+      "lat": 54.3156862,
+      "lng": -2.0790607,
+      "image_x": 1538,
+      "image_y": 362
+    },
+    "askrigg-central-2": {
+      "lat": 54.3155908,
+      "lng": -2.0789319,
+      "image_x": 1574,
+      "image_y": 407
+    },
+    "askrigg-central-3": {
+      "lat": 54.3156017,
+      "lng": -2.0791331,
+      "image_x": 1518,
+      "image_y": 402
+    },
+    "askrigg-central-4": {
+      "lat": 54.3155016,
+      "lng": -2.0791975,
+      "image_x": 1500,
+      "image_y": 450
+    },
+    "askrigg-central-5": {
+      "lat": 54.3154265,
+      "lng": -2.0792753,
+      "image_x": 1478,
+      "image_y": 486
+    },
+    "askrigg-central-6": {
+      "lat": 54.3153232,
+      "lng": -2.0794791,
+      "image_x": 1422,
+      "image_y": 535
+    },
+    "askrigg-central-7": {
+      "lat": 54.3152278,
+      "lng": -2.0794791,
+      "image_x": 1422,
+      "image_y": 580
+    },
+    "askrigg-central-8": {
+      "lat": 54.3151714,
+      "lng": -2.0793289,
+      "image_x": 1463,
+      "image_y": 607
+    },
+    "askrigg-central-9": {
+      "lat": 54.3151448,
+      "lng": -2.0796856,
+      "image_x": 1364,
+      "image_y": 620
+    },
+    "askrigg-central-10": {
+      "lat": 54.3150729,
+      "lng": -2.0798653,
+      "image_x": 1314,
+      "image_y": 654
+    },
+    "askrigg-central-11": {
+      "lat": 54.3150259,
+      "lng": -2.0800826,
+      "image_x": 1254,
+      "image_y": 677
+    },
+    "askrigg-central-12": {
+      "lat": 54.3149774,
+      "lng": -2.0802194,
+      "image_x": 1216,
+      "image_y": 700
+    },
+    "askrigg-central-13": {
+      "lat": 54.3149352,
+      "lng": -2.0803186,
+      "image_x": 1188,
+      "image_y": 720
+    },
+    "askrigg-central-14": {
+      "lat": 54.3149227,
+      "lng": -2.0804447,
+      "image_x": 1153,
+      "image_y": 726
+    },
+    "askrigg-central-15": {
+      "lat": 54.3148961,
+      "lng": -2.0805225,
+      "image_x": 1131,
+      "image_y": 739
+    },
+    "askrigg-central-16": {
+      "lat": 54.3148554,
+      "lng": -2.0806807,
+      "image_x": 1087,
+      "image_y": 758
+    },
+    "askrigg-central-17": {
+      "lat": 54.3148194,
+      "lng": -2.0807907,
+      "image_x": 1057,
+      "image_y": 775
+    },
+    "askrigg-central-18": {
+      "lat": 54.3147975,
+      "lng": -2.0808551,
+      "image_x": 1039,
+      "image_y": 786
+    },
+    "askrigg-central-19": {
+      "lat": 54.3147443,
+      "lng": -2.0809704,
+      "image_x": 1007,
+      "image_y": 811
+    },
+    "askrigg-central-20": {
+      "lat": 54.3146927,
+      "lng": -2.0807987,
+      "image_x": 1055,
+      "image_y": 836
+    },
+    "askrigg-central-21": {
+      "lat": 54.3146598,
+      "lng": -2.0806298,
+      "image_x": 1102,
+      "image_y": 851
+    },
+    "askrigg-central-22": {
+      "lat": 54.3146489,
+      "lng": -2.0804152,
+      "image_x": 1161,
+      "image_y": 856
+    },
+    "askrigg-central-23": {
+      "lat": 54.3145409,
+      "lng": -2.0800155,
+      "image_x": 1272,
+      "image_y": 908
+    },
+    "askrigg-central-24": {
+      "lat": 54.3145174,
+      "lng": -2.0798466,
+      "image_x": 1319,
+      "image_y": 919
+    },
+    "askrigg-central-25": {
+      "lat": 54.3149837,
+      "lng": -2.079353,
+      "image_x": 1457,
+      "image_y": 697
+    },
+    "askrigg-central-26": {
+      "lat": 54.314968,
+      "lng": -2.0791465,
+      "image_x": 1514,
+      "image_y": 704
+    },
+    "askrigg-central-27": {
+      "lat": 54.3150823,
+      "lng": -2.0791143,
+      "image_x": 1523,
+      "image_y": 650
+    },
+    "askrigg-central-28": {
+      "lat": 54.3152356,
+      "lng": -2.0788032,
+      "image_x": 1610,
+      "image_y": 577
+    },
+    "askrigg-central-29": {
+      "lat": 54.3153295,
+      "lng": -2.0786798,
+      "image_x": 1644,
+      "image_y": 532
+    },
+    "askrigg-central-30": {
+      "lat": 54.3149039,
+      "lng": -2.0788863,
+      "image_x": 1587,
+      "image_y": 735
+    },
+    "askrigg-central-31": {
+      "lat": 54.3147271,
+      "lng": -2.0790848,
+      "image_x": 1531,
+      "image_y": 819
+    },
+    "askrigg-central-32": {
+      "lat": 54.3145378,
+      "lng": -2.0794067,
+      "image_x": 1442,
+      "image_y": 909
+    },
+    "askrigg-central-33": {
+      "lat": 54.3143516,
+      "lng": -2.0793369,
+      "image_x": 1461,
+      "image_y": 998
+    },
+    "askrigg-central-34": {
+      "lat": 54.3142202,
+      "lng": -2.079632,
+      "image_x": 1379,
+      "image_y": 1061
+    },
+    "askrigg-central-35": {
+      "lat": 54.3143046,
+      "lng": -2.0799378,
+      "image_x": 1294,
+      "image_y": 1021
+    },
+    "askrigg-central-36": {
+      "lat": 54.3144642,
+      "lng": -2.0802248,
+      "image_x": 1214,
+      "image_y": 944
+    },
+    "askrigg-central-37": {
+      "lat": 54.3144893,
+      "lng": -2.0803562,
+      "image_x": 1178,
+      "image_y": 933
+    },
+    "askrigg-central-38": {
+      "lat": 54.3145127,
+      "lng": -2.0804769,
+      "image_x": 1144,
+      "image_y": 921
+    },
+    "askrigg-central-39": {
+      "lat": 54.31453,
+      "lng": -2.0806083,
+      "image_x": 1108,
+      "image_y": 913
+    },
+    "askrigg-central-40": {
+      "lat": 54.3146332,
+      "lng": -2.0809463,
+      "image_x": 1014,
+      "image_y": 864
+    },
+    "askrigg-central-41": {
+      "lat": 54.3151229,
+      "lng": -2.0810482,
+      "image_x": 985,
+      "image_y": 630
+    },
+    "askrigg-central-42": {
+      "lat": 54.3150572,
+      "lng": -2.0809007,
+      "image_x": 1026,
+      "image_y": 662
+    },
+    "askrigg-central-43": {
+      "lat": 54.3151464,
+      "lng": -2.0808631,
+      "image_x": 1037,
+      "image_y": 619
+    },
+    "askrigg-central-44": {
+      "lat": 54.3150682,
+      "lng": -2.080721,
+      "image_x": 1076,
+      "image_y": 656
+    },
+    "askrigg-central-45": {
+      "lat": 54.3150744,
+      "lng": -2.080619,
+      "image_x": 1105,
+      "image_y": 654
+    },
+    "askrigg-central-46": {
+      "lat": 54.3150971,
+      "lng": -2.0805587,
+      "image_x": 1121,
+      "image_y": 643
+    },
+    "askrigg-central-47": {
+      "lat": 54.3151081,
+      "lng": -2.0805037,
+      "image_x": 1137,
+      "image_y": 637
+    },
+    "askrigg-central-48": {
+      "lat": 54.3151206,
+      "lng": -2.0804474,
+      "image_x": 1152,
+      "image_y": 632
+    },
+    "askrigg-central-49": {
+      "lat": 54.3151315,
+      "lng": -2.080391,
+      "image_x": 1168,
+      "image_y": 626
+    },
+    "askrigg-central-50": {
+      "lat": 54.3156033,
+      "lng": -2.0804447,
+      "image_x": 1153,
+      "image_y": 401
+    },
+    "askrigg-central-51": {
+      "lat": 54.3151636,
+      "lng": -2.0802529,
+      "image_x": 1206,
+      "image_y": 611
+    },
+    "askrigg-central-52": {
+      "lat": 54.3151965,
+      "lng": -2.0801483,
+      "image_x": 1236,
+      "image_y": 595
+    },
+    "askrigg-central-53": {
+      "lat": 54.3152653,
+      "lng": -2.0800088,
+      "image_x": 1274,
+      "image_y": 562
+    },
+    "askrigg-central-54": {
+      "lat": 54.3153608,
+      "lng": -2.0798452,
+      "image_x": 1320,
+      "image_y": 517
+    },
+    "askrigg-central-55": {
+      "lat": 54.3153655,
+      "lng": -2.0797272,
+      "image_x": 1353,
+      "image_y": 515
+    },
+    "askrigg-central-56": {
+      "lat": 54.315432,
+      "lng": -2.0796347,
+      "image_x": 1378,
+      "image_y": 483
+    },
+    "askrigg-central-57": {
+      "lat": 54.3155579,
+      "lng": -2.0796467,
+      "image_x": 1375,
+      "image_y": 423
+    }
+  }
+}

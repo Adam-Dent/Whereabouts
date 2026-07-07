@@ -1,0 +1,345 @@
+{
+  "sheet_id": "harmby-south",
+  "pdf_hash": "63908111bc1e954179af5d02373324bae3c942a49e38aa8b74d28965fe7ddc1c",
+  "alignment": {
+    "corners": [
+      [
+        54.304455946300166,
+        -1.8072800463154397
+      ],
+      [
+        54.304455946300166,
+        -1.7959793144755765
+      ],
+      [
+        54.29979581333788,
+        -1.7959793144755765
+      ],
+      [
+        54.29979581333788,
+        -1.8072800463154397
+      ]
+    ],
+    "center": [
+      54.30212587981902,
+      -1.801629680395508
+    ],
+    "mpp": 0.31383303167672666,
+    "zoom": 19,
+    "stretched": false
+  },
+  "houses": {
+    "harmby-south-1": {
+      "lat": 54.3014664,
+      "lng": -1.8049389,
+      "image_x": 485,
+      "image_y": 1060
+    },
+    "harmby-south-2": {
+      "lat": 54.3013443,
+      "lng": -1.8050516,
+      "image_x": 461,
+      "image_y": 1104
+    },
+    "harmby-south-3": {
+      "lat": 54.301266,
+      "lng": -1.804322,
+      "image_x": 612,
+      "image_y": 1131
+    },
+    "harmby-south-4": {
+      "lat": 54.301878,
+      "lng": -1.8048289,
+      "image_x": 507,
+      "image_y": 914
+    },
+    "harmby-south-5": {
+      "lat": 54.3019735,
+      "lng": -1.804778,
+      "image_x": 518,
+      "image_y": 881
+    },
+    "harmby-south-6": {
+      "lat": 54.3020502,
+      "lng": -1.8048075,
+      "image_x": 512,
+      "image_y": 853
+    },
+    "harmby-south-7": {
+      "lat": 54.3021503,
+      "lng": -1.8048343,
+      "image_x": 506,
+      "image_y": 818
+    },
+    "harmby-south-8": {
+      "lat": 54.3021926,
+      "lng": -1.8047136,
+      "image_x": 531,
+      "image_y": 803
+    },
+    "harmby-south-9": {
+      "lat": 54.3022223,
+      "lng": -1.804601,
+      "image_x": 555,
+      "image_y": 792
+    },
+    "harmby-south-10": {
+      "lat": 54.3017137,
+      "lng": -1.8042791,
+      "image_x": 621,
+      "image_y": 973
+    },
+    "harmby-south-11": {
+      "lat": 54.3018827,
+      "lng": -1.8042415,
+      "image_x": 629,
+      "image_y": 913
+    },
+    "harmby-south-12": {
+      "lat": 54.3022834,
+      "lng": -1.8041316,
+      "image_x": 652,
+      "image_y": 771
+    },
+    "harmby-south-13": {
+      "lat": 54.3025087,
+      "lng": -1.804145,
+      "image_x": 649,
+      "image_y": 691
+    },
+    "harmby-south-14": {
+      "lat": 54.3027795,
+      "lng": -1.8037507,
+      "image_x": 730,
+      "image_y": 595
+    },
+    "harmby-south-15": {
+      "lat": 54.3028311,
+      "lng": -1.8025625,
+      "image_x": 976,
+      "image_y": 576
+    },
+    "harmby-south-16": {
+      "lat": 54.3023882,
+      "lng": -1.8018705,
+      "image_x": 1120,
+      "image_y": 733
+    },
+    "harmby-south-17": {
+      "lat": 54.3020862,
+      "lng": -1.8016639,
+      "image_x": 1162,
+      "image_y": 841
+    },
+    "harmby-south-18": {
+      "lat": 54.301903,
+      "lng": -1.801621,
+      "image_x": 1171,
+      "image_y": 906
+    },
+    "harmby-south-19": {
+      "lat": 54.3016902,
+      "lng": -1.8016237,
+      "image_x": 1171,
+      "image_y": 981
+    },
+    "harmby-south-20": {
+      "lat": 54.301529,
+      "lng": -1.8002424,
+      "image_x": 1457,
+      "image_y": 1038
+    },
+    "harmby-south-21": {
+      "lat": 54.3015039,
+      "lng": -1.7999929,
+      "image_x": 1508,
+      "image_y": 1047
+    },
+    "harmby-south-22": {
+      "lat": 54.301493,
+      "lng": -1.7996898,
+      "image_x": 1571,
+      "image_y": 1051
+    },
+    "harmby-south-23": {
+      "lat": 54.3016323,
+      "lng": -1.7995021,
+      "image_x": 1610,
+      "image_y": 1002
+    },
+    "harmby-south-24": {
+      "lat": 54.3016777,
+      "lng": -1.7988905,
+      "image_x": 1736,
+      "image_y": 985
+    },
+    "harmby-south-25": {
+      "lat": 54.3013725,
+      "lng": -1.7991212,
+      "image_x": 1689,
+      "image_y": 1094
+    },
+    "harmby-south-26": {
+      "lat": 54.3012206,
+      "lng": -1.7993572,
+      "image_x": 1640,
+      "image_y": 1148
+    },
+    "harmby-south-27": {
+      "lat": 54.3010954,
+      "lng": -1.7989576,
+      "image_x": 1723,
+      "image_y": 1192
+    },
+    "harmby-south-28": {
+      "lat": 54.3009499,
+      "lng": -1.7993841,
+      "image_x": 1634,
+      "image_y": 1244
+    },
+    "harmby-south-29": {
+      "lat": 54.3006869,
+      "lng": -1.7993492,
+      "image_x": 1642,
+      "image_y": 1337
+    },
+    "harmby-south-30": {
+      "lat": 54.300269,
+      "lng": -1.7987967,
+      "image_x": 1756,
+      "image_y": 1485
+    },
+    "harmby-south-31": {
+      "lat": 54.3007621,
+      "lng": -1.8000278,
+      "image_x": 1501,
+      "image_y": 1310
+    },
+    "harmby-south-32": {
+      "lat": 54.300845,
+      "lng": -1.8003175,
+      "image_x": 1441,
+      "image_y": 1281
+    },
+    "harmby-south-33": {
+      "lat": 54.3008701,
+      "lng": -1.8005803,
+      "image_x": 1387,
+      "image_y": 1272
+    },
+    "harmby-south-34": {
+      "lat": 54.3010579,
+      "lng": -1.8014064,
+      "image_x": 1216,
+      "image_y": 1205
+    },
+    "harmby-south-35": {
+      "lat": 54.301122,
+      "lng": -1.8016827,
+      "image_x": 1159,
+      "image_y": 1183
+    },
+    "harmby-south-36": {
+      "lat": 54.3012316,
+      "lng": -1.802128,
+      "image_x": 1066,
+      "image_y": 1144
+    },
+    "harmby-south-37": {
+      "lat": 54.3013678,
+      "lng": -1.8029541,
+      "image_x": 895,
+      "image_y": 1095
+    },
+    "harmby-south-38": {
+      "lat": 54.3014492,
+      "lng": -1.8033403,
+      "image_x": 815,
+      "image_y": 1067
+    },
+    "harmby-south-39": {
+      "lat": 54.3017403,
+      "lng": -1.8037695,
+      "image_x": 727,
+      "image_y": 963
+    },
+    "harmby-south-40": {
+      "lat": 54.3023444,
+      "lng": -1.8036863,
+      "image_x": 744,
+      "image_y": 749
+    },
+    "harmby-south-41": {
+      "lat": 54.3025259,
+      "lng": -1.8032867,
+      "image_x": 827,
+      "image_y": 685
+    },
+    "harmby-south-42": {
+      "lat": 54.3019531,
+      "lng": -1.803343,
+      "image_x": 815,
+      "image_y": 888
+    },
+    "harmby-south-43": {
+      "lat": 54.3019218,
+      "lng": -1.8029568,
+      "image_x": 895,
+      "image_y": 899
+    },
+    "harmby-south-44": {
+      "lat": 54.3025025,
+      "lng": -1.8027663,
+      "image_x": 934,
+      "image_y": 693
+    },
+    "harmby-south-45": {
+      "lat": 54.3024962,
+      "lng": -1.8023318,
+      "image_x": 1024,
+      "image_y": 695
+    },
+    "harmby-south-46": {
+      "lat": 54.3019093,
+      "lng": -1.8022004,
+      "image_x": 1051,
+      "image_y": 903
+    },
+    "harmby-south-47": {
+      "lat": 54.3017231,
+      "lng": -1.8022004,
+      "image_x": 1051,
+      "image_y": 969
+    },
+    "harmby-south-48": {
+      "lat": 54.3015728,
+      "lng": -1.8022835,
+      "image_x": 1034,
+      "image_y": 1023
+    },
+    "harmby-south-49": {
+      "lat": 54.3014679,
+      "lng": -1.8019509,
+      "image_x": 1103,
+      "image_y": 1060
+    },
+    "harmby-south-50": {
+      "lat": 54.3013474,
+      "lng": -1.8013045,
+      "image_x": 1237,
+      "image_y": 1103
+    },
+    "harmby-south-51": {
+      "lat": 54.301169,
+      "lng": -1.8002048,
+      "image_x": 1464,
+      "image_y": 1166
+    },
+    "harmby-south-52": {
+      "lat": 54.3011299,
+      "lng": -1.7998534,
+      "image_x": 1537,
+      "image_y": 1180
+    }
+  }
+}

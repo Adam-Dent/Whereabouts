@@ -1,0 +1,207 @@
+{
+  "sheet_id": "melmerby-wensleydale",
+  "pdf_hash": "22ff062d182bf00fa71b5c35f57831614887ced84b683c75360730165780a50a",
+  "alignment": {
+    "corners": [
+      [
+        54.26688042501869,
+        -1.888368265482942
+      ],
+      [
+        54.26688042501869,
+        -1.875837213307341
+      ],
+      [
+        54.26170819182979,
+        -1.875837213307341
+      ],
+      [
+        54.26170819182979,
+        -1.888368265482942
+      ]
+    ],
+    "center": [
+      54.26429430842424,
+      -1.8821027393951415
+    ],
+    "mpp": 0.34832002334484063,
+    "zoom": 18,
+    "stretched": false
+  },
+  "houses": {
+    "melmerby-wensleydale-1": {
+      "lat": 54.2657442,
+      "lng": -1.8868536,
+      "image_x": 283,
+      "image_y": 363
+    },
+    "melmerby-wensleydale-2": {
+      "lat": 54.2658225,
+      "lng": -1.8862581,
+      "image_x": 394,
+      "image_y": 338
+    },
+    "melmerby-wensleydale-3": {
+      "lat": 54.2659227,
+      "lng": -1.8860114,
+      "image_x": 440,
+      "image_y": 306
+    },
+    "melmerby-wensleydale-4": {
+      "lat": 54.2651927,
+      "lng": -1.8854803,
+      "image_x": 539,
+      "image_y": 539
+    },
+    "melmerby-wensleydale-5": {
+      "lat": 54.2648857,
+      "lng": -1.8851638,
+      "image_x": 598,
+      "image_y": 637
+    },
+    "melmerby-wensleydale-6": {
+      "lat": 54.2647792,
+      "lng": -1.8853784,
+      "image_x": 558,
+      "image_y": 672
+    },
+    "melmerby-wensleydale-7": {
+      "lat": 54.2645411,
+      "lng": -1.8849921,
+      "image_x": 630,
+      "image_y": 748
+    },
+    "melmerby-wensleydale-8": {
+      "lat": 54.2638737,
+      "lng": -1.8842089,
+      "image_x": 776,
+      "image_y": 961
+    },
+    "melmerby-wensleydale-9": {
+      "lat": 54.2637891,
+      "lng": -1.8841821,
+      "image_x": 781,
+      "image_y": 988
+    },
+    "melmerby-wensleydale-10": {
+      "lat": 54.2636951,
+      "lng": -1.8844664,
+      "image_x": 728,
+      "image_y": 1018
+    },
+    "melmerby-wensleydale-11": {
+      "lat": 54.263175,
+      "lng": -1.8850833,
+      "image_x": 613,
+      "image_y": 1184
+    },
+    "melmerby-wensleydale-12": {
+      "lat": 54.2632032,
+      "lng": -1.8842196,
+      "image_x": 774,
+      "image_y": 1175
+    },
+    "melmerby-wensleydale-13": {
+      "lat": 54.2630247,
+      "lng": -1.8843484,
+      "image_x": 750,
+      "image_y": 1232
+    },
+    "melmerby-wensleydale-14": {
+      "lat": 54.2629557,
+      "lng": -1.8841928,
+      "image_x": 779,
+      "image_y": 1254
+    },
+    "melmerby-wensleydale-15": {
+      "lat": 54.2628711,
+      "lng": -1.8844557,
+      "image_x": 730,
+      "image_y": 1281
+    },
+    "melmerby-wensleydale-16": {
+      "lat": 54.2628116,
+      "lng": -1.8845952,
+      "image_x": 704,
+      "image_y": 1300
+    },
+    "melmerby-wensleydale-17": {
+      "lat": 54.262774,
+      "lng": -1.8835276,
+      "image_x": 904,
+      "image_y": 1312
+    },
+    "melmerby-wensleydale-18": {
+      "lat": 54.2628641,
+      "lng": -1.8834753,
+      "image_x": 913,
+      "image_y": 1284
+    },
+    "melmerby-wensleydale-19": {
+      "lat": 54.2629244,
+      "lng": -1.8833801,
+      "image_x": 931,
+      "image_y": 1264
+    },
+    "melmerby-wensleydale-20": {
+      "lat": 54.2629965,
+      "lng": -1.8830448,
+      "image_x": 994,
+      "image_y": 1241
+    },
+    "melmerby-wensleydale-21": {
+      "lat": 54.2631233,
+      "lng": -1.8831494,
+      "image_x": 974,
+      "image_y": 1201
+    },
+    "melmerby-wensleydale-22": {
+      "lat": 54.2635667,
+      "lng": -1.8814248,
+      "image_x": 1296,
+      "image_y": 1059
+    },
+    "melmerby-wensleydale-23": {
+      "lat": 54.2649202,
+      "lng": -1.8790215,
+      "image_x": 1745,
+      "image_y": 626
+    },
+    "melmerby-wensleydale-24": {
+      "lat": 54.2634915,
+      "lng": -1.8829268,
+      "image_x": 1016,
+      "image_y": 1083
+    },
+    "melmerby-wensleydale-25": {
+      "lat": 54.2633286,
+      "lng": -1.8832165,
+      "image_x": 962,
+      "image_y": 1135
+    },
+    "melmerby-wensleydale-26": {
+      "lat": 54.26362,
+      "lng": -1.8834364,
+      "image_x": 921,
+      "image_y": 1042
+    },
+    "melmerby-wensleydale-27": {
+      "lat": 54.2641541,
+      "lng": -1.8835947,
+      "image_x": 891,
+      "image_y": 871
+    },
+    "melmerby-wensleydale-28": {
+      "lat": 54.2643782,
+      "lng": -1.8837073,
+      "image_x": 870,
+      "image_y": 800
+    },
+    "melmerby-wensleydale-29": {
+      "lat": 54.2646789,
+      "lng": -1.8841928,
+      "image_x": 779,
+      "image_y": 704
+    }
+  }
+}

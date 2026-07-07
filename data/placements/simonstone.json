@@ -1,0 +1,171 @@
+{
+  "sheet_id": "simonstone",
+  "pdf_hash": "3548992ac66fe3d94a4089be1f987b7b7e89846b79d0dbca22cae74c5e13d6a5",
+  "alignment": {
+    "corners": [
+      [
+        54.32424164920569,
+        -2.2042948069634196
+      ],
+      [
+        54.32424164920569,
+        -2.1965235409674895
+      ],
+      [
+        54.31782809598809,
+        -2.1965235409674895
+      ],
+      [
+        54.31782809598809,
+        -2.2042948069634196
+      ]
+    ],
+    "center": [
+      54.32103487259689,
+      -2.2004091739654545
+    ],
+    "mpp": 0.30524016425108097,
+    "zoom": 18,
+    "stretched": false
+  },
+  "houses": {
+    "simonstone-1": {
+      "lat": 54.3190374,
+      "lng": -2.1977806,
+      "image_x": 1386,
+      "image_y": 1898
+    },
+    "simonstone-2": {
+      "lat": 54.3190264,
+      "lng": -2.197963,
+      "image_x": 1347,
+      "image_y": 1902
+    },
+    "simonstone-3": {
+      "lat": 54.3190405,
+      "lng": -2.198014,
+      "image_x": 1336,
+      "image_y": 1897
+    },
+    "simonstone-4": {
+      "lat": 54.3190546,
+      "lng": -2.198077,
+      "image_x": 1323,
+      "image_y": 1892
+    },
+    "simonstone-5": {
+      "lat": 54.3190601,
+      "lng": -2.198136,
+      "image_x": 1310,
+      "image_y": 1890
+    },
+    "simonstone-6": {
+      "lat": 54.3190656,
+      "lng": -2.1981843,
+      "image_x": 1300,
+      "image_y": 1888
+    },
+    "simonstone-7": {
+      "lat": 54.3190875,
+      "lng": -2.1983331,
+      "image_x": 1268,
+      "image_y": 1880
+    },
+    "simonstone-8": {
+      "lat": 54.3191305,
+      "lng": -2.198486,
+      "image_x": 1236,
+      "image_y": 1864
+    },
+    "simonstone-9": {
+      "lat": 54.3192901,
+      "lng": -2.198946,
+      "image_x": 1138,
+      "image_y": 1806
+    },
+    "simonstone-10": {
+      "lat": 54.3206222,
+      "lng": -2.1981829,
+      "image_x": 1300,
+      "image_y": 1320
+    },
+    "simonstone-11": {
+      "lat": 54.3206534,
+      "lng": -2.1984887,
+      "image_x": 1235,
+      "image_y": 1309
+    },
+    "simonstone-12": {
+      "lat": 54.3206753,
+      "lng": -2.1986389,
+      "image_x": 1203,
+      "image_y": 1301
+    },
+    "simonstone-13": {
+      "lat": 54.3206941,
+      "lng": -2.1996796,
+      "image_x": 982,
+      "image_y": 1294
+    },
+    "simonstone-14": {
+      "lat": 54.3205627,
+      "lng": -2.201364,
+      "image_x": 623,
+      "image_y": 1342
+    },
+    "simonstone-15": {
+      "lat": 54.3207567,
+      "lng": -2.2014123,
+      "image_x": 613,
+      "image_y": 1271
+    },
+    "simonstone-16": {
+      "lat": 54.3220895,
+      "lng": -2.2008517,
+      "image_x": 732,
+      "image_y": 785
+    },
+    "simonstone-17": {
+      "lat": 54.3224837,
+      "lng": -2.2019166,
+      "image_x": 506,
+      "image_y": 641
+    },
+    "simonstone-18": {
+      "lat": 54.3225025,
+      "lng": -2.2021231,
+      "image_x": 462,
+      "image_y": 634
+    },
+    "simonstone-19": {
+      "lat": 54.3226089,
+      "lng": -2.2021392,
+      "image_x": 459,
+      "image_y": 595
+    },
+    "simonstone-20": {
+      "lat": 54.3227982,
+      "lng": -2.2021392,
+      "image_x": 459,
+      "image_y": 526
+    },
+    "simonstone-21": {
+      "lat": 54.322734,
+      "lng": -2.2025174,
+      "image_x": 378,
+      "image_y": 550
+    },
+    "simonstone-22": {
+      "lat": 54.3227606,
+      "lng": -2.202622,
+      "image_x": 356,
+      "image_y": 540
+    },
+    "simonstone-23": {
+      "lat": 54.3227794,
+      "lng": -2.2027615,
+      "image_x": 326,
+      "image_y": 533
+    }
+  }
+}

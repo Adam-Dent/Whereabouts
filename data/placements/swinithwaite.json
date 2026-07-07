@@ -1,0 +1,129 @@
+{
+  "sheet_id": "swinithwaite",
+  "pdf_hash": "5df9d60a80fc52cb87cd1526f035ad5d62ce64a3d629cc46c5589e61a83d07bd",
+  "alignment": {
+    "corners": [
+      [
+        54.3021759272339,
+        -1.9393755596944149
+      ],
+      [
+        54.3021759272339,
+        -1.9270823794535348
+      ],
+      [
+        54.29710622794624,
+        -1.9270823794535348
+      ],
+      [
+        54.29710622794624,
+        -1.9393755596944149
+      ]
+    ],
+    "center": [
+      54.29964107759007,
+      -1.9332289695739748
+    ],
+    "mpp": 0.3414149574727235,
+    "zoom": 18,
+    "stretched": false
+  },
+  "houses": {
+    "swinithwaite-1": {
+      "lat": 54.2981795,
+      "lng": -1.9347203,
+      "image_x": 886,
+      "image_y": 1303
+    },
+    "swinithwaite-2": {
+      "lat": 54.298048,
+      "lng": -1.9349456,
+      "image_x": 843,
+      "image_y": 1346
+    },
+    "swinithwaite-3": {
+      "lat": 54.298095,
+      "lng": -1.9355679,
+      "image_x": 724,
+      "image_y": 1331
+    },
+    "swinithwaite-4": {
+      "lat": 54.2978821,
+      "lng": -1.9377834,
+      "image_x": 303,
+      "image_y": 1400
+    },
+    "swinithwaite-5": {
+      "lat": 54.2983172,
+      "lng": -1.9373006,
+      "image_x": 395,
+      "image_y": 1258
+    },
+    "swinithwaite-6": {
+      "lat": 54.2985082,
+      "lng": -1.9355786,
+      "image_x": 722,
+      "image_y": 1196
+    },
+    "swinithwaite-7": {
+      "lat": 54.2985051,
+      "lng": -1.9346559,
+      "image_x": 898,
+      "image_y": 1197
+    },
+    "swinithwaite-8": {
+      "lat": 54.2988306,
+      "lng": -1.9336206,
+      "image_x": 1095,
+      "image_y": 1091
+    },
+    "swinithwaite-9": {
+      "lat": 54.2989464,
+      "lng": -1.9331217,
+      "image_x": 1190,
+      "image_y": 1053
+    },
+    "swinithwaite-10": {
+      "lat": 54.2996101,
+      "lng": -1.9322956,
+      "image_x": 1347,
+      "image_y": 837
+    },
+    "swinithwaite-11": {
+      "lat": 54.2993534,
+      "lng": -1.9317698,
+      "image_x": 1447,
+      "image_y": 920
+    },
+    "swinithwaite-12": {
+      "lat": 54.2990967,
+      "lng": -1.9317538,
+      "image_x": 1450,
+      "image_y": 1004
+    },
+    "swinithwaite-13": {
+      "lat": 54.2990091,
+      "lng": -1.9319522,
+      "image_x": 1412,
+      "image_y": 1033
+    },
+    "swinithwaite-14": {
+      "lat": 54.2989026,
+      "lng": -1.9317377,
+      "image_x": 1453,
+      "image_y": 1067
+    },
+    "swinithwaite-15": {
+      "lat": 54.2990904,
+      "lng": -1.9314319,
+      "image_x": 1511,
+      "image_y": 1006
+    },
+    "swinithwaite-16": {
+      "lat": 54.2987555,
+      "lng": -1.9312549,
+      "image_x": 1545,
+      "image_y": 1115
+    }
+  }
+}

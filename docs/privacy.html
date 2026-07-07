@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#0f4c5c"/>
+<title>Whereabouts: Privacy and data</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --hdr:#0f4c5c;
+  --ink:#1c1e16;
+  --paper:#faf9f6;
+  --card:#ffffff;
+  --border:#e7e3da;
+  --muted:#6b675f;
+  --accent:#a5610f;
+  --good:#217a2e;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);line-height:1.68;-webkit-font-smoothing:antialiased;font-size:17px}
+:focus-visible{outline:2px solid var(--hdr);outline-offset:2px;border-radius:2px}
+.topbar :focus-visible{outline-color:#fff}
+
+.topbar{background:var(--hdr);color:#fff;position:sticky;top:0;z-index:5}
+.topbar-in{max-width:820px;margin:0 auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between}
+.wordmark{font-family:var(--serif);font-weight:800;font-size:21px;color:#fff;text-decoration:none}
+.topbar a.back{color:rgba(255,255,255,.85);text-decoration:none;font-size:14px;font-weight:600}
+.topbar a.back:hover{color:#fff}
+
+.col{max-width:720px;margin:0 auto;padding:0 22px 72px}
+
+.masthead{padding:40px 0 4px}
+.kicker{font-size:12.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--serif);font-weight:800;font-size:clamp(28px,6vw,40px);line-height:1.1;letter-spacing:-.4px;margin:12px 0 0}
+.intro{margin-top:16px;font-size:18px;color:#333029;max-width:600px}
+
+.chips{display:flex;flex-wrap:wrap;gap:11px;margin:26px 0 4px}
+.chip{flex:1;min-width:180px;background:var(--card);border:1px solid var(--border);border-radius:11px;padding:13px 15px}
+.chip b{display:block;color:var(--good);font-size:13.5px;font-weight:700;margin-bottom:2px}
+.chip span{font-size:13.5px;color:var(--muted);line-height:1.45}
+
+section{margin-top:30px}
+section h2{font-family:var(--serif);font-weight:700;font-size:22px;color:var(--hdr);line-height:1.2;margin-bottom:2px}
+section p{margin-top:12px}
+section p.first{margin-top:8px}
+strong{color:var(--ink)}
+ul{margin:10px 0 0 20px}
+li{margin-top:6px}
+.note{margin-top:16px;padding:13px 16px;background:rgba(165,97,15,.08);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;font-size:15px;color:#5a4a30}
+
+.rule{height:1px;background:var(--border);border:0;margin:44px 0 0}
+footer{margin-top:26px;font-size:14px;color:var(--muted);line-height:1.7}
+a{color:var(--accent)}
+footer a{color:var(--accent)}
+
+@media print{
+  body{background:#fff;font-size:12pt}
+  .topbar{position:static}
+  .topbar,.topbar *{background:var(--hdr) !important;color:#fff !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  section,.chip{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <a class="wordmark" href="./">Whereabouts</a>
+    <a class="back" href="./">Open the app &rarr;</a>
+  </div>
+</div>
+
+<div class="col">
+
+  <div class="masthead">
+    <div class="kicker">Privacy and data</div>
+    <h1>What Whereabouts knows about you: nothing</h1>
+    <p class="intro">Whereabouts is a free finder for named houses. It holds no personal information, keeps no accounts, and records nothing about who uses it or what they look up. Here is exactly how that works, for anyone who wants to check before relying on it or recommending it.</p>
+  </div>
+
+  <div class="chips">
+    <div class="chip"><b>No personal data</b><span>No names, no accounts, no sign-in, nothing about you is collected or stored.</span></div>
+    <div class="chip"><b>Nothing you type leaves the phone</b><span>Searching happens entirely on your device. No cookies, no tracking.</span></div>
+    <div class="chip"><b>No server to breach</b><span>A static web page on a content network. There is no database behind it.</span></div>
+  </div>
+
+  <section>
+    <h2>What it holds, and what it does not</h2>
+    <p class="first">Whereabouts contains one fixed, public reference set: house names taken from published village maps, a latitude and longitude for each house, and the map drawings as images. You type a house name and read the result. What you type is never recorded, never sent to a server, and never shared. There is no login, and there are no cookies.</p>
+    <div class="note">Some of what people look up could be sensitive to them, so the app is built so that a search never becomes a record. The whole search runs on the device itself. Any usage counting is anonymous and aggregated, and it never captures which house anyone searched for.</div>
+  </section>
+
+  <section>
+    <h2>How it is built and hosted</h2>
+    <p class="first">The app is a single web page served over a secure connection (HTTPS) from a content delivery network. There is no application running on a server while you use it, and no store of personal data anywhere, so there is nothing to be breached and nothing for anyone to log in to. The code is open source, which means anyone can read it and confirm for themselves that no information is sent away. Once the page has loaded, it works with no signal at all, which is the point in places where coverage drops but GPS keeps going.</p>
+  </section>
+
+  <section>
+    <h2>Where the maps and locations come from</h2>
+    <p class="first">The village drawings are the work of Dr A Colin Day (<a href="https://colinday.co.uk/maps/" target="_blank" rel="noopener">colinday.co.uk</a>), made freely available for copying and used here with his full support. Each drawing is shown in full with its own attribution. The house locations are original work, placed by hand from satellite imagery, and are published under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-ShareAlike licence</a>. The software itself is open source under the MIT licence.</p>
+  </section>
+
+  <section>
+    <h2>A word on accuracy</h2>
+    <p class="first">Every location is placed by hand, so occasionally one can be wrong, and some houses are only pinned to the centre of their village so far. A house pinned to an exact spot shows a solid red ring; one not yet placed shows an amber dashed ring and sends directions to the village centre, so the two are never mistaken. Where a name appears more than once in a village, the app says so. Treat it as a strong guide rather than a guarantee, and glance at the map before setting off. It is a navigation aid, not a substitute for local knowledge.</p>
+  </section>
+
+  <hr class="rule"/>
+
+  <footer>
+    <a href="./how-it-works.html">How Whereabouts works</a> &nbsp;&middot;&nbsp; <a href="./">Open the app</a><br/>
+    Made by Adam Dent. Maps by Dr A Colin Day, shown in full with their own attributions.
+  </footer>
+
+</div>
+</body>
+</html>

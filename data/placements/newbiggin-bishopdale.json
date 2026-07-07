@@ -1,0 +1,285 @@
+{
+  "sheet_id": "newbiggin-bishopdale",
+  "pdf_hash": "56a782d50970cbb0fb03bccbc0e147a8eb7a5ccafad6498aea8e667f6229d35a",
+  "alignment": {
+    "corners": [
+      [
+        54.26882687406622,
+        -2.008556127548218
+      ],
+      [
+        54.268701564727344,
+        -1.9970333576202395
+      ],
+      [
+        54.26394537629049,
+        -1.9968944131315611
+      ],
+      [
+        54.26396459235005,
+        -2.008416652679444
+      ]
+    ],
+    "center": [
+      54.26635960185853,
+      -2.0027251377448656
+    ],
+    "mpp": 0.3232299346525525,
+    "zoom": 19,
+    "stretched": true
+  },
+  "houses": {
+    "newbiggin-bishopdale-1": {
+      "lat": 54.2652397,
+      "lng": -2.007781,
+      "image_x": 134,
+      "image_y": 1219
+    },
+    "newbiggin-bishopdale-2": {
+      "lat": 54.2653071,
+      "lng": -2.0076764,
+      "image_x": 155,
+      "image_y": 1196
+    },
+    "newbiggin-bishopdale-3": {
+      "lat": 54.2653463,
+      "lng": -2.0074189,
+      "image_x": 206,
+      "image_y": 1182
+    },
+    "newbiggin-bishopdale-4": {
+      "lat": 54.2654904,
+      "lng": -2.0071748,
+      "image_x": 256,
+      "image_y": 1132
+    },
+    "newbiggin-bishopdale-5": {
+      "lat": 54.2655609,
+      "lng": -2.0070246,
+      "image_x": 286,
+      "image_y": 1108
+    },
+    "newbiggin-bishopdale-6": {
+      "lat": 54.2657536,
+      "lng": -2.0066357,
+      "image_x": 365,
+      "image_y": 1042
+    },
+    "newbiggin-bishopdale-7": {
+      "lat": 54.2657833,
+      "lng": -2.0064506,
+      "image_x": 402,
+      "image_y": 1031
+    },
+    "newbiggin-bishopdale-8": {
+      "lat": 54.2658883,
+      "lng": -2.0063755,
+      "image_x": 418,
+      "image_y": 995
+    },
+    "newbiggin-bishopdale-9": {
+      "lat": 54.2659744,
+      "lng": -2.0062307,
+      "image_x": 447,
+      "image_y": 966
+    },
+    "newbiggin-bishopdale-10": {
+      "lat": 54.2660935,
+      "lng": -2.005949,
+      "image_x": 505,
+      "image_y": 924
+    },
+    "newbiggin-bishopdale-11": {
+      "lat": 54.2661577,
+      "lng": -2.005823,
+      "image_x": 530,
+      "image_y": 902
+    },
+    "newbiggin-bishopdale-12": {
+      "lat": 54.2662799,
+      "lng": -2.0055199,
+      "image_x": 592,
+      "image_y": 860
+    },
+    "newbiggin-bishopdale-13": {
+      "lat": 54.2663629,
+      "lng": -2.0053884,
+      "image_x": 619,
+      "image_y": 831
+    },
+    "newbiggin-bishopdale-14": {
+      "lat": 54.2664506,
+      "lng": -2.0051122,
+      "image_x": 675,
+      "image_y": 801
+    },
+    "newbiggin-bishopdale-15": {
+      "lat": 54.266955,
+      "lng": -2.0044792,
+      "image_x": 805,
+      "image_y": 626
+    },
+    "newbiggin-bishopdale-16": {
+      "lat": 54.266836,
+      "lng": -2.0043182,
+      "image_x": 837,
+      "image_y": 667
+    },
+    "newbiggin-bishopdale-17": {
+      "lat": 54.2670443,
+      "lng": -2.0032614,
+      "image_x": 1052,
+      "image_y": 593
+    },
+    "newbiggin-bishopdale-18": {
+      "lat": 54.2671179,
+      "lng": -2.003122,
+      "image_x": 1081,
+      "image_y": 567
+    },
+    "newbiggin-bishopdale-19": {
+      "lat": 54.2671681,
+      "lng": -2.0029691,
+      "image_x": 1112,
+      "image_y": 549
+    },
+    "newbiggin-bishopdale-20": {
+      "lat": 54.2672526,
+      "lng": -2.0026955,
+      "image_x": 1168,
+      "image_y": 519
+    },
+    "newbiggin-bishopdale-21": {
+      "lat": 54.267486,
+      "lng": -2.0024005,
+      "image_x": 1229,
+      "image_y": 438
+    },
+    "newbiggin-bishopdale-22": {
+      "lat": 54.2674578,
+      "lng": -2.0018587,
+      "image_x": 1339,
+      "image_y": 446
+    },
+    "newbiggin-bishopdale-23": {
+      "lat": 54.2675346,
+      "lng": -2.0015824,
+      "image_x": 1396,
+      "image_y": 419
+    },
+    "newbiggin-bishopdale-24": {
+      "lat": 54.2676599,
+      "lng": -2.0011291,
+      "image_x": 1489,
+      "image_y": 375
+    },
+    "newbiggin-bishopdale-25": {
+      "lat": 54.267757,
+      "lng": -2.000877,
+      "image_x": 1541,
+      "image_y": 340
+    },
+    "newbiggin-bishopdale-26": {
+      "lat": 54.2679607,
+      "lng": -1.9996431,
+      "image_x": 1796,
+      "image_y": 266
+    },
+    "newbiggin-bishopdale-27": {
+      "lat": 54.2676771,
+      "lng": -2.0001259,
+      "image_x": 1695,
+      "image_y": 366
+    },
+    "newbiggin-bishopdale-28": {
+      "lat": 54.2676615,
+      "lng": -2.0003432,
+      "image_x": 1650,
+      "image_y": 372
+    },
+    "newbiggin-bishopdale-29": {
+      "lat": 54.2675832,
+      "lng": -2.0006195,
+      "image_x": 1593,
+      "image_y": 400
+    },
+    "newbiggin-bishopdale-30": {
+      "lat": 54.2674391,
+      "lng": -2.0010084,
+      "image_x": 1513,
+      "image_y": 451
+    },
+    "newbiggin-bishopdale-31": {
+      "lat": 54.2673921,
+      "lng": -2.0011881,
+      "image_x": 1476,
+      "image_y": 467
+    },
+    "newbiggin-bishopdale-32": {
+      "lat": 54.2672887,
+      "lng": -2.0016333,
+      "image_x": 1384,
+      "image_y": 504
+    },
+    "newbiggin-bishopdale-33": {
+      "lat": 54.2671853,
+      "lng": -2.0021698,
+      "image_x": 1274,
+      "image_y": 541
+    },
+    "newbiggin-bishopdale-34": {
+      "lat": 54.2660527,
+      "lng": -2.0054045,
+      "image_x": 614,
+      "image_y": 937
+    },
+    "newbiggin-bishopdale-35": {
+      "lat": 54.2659932,
+      "lng": -2.0055494,
+      "image_x": 584,
+      "image_y": 958
+    },
+    "newbiggin-bishopdale-36": {
+      "lat": 54.2658742,
+      "lng": -2.0058256,
+      "image_x": 528,
+      "image_y": 999
+    },
+    "newbiggin-bishopdale-37": {
+      "lat": 54.2654356,
+      "lng": -2.0066062,
+      "image_x": 369,
+      "image_y": 1150
+    },
+    "newbiggin-bishopdale-38": {
+      "lat": 54.2653275,
+      "lng": -2.0068315,
+      "image_x": 324,
+      "image_y": 1187
+    },
+    "newbiggin-bishopdale-39": {
+      "lat": 54.2651974,
+      "lng": -2.0070997,
+      "image_x": 269,
+      "image_y": 1232
+    },
+    "newbiggin-bishopdale-40": {
+      "lat": 54.265011,
+      "lng": -2.0073599,
+      "image_x": 216,
+      "image_y": 1296
+    },
+    "newbiggin-bishopdale-41": {
+      "lat": 54.2650079,
+      "lng": -2.0075905,
+      "image_x": 170,
+      "image_y": 1297
+    },
+    "newbiggin-bishopdale-42": {
+      "lat": 54.2648606,
+      "lng": -2.0077595,
+      "image_x": 136,
+      "image_y": 1348
+    }
+  }
+}

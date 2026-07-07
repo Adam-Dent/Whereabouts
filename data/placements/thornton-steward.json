@@ -1,0 +1,345 @@
+{
+  "sheet_id": "thornton-steward",
+  "pdf_hash": "7c8902b452bb6d2f2232c027cf54f8fba927453c039467fa67829c7489baffda",
+  "alignment": {
+    "corners": [
+      [
+        54.2832506631483,
+        -1.7373349985068607
+      ],
+      [
+        54.2832506631483,
+        -1.7216202894264885
+      ],
+      [
+        54.276766837768996,
+        -1.7216202894264885
+      ],
+      [
+        54.276766837768996,
+        -1.7373349985068607
+      ]
+    ],
+    "center": [
+      54.28000875045865,
+      -1.7294776439666746
+    ],
+    "mpp": 0.4366481798087091,
+    "zoom": 17,
+    "stretched": false
+  },
+  "houses": {
+    "thornton-steward-1": {
+      "lat": 54.2796146,
+      "lng": -1.7314866,
+      "image_x": 870,
+      "image_y": 927
+    },
+    "thornton-steward-2": {
+      "lat": 54.2794376,
+      "lng": -1.7311299,
+      "image_x": 924,
+      "image_y": 972
+    },
+    "thornton-steward-3": {
+      "lat": 54.2794314,
+      "lng": -1.7308778,
+      "image_x": 961,
+      "image_y": 974
+    },
+    "thornton-steward-4": {
+      "lat": 54.2794204,
+      "lng": -1.7306766,
+      "image_x": 991,
+      "image_y": 976
+    },
+    "thornton-steward-5": {
+      "lat": 54.2799904,
+      "lng": -1.7299873,
+      "image_x": 1094,
+      "image_y": 831
+    },
+    "thornton-steward-6": {
+      "lat": 54.279707,
+      "lng": -1.7298666,
+      "image_x": 1112,
+      "image_y": 903
+    },
+    "thornton-steward-7": {
+      "lat": 54.2796396,
+      "lng": -1.7297646,
+      "image_x": 1127,
+      "image_y": 921
+    },
+    "thornton-steward-8": {
+      "lat": 54.2793922,
+      "lng": -1.729711,
+      "image_x": 1135,
+      "image_y": 984
+    },
+    "thornton-steward-9": {
+      "lat": 54.2808391,
+      "lng": -1.7289305,
+      "image_x": 1251,
+      "image_y": 615
+    },
+    "thornton-steward-10": {
+      "lat": 54.2805745,
+      "lng": -1.7290083,
+      "image_x": 1239,
+      "image_y": 682
+    },
+    "thornton-steward-11": {
+      "lat": 54.2793578,
+      "lng": -1.7294441,
+      "image_x": 1174,
+      "image_y": 992
+    },
+    "thornton-steward-12": {
+      "lat": 54.2793272,
+      "lng": -1.7291585,
+      "image_x": 1217,
+      "image_y": 1000
+    },
+    "thornton-steward-13": {
+      "lat": 54.2793147,
+      "lng": -1.7287306,
+      "image_x": 1281,
+      "image_y": 1003
+    },
+    "thornton-steward-14": {
+      "lat": 54.2794815,
+      "lng": -1.7281258,
+      "image_x": 1371,
+      "image_y": 961
+    },
+    "thornton-steward-15": {
+      "lat": 54.2796835,
+      "lng": -1.7280561,
+      "image_x": 1381,
+      "image_y": 909
+    },
+    "thornton-steward-16": {
+      "lat": 54.2799747,
+      "lng": -1.7277101,
+      "image_x": 1433,
+      "image_y": 835
+    },
+    "thornton-steward-17": {
+      "lat": 54.2804195,
+      "lng": -1.7269832,
+      "image_x": 1541,
+      "image_y": 722
+    },
+    "thornton-steward-18": {
+      "lat": 54.2803882,
+      "lng": -1.7264682,
+      "image_x": 1617,
+      "image_y": 730
+    },
+    "thornton-steward-19": {
+      "lat": 54.279671,
+      "lng": -1.7273533,
+      "image_x": 1486,
+      "image_y": 913
+    },
+    "thornton-steward-20": {
+      "lat": 54.2795332,
+      "lng": -1.727466,
+      "image_x": 1469,
+      "image_y": 948
+    },
+    "thornton-steward-21": {
+      "lat": 54.2793703,
+      "lng": -1.727525,
+      "image_x": 1460,
+      "image_y": 989
+    },
+    "thornton-steward-22": {
+      "lat": 54.2792419,
+      "lng": -1.7276216,
+      "image_x": 1446,
+      "image_y": 1022
+    },
+    "thornton-steward-23": {
+      "lat": 54.2792763,
+      "lng": -1.7271951,
+      "image_x": 1509,
+      "image_y": 1013
+    },
+    "thornton-steward-24": {
+      "lat": 54.2792904,
+      "lng": -1.7270261,
+      "image_x": 1534,
+      "image_y": 1010
+    },
+    "thornton-steward-25": {
+      "lat": 54.2793985,
+      "lng": -1.7250091,
+      "image_x": 1835,
+      "image_y": 982
+    },
+    "thornton-steward-26": {
+      "lat": 54.2793202,
+      "lng": -1.7254704,
+      "image_x": 1766,
+      "image_y": 1002
+    },
+    "thornton-steward-27": {
+      "lat": 54.2792795,
+      "lng": -1.7258942,
+      "image_x": 1703,
+      "image_y": 1012
+    },
+    "thornton-steward-28": {
+      "lat": 54.2792701,
+      "lng": -1.7261463,
+      "image_x": 1665,
+      "image_y": 1015
+    },
+    "thornton-steward-29": {
+      "lat": 54.279209,
+      "lng": -1.7263877,
+      "image_x": 1629,
+      "image_y": 1030
+    },
+    "thornton-steward-30": {
+      "lat": 54.2789804,
+      "lng": -1.7267391,
+      "image_x": 1577,
+      "image_y": 1089
+    },
+    "thornton-steward-31": {
+      "lat": 54.2790023,
+      "lng": -1.7274874,
+      "image_x": 1466,
+      "image_y": 1083
+    },
+    "thornton-steward-32": {
+      "lat": 54.2787956,
+      "lng": -1.7273507,
+      "image_x": 1486,
+      "image_y": 1136
+    },
+    "thornton-steward-33": {
+      "lat": 54.2787141,
+      "lng": -1.7273641,
+      "image_x": 1484,
+      "image_y": 1157
+    },
+    "thornton-steward-34": {
+      "lat": 54.2785998,
+      "lng": -1.7271602,
+      "image_x": 1514,
+      "image_y": 1186
+    },
+    "thornton-steward-35": {
+      "lat": 54.2786907,
+      "lng": -1.7265218,
+      "image_x": 1609,
+      "image_y": 1163
+    },
+    "thornton-steward-36": {
+      "lat": 54.2785278,
+      "lng": -1.7265299,
+      "image_x": 1608,
+      "image_y": 1204
+    },
+    "thornton-steward-37": {
+      "lat": 54.2785826,
+      "lng": -1.7276859,
+      "image_x": 1436,
+      "image_y": 1190
+    },
+    "thornton-steward-38": {
+      "lat": 54.2787956,
+      "lng": -1.7281902,
+      "image_x": 1361,
+      "image_y": 1136
+    },
+    "thornton-steward-39": {
+      "lat": 54.2789506,
+      "lng": -1.7288071,
+      "image_x": 1269,
+      "image_y": 1096
+    },
+    "thornton-steward-40": {
+      "lat": 54.2789757,
+      "lng": -1.7290565,
+      "image_x": 1232,
+      "image_y": 1090
+    },
+    "thornton-steward-41": {
+      "lat": 54.2787517,
+      "lng": -1.7290378,
+      "image_x": 1235,
+      "image_y": 1147
+    },
+    "thornton-steward-42": {
+      "lat": 54.2773971,
+      "lng": -1.7293167,
+      "image_x": 1193,
+      "image_y": 1492
+    },
+    "thornton-steward-43": {
+      "lat": 54.2777557,
+      "lng": -1.7299765,
+      "image_x": 1095,
+      "image_y": 1401
+    },
+    "thornton-steward-44": {
+      "lat": 54.2789459,
+      "lng": -1.7296413,
+      "image_x": 1145,
+      "image_y": 1097
+    },
+    "thornton-steward-45": {
+      "lat": 54.2790352,
+      "lng": -1.7299631,
+      "image_x": 1097,
+      "image_y": 1075
+    },
+    "thornton-steward-46": {
+      "lat": 54.2790837,
+      "lng": -1.7302474,
+      "image_x": 1055,
+      "image_y": 1062
+    },
+    "thornton-steward-47": {
+      "lat": 54.279137,
+      "lng": -1.7304567,
+      "image_x": 1024,
+      "image_y": 1049
+    },
+    "thornton-steward-48": {
+      "lat": 54.2790164,
+      "lng": -1.7307571,
+      "image_x": 979,
+      "image_y": 1079
+    },
+    "thornton-steward-49": {
+      "lat": 54.2791933,
+      "lng": -1.731095,
+      "image_x": 929,
+      "image_y": 1034
+    },
+    "thornton-steward-50": {
+      "lat": 54.2790007,
+      "lng": -1.7314598,
+      "image_x": 874,
+      "image_y": 1083
+    },
+    "thornton-steward-51": {
+      "lat": 54.2792278,
+      "lng": -1.7320794,
+      "image_x": 782,
+      "image_y": 1026
+    },
+    "thornton-steward-52": {
+      "lat": 54.2777918,
+      "lng": -1.7397451,
+      "image_x": -359,
+      "image_y": 1392
+    }
+  }
+}

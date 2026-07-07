@@ -1,0 +1,182 @@
+{
+  "sheet_id": "bolton-on-swale",
+  "pdf_hash": "e9458aaf31f1a4473ad59067d9f7daf56f357f70d30ca82469db45c6bf5a2b80",
+  "alignment": {
+    "corners": [
+      [
+        54.39063772384783,
+        -1.616881676626989
+      ],
+      [
+        54.39063772384783,
+        -1.6095797338954725
+      ],
+      [
+        54.38462125780916,
+        -1.6095797338954725
+      ],
+      [
+        54.38462125780916,
+        -1.616881676626989
+      ]
+    ],
+    "center": [
+      54.387629490828495,
+      -1.6132307052612307
+    ],
+    "mpp": 0.2863415987278589,
+    "zoom": 17
+  },
+  "houses": {
+    "bolton-on-swale-1": {
+      "lat": 54.3868928,
+      "lng": -1.6141695,
+      "image_x": 614,
+      "image_y": 1456
+    },
+    "bolton-on-swale-2": {
+      "lat": 54.3869459,
+      "lng": -1.6145289,
+      "image_x": 533,
+      "image_y": 1435
+    },
+    "bolton-on-swale-3": {
+      "lat": 54.3873458,
+      "lng": -1.6144753,
+      "image_x": 545,
+      "image_y": 1280
+    },
+    "bolton-on-swale-4": {
+      "lat": 54.3874895,
+      "lng": -1.6145611,
+      "image_x": 525,
+      "image_y": 1224
+    },
+    "bolton-on-swale-5": {
+      "lat": 54.3875832,
+      "lng": -1.6146952,
+      "image_x": 495,
+      "image_y": 1188
+    },
+    "bolton-on-swale-6": {
+      "lat": 54.3878768,
+      "lng": -1.6149312,
+      "image_x": 442,
+      "image_y": 1073
+    },
+    "bolton-on-swale-7": {
+      "lat": 54.3879986,
+      "lng": -1.6150278,
+      "image_x": 420,
+      "image_y": 1026
+    },
+    "bolton-on-swale-8": {
+      "lat": 54.3880986,
+      "lng": -1.6153336,
+      "image_x": 350,
+      "image_y": 987
+    },
+    "bolton-on-swale-9": {
+      "lat": 54.3882922,
+      "lng": -1.6155052,
+      "image_x": 312,
+      "image_y": 912
+    },
+    "bolton-on-swale-10": {
+      "lat": 54.388767,
+      "lng": -1.6149795,
+      "image_x": 431,
+      "image_y": 727
+    },
+    "bolton-on-swale-11": {
+      "lat": 54.3888607,
+      "lng": -1.6145986,
+      "image_x": 517,
+      "image_y": 691
+    },
+    "bolton-on-swale-12": {
+      "lat": 54.3887951,
+      "lng": -1.614207,
+      "image_x": 605,
+      "image_y": 716
+    },
+    "bolton-on-swale-13": {
+      "lat": 54.3884515,
+      "lng": -1.6141266,
+      "image_x": 624,
+      "image_y": 850
+    },
+    "bolton-on-swale-14": {
+      "lat": 54.3884672,
+      "lng": -1.614663,
+      "image_x": 502,
+      "image_y": 844
+    },
+    "bolton-on-swale-15": {
+      "lat": 54.3882922,
+      "lng": -1.6144967,
+      "image_x": 540,
+      "image_y": 912
+    },
+    "bolton-on-swale-16": {
+      "lat": 54.3880767,
+      "lng": -1.6142768,
+      "image_x": 590,
+      "image_y": 996
+    },
+    "bolton-on-swale-17": {
+      "lat": 54.3879549,
+      "lng": -1.6138208,
+      "image_x": 693,
+      "image_y": 1043
+    },
+    "bolton-on-swale-18": {
+      "lat": 54.3878237,
+      "lng": -1.6135579,
+      "image_x": 752,
+      "image_y": 1094
+    },
+    "bolton-on-swale-19": {
+      "lat": 54.3878331,
+      "lng": -1.6145235,
+      "image_x": 534,
+      "image_y": 1090
+    },
+    "bolton-on-swale-20": {
+      "lat": 54.387655,
+      "lng": -1.6143304,
+      "image_x": 578,
+      "image_y": 1160
+    },
+    "bolton-on-swale-21": {
+      "lat": 54.3877112,
+      "lng": -1.6141051,
+      "image_x": 629,
+      "image_y": 1138
+    },
+    "bolton-on-swale-22": {
+      "lat": 54.3877456,
+      "lng": -1.612587,
+      "image_x": 972,
+      "image_y": 1124
+    },
+    "bolton-on-swale-23": {
+      "lat": 54.3874426,
+      "lng": -1.6128606,
+      "image_x": 910,
+      "image_y": 1242
+    },
+    "bolton-on-swale-24": {
+      "lat": 54.3872021,
+      "lng": -1.6116375,
+      "image_x": 1187,
+      "image_y": 1336
+    },
+    "bolton-on-swale-25": {
+      "lat": 54.3854746,
+      "lng": -1.6117716,
+      "image_x": 1157,
+      "image_y": 2007
+    }
+  }
+}

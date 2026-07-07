@@ -1,0 +1,506 @@
+{
+  "sheet_id": "manfield",
+  "pdf_hash": "0b376088eb3b8d6016dfc90f808e04fdb2da1f18e15662383f3cc98670fd73be",
+  "alignment": {
+    "corners": [
+      [
+        54.51794030718679,
+        -1.6673148008651575
+      ],
+      [
+        54.51794030718679,
+        -1.6512643960647742
+      ],
+      [
+        54.51135574417934,
+        -1.6512643960647742
+      ],
+      [
+        54.51135574417934,
+        -1.6673148008651575
+      ]
+    ],
+    "center": [
+      54.514648025683066,
+      -1.6592895984649658
+    ],
+    "mpp": 0.4434322770660319,
+    "zoom": 18
+  },
+  "houses": {
+    "manfield-1": {
+      "lat": 54.5166336,
+      "lng": -1.66511,
+      "image_x": 321,
+      "image_y": 328
+    },
+    "manfield-2": {
+      "lat": 54.5166647,
+      "lng": -1.6643348,
+      "image_x": 434,
+      "image_y": 320
+    },
+    "manfield-3": {
+      "lat": 54.5166242,
+      "lng": -1.6637287,
+      "image_x": 523,
+      "image_y": 330
+    },
+    "manfield-4": {
+      "lat": 54.5164857,
+      "lng": -1.6632432,
+      "image_x": 593,
+      "image_y": 365
+    },
+    "manfield-5": {
+      "lat": 54.516467,
+      "lng": -1.6630259,
+      "image_x": 625,
+      "image_y": 370
+    },
+    "manfield-6": {
+      "lat": 54.5166102,
+      "lng": -1.6626906,
+      "image_x": 674,
+      "image_y": 334
+    },
+    "manfield-7": {
+      "lat": 54.5166024,
+      "lng": -1.6622159,
+      "image_x": 743,
+      "image_y": 336
+    },
+    "manfield-8": {
+      "lat": 54.5164826,
+      "lng": -1.6616929,
+      "image_x": 819,
+      "image_y": 366
+    },
+    "manfield-9": {
+      "lat": 54.5163736,
+      "lng": -1.6614407,
+      "image_x": 856,
+      "image_y": 393
+    },
+    "manfield-10": {
+      "lat": 54.5160887,
+      "lng": -1.6610062,
+      "image_x": 919,
+      "image_y": 465
+    },
+    "manfield-11": {
+      "lat": 54.5163782,
+      "lng": -1.6609499,
+      "image_x": 928,
+      "image_y": 392
+    },
+    "manfield-12": {
+      "lat": 54.5167441,
+      "lng": -1.6612852,
+      "image_x": 879,
+      "image_y": 300
+    },
+    "manfield-13": {
+      "lat": 54.5167317,
+      "lng": -1.6609231,
+      "image_x": 931,
+      "image_y": 303
+    },
+    "manfield-14": {
+      "lat": 54.517015,
+      "lng": -1.6610786,
+      "image_x": 909,
+      "image_y": 232
+    },
+    "manfield-15": {
+      "lat": 54.5167612,
+      "lng": -1.6602552,
+      "image_x": 1029,
+      "image_y": 296
+    },
+    "manfield-16": {
+      "lat": 54.5165822,
+      "lng": -1.6600513,
+      "image_x": 1058,
+      "image_y": 341
+    },
+    "manfield-17": {
+      "lat": 54.5165402,
+      "lng": -1.6597751,
+      "image_x": 1099,
+      "image_y": 351
+    },
+    "manfield-18": {
+      "lat": 54.5166554,
+      "lng": -1.6594237,
+      "image_x": 1150,
+      "image_y": 323
+    },
+    "manfield-19": {
+      "lat": 54.5168157,
+      "lng": -1.6592547,
+      "image_x": 1175,
+      "image_y": 282
+    },
+    "manfield-20": {
+      "lat": 54.5169574,
+      "lng": -1.658206,
+      "image_x": 1327,
+      "image_y": 247
+    },
+    "manfield-21": {
+      "lat": 54.5158894,
+      "lng": -1.6565216,
+      "image_x": 1573,
+      "image_y": 515
+    },
+    "manfield-22": {
+      "lat": 54.5161167,
+      "lng": -1.6568649,
+      "image_x": 1523,
+      "image_y": 458
+    },
+    "manfield-23": {
+      "lat": 54.5158364,
+      "lng": -1.6574281,
+      "image_x": 1441,
+      "image_y": 528
+    },
+    "manfield-24": {
+      "lat": 54.516017,
+      "lng": -1.6576669,
+      "image_x": 1406,
+      "image_y": 483
+    },
+    "manfield-25": {
+      "lat": 54.5160404,
+      "lng": -1.657801,
+      "image_x": 1386,
+      "image_y": 477
+    },
+    "manfield-26": {
+      "lat": 54.5159112,
+      "lng": -1.6581309,
+      "image_x": 1338,
+      "image_y": 509
+    },
+    "manfield-27": {
+      "lat": 54.5161696,
+      "lng": -1.6590267,
+      "image_x": 1208,
+      "image_y": 445
+    },
+    "manfield-28": {
+      "lat": 54.5161634,
+      "lng": -1.6600218,
+      "image_x": 1063,
+      "image_y": 446
+    },
+    "manfield-29": {
+      "lat": 54.5160887,
+      "lng": -1.6600084,
+      "image_x": 1065,
+      "image_y": 465
+    },
+    "manfield-30": {
+      "lat": 54.5159532,
+      "lng": -1.6600406,
+      "image_x": 1060,
+      "image_y": 499
+    },
+    "manfield-31": {
+      "lat": 54.5160887,
+      "lng": -1.6605583,
+      "image_x": 985,
+      "image_y": 465
+    },
+    "manfield-32": {
+      "lat": 54.5151342,
+      "lng": -1.6608855,
+      "image_x": 937,
+      "image_y": 704
+    },
+    "manfield-33": {
+      "lat": 54.5149567,
+      "lng": -1.660738,
+      "image_x": 958,
+      "image_y": 749
+    },
+    "manfield-34": {
+      "lat": 54.5147637,
+      "lng": -1.660628,
+      "image_x": 974,
+      "image_y": 797
+    },
+    "manfield-35": {
+      "lat": 54.5145799,
+      "lng": -1.6604698,
+      "image_x": 998,
+      "image_y": 844
+    },
+    "manfield-36": {
+      "lat": 54.5146157,
+      "lng": -1.6609848,
+      "image_x": 922,
+      "image_y": 835
+    },
+    "manfield-37": {
+      "lat": 54.5150284,
+      "lng": -1.6617358,
+      "image_x": 813,
+      "image_y": 731
+    },
+    "manfield-38": {
+      "lat": 54.5149053,
+      "lng": -1.6622159,
+      "image_x": 743,
+      "image_y": 762
+    },
+    "manfield-39": {
+      "lat": 54.5149692,
+      "lng": -1.6626289,
+      "image_x": 683,
+      "image_y": 746
+    },
+    "manfield-40": {
+      "lat": 54.5151576,
+      "lng": -1.66327,
+      "image_x": 589,
+      "image_y": 699
+    },
+    "manfield-41": {
+      "lat": 54.5160124,
+      "lng": -1.6633129,
+      "image_x": 583,
+      "image_y": 484
+    },
+    "manfield-42": {
+      "lat": 54.5160746,
+      "lng": -1.6643187,
+      "image_x": 437,
+      "image_y": 468
+    },
+    "manfield-43": {
+      "lat": 54.5158878,
+      "lng": -1.6646942,
+      "image_x": 382,
+      "image_y": 515
+    },
+    "manfield-44": {
+      "lat": 54.5157103,
+      "lng": -1.6645709,
+      "image_x": 400,
+      "image_y": 560
+    },
+    "manfield-45": {
+      "lat": 54.5155749,
+      "lng": -1.6643992,
+      "image_x": 425,
+      "image_y": 594
+    },
+    "manfield-46": {
+      "lat": 54.5153911,
+      "lng": -1.6644609,
+      "image_x": 416,
+      "image_y": 640
+    },
+    "manfield-47": {
+      "lat": 54.5152821,
+      "lng": -1.6641766,
+      "image_x": 457,
+      "image_y": 667
+    },
+    "manfield-48": {
+      "lat": 54.5151949,
+      "lng": -1.6643992,
+      "image_x": 425,
+      "image_y": 689
+    },
+    "manfield-49": {
+      "lat": 54.5152292,
+      "lng": -1.6640264,
+      "image_x": 479,
+      "image_y": 681
+    },
+    "manfield-50": {
+      "lat": 54.5151171,
+      "lng": -1.6639647,
+      "image_x": 488,
+      "image_y": 709
+    },
+    "manfield-51": {
+      "lat": 54.5148727,
+      "lng": -1.6639727,
+      "image_x": 487,
+      "image_y": 770
+    },
+    "manfield-52": {
+      "lat": 54.5147901,
+      "lng": -1.6636857,
+      "image_x": 529,
+      "image_y": 791
+    },
+    "manfield-53": {
+      "lat": 54.5147185,
+      "lng": -1.6633773,
+      "image_x": 574,
+      "image_y": 809
+    },
+    "manfield-54": {
+      "lat": 54.5146266,
+      "lng": -1.6630688,
+      "image_x": 619,
+      "image_y": 832
+    },
+    "manfield-55": {
+      "lat": 54.5145955,
+      "lng": -1.6628489,
+      "image_x": 651,
+      "image_y": 840
+    },
+    "manfield-56": {
+      "lat": 54.5144414,
+      "lng": -1.6627416,
+      "image_x": 666,
+      "image_y": 878
+    },
+    "manfield-57": {
+      "lat": 54.5144414,
+      "lng": -1.6624627,
+      "image_x": 707,
+      "image_y": 878
+    },
+    "manfield-58": {
+      "lat": 54.5144024,
+      "lng": -1.6621569,
+      "image_x": 752,
+      "image_y": 888
+    },
+    "manfield-59": {
+      "lat": 54.5143588,
+      "lng": -1.6619182,
+      "image_x": 786,
+      "image_y": 899
+    },
+    "manfield-60": {
+      "lat": 54.5143199,
+      "lng": -1.6616338,
+      "image_x": 828,
+      "image_y": 909
+    },
+    "manfield-61": {
+      "lat": 54.514267,
+      "lng": -1.6613522,
+      "image_x": 869,
+      "image_y": 922
+    },
+    "manfield-62": {
+      "lat": 54.5142125,
+      "lng": -1.6611135,
+      "image_x": 904,
+      "image_y": 936
+    },
+    "manfield-63": {
+      "lat": 54.5141689,
+      "lng": -1.6607863,
+      "image_x": 951,
+      "image_y": 947
+    },
+    "manfield-64": {
+      "lat": 54.5140614,
+      "lng": -1.6605395,
+      "image_x": 987,
+      "image_y": 974
+    },
+    "manfield-65": {
+      "lat": 54.5140459,
+      "lng": -1.6602203,
+      "image_x": 1034,
+      "image_y": 978
+    },
+    "manfield-66": {
+      "lat": 54.5125495,
+      "lng": -1.6592628,
+      "image_x": 1173,
+      "image_y": 1353
+    },
+    "manfield-67": {
+      "lat": 54.5138248,
+      "lng": -1.6593835,
+      "image_x": 1156,
+      "image_y": 1033
+    },
+    "manfield-68": {
+      "lat": 54.5140941,
+      "lng": -1.6597804,
+      "image_x": 1098,
+      "image_y": 966
+    },
+    "manfield-69": {
+      "lat": 54.5143308,
+      "lng": -1.6598153,
+      "image_x": 1093,
+      "image_y": 906
+    },
+    "manfield-70": {
+      "lat": 54.5144834,
+      "lng": -1.6598341,
+      "image_x": 1090,
+      "image_y": 868
+    },
+    "manfield-71": {
+      "lat": 54.5146235,
+      "lng": -1.6598234,
+      "image_x": 1092,
+      "image_y": 833
+    },
+    "manfield-72": {
+      "lat": 54.5147683,
+      "lng": -1.6599011,
+      "image_x": 1080,
+      "image_y": 796
+    },
+    "manfield-73": {
+      "lat": 54.5148945,
+      "lng": -1.6599977,
+      "image_x": 1066,
+      "image_y": 765
+    },
+    "manfield-74": {
+      "lat": 54.5150408,
+      "lng": -1.6601184,
+      "image_x": 1049,
+      "image_y": 728
+    },
+    "manfield-75": {
+      "lat": 54.5151965,
+      "lng": -1.6602015,
+      "image_x": 1037,
+      "image_y": 689
+    },
+    "manfield-76": {
+      "lat": 54.5155375,
+      "lng": -1.6603035,
+      "image_x": 1022,
+      "image_y": 603
+    },
+    "manfield-77": {
+      "lat": 54.5154923,
+      "lng": -1.6578197,
+      "image_x": 1384,
+      "image_y": 615
+    },
+    "manfield-78": {
+      "lat": 54.5151685,
+      "lng": -1.6574818,
+      "image_x": 1433,
+      "image_y": 696
+    },
+    "manfield-79": {
+      "lat": 54.5149287,
+      "lng": -1.6567147,
+      "image_x": 1545,
+      "image_y": 756
+    }
+  }
+}

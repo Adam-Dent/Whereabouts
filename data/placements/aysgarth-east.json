@@ -1,0 +1,213 @@
+{
+  "sheet_id": "aysgarth-east",
+  "pdf_hash": "8ad3c7def649a7a2ef59a87317b7e668d54202a4e87f2576cdd011ebf0dc1912",
+  "alignment": {
+    "corners": [
+      [
+        54.29607886534529,
+        -1.994597911834717
+      ],
+      [
+        54.29671751444559,
+        -1.9712090492248537
+      ],
+      [
+        54.287231410578656,
+        -1.9732070698839426
+      ],
+      [
+        54.28738724402677,
+        -1.9940400123596194
+      ]
+    ],
+    "center": [
+      54.291853758599075,
+      -1.983263510825783
+    ],
+    "mpp": 0.5841426031575554,
+    "zoom": 18,
+    "stretched": true
+  },
+  "houses": {
+    "aysgarth-east-1": {
+      "lat": 54.2901537,
+      "lng": -1.9910949,
+      "image_x": 362,
+      "image_y": 1089
+    },
+    "aysgarth-east-2": {
+      "lat": 54.2901364,
+      "lng": -1.990588,
+      "image_x": 420,
+      "image_y": 1093
+    },
+    "aysgarth-east-3": {
+      "lat": 54.2900754,
+      "lng": -1.9902232,
+      "image_x": 462,
+      "image_y": 1105
+    },
+    "aysgarth-east-4": {
+      "lat": 54.2900128,
+      "lng": -1.9898102,
+      "image_x": 508,
+      "image_y": 1118
+    },
+    "aysgarth-east-5": {
+      "lat": 54.2898954,
+      "lng": -1.9894454,
+      "image_x": 550,
+      "image_y": 1141
+    },
+    "aysgarth-east-6": {
+      "lat": 54.2903118,
+      "lng": -1.9851887,
+      "image_x": 1023,
+      "image_y": 1063
+    },
+    "aysgarth-east-7": {
+      "lat": 54.2905216,
+      "lng": -1.9848266,
+      "image_x": 1061,
+      "image_y": 1024
+    },
+    "aysgarth-east-8": {
+      "lat": 54.2905889,
+      "lng": -1.9842821,
+      "image_x": 1119,
+      "image_y": 1012
+    },
+    "aysgarth-east-9": {
+      "lat": 54.2928714,
+      "lng": -1.9846657,
+      "image_x": 1064,
+      "image_y": 594
+    },
+    "aysgarth-east-10": {
+      "lat": 54.2930749,
+      "lng": -1.9843385,
+      "image_x": 1097,
+      "image_y": 559
+    },
+    "aysgarth-east-11": {
+      "lat": 54.2931422,
+      "lng": -1.9844887,
+      "image_x": 1081,
+      "image_y": 546
+    },
+    "aysgarth-east-12": {
+      "lat": 54.2932236,
+      "lng": -1.9846067,
+      "image_x": 1068,
+      "image_y": 532
+    },
+    "aysgarth-east-13": {
+      "lat": 54.2932252,
+      "lng": -1.9836411,
+      "image_x": 1169,
+      "image_y": 534
+    },
+    "aysgarth-east-14": {
+      "lat": 54.2934224,
+      "lng": -1.9839522,
+      "image_x": 1136,
+      "image_y": 499
+    },
+    "aysgarth-east-15": {
+      "lat": 54.2944258,
+      "lng": -1.9834667,
+      "image_x": 1179,
+      "image_y": 327
+    },
+    "aysgarth-east-16": {
+      "lat": 54.2924534,
+      "lng": -1.9829249,
+      "image_x": 1250,
+      "image_y": 672
+    },
+    "aysgarth-east-17": {
+      "lat": 54.2916018,
+      "lng": -1.9840944,
+      "image_x": 1133,
+      "image_y": 824
+    },
+    "aysgarth-east-18": {
+      "lat": 54.2911885,
+      "lng": -1.9838208,
+      "image_x": 1165,
+      "image_y": 901
+    },
+    "aysgarth-east-19": {
+      "lat": 54.2909818,
+      "lng": -1.983853,
+      "image_x": 1163,
+      "image_y": 939
+    },
+    "aysgarth-east-20": {
+      "lat": 54.2907157,
+      "lng": -1.9837457,
+      "image_x": 1176,
+      "image_y": 989
+    },
+    "aysgarth-east-21": {
+      "lat": 54.2907094,
+      "lng": -1.9833058,
+      "image_x": 1224,
+      "image_y": 990
+    },
+    "aysgarth-east-22": {
+      "lat": 54.2907627,
+      "lng": -1.9829249,
+      "image_x": 1264,
+      "image_y": 981
+    },
+    "aysgarth-east-23": {
+      "lat": 54.2908441,
+      "lng": -1.9812512,
+      "image_x": 1441,
+      "image_y": 967
+    },
+    "aysgarth-east-24": {
+      "lat": 54.2907595,
+      "lng": -1.9805431,
+      "image_x": 1516,
+      "image_y": 984
+    },
+    "aysgarth-east-25": {
+      "lat": 54.2908848,
+      "lng": -1.979776,
+      "image_x": 1595,
+      "image_y": 962
+    },
+    "aysgarth-east-26": {
+      "lat": 54.2901865,
+      "lng": -1.9813317,
+      "image_x": 1439,
+      "image_y": 1090
+    },
+    "aysgarth-east-27": {
+      "lat": 54.2902179,
+      "lng": -1.9816911,
+      "image_x": 1401,
+      "image_y": 1084
+    },
+    "aysgarth-east-28": {
+      "lat": 54.2895134,
+      "lng": -1.9842714,
+      "image_x": 1128,
+      "image_y": 1217
+    },
+    "aysgarth-east-29": {
+      "lat": 54.2884926,
+      "lng": -1.987828,
+      "image_x": 735,
+      "image_y": 1418
+    },
+    "aysgarth-east-30": {
+      "lat": 54.2893505,
+      "lng": -1.9891101,
+      "image_x": 588,
+      "image_y": 1248
+    }
+  }
+}

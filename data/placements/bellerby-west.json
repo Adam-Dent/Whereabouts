@@ -1,0 +1,525 @@
+{
+  "sheet_id": "bellerby-west",
+  "pdf_hash": "d9b05d4a9b8b636f619604011d53de902a7835b6b85f95305e8645547d2ca13c",
+  "alignment": {
+    "corners": [
+      [
+        54.33309558025987,
+        -1.831866189958714
+      ],
+      [
+        54.33309558025987,
+        -1.8212412575876724
+      ],
+      [
+        54.32871719334742,
+        -1.8212412575876724
+      ],
+      [
+        54.32871719334742,
+        -1.831866189958714
+      ]
+    ],
+    "center": [
+      54.33090638680365,
+      -1.8265537237731932
+    ],
+    "mpp": 0.29485906297276465,
+    "zoom": 19,
+    "stretched": false
+  },
+  "houses": {
+    "bellerby-west-1": {
+      "lat": 54.3292035,
+      "lng": -1.8263564,
+      "image_x": 1213,
+      "image_y": 1469
+    },
+    "bellerby-west-2": {
+      "lat": 54.3294209,
+      "lng": -1.8258038,
+      "image_x": 1335,
+      "image_y": 1387
+    },
+    "bellerby-west-3": {
+      "lat": 54.3295852,
+      "lng": -1.8258306,
+      "image_x": 1329,
+      "image_y": 1325
+    },
+    "bellerby-west-4": {
+      "lat": 54.3297697,
+      "lng": -1.8256053,
+      "image_x": 1378,
+      "image_y": 1256
+    },
+    "bellerby-west-5": {
+      "lat": 54.3298573,
+      "lng": -1.8255946,
+      "image_x": 1381,
+      "image_y": 1223
+    },
+    "bellerby-west-6": {
+      "lat": 54.3305377,
+      "lng": -1.8255624,
+      "image_x": 1388,
+      "image_y": 966
+    },
+    "bellerby-west-7": {
+      "lat": 54.3306644,
+      "lng": -1.8256938,
+      "image_x": 1359,
+      "image_y": 918
+    },
+    "bellerby-west-8": {
+      "lat": 54.3308067,
+      "lng": -1.8254364,
+      "image_x": 1415,
+      "image_y": 864
+    },
+    "bellerby-west-9": {
+      "lat": 54.3309975,
+      "lng": -1.8255115,
+      "image_x": 1399,
+      "image_y": 792
+    },
+    "bellerby-west-10": {
+      "lat": 54.3311758,
+      "lng": -1.8251333,
+      "image_x": 1482,
+      "image_y": 725
+    },
+    "bellerby-west-11": {
+      "lat": 54.3312634,
+      "lng": -1.8253934,
+      "image_x": 1425,
+      "image_y": 692
+    },
+    "bellerby-west-12": {
+      "lat": 54.3313228,
+      "lng": -1.8253103,
+      "image_x": 1443,
+      "image_y": 669
+    },
+    "bellerby-west-13": {
+      "lat": 54.3313228,
+      "lng": -1.8251333,
+      "image_x": 1482,
+      "image_y": 669
+    },
+    "bellerby-west-14": {
+      "lat": 54.3314026,
+      "lng": -1.825313,
+      "image_x": 1443,
+      "image_y": 639
+    },
+    "bellerby-west-15": {
+      "lat": 54.3313588,
+      "lng": -1.8255758,
+      "image_x": 1385,
+      "image_y": 656
+    },
+    "bellerby-west-16": {
+      "lat": 54.3313588,
+      "lng": -1.8256912,
+      "image_x": 1359,
+      "image_y": 656
+    },
+    "bellerby-west-17": {
+      "lat": 54.3313494,
+      "lng": -1.8258762,
+      "image_x": 1319,
+      "image_y": 659
+    },
+    "bellerby-west-18": {
+      "lat": 54.3312227,
+      "lng": -1.8260747,
+      "image_x": 1275,
+      "image_y": 707
+    },
+    "bellerby-west-19": {
+      "lat": 54.3312258,
+      "lng": -1.8262437,
+      "image_x": 1238,
+      "image_y": 706
+    },
+    "bellerby-west-20": {
+      "lat": 54.3312305,
+      "lng": -1.8264019,
+      "image_x": 1203,
+      "image_y": 704
+    },
+    "bellerby-west-21": {
+      "lat": 54.331254,
+      "lng": -1.8265763,
+      "image_x": 1165,
+      "image_y": 695
+    },
+    "bellerby-west-22": {
+      "lat": 54.3312555,
+      "lng": -1.8267748,
+      "image_x": 1121,
+      "image_y": 695
+    },
+    "bellerby-west-23": {
+      "lat": 54.3312837,
+      "lng": -1.8269625,
+      "image_x": 1080,
+      "image_y": 684
+    },
+    "bellerby-west-24": {
+      "lat": 54.3313509,
+      "lng": -1.8273407,
+      "image_x": 996,
+      "image_y": 659
+    },
+    "bellerby-west-25": {
+      "lat": 54.3314073,
+      "lng": -1.8275794,
+      "image_x": 944,
+      "image_y": 637
+    },
+    "bellerby-west-26": {
+      "lat": 54.3314276,
+      "lng": -1.8277565,
+      "image_x": 905,
+      "image_y": 630
+    },
+    "bellerby-west-27": {
+      "lat": 54.3314682,
+      "lng": -1.8284056,
+      "image_x": 762,
+      "image_y": 614
+    },
+    "bellerby-west-28": {
+      "lat": 54.3315871,
+      "lng": -1.8288374,
+      "image_x": 667,
+      "image_y": 570
+    },
+    "bellerby-west-29": {
+      "lat": 54.3316966,
+      "lng": -1.8291432,
+      "image_x": 599,
+      "image_y": 528
+    },
+    "bellerby-west-30": {
+      "lat": 54.3318311,
+      "lng": -1.8303931,
+      "image_x": 324,
+      "image_y": 477
+    },
+    "bellerby-west-31": {
+      "lat": 54.3317795,
+      "lng": -1.830385,
+      "image_x": 326,
+      "image_y": 497
+    },
+    "bellerby-west-32": {
+      "lat": 54.3317232,
+      "lng": -1.8303609,
+      "image_x": 331,
+      "image_y": 518
+    },
+    "bellerby-west-33": {
+      "lat": 54.331548,
+      "lng": -1.8301356,
+      "image_x": 381,
+      "image_y": 584
+    },
+    "bellerby-west-34": {
+      "lat": 54.3316497,
+      "lng": -1.8308222,
+      "image_x": 230,
+      "image_y": 546
+    },
+    "bellerby-west-35": {
+      "lat": 54.3315574,
+      "lng": -1.8307981,
+      "image_x": 235,
+      "image_y": 581
+    },
+    "bellerby-west-36": {
+      "lat": 54.3315167,
+      "lng": -1.8309671,
+      "image_x": 198,
+      "image_y": 596
+    },
+    "bellerby-west-37": {
+      "lat": 54.3315214,
+      "lng": -1.8310905,
+      "image_x": 171,
+      "image_y": 594
+    },
+    "bellerby-west-38": {
+      "lat": 54.331523,
+      "lng": -1.831238,
+      "image_x": 138,
+      "image_y": 594
+    },
+    "bellerby-west-39": {
+      "lat": 54.3315246,
+      "lng": -1.8313614,
+      "image_x": 111,
+      "image_y": 593
+    },
+    "bellerby-west-40": {
+      "lat": 54.3316246,
+      "lng": -1.8314204,
+      "image_x": 98,
+      "image_y": 555
+    },
+    "bellerby-west-41": {
+      "lat": 54.3316872,
+      "lng": -1.8313345,
+      "image_x": 117,
+      "image_y": 532
+    },
+    "bellerby-west-42": {
+      "lat": 54.3317607,
+      "lng": -1.8313265,
+      "image_x": 119,
+      "image_y": 504
+    },
+    "bellerby-west-43": {
+      "lat": 54.3319546,
+      "lng": -1.8313265,
+      "image_x": 119,
+      "image_y": 431
+    },
+    "bellerby-west-44": {
+      "lat": 54.3319327,
+      "lng": -1.8311629,
+      "image_x": 155,
+      "image_y": 439
+    },
+    "bellerby-west-45": {
+      "lat": 54.3319109,
+      "lng": -1.8309724,
+      "image_x": 197,
+      "image_y": 447
+    },
+    "bellerby-west-46": {
+      "lat": 54.3318936,
+      "lng": -1.8308222,
+      "image_x": 230,
+      "image_y": 454
+    },
+    "bellerby-west-47": {
+      "lat": 54.3321924,
+      "lng": -1.8312004,
+      "image_x": 147,
+      "image_y": 341
+    },
+    "bellerby-west-48": {
+      "lat": 54.332183,
+      "lng": -1.8309537,
+      "image_x": 201,
+      "image_y": 345
+    },
+    "bellerby-west-49": {
+      "lat": 54.3321767,
+      "lng": -1.8306318,
+      "image_x": 272,
+      "image_y": 347
+    },
+    "bellerby-west-50": {
+      "lat": 54.3321908,
+      "lng": -1.830495,
+      "image_x": 302,
+      "image_y": 342
+    },
+    "bellerby-west-51": {
+      "lat": 54.3321908,
+      "lng": -1.830385,
+      "image_x": 326,
+      "image_y": 342
+    },
+    "bellerby-west-52": {
+      "lat": 54.3322064,
+      "lng": -1.8302616,
+      "image_x": 353,
+      "image_y": 336
+    },
+    "bellerby-west-53": {
+      "lat": 54.3320063,
+      "lng": -1.8302053,
+      "image_x": 366,
+      "image_y": 411
+    },
+    "bellerby-west-54": {
+      "lat": 54.3320016,
+      "lng": -1.830031,
+      "image_x": 404,
+      "image_y": 413
+    },
+    "bellerby-west-55": {
+      "lat": 54.332,
+      "lng": -1.8299451,
+      "image_x": 423,
+      "image_y": 414
+    },
+    "bellerby-west-56": {
+      "lat": 54.332183,
+      "lng": -1.829972,
+      "image_x": 417,
+      "image_y": 345
+    },
+    "bellerby-west-57": {
+      "lat": 54.3323081,
+      "lng": -1.8296903,
+      "image_x": 479,
+      "image_y": 297
+    },
+    "bellerby-west-58": {
+      "lat": 54.3322377,
+      "lng": -1.8293846,
+      "image_x": 546,
+      "image_y": 324
+    },
+    "bellerby-west-59": {
+      "lat": 54.3321079,
+      "lng": -1.8290949,
+      "image_x": 610,
+      "image_y": 373
+    },
+    "bellerby-west-60": {
+      "lat": 54.3319922,
+      "lng": -1.8286201,
+      "image_x": 715,
+      "image_y": 417
+    },
+    "bellerby-west-61": {
+      "lat": 54.3318921,
+      "lng": -1.8283358,
+      "image_x": 777,
+      "image_y": 454
+    },
+    "bellerby-west-62": {
+      "lat": 54.3318796,
+      "lng": -1.8281615,
+      "image_x": 816,
+      "image_y": 459
+    },
+    "bellerby-west-63": {
+      "lat": 54.3318248,
+      "lng": -1.8278691,
+      "image_x": 880,
+      "image_y": 480
+    },
+    "bellerby-west-64": {
+      "lat": 54.3317764,
+      "lng": -1.8276465,
+      "image_x": 929,
+      "image_y": 498
+    },
+    "bellerby-west-65": {
+      "lat": 54.3316293,
+      "lng": -1.8272924,
+      "image_x": 1007,
+      "image_y": 554
+    },
+    "bellerby-west-66": {
+      "lat": 54.331609,
+      "lng": -1.8271717,
+      "image_x": 1033,
+      "image_y": 561
+    },
+    "bellerby-west-67": {
+      "lat": 54.3316262,
+      "lng": -1.8270537,
+      "image_x": 1059,
+      "image_y": 555
+    },
+    "bellerby-west-68": {
+      "lat": 54.3316935,
+      "lng": -1.8268982,
+      "image_x": 1094,
+      "image_y": 529
+    },
+    "bellerby-west-69": {
+      "lat": 54.3317904,
+      "lng": -1.8269062,
+      "image_x": 1092,
+      "image_y": 493
+    },
+    "bellerby-west-70": {
+      "lat": 54.3315746,
+      "lng": -1.8264851,
+      "image_x": 1185,
+      "image_y": 574
+    },
+    "bellerby-west-71": {
+      "lat": 54.3315746,
+      "lng": -1.8262598,
+      "image_x": 1234,
+      "image_y": 574
+    },
+    "bellerby-west-72": {
+      "lat": 54.3315918,
+      "lng": -1.8261659,
+      "image_x": 1255,
+      "image_y": 568
+    },
+    "bellerby-west-73": {
+      "lat": 54.3315543,
+      "lng": -1.826013,
+      "image_x": 1289,
+      "image_y": 582
+    },
+    "bellerby-west-74": {
+      "lat": 54.331559,
+      "lng": -1.8258119,
+      "image_x": 1333,
+      "image_y": 580
+    },
+    "bellerby-west-75": {
+      "lat": 54.3315637,
+      "lng": -1.8257099,
+      "image_x": 1355,
+      "image_y": 578
+    },
+    "bellerby-west-76": {
+      "lat": 54.3316121,
+      "lng": -1.8256,
+      "image_x": 1379,
+      "image_y": 560
+    },
+    "bellerby-west-77": {
+      "lat": 54.3316262,
+      "lng": -1.82549,
+      "image_x": 1404,
+      "image_y": 555
+    },
+    "bellerby-west-78": {
+      "lat": 54.3316246,
+      "lng": -1.825321,
+      "image_x": 1441,
+      "image_y": 555
+    },
+    "bellerby-west-79": {
+      "lat": 54.331645,
+      "lng": -1.8252379,
+      "image_x": 1459,
+      "image_y": 548
+    },
+    "bellerby-west-80": {
+      "lat": 54.3317326,
+      "lng": -1.8251225,
+      "image_x": 1485,
+      "image_y": 515
+    },
+    "bellerby-west-81": {
+      "lat": 54.3317263,
+      "lng": -1.8249965,
+      "image_x": 1512,
+      "image_y": 517
+    },
+    "bellerby-west-82": {
+      "lat": 54.3316168,
+      "lng": -1.8249562,
+      "image_x": 1521,
+      "image_y": 558
+    }
+  }
+}

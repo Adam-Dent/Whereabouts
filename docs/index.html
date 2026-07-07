@@ -1,0 +1,901 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#0f4c5c"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="Whereabouts"/>
+<link rel="manifest" href="./manifest.json"/>
+<link rel="icon" href="./favicon.ico" sizes="32x32"/>
+<link rel="apple-touch-icon" href="./icon-180.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+<title>Whereabouts</title>
+<style>
+:root{
+  --hdr:#0f4c5c;
+  --ink:#15180f;
+  --paper:#faf9f6;
+  --card:#ffffff;
+  --border:#e8e5de;
+  --muted:#6e6b63;
+  --faint:#8f8b82;
+  --accent:#a5610f;
+  --accent-dim:rgba(165,97,15,.12);
+  --placed:#2e8a3c;
+  --unplaced:#ccc8c0;
+  --safe-top:env(safe-area-inset-top,0px);
+  --safe-bot:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overscroll-behavior:none}
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased}
+:focus-visible{outline:2px solid var(--hdr);outline-offset:2px}
+.hdr-btn:focus-visible,.fs-close-btn:focus-visible,.sheet-close:focus-visible{outline-color:#fff}
+.ri:focus-visible,.map-wrap:focus-visible{outline:2px solid var(--hdr);outline-offset:-2px;background:var(--accent-dim)}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+}
+#app{height:100%;display:flex;flex-direction:column}
+.screen{flex:1;display:flex;flex-direction:column;overflow:hidden;min-height:0}
+.screen.off{display:none}
+.hdr{background:var(--hdr);color:#fff;flex-shrink:0;padding-top:var(--safe-top)}
+.hdr-row{display:flex;align-items:center;min-height:52px;padding:0 4px 0 14px;gap:4px}
+.hdr h1{font-family:"Playfair Display",Georgia,serif;font-size:22px;font-weight:700;letter-spacing:-.2px;flex:1;line-height:1;color:#fff}
+.hdr-btn{width:44px;height:44px;background:none;border:none;color:rgba(255,255,255,.75);cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:10px;flex-shrink:0}
+.hdr-btn:active{background:rgba(255,255,255,.12)}
+@keyframes ww-spin{to{transform:rotate(360deg)}}
+#refresh-btn.spinning svg{animation:ww-spin .7s linear infinite}
+.toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 26px);transform:translate(-50%,18px);background:rgba(28,28,30,.95);color:#fff;padding:11px 18px;border-radius:22px;font-size:13.5px;line-height:1.35;max-width:86%;text-align:center;opacity:0;pointer-events:none;transition:opacity .25s ease,transform .25s ease;z-index:200;box-shadow:0 6px 24px rgba(0,0,0,.3)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.hdr-back{font-size:26px;line-height:1}
+.hdr-title{font-size:15px;font-weight:600;flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;opacity:.9}
+.searchbar{padding:10px 12px;background:var(--card);border-bottom:1px solid var(--border);flex-shrink:0}
+.search-inner{position:relative}
+.search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--faint);pointer-events:none}
+#q{width:100%;height:44px;border:1.5px solid var(--border);border-radius:22px;background:var(--paper);padding:0 44px 0 40px;font-size:16px;color:var(--ink);outline:none;-webkit-appearance:none;transition:border-color .15s,box-shadow .15s}
+#q:focus{border-color:var(--hdr);background:var(--card);box-shadow:0 0 0 3px rgba(15,76,92,.12)}
+#q::placeholder{color:var(--muted)}
+#q::-webkit-search-cancel-button{display:none}
+.clear-btn{position:absolute;right:5px;top:50%;transform:translateY(-50%);width:34px;height:34px;border:none;background:none;color:var(--faint);display:none;align-items:center;justify-content:center;cursor:pointer;border-radius:50%;padding:0}
+.clear-btn:active{background:var(--border);color:var(--ink)}
+.clear-btn.show{display:flex}
+#ios-hint{display:none;background:#f0f7e8;border-bottom:1px solid #d0e4b8;padding:9px 16px;font-size:13px;color:#3a5a2a;text-align:center;flex-shrink:0}
+.unplaced{background:var(--unplaced)}
+.area-row{margin:12px 0 16px}
+.area-top{display:flex;justify-content:space-between;align-items:baseline;gap:2px 10px;flex-wrap:wrap}
+.area-top b{font-size:14px;font-weight:600}
+.area-top span{font-size:12px;color:var(--muted);white-space:nowrap;margin-left:auto}
+.area-bar{height:6px;background:var(--border);border-radius:3px;margin-top:6px;overflow:hidden}
+.area-fill{height:100%;background:var(--placed);border-radius:3px;transition:width .3s}
+.area-btn{margin-top:8px;font-size:12.5px;font-weight:600;padding:7px 13px;border:1.5px solid var(--border);border-radius:9px;background:var(--paper);color:var(--ink);cursor:pointer;-webkit-appearance:none}
+.area-btn:disabled{opacity:.7;cursor:default}
+.area-btn.saved{color:var(--placed);border-color:#cbe8cf;background:#eaf6ec;opacity:1}
+.dl-all-btn{display:block;width:100%;margin-top:14px;font-size:13.5px;font-weight:600;padding:11px 14px;border:1.5px solid var(--hdr);border-radius:10px;background:var(--card);color:var(--hdr);cursor:pointer;-webkit-appearance:none;text-align:center}
+.dl-all-btn:active{background:var(--paper)}
+.dl-all-btn:disabled{opacity:.7;cursor:default}
+.dl-all-btn.saved{color:var(--placed);border-color:#cbe8cf;background:#eaf6ec}
+#results{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;background:var(--paper)}
+.intro{padding:16vh 36px 24px;text-align:center}
+.intro-head{font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:700;color:var(--ink);line-height:1.35;margin-bottom:10px}
+.intro-body{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:18px}
+.intro-key{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--muted);line-height:1.5;margin:8px auto 0;max-width:300px;text-align:left}
+.intro-key .dot{flex:none;margin-top:6px}
+.hint-msg{padding:24px 18px;font-size:14px;color:var(--muted)}
+.hint-err{color:#b03010}
+.skeleton{animation:shimmer 1.4s ease-in-out infinite;background:linear-gradient(90deg,var(--paper) 0%,#efeee9 50%,var(--paper) 100%);background-size:300% 100%}
+@keyframes shimmer{0%{background-position:100% 0}100%{background-position:-100% 0}}
+.sk-row{height:62px;border-bottom:1px solid var(--border)}
+.ri{display:flex;align-items:center;padding:13px 14px 13px 16px;border-bottom:1px solid var(--border);cursor:pointer;gap:12px;user-select:none;background:var(--card)}
+.ri:active{background:var(--accent-dim)}
+.dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.placed{background:var(--placed)}
+.ri-text{flex:1;min-width:0}
+.ri-name{font-size:15px;font-weight:600;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ri-sub{font-size:12px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ri-chev{color:var(--faint);font-size:18px;flex-shrink:0;line-height:1}
+.ri-warn{font-size:11.5px;color:#a06010;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.d-warn{display:none;margin-top:9px;padding:8px 11px;background:#fdf4e4;border:1px solid #f0d8a0;color:#7a5010;font-size:12.5px;line-height:1.5;border-radius:8px}
+#detail-scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.d-hero{padding:calc(var(--safe-top) + 8px) 18px 14px;background:var(--card);border-bottom:1px solid var(--border)}
+.d-back{margin:0 0 6px -10px;color:var(--ink)}
+.d-back:active{background:var(--border)}
+.d-name{font-size:27px;font-weight:800;letter-spacing:-.5px;line-height:1.15}
+.d-village{display:flex;align-items:center;gap:7px;margin-top:8px;font-size:14px;color:var(--muted);font-weight:500}
+.map-wrap{position:relative;background:#e8e4dc;cursor:zoom-in;margin:14px 18px 0;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(20,20,15,.14)}
+.map-img{display:block;width:100%}
+.map-expand{position:absolute;top:8px;right:8px;width:30px;height:30px;background:rgba(0,0,0,.35);border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;pointer-events:none;font-size:13px;backdrop-filter:blur(2px)}
+@media(min-width:760px){
+  .screen{max-width:720px;width:100%;margin:0 auto;border-left:1px solid var(--border);border-right:1px solid var(--border)}
+  #about-sheet{max-width:720px;border-radius:20px 20px 0 0}
+}
+@keyframes ring-pulse{0%{box-shadow:0 0 0 2.5px rgba(255,255,255,.9),0 0 0 2.5px rgba(255,255,255,.9)}60%{box-shadow:0 0 0 2.5px rgba(255,255,255,.9),0 0 0 11px rgba(230,32,32,0)}100%{box-shadow:0 0 0 2.5px rgba(255,255,255,.9),0 0 0 2.5px rgba(255,255,255,.9)}}
+.ring{position:absolute;width:36px;height:36px;border:3.5px solid #e62020;border-radius:50%;background:rgba(230,32,32,.12);transform:translate(-50%,-50%);pointer-events:none;display:none;z-index:1;box-shadow:0 0 0 2.5px rgba(255,255,255,.9);animation:ring-pulse 1.8s ease-out 0s 3}
+.ring.approx,.ring-fs.approx{border-color:var(--accent);border-style:dashed;background:rgba(196,118,26,.12);animation:none}
+.info-block{padding:18px 18px calc(18px + var(--safe-bot))}
+.loc-status{display:flex;align-items:flex-start;gap:9px;padding:12px 14px;border-radius:10px;font-size:13px;line-height:1.55;margin-bottom:16px}
+.loc-status.exact{background:#eaf6ec;border:1px solid #cbe8cf;color:#1f6b2c}
+.loc-status.approx{background:#fdf4e4;border:1px solid #f0d8a0;color:#7a5010}
+.loc-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:5px}
+.loc-status.exact .loc-dot{background:var(--placed)}
+.loc-status.approx .loc-dot{background:var(--accent)}
+.btn-nav{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:16px;background:var(--accent);color:#fff;border:none;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer;-webkit-appearance:none;letter-spacing:.1px}
+.btn-nav:disabled{background:var(--unplaced)}
+.btn-nav:not(:disabled):active{filter:brightness(.9)}
+#map-fs{display:none;position:fixed;inset:0;z-index:400;background:#111;flex-direction:column}
+#map-fs.open{display:flex}
+#map-fs-toolbar{height:calc(var(--safe-top) + 48px);padding-top:var(--safe-top);background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;flex-shrink:0;backdrop-filter:blur(4px)}
+.fs-close-btn{width:40px;height:40px;background:rgba(255,255,255,.15);border:none;color:#fff;border-radius:10px;cursor:pointer;font-size:22px;display:flex;align-items:center;justify-content:center}
+#map-fs-container{flex:1;overflow:hidden;position:relative;cursor:grab;touch-action:none}
+#map-fs-container:active{cursor:grabbing}
+#map-fs-img{position:absolute;top:0;left:0;display:block;transform-origin:0 0;user-select:none;-webkit-user-drag:none}
+.ring-fs{position:absolute;width:36px;height:36px;border:3.5px solid #e62020;border-radius:50%;background:rgba(230,32,32,.12);transform:translate(-50%,-50%);pointer-events:none;display:none;z-index:2;box-shadow:0 0 0 2.5px rgba(255,255,255,.9)}
+#about-wrap{display:none;position:fixed;inset:0;z-index:200;align-items:flex-end;justify-content:center}
+#about-wrap.open{display:flex}
+#about-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.45)}
+#about-sheet{position:relative;width:100%;max-height:80vh;background:var(--card);border-radius:20px 20px 0 0;overflow-y:auto;padding:0 0 calc(20px + var(--safe-bot))}
+.sheet-head{display:flex;align-items:center;justify-content:space-between;padding:14px 52px 8px 18px}
+.sheet-head h2{font-family:"Playfair Display",Georgia,serif;font-size:20px;font-weight:700}
+.sheet-ver{font-size:12px;color:var(--muted);font-weight:400;font-family:system-ui,sans-serif;margin-left:6px;align-self:flex-end;padding-bottom:2px}
+.sheet-close{position:absolute;top:8px;right:10px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:none;border:none;color:var(--muted);font-size:26px;cursor:pointer;line-height:1;border-radius:10px}
+.sheet-close:active{background:var(--border)}
+.sheet-body{padding:0 18px}
+.sheet-body p{font-size:14px;color:var(--ink);line-height:1.65;margin-bottom:10px}
+.about-lead{font-size:15px;margin:14px 0 4px}
+.sheet-h{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin:16px 0 5px}
+.sheet-divider{height:1px;background:var(--border);margin:14px 0}
+.sheet-attr{font-size:12px;color:var(--muted);line-height:1.8}
+.sheet-attr a{color:var(--muted)}
+</style>
+</head>
+<body>
+<div id="app">
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div class="screen" id="s-search">
+  <div class="hdr">
+    <div class="hdr-row">
+      <h1>Whereabouts</h1>
+      <button class="hdr-btn" id="refresh-btn" aria-label="Refresh">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+      </button>
+      <button class="hdr-btn" id="info-btn" aria-label="About">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><circle cx="12" cy="8.5" r=".5" fill="currentColor" stroke="none"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="ios-hint">Keep Whereabouts handy: tap <b>Share &#8593;</b>, then <b>Add to Home Screen</b>.</div>
+  <div class="searchbar" role="search">
+    <div class="search-inner">
+      <svg class="search-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input id="q" type="search" aria-label="Search for a house by name" placeholder="House name&#8230;" autocomplete="off" autocorrect="off" spellcheck="false" inputmode="search"/>
+      <button id="clear-btn" class="clear-btn" type="button" aria-label="Clear search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="results" aria-label="Search results" aria-live="polite">
+    <div class="sk-row skeleton"></div>
+    <div class="sk-row skeleton"></div>
+    <div class="sk-row skeleton"></div>
+    <div class="sk-row skeleton"></div>
+    <div class="sk-row skeleton"></div>
+  </div>
+</div>
+
+<div class="screen off" id="s-detail">
+  <div id="detail-scroll">
+    <div class="d-hero">
+      <button class="hdr-btn hdr-back d-back" id="back-btn" aria-label="Back">&#8249;</button>
+      <div class="d-name" id="d-name"></div>
+      <div class="d-village" id="d-village"></div>
+      <div class="d-warn" id="d-warn"></div>
+    </div>
+    <div class="map-wrap" id="map-wrap" role="button" tabindex="0" aria-label="Open the village map full screen">
+      <img class="map-img" id="map-img" src="" alt=""/>
+      <div class="ring" id="ring"></div>
+      <div class="map-expand" aria-hidden="true">&#8599;</div>
+    </div>
+    <div class="info-block">
+      <div class="loc-status" id="d-locstatus">
+        <span class="loc-dot"></span>
+        <span id="d-locstatus-text"></span>
+      </div>
+      <button class="btn-nav" id="nav-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+        Get directions
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="map-fs" role="dialog" aria-modal="true" aria-label="Map full screen">
+  <div id="map-fs-toolbar">
+    <button class="fs-close-btn" id="map-fs-close" aria-label="Close">&#215;</button>
+  </div>
+  <div id="map-fs-container">
+    <img id="map-fs-img" src="" alt=""/>
+    <div class="ring-fs" id="ring-fs"></div>
+  </div>
+</div>
+
+<div id="about-wrap" role="dialog" aria-modal="true" aria-label="About Whereabouts">
+  <div id="about-backdrop"></div>
+  <div id="about-sheet">
+    <div class="sheet-head">
+      <h2>Whereabouts <span class="sheet-ver" id="about-ver"></span></h2>
+      <button class="sheet-close" id="sheet-close-btn" aria-label="Close">&#215;</button>
+    </div>
+    <div class="sheet-body">
+      <p class="about-lead">Whereabouts helps you find a house by name in the villages of North Yorkshire, the kind of address a satnav struggles with. It stands on the maps of <a href="https://colinday.co.uk/maps/" target="_blank" rel="noopener">Dr&nbsp;A&nbsp;Colin&nbsp;Day</a>, who has spent years recording the names of the houses in the county&#8217;s villages and gives his work away free. The app adds a search box over those maps and passes the directions to your phone.</p>
+      <p class="about-lead">You can read more about how this project works <a href="./how-it-works.html">here</a>.</p>
+      <div class="sheet-h">A note on accuracy</div>
+      <p>Every house here is placed by hand, so now and then a pin sits on the wrong roof, and some houses are only pinned to the middle of their village for now. Glance at the map before you set off, and take extra care where the same name turns up more than once.</p>
+      <div class="sheet-h">Coverage</div>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:8px">Whereabouts covers North Yorkshire for now. Colin&#8217;s maps reach right across the north of England, so more counties may follow.</p>
+      <p id="area-sum"></p>
+      <div id="areas"></div>
+      <button class="dl-all-btn" id="dl-all-btn"></button>
+      <div class="sheet-h">Offline use &amp; updates</div>
+      <p>Whereabouts is built for places where signal comes and goes. Any map you open stays on your phone by itself; to make a whole area work with no signal at all, save it above. Tap a saved area if you ever want its maps off your phone again. And for one-tap access, add this page to your home screen: it opens like any other app, even in a dead spot.</p>
+      <p>You never need to think about updates. The app fetches the newest houses whenever it opens with signal and gives itself a fresh start each morning. If an area you saved gains new or revised maps, its button changes to &#8220;Update&#8221;: one tap brings it in line. Saved maps stay on your phone through all of this.</p>
+      <div class="sheet-h">Thank you, Dr Day</div>
+      <p>Every village drawing in this app is the work of Dr&nbsp;A&nbsp;Colin&nbsp;Day, who has spent more than twenty years mapping villages house by house and name by name, and giving the results away free, still updated by his own hand today. Long before this app existed, his maps were finding front doors for delivery drivers, healthcare professionals and anyone else a satnav had given up on. Colin has given this project his full support to build on his foundations. If it ever finds you the right door, the thanks belongs to him.</p>
+      <div class="sheet-divider"></div>
+      <div class="sheet-attr">
+        Made by Adam Dent<br/>
+        Maps by <a href="https://colinday.co.uk/maps/" target="_blank">Dr&nbsp;A&nbsp;Colin&nbsp;Day</a>, shown in full with their own attributions<br/>
+        App code is open source (MIT); the house locations are shared under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC&nbsp;BY-SA&nbsp;4.0</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<script src="./fuse.min.js"></script>
+<script>
+'use strict';
+const VERSION = '1.44.2';
+let houses = [], sheets = {}, districts = {}, fuse = null, dataGenerated = '';
+const byId = new Map();
+const qEl   = document.getElementById('q');
+const resEl = document.getElementById('results');
+
+document.getElementById('about-ver').textContent = 'v' + VERSION;
+
+// Same normalisation the ETL applies to names (SPEC 7.3), done client-side so
+// the payload doesn't ship a names_normalized duplicate of every name.
+function norm(s) {
+  return s.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+          .replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+}
+// house id is "<sheet_id>-<map_number>"
+function sheetOf(h) { return sheets[h.id.slice(0, h.id.lastIndexOf('-'))]; }
+
+// Load the house list. Try the network, but if that fails (offline, or the
+// service worker isn't intercepting yet on an iOS cold launch) fall back to
+// reading it straight out of Cache Storage ourselves. Returns the JSON text or
+// null if it is genuinely nowhere on the phone.
+async function loadHousesText() {
+  let text = null;
+  try {
+    const r = await fetch('./houses.json');
+    if (r.ok) text = await r.text();
+  } catch (_) { /* offline or blocked - fall through to the cache */ }
+  if (text !== null) {
+    // Store it ourselves so one online open is always enough to work offline
+    // after, without depending on the service worker having controlled the page.
+    if ('caches' in window) {
+      caches.open(DATA_CACHE)
+        .then(c => c.put('./houses.json',
+          new Response(text, { headers: { 'Content-Type': 'application/json' } })))
+        .catch(() => {});
+    }
+    return text;
+  }
+  if ('caches' in window) {
+    try {
+      const cached = await caches.match('./houses.json');
+      if (cached) return await cached.text();
+    } catch (_) {}
+  }
+  return null;
+}
+
+(async () => {
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');
+  showIOSHint();
+  route();
+  const text = await loadHousesText();
+  if (text === null) {
+    resEl.innerHTML = '<div class="hint-msg hint-err">The house list isn&#8217;t saved on this phone yet. Open the app once with signal and it will be ready to use offline from then on. Any maps you have saved are still here.</div>';
+    return;
+  }
+  try {
+    const data = JSON.parse(text);
+    houses = data.houses; sheets = data.sheets; districts = data.districts;
+    dataGenerated = data.generated || '';
+    for (const h of houses) byId.set(h.id, h);
+    computeDupCounts();
+    setupFuse();
+  } catch (e) {
+    console.error('Whereabouts load error:', e);
+    resEl.innerHTML = '<div class="hint-msg hint-err">The house list couldn&#8217;t be read. Open the app once with signal to repair it.</div>';
+    return;
+  }
+  renderSearch(qEl.value);
+  renderAreas();
+  pruneImageCache();
+  // If this load followed a manual refresh, confirm the outcome.
+  try {
+    const from = sessionStorage.getItem('ww_refreshFrom');
+    if (from !== null) {
+      sessionStorage.removeItem('ww_refreshFrom');
+      toast(from && from !== dataGenerated ? 'Updated to the latest maps.'
+                                           : 'You are on the latest version.');
+    }
+  } catch (_) {}
+})();
+
+// Some villages have several houses with exactly the same name (283 groups
+// across North Yorkshire; Dalton has four Rose Cottages). Count them at load,
+// straight from the data, so any duplicates in future districts get the
+// same-name warnings automatically with no code change.
+const dupCount = new Map();
+function dupKey(h) {
+  const s = sheetOf(h) || {};
+  return norm(h.n[0] || '') + '|' + (s.village || '') + '|' + (s.district || '');
+}
+function computeDupCounts() {
+  dupCount.clear();
+  for (const h of houses) {
+    const k = dupKey(h);
+    dupCount.set(k, (dupCount.get(k) || 0) + 1);
+  }
+}
+
+function setupFuse() {
+  // One combined name-plus-village string per house. With separate weighted
+  // keys, a narrowing query like "rose cottage dalton" scored WORSE than
+  // "rose cottage" on both keys (the extra word spoils each field match), so
+  // village narrowing returned nothing useful once 313 exact Rose Cottages
+  // existed. Against the combined string, the village word helps instead.
+  const docs = houses.map(h => {
+    const s = sheetOf(h);
+    return { id: h.id, t: h.n.map(norm).join(' ') + ' ' + (s ? norm(s.village) : '') };
+  });
+  fuse = new Fuse(docs, { keys: ['t'], threshold: 0.4, includeScore: true, ignoreLocation: true });
+}
+
+const clearBtn = document.getElementById('clear-btn');
+function syncClearBtn() { clearBtn.classList.toggle('show', qEl.value.length > 0); }
+
+let _qTimer = null;
+qEl.addEventListener('input', () => {
+  syncClearBtn();
+  clearTimeout(_qTimer);
+  _qTimer = setTimeout(() => renderSearch(qEl.value), 120);
+});
+
+clearBtn.addEventListener('click', () => {
+  qEl.value = '';
+  syncClearBtn();
+  clearTimeout(_qTimer);
+  renderSearch('');
+  qEl.focus();
+});
+
+function renderSearch(raw) {
+  const q = (raw || '').trim();
+  if (!q) {
+    if (!fuse) return;
+    resEl.innerHTML = '<div class="intro"><div class="intro-head">Named houses across<br/>North Yorkshire</div><div class="intro-body">Type a house name to see it on the village map and get directions.</div><div class="intro-key"><span class="dot placed"></span>Pinned to the exact spot</div><div class="intro-key"><span class="dot unplaced"></span>Not pinned yet: directions go to the village centre</div></div>';
+    return;
+  }
+  if (!fuse) { resEl.innerHTML = '<div class="hint-msg">Loading&#8230;</div>'; return; }
+  const norm = q.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+  // Plain relevance order - Fuse already returns best match first. A numbered
+  // address someone actually searched for (e.g. "123 Street Farm") should be
+  // able to outrank an unrelated named house, so nothing here reorders by
+  // whether the primary name happens to start with a digit.
+  let hits = fuse.search(norm, { limit: 80 });
+  if (!hits.length) { resEl.innerHTML = '<div class="hint-msg">Nothing found for &#8220;' + esc(q) + '&#8221;. Try fewer words, a different spelling, or add the village name.</div>'; return; }
+  resEl.innerHTML = hits.slice(0, 60).map(r => {
+    const h = byId.get(r.item.id);
+    const s = sheetOf(h) || {};
+    const alias = h.n.slice(1).join(' · ');
+    const sub = [s.village, s.district, alias].filter(Boolean).join(' · ');
+    const dot = h.lat != null ? 'placed' : 'unplaced';
+    const nDup = dupCount.get(dupKey(h)) || 1;
+    const warn = nDup > 1
+      ? '<div class="ri-warn">' + nDup + ' places with this name in ' + esc(s.village || 'this village') + '</div>'
+      : '';
+    return '<div class="ri" role="button" tabindex="0" data-id="' + h.id + '"><div class="dot ' + dot + '" aria-hidden="true"></div><div class="ri-text"><div class="ri-name">' + esc(h.n[0]) + '</div><div class="ri-sub">' + esc(sub) + '</div>' + warn + '</div><div class="ri-chev" aria-hidden="true">&#8250;</div></div>';
+  }).join('');
+  resEl.querySelectorAll('.ri').forEach(el => {
+    const open = () => go('#/detail/' + el.dataset.id);
+    el.addEventListener('click', open);
+    el.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
+    });
+  });
+}
+
+function go(hash) { location.hash = hash; }
+window.addEventListener('hashchange', route);
+document.getElementById('back-btn').addEventListener('click', () => go('#/'));
+
+function route() {
+  const hash = location.hash.replace(/^#/, '') || '/';
+  if (hash.startsWith('/detail/')) {
+    showDetail(hash.slice('/detail/'.length));
+  } else {
+    document.getElementById('s-search').classList.remove('off');
+    document.getElementById('s-detail').classList.add('off');
+    if (!location.hash || location.hash === '#/') qEl.focus();
+  }
+}
+
+let _detailH = null;
+function showDetail(id) {
+  const h = byId.get(id);
+  if (!h) { go('#/'); return; }
+  const sh = sheetOf(h) || {};
+  _detailH = h;
+  document.getElementById('s-search').classList.add('off');
+  document.getElementById('s-detail').classList.remove('off');
+  document.getElementById('d-name').textContent  = h.n.join(' / ');
+  document.getElementById('d-village').textContent = [sh.village, sh.district].filter(Boolean).join(' · ');
+  const dWarn = document.getElementById('d-warn');
+  const nDup = dupCount.get(dupKey(h)) || 1;
+  if (nDup > 1) {
+    dWarn.textContent = 'There are ' + nDup + ' places named "' + h.n[0] + '" in ' +
+      (sh.village || 'this village') + '. Check the circle on the map to be sure this is the right one.';
+    dWarn.style.display = 'block';
+  } else {
+    dWarn.style.display = 'none';
+  }
+  const hasCoords = h.lat != null && h.lng != null;
+  const locEl = document.getElementById('d-locstatus');
+  locEl.className = 'loc-status ' + (hasCoords ? 'exact' : 'approx');
+  document.getElementById('d-locstatus-text').textContent = hasCoords
+    ? 'Pinned by hand to the exact spot. Directions will take you to the door.'
+    : (h.x != null
+        ? 'The circle shows the house on the village drawing, but it hasn’t been pinned to an exact spot yet. Directions will take you to the village centre; let the drawing guide the last stretch.'
+        : 'This house hasn’t been pinned to an exact spot yet. Directions will take you to the village centre.');
+  const navBtn = document.getElementById('nav-btn');
+  navBtn.disabled = !(hasCoords || sh.clat != null);
+  navBtn.onclick = () => openMaps(h);
+  const img  = document.getElementById('map-img');
+  img.alt = 'Map of ' + (sh.village || 'the village') + ' with ' + h.n[0] + ' circled';
+  const ring = document.getElementById('ring');
+  ring.style.display = 'none';
+  ring.classList.toggle('approx', !hasCoords);
+  // The ring is positioned by positionDetailRing, bound once as img.onload:
+  // it always reads the *currently open* house, so a slow or cached image can
+  // never resurrect the previous house's ring position.
+  if (sh.img) img.src = './images/' + sh.img;
+  if (img.complete && img.naturalWidth) positionDetailRing();
+}
+
+function positionDetailRing() {
+  requestAnimationFrame(() => {
+    const h = _detailH;
+    if (!h) return;
+    const sh   = sheetOf(h) || {};
+    const img  = document.getElementById('map-img');
+    const ring = document.getElementById('ring');
+    if (h.x == null || !sh.w || !img.offsetWidth || !img.naturalWidth) {
+      ring.style.display = 'none';
+      return;
+    }
+    const s = img.offsetWidth / sh.w;
+    ring.style.left = (h.x * s) + 'px';
+    ring.style.top  = (h.y * s) + 'px';
+    ring.style.display = 'block';
+  });
+}
+document.getElementById('map-img').onload = positionDetailRing;
+
+const mapWrapEl = document.getElementById('map-wrap');
+mapWrapEl.addEventListener('click', () => { if (_detailH) openMapFS(_detailH); });
+mapWrapEl.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && _detailH) { e.preventDefault(); openMapFS(_detailH); }
+});
+
+function openMaps(h) {
+  const sh = sheetOf(h) || {};
+  const lat = h.lat ?? sh.clat;
+  const lng = h.lng ?? sh.clng;
+  if (lat == null) { alert('No location available.'); return; }
+  const label = encodeURIComponent(h.n[0] || h.id);
+  const ua = navigator.userAgent;
+  if (/iPad|iPhone|iPod/.test(ua)) {
+    location.href = `https://maps.apple.com/?daddr=${lat},${lng}&dirflg=d`;
+  } else if (/Android/.test(ua)) {
+    location.href = `geo:${lat},${lng}?q=${lat},${lng}(${label})`;
+  } else {
+    window.open(`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`, '_blank');
+  }
+}
+
+// ── fullscreen map viewer ─────────────────────────────────────────────────────
+let _fsH = null, _fsT = { x: 0, y: 0, s: 1 }, _fsGesture = null, _fsMouse = null, _fsPrevFocus = null;
+const fsEl   = document.getElementById('map-fs');
+const fsImg  = document.getElementById('map-fs-img');
+const fsRing = document.getElementById('ring-fs');
+const fsCont = document.getElementById('map-fs-container');
+
+function openMapFS(h) {
+  _fsH = h;
+  _fsPrevFocus = document.activeElement;
+  fsRing.style.display = 'none';
+  fsRing.classList.toggle('approx', h.lat == null);
+  fsEl.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('map-fs-close').focus();
+  const imgFile = (sheetOf(h) || {}).img || '';
+  fsImg.onload = () => { fitFS(); placeRingFS(); };
+  if (imgFile && fsImg.src.endsWith(imgFile) && fsImg.complete && fsImg.naturalWidth) {
+    setTimeout(() => { fitFS(); placeRingFS(); }, 30);
+  } else {
+    fsImg.src = './images/' + imgFile;
+  }
+}
+function closeMapFS() {
+  fsEl.classList.remove('open');
+  document.body.style.overflow = '';
+  if (_fsPrevFocus && _fsPrevFocus.focus) _fsPrevFocus.focus();
+}
+function fitFS() {
+  const s = fsCont.offsetWidth / (fsImg.naturalWidth || 1);
+  const ty = Math.max(0, (fsCont.offsetHeight - fsImg.naturalHeight * s) / 2);
+  _fsT = { x: 0, y: ty, s };
+  applyFS();
+}
+function applyFS() {
+  fsImg.style.transform = `translate(${_fsT.x}px,${_fsT.y}px) scale(${_fsT.s})`;
+  placeRingFS();
+}
+function placeRingFS() {
+  if (!_fsH || _fsH.x == null) return;
+  fsRing.style.left = (_fsH.x * _fsT.s + _fsT.x) + 'px';
+  fsRing.style.top  = (_fsH.y * _fsT.s + _fsT.y) + 'px';
+  fsRing.style.display = 'block';
+}
+function fsDist(t) { return Math.hypot(t[0].clientX-t[1].clientX, t[0].clientY-t[1].clientY); }
+function fsMid(t)  { return { x:(t[0].clientX+t[1].clientX)/2, y:(t[0].clientY+t[1].clientY)/2 }; }
+fsCont.addEventListener('touchstart', e => {
+  e.preventDefault();
+  if (e.touches.length === 1) {
+    _fsGesture = { type:'pan', ox: e.touches[0].clientX - _fsT.x, oy: e.touches[0].clientY - _fsT.y };
+  } else {
+    const mid = fsMid(e.touches);
+    _fsGesture = { type:'pinch', s0:_fsT.s, d0:fsDist(e.touches), mx:mid.x, my:mid.y, tx0:_fsT.x, ty0:_fsT.y };
+  }
+}, { passive:false });
+fsCont.addEventListener('touchmove', e => {
+  e.preventDefault();
+  if (!_fsGesture) return;
+  if (_fsGesture.type === 'pan' && e.touches.length === 1) {
+    _fsT.x = e.touches[0].clientX - _fsGesture.ox;
+    _fsT.y = e.touches[0].clientY - _fsGesture.oy;
+    applyFS();
+  } else if (_fsGesture.type === 'pinch' && e.touches.length === 2) {
+    const ns = Math.max(0.3, Math.min(10, _fsGesture.s0 * fsDist(e.touches) / _fsGesture.d0));
+    const mid = fsMid(e.touches);
+    const r = ns / _fsGesture.s0;
+    _fsT.x = mid.x - r * (_fsGesture.mx - _fsGesture.tx0);
+    _fsT.y = mid.y - r * (_fsGesture.my - _fsGesture.ty0);
+    _fsT.s = ns;
+    applyFS();
+  }
+}, { passive:false });
+fsCont.addEventListener('touchend',   () => { _fsGesture = null; }, { passive:true });
+fsCont.addEventListener('mousedown',  e => { _fsMouse = { ox: e.clientX - _fsT.x, oy: e.clientY - _fsT.y }; });
+fsCont.addEventListener('mousemove',  e => { if (!_fsMouse) return; _fsT.x = e.clientX - _fsMouse.ox; _fsT.y = e.clientY - _fsMouse.oy; applyFS(); });
+fsCont.addEventListener('mouseup',    () => { _fsMouse = null; });
+fsCont.addEventListener('mouseleave', () => { _fsMouse = null; });
+fsCont.addEventListener('wheel',      e => {
+  e.preventDefault();
+  const rc = fsCont.getBoundingClientRect();
+  const cx = e.clientX - rc.left, cy = e.clientY - rc.top;
+  const ns = Math.max(0.3, Math.min(10, _fsT.s * (e.deltaY < 0 ? 1.12 : 0.89)));
+  const f = ns / _fsT.s;
+  _fsT.x = cx - f*(cx - _fsT.x); _fsT.y = cy - f*(cy - _fsT.y); _fsT.s = ns;
+  applyFS();
+}, { passive:false });
+document.getElementById('map-fs-close').addEventListener('click', closeMapFS);
+fsEl.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeMapFS(); }
+  // Only the close button is focusable in here, so keep Tab on it.
+  else if (e.key === 'Tab') { e.preventDefault(); document.getElementById('map-fs-close').focus(); }
+});
+
+// ── coverage & offline areas ──────────────────────────────────────────────────
+// Maps are cached one of two ways: any map you view is cached automatically by
+// the service worker (cache-first), and whole districts can be saved explicitly
+// below. Nothing is downloaded in bulk unasked - the full dataset is far too
+// big to push onto every phone.
+const IMG_CACHE = 'whereabouts-images-v2';
+// Must match the names the service worker uses, so the page and the worker
+// read and write the same Cache Storage buckets.
+const DATA_CACHE = 'whereabouts-data-v1';
+const SHELL_CACHE = 'whereabouts-shell-v1';
+
+const SAVED_KEY = 'whereabouts_saved_areas';
+const savedAreas = new Set(JSON.parse(localStorage.getItem(SAVED_KEY) || '[]'));
+function persistSavedAreas() { localStorage.setItem(SAVED_KEY, JSON.stringify([...savedAreas])); }
+
+function districtSheets(name) {
+  return Object.values(sheets).filter(s => s.district === name && s.img);
+}
+function fmtMB(b) { return (b / 1e6).toFixed(1) + ' MB'; }
+
+async function renderAreas() {
+  const el = document.getElementById('areas');
+  if (!el || !houses.length) return;
+  let placedAll = 0, totalAll = 0;
+  for (const d of Object.values(districts)) { placedAll += d.placed; totalAll += d.total; }
+  const fresh = dataGenerated
+    ? ' Data updated ' + new Date(dataGenerated).toLocaleDateString(undefined,
+        { day: 'numeric', month: 'long', year: 'numeric' }) + '.'
+    : '';
+  document.getElementById('area-sum').innerHTML =
+    placedAll.toLocaleString() + ' of the ' + totalAll.toLocaleString() +
+    ' houses on <a href="https://colinday.co.uk/maps/" target="_blank" rel="noopener">Colin Day&#8217;s maps</a> pinned so far, each one placed by hand on satellite imagery. The green bars show how far each area has come.' + fresh;
+  const names = Object.keys(districts).sort((a, b) => {
+    const pa = districts[a].placed / (districts[a].total || 1);
+    const pb = districts[b].placed / (districts[b].total || 1);
+    return (pb - pa) || a.localeCompare(b);
+  });
+  const cache = 'caches' in window ? await caches.open(IMG_CACHE) : null;
+  el.innerHTML = '';
+  let allMaps = 0, allCached = 0, allBytes = 0;
+  for (const name of names) {
+    const d = districts[name];
+    const pct = Math.round(100 * d.placed / (d.total || 1));
+    const ss = districtSheets(name);
+    const bytes = ss.reduce((t, s) => t + (s.bytes || 0), 0);
+    let cachedN = 0;
+    if (cache) {
+      const hits = await Promise.all(ss.map(s => cache.match('./images/' + s.img)));
+      cachedN = hits.filter(Boolean).length;
+    }
+    allMaps += ss.length; allCached += cachedN; allBytes += bytes;
+    const row = document.createElement('div');
+    row.className = 'area-row';
+    row.innerHTML =
+      '<div class="area-top"><b>' + esc(name) + '</b><span>' +
+      d.placed.toLocaleString() + ' of ' + d.total.toLocaleString() + ' mapped houses · ' + pct + '%</span></div>' +
+      '<div class="area-bar"><div class="area-fill" style="width:' + pct + '%"></div></div>' +
+      (cache && bytes ? '<button class="area-btn"></button>' : '');
+    el.appendChild(row);
+    const btn = row.querySelector('.area-btn');
+    if (btn) setAreaBtn(btn, name, ss, cachedN, bytes);
+  }
+  setDlAllBtn(allMaps, allCached, allBytes);
+}
+
+// The "save everything" button below the per-area list. It is the whole county
+// in one go (about 125 MB today), so it confirms first and nudges towards wi-fi.
+function setDlAllBtn(total, cached, bytes) {
+  const btn = document.getElementById('dl-all-btn');
+  if (!btn) return;
+  if (!('caches' in window) || !total) { btn.style.display = 'none'; return; }
+  btn.style.display = '';
+  const maps = total.toLocaleString() + ' maps';
+  if (cached >= total) {
+    btn.textContent = 'All ' + maps + ' saved for offline use ✓';
+    btn.classList.add('saved');
+    btn.onclick = null;
+    return;
+  }
+  btn.classList.remove('saved');
+  btn.textContent = 'Save all ' + maps + ' for offline use (' + fmtMB(bytes) + ')';
+  btn.onclick = () => downloadAllMaps(btn);
+}
+
+async function downloadAllMaps(btn) {
+  const all = Object.values(sheets).filter(s => s.img && s.bytes);
+  const bytes = all.reduce((t, s) => t + (s.bytes || 0), 0);
+  if (!confirm('Save all ' + all.length + ' maps on this phone for offline use? '
+      + 'That is about ' + fmtMB(bytes) + ', so it is best done on wi-fi.')) return;
+  btn.disabled = true;
+  const cache = await caches.open(IMG_CACHE);
+  let done = 0, failed = 0;
+  for (const s of all) {
+    const url = './images/' + s.img;
+    if (!(await cache.match(url))) {
+      try { await cache.add(url); } catch (_) { failed++; }
+    }
+    done++;
+    if (done % 4 === 0 || done === all.length)
+      btn.textContent = 'Saving… ' + done + ' / ' + all.length;
+  }
+  // The list and the app shell too, so the whole app works with no signal.
+  try { await (await caches.open(DATA_CACHE)).add('./houses.json'); } catch (_) {}
+  try { await (await caches.open(SHELL_CACHE)).addAll(['./', './index.html', './fuse.min.js']); } catch (_) {}
+  if (navigator.storage && navigator.storage.persist) navigator.storage.persist();
+  if (failed) {
+    btn.textContent = 'Retry: ' + failed + ' maps failed';
+    btn.disabled = false;
+    btn.onclick = () => downloadAllMaps(btn);
+    return;
+  }
+  for (const n of Object.keys(districts)) savedAreas.add(n);
+  persistSavedAreas();
+  btn.disabled = false;
+  renderAreas();
+}
+
+function setAreaBtn(btn, name, ss, cachedN, bytes) {
+  const maps = ss.length + (ss.length === 1 ? ' map' : ' maps');
+  if (cachedN >= ss.length) {
+    btn.textContent = maps + ' saved for offline use \u2713';
+    btn.classList.add('saved');
+    btn.disabled = false;
+    btn.onclick = () => removeArea(btn, name, ss, bytes);
+    return;
+  }
+  btn.classList.remove('saved');
+  btn.disabled = false;
+  // 'Update' only when the user saved this area before AND something changed;
+  // a few auto-cached maps from browsing must not make an unsaved area say Update.
+  const isUpdate = savedAreas.has(name) && cachedN > 0;
+  btn.textContent = (isUpdate ? 'Update ' + maps : 'Save ' + maps + ' for offline use') + ' (' + fmtMB(bytes) + ')';
+  btn.onclick = () => downloadArea(btn, name, ss, bytes);
+}
+
+async function removeArea(btn, name, ss, bytes) {
+  if (!confirm('Remove ' + name + '\u2019s offline maps from this phone? They free up ' +
+               fmtMB(bytes) + ' and can be saved again any time.')) return;
+  btn.disabled = true;
+  const cache = await caches.open(IMG_CACHE);
+  for (const s of ss) await cache.delete('./images/' + s.img);
+  savedAreas.delete(name);
+  persistSavedAreas();
+  // Re-render the whole panel, not just this button, so the "save all" button
+  // below drops out of its saved state once an area is removed.
+  renderAreas();
+}
+
+async function downloadArea(btn, name, ss, bytes) {
+  btn.disabled = true;
+  const cache = await caches.open(IMG_CACHE);
+  let done = 0, failed = 0;
+  for (const s of ss) {
+    const url = './images/' + s.img;
+    if (!(await cache.match(url))) {
+      try { await cache.add(url); } catch (_) { failed++; }
+    }
+    btn.textContent = 'Saving\u2026 ' + (++done) + ' / ' + ss.length;
+  }
+  if (failed) {
+    btn.textContent = 'Retry: ' + failed + ' maps failed';
+    btn.disabled = false;
+    btn.onclick = () => downloadArea(btn, name, ss, bytes);
+    return;
+  }
+  // Saving an area should make the whole app work offline, not just its images:
+  // cache the house list and the app shell too, so search still loads with no
+  // signal even if the list was never cached before or has since been evicted.
+  try {
+    const dc = await caches.open(DATA_CACHE);
+    await dc.add('./houses.json');
+  } catch (_) { /* keep the images even if the list refetch fails */ }
+  try {
+    const shell = await caches.open(SHELL_CACHE);
+    await shell.addAll(['./', './index.html', './fuse.min.js']);
+  } catch (_) {}
+  // ask the browser to protect the cache from storage-pressure eviction
+  if (navigator.storage && navigator.storage.persist) navigator.storage.persist();
+  savedAreas.add(name);
+  persistSavedAreas();
+  // Re-render so the "save all" button below reflects the new totals too.
+  renderAreas();
+}
+
+// Drop cached images that no longer exist in the dataset (content-hashed
+// filenames mean a revised map leaves its old file orphaned in the cache).
+async function pruneImageCache() {
+  if (!('caches' in window)) return;
+  const valid = new Set(Object.values(sheets).map(s => s.img));
+  const cache = await caches.open(IMG_CACHE);
+  for (const req of await cache.keys()) {
+    if (!valid.has(req.url.split('/').pop())) cache.delete(req);
+  }
+}
+
+function showIOSHint() {
+  if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !navigator.standalone)
+    document.getElementById('ios-hint').style.display = '';
+}
+
+// Installed apps can sit alive in the background for weeks without the fresh
+// open that picks up new deploys. Whenever the app wakes on a new calendar
+// day (or after 12+ hours) with a connection, refresh it quietly. A reload
+// only touches the page and data - saved offline maps live in Cache Storage
+// and are untouched.
+const LOADED_AT = Date.now();
+const LOADED_DAY = new Date().toDateString();
+function isStale() {
+  return new Date().toDateString() !== LOADED_DAY || Date.now() - LOADED_AT > 43200000;
+}
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden && navigator.onLine && isStale()) location.reload();
+});
+// If the first open of the day happened offline, the wake check above fires on
+// the next open with signal. This covers signal returning while the app sits
+// in the background - refresh only while hidden, never under someone's fingers.
+window.addEventListener('online', () => {
+  if (document.hidden && isStale()) location.reload();
+});
+
+// Brief bottom message, auto-dismissing. Installed to a home screen there is no
+// browser chrome, so this is how the app talks back after a refresh tap.
+let _toastTimer;
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(_toastTimer);
+  _toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+// Manual refresh. Installed apps can't use the browser's reload, and though the
+// app already refreshes itself on the first open of the day, this lets you pull
+// the latest maps on demand. With signal it reloads (fetching any new deploy and
+// data); without, it keeps exactly what's on the phone and says so.
+document.getElementById('refresh-btn').addEventListener('click', () => {
+  if (navigator.onLine) {
+    document.getElementById('refresh-btn').classList.add('spinning');
+    // Remember the current data date so the reloaded page can confirm whether
+    // anything actually changed.
+    try { sessionStorage.setItem('ww_refreshFrom', dataGenerated || ''); } catch (_) {}
+    location.reload();
+  } else {
+    toast('You are offline. Showing the maps saved on this phone.');
+  }
+});
+
+const aboutWrap = document.getElementById('about-wrap');
+const aboutSheet = document.getElementById('about-sheet');
+const infoBtn = document.getElementById('info-btn');
+const aboutCloseBtn = document.getElementById('sheet-close-btn');
+let _aboutPrevFocus = null;
+function openAbout() {
+  _aboutPrevFocus = document.activeElement;
+  aboutWrap.classList.add('open');
+  renderAreas();
+  aboutCloseBtn.focus();
+}
+function closeAbout() {
+  aboutWrap.classList.remove('open');
+  if (_aboutPrevFocus && _aboutPrevFocus.focus) _aboutPrevFocus.focus();
+}
+infoBtn.addEventListener('click', openAbout);
+document.getElementById('about-backdrop').addEventListener('click', closeAbout);
+aboutCloseBtn.addEventListener('click', closeAbout);
+// Keep keyboard focus inside the sheet while it is open, and let Escape close it.
+aboutWrap.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeAbout(); return; }
+  if (e.key !== 'Tab') return;
+  const f = aboutSheet.querySelectorAll('a[href],button:not([disabled]),input,[tabindex]:not([tabindex="-1"])');
+  if (!f.length) return;
+  const first = f[0], last = f[f.length - 1];
+  if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+  else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+});
+
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+</script>
+<script data-goatcounter="https://whereabouts-app.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

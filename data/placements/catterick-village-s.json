@@ -1,0 +1,207 @@
+{
+  "sheet_id": "catterick-village-s",
+  "pdf_hash": "bb17605114e87b4802bbb6db061d1f1543d07f53f2b1c6dfb32d5f97dd1956b4",
+  "alignment": {
+    "corners": [
+      [
+        54.37517084117513,
+        -1.6348171234130862
+      ],
+      [
+        54.37490837050418,
+        -1.6173720359802246
+      ],
+      [
+        54.36692096060366,
+        -1.6169214248657229
+      ],
+      [
+        54.36678344855167,
+        -1.6353106498718264
+      ]
+    ],
+    "center": [
+      54.37094590520866,
+      -1.6261053085327148
+    ],
+    "mpp": 0.49779470788002295,
+    "zoom": 17,
+    "stretched": true
+  },
+  "houses": {
+    "catterick-village-s-1": {
+      "lat": 54.3727523,
+      "lng": -1.6280365,
+      "image_x": 887,
+      "image_y": 483
+    },
+    "catterick-village-s-2": {
+      "lat": 54.3725898,
+      "lng": -1.6269422,
+      "image_x": 1030,
+      "image_y": 515
+    },
+    "catterick-village-s-3": {
+      "lat": 54.3718648,
+      "lng": -1.6236377,
+      "image_x": 1467,
+      "image_y": 659
+    },
+    "catterick-village-s-4": {
+      "lat": 54.3719961,
+      "lng": -1.6229725,
+      "image_x": 1556,
+      "image_y": 631
+    },
+    "catterick-village-s-5": {
+      "lat": 54.3713961,
+      "lng": -1.6209769,
+      "image_x": 1821,
+      "image_y": 752
+    },
+    "catterick-village-s-6": {
+      "lat": 54.3703211,
+      "lng": -1.6242814,
+      "image_x": 1379,
+      "image_y": 973
+    },
+    "catterick-village-s-7": {
+      "lat": 54.3718023,
+      "lng": -1.6260839,
+      "image_x": 1143,
+      "image_y": 675
+    },
+    "catterick-village-s-8": {
+      "lat": 54.3712461,
+      "lng": -1.624893,
+      "image_x": 1300,
+      "image_y": 786
+    },
+    "catterick-village-s-9": {
+      "lat": 54.3709086,
+      "lng": -1.6265237,
+      "image_x": 1086,
+      "image_y": 856
+    },
+    "catterick-village-s-10": {
+      "lat": 54.3713524,
+      "lng": -1.6269422,
+      "image_x": 1031,
+      "image_y": 767
+    },
+    "catterick-village-s-11": {
+      "lat": 54.3708336,
+      "lng": -1.6273284,
+      "image_x": 982,
+      "image_y": 872
+    },
+    "catterick-village-s-12": {
+      "lat": 54.3721023,
+      "lng": -1.6283369,
+      "image_x": 849,
+      "image_y": 616
+    },
+    "catterick-village-s-13": {
+      "lat": 54.3718148,
+      "lng": -1.6290128,
+      "image_x": 762,
+      "image_y": 676
+    },
+    "catterick-village-s-14": {
+      "lat": 54.3711961,
+      "lng": -1.6290128,
+      "image_x": 764,
+      "image_y": 800
+    },
+    "catterick-village-s-15": {
+      "lat": 54.370968,
+      "lng": -1.6289967,
+      "image_x": 766,
+      "image_y": 846
+    },
+    "catterick-village-s-16": {
+      "lat": 54.3704649,
+      "lng": -1.6290128,
+      "image_x": 766,
+      "image_y": 946
+    },
+    "catterick-village-s-17": {
+      "lat": 54.369718,
+      "lng": -1.6289967,
+      "image_x": 770,
+      "image_y": 1094
+    },
+    "catterick-village-s-18": {
+      "lat": 54.369593,
+      "lng": -1.6289592,
+      "image_x": 775,
+      "image_y": 1119
+    },
+    "catterick-village-s-19": {
+      "lat": 54.3695086,
+      "lng": -1.6289753,
+      "image_x": 773,
+      "image_y": 1136
+    },
+    "catterick-village-s-20": {
+      "lat": 54.3697336,
+      "lng": -1.6282189,
+      "image_x": 869,
+      "image_y": 1091
+    },
+    "catterick-village-s-21": {
+      "lat": 54.3708149,
+      "lng": -1.6282886,
+      "image_x": 858,
+      "image_y": 876
+    },
+    "catterick-village-s-22": {
+      "lat": 54.3710617,
+      "lng": -1.6282994,
+      "image_x": 856,
+      "image_y": 827
+    },
+    "catterick-village-s-23": {
+      "lat": 54.3703305,
+      "lng": -1.6261804,
+      "image_x": 1131,
+      "image_y": 972
+    },
+    "catterick-village-s-24": {
+      "lat": 54.3687398,
+      "lng": -1.63059,
+      "image_x": 571,
+      "image_y": 1285
+    },
+    "catterick-village-s-25": {
+      "lat": 54.3686773,
+      "lng": -1.6308689,
+      "image_x": 536,
+      "image_y": 1297
+    },
+    "catterick-village-s-26": {
+      "lat": 54.3684898,
+      "lng": -1.6280258,
+      "image_x": 896,
+      "image_y": 1335
+    },
+    "catterick-village-s-27": {
+      "lat": 54.3691898,
+      "lng": -1.626277,
+      "image_x": 1119,
+      "image_y": 1199
+    },
+    "catterick-village-s-28": {
+      "lat": 54.3695274,
+      "lng": -1.6269743,
+      "image_x": 1029,
+      "image_y": 1132
+    },
+    "catterick-village-s-29": {
+      "lat": 54.3685648,
+      "lng": -1.6252148,
+      "image_x": 1256,
+      "image_y": 1322
+    }
+  }
+}

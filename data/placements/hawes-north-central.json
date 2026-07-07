@@ -1,0 +1,363 @@
+{
+  "sheet_id": "hawes-north-central",
+  "pdf_hash": "a2a3a681417a63893d8078f911fdba8734a5cc5d6fb1f8d4ede6b70bab6e4e4e",
+  "alignment": {
+    "corners": [
+      [
+        54.30631016197165,
+        -2.199737764871441
+      ],
+      [
+        54.306352400150196,
+        -2.193177938461304
+      ],
+      [
+        54.30363244805656,
+        -2.1932154893875127
+      ],
+      [
+        54.303612863496554,
+        -2.199737764871441
+      ]
+    ],
+    "center": [
+      54.30497696841874,
+      -2.1964672393979248
+    ],
+    "mpp": 0.18164746899471124,
+    "zoom": 19,
+    "stretched": true
+  },
+  "houses": {
+    "hawes-north-central-1": {
+      "lat": 54.3042952,
+      "lng": -2.199453,
+      "image_x": 103,
+      "image_y": 1234
+    },
+    "hawes-north-central-2": {
+      "lat": 54.3044228,
+      "lng": -2.1993658,
+      "image_x": 134,
+      "image_y": 1156
+    },
+    "hawes-north-central-3": {
+      "lat": 54.3047718,
+      "lng": -2.1992411,
+      "image_x": 179,
+      "image_y": 942
+    },
+    "hawes-north-central-4": {
+      "lat": 54.3045855,
+      "lng": -2.1990184,
+      "image_x": 259,
+      "image_y": 1057
+    },
+    "hawes-north-central-5": {
+      "lat": 54.3045511,
+      "lng": -2.198946,
+      "image_x": 285,
+      "image_y": 1078
+    },
+    "hawes-north-central-6": {
+      "lat": 54.3045198,
+      "lng": -2.1988562,
+      "image_x": 318,
+      "image_y": 1097
+    },
+    "hawes-north-central-7": {
+      "lat": 54.3043422,
+      "lng": -2.1990372,
+      "image_x": 253,
+      "image_y": 1206
+    },
+    "hawes-north-central-8": {
+      "lat": 54.3043852,
+      "lng": -2.1990265,
+      "image_x": 257,
+      "image_y": 1179
+    },
+    "hawes-north-central-9": {
+      "lat": 54.3042358,
+      "lng": -2.199056,
+      "image_x": 246,
+      "image_y": 1271
+    },
+    "hawes-north-central-10": {
+      "lat": 54.3041583,
+      "lng": -2.1988535,
+      "image_x": 319,
+      "image_y": 1319
+    },
+    "hawes-north-central-11": {
+      "lat": 54.3043844,
+      "lng": -2.1986188,
+      "image_x": 403,
+      "image_y": 1181
+    },
+    "hawes-north-central-12": {
+      "lat": 54.3042459,
+      "lng": -2.1986443,
+      "image_x": 394,
+      "image_y": 1266
+    },
+    "hawes-north-central-13": {
+      "lat": 54.3040949,
+      "lng": -2.1984378,
+      "image_x": 469,
+      "image_y": 1359
+    },
+    "hawes-north-central-14": {
+      "lat": 54.3040926,
+      "lng": -2.1983519,
+      "image_x": 500,
+      "image_y": 1361
+    },
+    "hawes-north-central-15": {
+      "lat": 54.3041113,
+      "lng": -2.1982862,
+      "image_x": 523,
+      "image_y": 1349
+    },
+    "hawes-north-central-16": {
+      "lat": 54.3041348,
+      "lng": -2.198199,
+      "image_x": 555,
+      "image_y": 1335
+    },
+    "hawes-north-central-17": {
+      "lat": 54.3042741,
+      "lng": -2.1982835,
+      "image_x": 524,
+      "image_y": 1249
+    },
+    "hawes-north-central-18": {
+      "lat": 54.3044275,
+      "lng": -2.1983144,
+      "image_x": 513,
+      "image_y": 1155
+    },
+    "hawes-north-central-19": {
+      "lat": 54.3045034,
+      "lng": -2.1978959,
+      "image_x": 663,
+      "image_y": 1110
+    },
+    "hawes-north-central-20": {
+      "lat": 54.3042976,
+      "lng": -2.1979348,
+      "image_x": 650,
+      "image_y": 1236
+    },
+    "hawes-north-central-21": {
+      "lat": 54.3042444,
+      "lng": -2.1980622,
+      "image_x": 604,
+      "image_y": 1268
+    },
+    "hawes-north-central-22": {
+      "lat": 54.3041278,
+      "lng": -2.197971,
+      "image_x": 637,
+      "image_y": 1340
+    },
+    "hawes-north-central-23": {
+      "lat": 54.3041074,
+      "lng": -2.1978785,
+      "image_x": 670,
+      "image_y": 1353
+    },
+    "hawes-north-central-24": {
+      "lat": 54.304084,
+      "lng": -2.1977685,
+      "image_x": 710,
+      "image_y": 1367
+    },
+    "hawes-north-central-25": {
+      "lat": 54.3040503,
+      "lng": -2.197613,
+      "image_x": 766,
+      "image_y": 1388
+    },
+    "hawes-north-central-26": {
+      "lat": 54.3040965,
+      "lng": -2.1975231,
+      "image_x": 798,
+      "image_y": 1360
+    },
+    "hawes-north-central-27": {
+      "lat": 54.304127,
+      "lng": -2.1974038,
+      "image_x": 841,
+      "image_y": 1342
+    },
+    "hawes-north-central-28": {
+      "lat": 54.3041919,
+      "lng": -2.1973528,
+      "image_x": 859,
+      "image_y": 1302
+    },
+    "hawes-north-central-29": {
+      "lat": 54.3042256,
+      "lng": -2.197212,
+      "image_x": 909,
+      "image_y": 1282
+    },
+    "hawes-north-central-30": {
+      "lat": 54.3043062,
+      "lng": -2.1974882,
+      "image_x": 810,
+      "image_y": 1232
+    },
+    "hawes-north-central-31": {
+      "lat": 54.3046669,
+      "lng": -2.1977323,
+      "image_x": 722,
+      "image_y": 1010
+    },
+    "hawes-north-central-32": {
+      "lat": 54.304584,
+      "lng": -2.1973863,
+      "image_x": 846,
+      "image_y": 1062
+    },
+    "hawes-north-central-33": {
+      "lat": 54.3046043,
+      "lng": -2.1972227,
+      "image_x": 905,
+      "image_y": 1050
+    },
+    "hawes-north-central-34": {
+      "lat": 54.3044963,
+      "lng": -2.1970886,
+      "image_x": 953,
+      "image_y": 1116
+    },
+    "hawes-north-central-35": {
+      "lat": 54.3044306,
+      "lng": -2.1971288,
+      "image_x": 939,
+      "image_y": 1156
+    },
+    "hawes-north-central-36": {
+      "lat": 54.3044275,
+      "lng": -2.1973246,
+      "image_x": 868,
+      "image_y": 1158
+    },
+    "hawes-north-central-37": {
+      "lat": 54.3042647,
+      "lng": -2.1970537,
+      "image_x": 966,
+      "image_y": 1258
+    },
+    "hawes-north-central-38": {
+      "lat": 54.3042585,
+      "lng": -2.1969169,
+      "image_x": 1015,
+      "image_y": 1262
+    },
+    "hawes-north-central-39": {
+      "lat": 54.3042835,
+      "lng": -2.1968177,
+      "image_x": 1051,
+      "image_y": 1247
+    },
+    "hawes-north-central-40": {
+      "lat": 54.3043164,
+      "lng": -2.1967131,
+      "image_x": 1088,
+      "image_y": 1227
+    },
+    "hawes-north-central-41": {
+      "lat": 54.3043398,
+      "lng": -2.1966004,
+      "image_x": 1128,
+      "image_y": 1213
+    },
+    "hawes-north-central-42": {
+      "lat": 54.3043837,
+      "lng": -2.1964368,
+      "image_x": 1187,
+      "image_y": 1187
+    },
+    "hawes-north-central-43": {
+      "lat": 54.3042725,
+      "lng": -2.1963885,
+      "image_x": 1204,
+      "image_y": 1255
+    },
+    "hawes-north-central-44": {
+      "lat": 54.3045793,
+      "lng": -2.1949401,
+      "image_x": 1721,
+      "image_y": 1071
+    },
+    "hawes-north-central-45": {
+      "lat": 54.3045636,
+      "lng": -2.1948275,
+      "image_x": 1761,
+      "image_y": 1081
+    },
+    "hawes-north-central-46": {
+      "lat": 54.3046904,
+      "lng": -2.1948919,
+      "image_x": 1738,
+      "image_y": 1003
+    },
+    "hawes-north-central-47": {
+      "lat": 54.3043813,
+      "lng": -2.1948758,
+      "image_x": 1744,
+      "image_y": 1192
+    },
+    "hawes-north-central-48": {
+      "lat": 54.3043618,
+      "lng": -2.1947162,
+      "image_x": 1801,
+      "image_y": 1204
+    },
+    "hawes-north-central-49": {
+      "lat": 54.3043289,
+      "lng": -2.1958709,
+      "image_x": 1389,
+      "image_y": 1222
+    },
+    "hawes-north-central-50": {
+      "lat": 54.3043046,
+      "lng": -2.1957757,
+      "image_x": 1423,
+      "image_y": 1237
+    },
+    "hawes-north-central-51": {
+      "lat": 54.3042874,
+      "lng": -2.1956804,
+      "image_x": 1458,
+      "image_y": 1247
+    },
+    "hawes-north-central-52": {
+      "lat": 54.3043258,
+      "lng": -2.1954431,
+      "image_x": 1542,
+      "image_y": 1225
+    },
+    "hawes-north-central-53": {
+      "lat": 54.3042608,
+      "lng": -2.1952446,
+      "image_x": 1613,
+      "image_y": 1265
+    },
+    "hawes-north-central-54": {
+      "lat": 54.3040973,
+      "lng": -2.1942884,
+      "image_x": 1955,
+      "image_y": 1367
+    },
+    "hawes-north-central-55": {
+      "lat": 54.3042475,
+      "lng": -2.194224,
+      "image_x": 1977,
+      "image_y": 1275
+    }
+  }
+}

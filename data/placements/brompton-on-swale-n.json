@@ -1,0 +1,465 @@
+{
+  "sheet_id": "brompton-on-swale-n",
+  "pdf_hash": "e7a60c523ba0a5cc2c2095904b9c060c6488f7a0d4849ea162e39def5cb4a548",
+  "alignment": {
+    "corners": [
+      [
+        54.39853650293306,
+        -1.672797203063965
+      ],
+      [
+        54.39863643440716,
+        -1.6574120521545412
+      ],
+      [
+        54.39137827792947,
+        -1.6565537452697756
+      ],
+      [
+        54.391290822432524,
+        -1.6734623908996584
+      ]
+    ],
+    "center": [
+      54.39496050942555,
+      -1.665056347846985
+    ],
+    "mpp": 0.48729047890917265,
+    "zoom": 19,
+    "stretched": true
+  },
+  "houses": {
+    "brompton-on-swale-n-1": {
+      "lat": 54.3934615,
+      "lng": -1.6699809,
+      "image_x": 468,
+      "image_y": 1194
+    },
+    "brompton-on-swale-n-2": {
+      "lat": 54.3933772,
+      "lng": -1.6701043,
+      "image_x": 451,
+      "image_y": 1212
+    },
+    "brompton-on-swale-n-3": {
+      "lat": 54.3930649,
+      "lng": -1.6700184,
+      "image_x": 465,
+      "image_y": 1280
+    },
+    "brompton-on-swale-n-4": {
+      "lat": 54.3926245,
+      "lng": -1.669541,
+      "image_x": 536,
+      "image_y": 1376
+    },
+    "brompton-on-swale-n-5": {
+      "lat": 54.3925558,
+      "lng": -1.6692191,
+      "image_x": 581,
+      "image_y": 1391
+    },
+    "brompton-on-swale-n-6": {
+      "lat": 54.3927338,
+      "lng": -1.6692299,
+      "image_x": 579,
+      "image_y": 1353
+    },
+    "brompton-on-swale-n-7": {
+      "lat": 54.393093,
+      "lng": -1.668967,
+      "image_x": 614,
+      "image_y": 1275
+    },
+    "brompton-on-swale-n-8": {
+      "lat": 54.3925745,
+      "lng": -1.6689563,
+      "image_x": 618,
+      "image_y": 1387
+    },
+    "brompton-on-swale-n-9": {
+      "lat": 54.3925652,
+      "lng": -1.668444,
+      "image_x": 691,
+      "image_y": 1390
+    },
+    "brompton-on-swale-n-10": {
+      "lat": 54.3925605,
+      "lng": -1.667583,
+      "image_x": 812,
+      "image_y": 1392
+    },
+    "brompton-on-swale-n-11": {
+      "lat": 54.3928666,
+      "lng": -1.6678378,
+      "image_x": 775,
+      "image_y": 1326
+    },
+    "brompton-on-swale-n-12": {
+      "lat": 54.3924668,
+      "lng": -1.6668642,
+      "image_x": 913,
+      "image_y": 1413
+    },
+    "brompton-on-swale-n-13": {
+      "lat": 54.3924683,
+      "lng": -1.6665342,
+      "image_x": 959,
+      "image_y": 1413
+    },
+    "brompton-on-swale-n-14": {
+      "lat": 54.3924215,
+      "lng": -1.6662419,
+      "image_x": 1000,
+      "image_y": 1423
+    },
+    "brompton-on-swale-n-15": {
+      "lat": 54.3924402,
+      "lng": -1.6660354,
+      "image_x": 1029,
+      "image_y": 1419
+    },
+    "brompton-on-swale-n-16": {
+      "lat": 54.3926729,
+      "lng": -1.6659978,
+      "image_x": 1035,
+      "image_y": 1370
+    },
+    "brompton-on-swale-n-17": {
+      "lat": 54.3934287,
+      "lng": -1.6660461,
+      "image_x": 1028,
+      "image_y": 1206
+    },
+    "brompton-on-swale-n-18": {
+      "lat": 54.3934209,
+      "lng": -1.6663733,
+      "image_x": 981,
+      "image_y": 1207
+    },
+    "brompton-on-swale-n-19": {
+      "lat": 54.3923559,
+      "lng": -1.6655311,
+      "image_x": 1100,
+      "image_y": 1438
+    },
+    "brompton-on-swale-n-20": {
+      "lat": 54.3923465,
+      "lng": -1.6650832,
+      "image_x": 1163,
+      "image_y": 1440
+    },
+    "brompton-on-swale-n-21": {
+      "lat": 54.3948514,
+      "lng": -1.6660005,
+      "image_x": 1034,
+      "image_y": 889
+    },
+    "brompton-on-swale-n-22": {
+      "lat": 54.3923715,
+      "lng": -1.6645038,
+      "image_x": 1244,
+      "image_y": 1436
+    },
+    "brompton-on-swale-n-23": {
+      "lat": 54.3923902,
+      "lng": -1.6641873,
+      "image_x": 1288,
+      "image_y": 1432
+    },
+    "brompton-on-swale-n-24": {
+      "lat": 54.3923965,
+      "lng": -1.6639352,
+      "image_x": 1324,
+      "image_y": 1431
+    },
+    "brompton-on-swale-n-25": {
+      "lat": 54.3929197,
+      "lng": -1.6641095,
+      "image_x": 1301,
+      "image_y": 1319
+    },
+    "brompton-on-swale-n-26": {
+      "lat": 54.3930899,
+      "lng": -1.6648015,
+      "image_x": 1204,
+      "image_y": 1281
+    },
+    "brompton-on-swale-n-27": {
+      "lat": 54.3934693,
+      "lng": -1.6644555,
+      "image_x": 1254,
+      "image_y": 1199
+    },
+    "brompton-on-swale-n-28": {
+      "lat": 54.3937005,
+      "lng": -1.6643992,
+      "image_x": 1262,
+      "image_y": 1148
+    },
+    "brompton-on-swale-n-29": {
+      "lat": 54.3934647,
+      "lng": -1.663954,
+      "image_x": 1325,
+      "image_y": 1201
+    },
+    "brompton-on-swale-n-30": {
+      "lat": 54.3929743,
+      "lng": -1.6635785,
+      "image_x": 1376,
+      "image_y": 1308
+    },
+    "brompton-on-swale-n-31": {
+      "lat": 54.3926073,
+      "lng": -1.6633371,
+      "image_x": 1408,
+      "image_y": 1387
+    },
+    "brompton-on-swale-n-32": {
+      "lat": 54.3927291,
+      "lng": -1.662924,
+      "image_x": 1467,
+      "image_y": 1361
+    },
+    "brompton-on-swale-n-33": {
+      "lat": 54.3930493,
+      "lng": -1.661776,
+      "image_x": 1631,
+      "image_y": 1293
+    },
+    "brompton-on-swale-n-34": {
+      "lat": 54.3933475,
+      "lng": -1.6610867,
+      "image_x": 1731,
+      "image_y": 1230
+    },
+    "brompton-on-swale-n-35": {
+      "lat": 54.3934943,
+      "lng": -1.6606173,
+      "image_x": 1799,
+      "image_y": 1198
+    },
+    "brompton-on-swale-n-36": {
+      "lat": 54.3936599,
+      "lng": -1.6611806,
+      "image_x": 1720,
+      "image_y": 1161
+    },
+    "brompton-on-swale-n-37": {
+      "lat": 54.3934678,
+      "lng": -1.6620684,
+      "image_x": 1593,
+      "image_y": 1202
+    },
+    "brompton-on-swale-n-38": {
+      "lat": 54.393068,
+      "lng": -1.6628087,
+      "image_x": 1485,
+      "image_y": 1288
+    },
+    "brompton-on-swale-n-39": {
+      "lat": 54.3935084,
+      "lng": -1.662873,
+      "image_x": 1479,
+      "image_y": 1192
+    },
+    "brompton-on-swale-n-40": {
+      "lat": 54.3934928,
+      "lng": -1.6624358,
+      "image_x": 1541,
+      "image_y": 1196
+    },
+    "brompton-on-swale-n-41": {
+      "lat": 54.3938644,
+      "lng": -1.6627657,
+      "image_x": 1496,
+      "image_y": 1114
+    },
+    "brompton-on-swale-n-42": {
+      "lat": 54.3934631,
+      "lng": -1.6635945,
+      "image_x": 1376,
+      "image_y": 1201
+    },
+    "brompton-on-swale-n-43": {
+      "lat": 54.3937333,
+      "lng": -1.6635865,
+      "image_x": 1378,
+      "image_y": 1142
+    },
+    "brompton-on-swale-n-44": {
+      "lat": 54.3941252,
+      "lng": -1.6628677,
+      "image_x": 1483,
+      "image_y": 1056
+    },
+    "brompton-on-swale-n-45": {
+      "lat": 54.394158,
+      "lng": -1.662527,
+      "image_x": 1532,
+      "image_y": 1049
+    },
+    "brompton-on-swale-n-46": {
+      "lat": 54.3944656,
+      "lng": -1.6627952,
+      "image_x": 1496,
+      "image_y": 980
+    },
+    "brompton-on-swale-n-47": {
+      "lat": 54.3942564,
+      "lng": -1.6639057,
+      "image_x": 1335,
+      "image_y": 1026
+    },
+    "brompton-on-swale-n-48": {
+      "lat": 54.3946343,
+      "lng": -1.6635489,
+      "image_x": 1388,
+      "image_y": 941
+    },
+    "brompton-on-swale-n-49": {
+      "lat": 54.3947374,
+      "lng": -1.6627577,
+      "image_x": 1503,
+      "image_y": 919
+    },
+    "brompton-on-swale-n-50": {
+      "lat": 54.3949591,
+      "lng": -1.6632029,
+      "image_x": 1440,
+      "image_y": 868
+    },
+    "brompton-on-swale-n-51": {
+      "lat": 54.3947436,
+      "lng": -1.6642463,
+      "image_x": 1288,
+      "image_y": 916
+    },
+    "brompton-on-swale-n-52": {
+      "lat": 54.394931,
+      "lng": -1.6638333,
+      "image_x": 1348,
+      "image_y": 874
+    },
+    "brompton-on-swale-n-53": {
+      "lat": 54.3950372,
+      "lng": -1.663895,
+      "image_x": 1340,
+      "image_y": 850
+    },
+    "brompton-on-swale-n-54": {
+      "lat": 54.3952152,
+      "lng": -1.6633344,
+      "image_x": 1422,
+      "image_y": 810
+    },
+    "brompton-on-swale-n-55": {
+      "lat": 54.3952542,
+      "lng": -1.662527,
+      "image_x": 1539,
+      "image_y": 802
+    },
+    "brompton-on-swale-n-56": {
+      "lat": 54.395273,
+      "lng": -1.6620979,
+      "image_x": 1602,
+      "image_y": 798
+    },
+    "brompton-on-swale-n-57": {
+      "lat": 54.3950247,
+      "lng": -1.6624251,
+      "image_x": 1553,
+      "image_y": 854
+    },
+    "brompton-on-swale-n-58": {
+      "lat": 54.3950715,
+      "lng": -1.6620255,
+      "image_x": 1611,
+      "image_y": 844
+    },
+    "brompton-on-swale-n-59": {
+      "lat": 54.394892,
+      "lng": -1.6621622,
+      "image_x": 1590,
+      "image_y": 885
+    },
+    "brompton-on-swale-n-60": {
+      "lat": 54.3945672,
+      "lng": -1.6619664,
+      "image_x": 1615,
+      "image_y": 958
+    },
+    "brompton-on-swale-n-61": {
+      "lat": 54.3942127,
+      "lng": -1.6617358,
+      "image_x": 1646,
+      "image_y": 1038
+    },
+    "brompton-on-swale-n-62": {
+      "lat": 54.3939862,
+      "lng": -1.6616017,
+      "image_x": 1663,
+      "image_y": 1089
+    },
+    "brompton-on-swale-n-63": {
+      "lat": 54.3948842,
+      "lng": -1.6617143,
+      "image_x": 1654,
+      "image_y": 887
+    },
+    "brompton-on-swale-n-64": {
+      "lat": 54.394767,
+      "lng": -1.6609955,
+      "image_x": 1757,
+      "image_y": 915
+    },
+    "brompton-on-swale-n-65": {
+      "lat": 54.3946171,
+      "lng": -1.6616848,
+      "image_x": 1656,
+      "image_y": 948
+    },
+    "brompton-on-swale-n-66": {
+      "lat": 54.394386,
+      "lng": -1.6616204,
+      "image_x": 1664,
+      "image_y": 1000
+    },
+    "brompton-on-swale-n-67": {
+      "lat": 54.394411,
+      "lng": -1.6607246,
+      "image_x": 1792,
+      "image_y": 995
+    },
+    "brompton-on-swale-n-68": {
+      "lat": 54.3941689,
+      "lng": -1.6612422,
+      "image_x": 1716,
+      "image_y": 1048
+    },
+    "brompton-on-swale-n-69": {
+      "lat": 54.3938988,
+      "lng": -1.6611537,
+      "image_x": 1726,
+      "image_y": 1109
+    },
+    "brompton-on-swale-n-70": {
+      "lat": 54.3939847,
+      "lng": -1.6606602,
+      "image_x": 1797,
+      "image_y": 1090
+    },
+    "brompton-on-swale-n-71": {
+      "lat": 54.3937504,
+      "lng": -1.6603518,
+      "image_x": 1839,
+      "image_y": 1142
+    },
+    "brompton-on-swale-n-72": {
+      "lat": 54.3935693,
+      "lng": -1.6601345,
+      "image_x": 1868,
+      "image_y": 1182
+    }
+  }
+}

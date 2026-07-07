@@ -1,0 +1,225 @@
+{
+  "sheet_id": "askrigg-lodge-yard",
+  "pdf_hash": "a6f96d432547cd08b75b3aa589bd0f448bf4b8eee9129757bf5df18ce256d5e4",
+  "alignment": {
+    "corners": [
+      [
+        54.316197812305354,
+        -2.081372737884522
+      ],
+      [
+        54.31614216169265,
+        -2.079364078887537
+      ],
+      [
+        54.31403865781623,
+        -2.079393267631531
+      ],
+      [
+        54.3143766199108,
+        -2.082070112228394
+      ]
+    ],
+    "center": [
+      54.31518881293126,
+      -2.080550049157996
+    ],
+    "mpp": 0.09057513039179625,
+    "zoom": 20,
+    "stretched": true
+  },
+  "houses": {
+    "askrigg-lodge-yard-1": {
+      "lat": 54.3151808,
+      "lng": -2.0804715,
+      "image_x": 931,
+      "image_y": 1350
+    },
+    "askrigg-lodge-yard-2": {
+      "lat": 54.3152841,
+      "lng": -2.079927,
+      "image_x": 1291,
+      "image_y": 1185
+    },
+    "askrigg-lodge-yard-3": {
+      "lat": 54.3154891,
+      "lng": -2.0801926,
+      "image_x": 1090,
+      "image_y": 958
+    },
+    "askrigg-lodge-yard-4": {
+      "lat": 54.3154812,
+      "lng": -2.0802972,
+      "image_x": 1016,
+      "image_y": 976
+    },
+    "askrigg-lodge-yard-5": {
+      "lat": 54.3154703,
+      "lng": -2.0804286,
+      "image_x": 924,
+      "image_y": 1000
+    },
+    "askrigg-lodge-yard-6": {
+      "lat": 54.3154687,
+      "lng": -2.0805734,
+      "image_x": 819,
+      "image_y": 1013
+    },
+    "askrigg-lodge-yard-7": {
+      "lat": 54.3153936,
+      "lng": -2.0805869,
+      "image_x": 821,
+      "image_y": 1108
+    },
+    "askrigg-lodge-yard-8": {
+      "lat": 54.315331,
+      "lng": -2.0805627,
+      "image_x": 847,
+      "image_y": 1182
+    },
+    "askrigg-lodge-yard-9": {
+      "lat": 54.3152857,
+      "lng": -2.080788,
+      "image_x": 693,
+      "image_y": 1255
+    },
+    "askrigg-lodge-yard-10": {
+      "lat": 54.3154233,
+      "lng": -2.0807424,
+      "image_x": 703,
+      "image_y": 1083
+    },
+    "askrigg-lodge-yard-11": {
+      "lat": 54.3153655,
+      "lng": -2.080839,
+      "image_x": 643,
+      "image_y": 1163
+    },
+    "askrigg-lodge-yard-12": {
+      "lat": 54.3154406,
+      "lng": -2.0809275,
+      "image_x": 563,
+      "image_y": 1077
+    },
+    "askrigg-lodge-yard-13": {
+      "lat": 54.315511,
+      "lng": -2.0809221,
+      "image_x": 553,
+      "image_y": 987
+    },
+    "askrigg-lodge-yard-14": {
+      "lat": 54.3157863,
+      "lng": -2.0806807,
+      "image_x": 685,
+      "image_y": 597
+    },
+    "askrigg-lodge-yard-15": {
+      "lat": 54.315755,
+      "lng": -2.080552,
+      "image_x": 790,
+      "image_y": 632
+    },
+    "askrigg-lodge-yard-16": {
+      "lat": 54.3157988,
+      "lng": -2.0805453,
+      "image_x": 788,
+      "image_y": 570
+    },
+    "askrigg-lodge-yard-17": {
+      "lat": 54.3157574,
+      "lng": -2.0803937,
+      "image_x": 910,
+      "image_y": 618
+    },
+    "askrigg-lodge-yard-18": {
+      "lat": 54.3157988,
+      "lng": -2.0803817,
+      "image_x": 913,
+      "image_y": 560
+    },
+    "askrigg-lodge-yard-19": {
+      "lat": 54.3157589,
+      "lng": -2.0802918,
+      "image_x": 986,
+      "image_y": 609
+    },
+    "askrigg-lodge-yard-20": {
+      "lat": 54.3157644,
+      "lng": -2.0802167,
+      "image_x": 1042,
+      "image_y": 597
+    },
+    "askrigg-lodge-yard-21": {
+      "lat": 54.3157957,
+      "lng": -2.080096,
+      "image_x": 1128,
+      "image_y": 546
+    },
+    "askrigg-lodge-yard-22": {
+      "lat": 54.3157942,
+      "lng": -2.0800236,
+      "image_x": 1182,
+      "image_y": 543
+    },
+    "askrigg-lodge-yard-23": {
+      "lat": 54.3157112,
+      "lng": -2.0800531,
+      "image_x": 1168,
+      "image_y": 659
+    },
+    "askrigg-lodge-yard-24": {
+      "lat": 54.3156666,
+      "lng": -2.0800772,
+      "image_x": 1155,
+      "image_y": 720
+    },
+    "askrigg-lodge-yard-25": {
+      "lat": 54.3156174,
+      "lng": -2.0800906,
+      "image_x": 1150,
+      "image_y": 786
+    },
+    "askrigg-lodge-yard-26": {
+      "lat": 54.3155634,
+      "lng": -2.0800585,
+      "image_x": 1178,
+      "image_y": 854
+    },
+    "askrigg-lodge-yard-27": {
+      "lat": 54.3157237,
+      "lng": -2.079919,
+      "image_x": 1264,
+      "image_y": 633
+    },
+    "askrigg-lodge-yard-28": {
+      "lat": 54.3155516,
+      "lng": -2.0798855,
+      "image_x": 1301,
+      "image_y": 856
+    },
+    "askrigg-lodge-yard-29": {
+      "lat": 54.3155274,
+      "lng": -2.0798908,
+      "image_x": 1299,
+      "image_y": 887
+    },
+    "askrigg-lodge-yard-30": {
+      "lat": 54.3154875,
+      "lng": -2.0798801,
+      "image_x": 1309,
+      "image_y": 936
+    },
+    "askrigg-lodge-yard-31": {
+      "lat": 54.3153866,
+      "lng": -2.0798412,
+      "image_x": 1342,
+      "image_y": 1057
+    },
+    "askrigg-lodge-yard-32": {
+      "lat": 54.3153584,
+      "lng": -2.0797795,
+      "image_x": 1385,
+      "image_y": 1086
+    }
+  }
+}

@@ -1,0 +1,813 @@
+{
+  "sheet_id": "west-burton",
+  "pdf_hash": "1f5228ba3cbd3548b40832356d5bb867a985ffef112e98dfd9f837a4deddd499",
+  "alignment": {
+    "corners": [
+      [
+        54.282030405626614,
+        -1.9796724285114145
+      ],
+      [
+        54.282030405626614,
+        -1.9680457149517208
+      ],
+      [
+        54.272424772660074,
+        -1.9680457149517208
+      ],
+      [
+        54.272424772660074,
+        -1.9796724285114145
+      ]
+    ],
+    "center": [
+      54.277227589143344,
+      -1.9738590717315676
+    ],
+    "mpp": 0.4571607788951008,
+    "zoom": 17,
+    "stretched": false
+  },
+  "houses": {
+    "west-burton-1": {
+      "lat": 54.2766251,
+      "lng": -1.9734594,
+      "image_x": 883,
+      "image_y": 1316
+    },
+    "west-burton-2": {
+      "lat": 54.2764105,
+      "lng": -1.9730383,
+      "image_x": 943,
+      "image_y": 1368
+    },
+    "west-burton-3": {
+      "lat": 54.2762649,
+      "lng": -1.9730249,
+      "image_x": 945,
+      "image_y": 1404
+    },
+    "west-burton-4": {
+      "lat": 54.2762273,
+      "lng": -1.9728801,
+      "image_x": 966,
+      "image_y": 1413
+    },
+    "west-burton-5": {
+      "lat": 54.2762805,
+      "lng": -1.9732878,
+      "image_x": 908,
+      "image_y": 1400
+    },
+    "west-burton-6": {
+      "lat": 54.2762398,
+      "lng": -1.973379,
+      "image_x": 895,
+      "image_y": 1410
+    },
+    "west-burton-7": {
+      "lat": 54.2760597,
+      "lng": -1.9732717,
+      "image_x": 910,
+      "image_y": 1454
+    },
+    "west-burton-8": {
+      "lat": 54.2760237,
+      "lng": -1.9731858,
+      "image_x": 922,
+      "image_y": 1463
+    },
+    "west-burton-9": {
+      "lat": 54.2759814,
+      "lng": -1.9729257,
+      "image_x": 959,
+      "image_y": 1473
+    },
+    "west-burton-10": {
+      "lat": 54.2761302,
+      "lng": -1.9734594,
+      "image_x": 883,
+      "image_y": 1437
+    },
+    "west-burton-11": {
+      "lat": 54.2760691,
+      "lng": -1.9735882,
+      "image_x": 865,
+      "image_y": 1452
+    },
+    "west-burton-12": {
+      "lat": 54.2759595,
+      "lng": -1.9736901,
+      "image_x": 851,
+      "image_y": 1478
+    },
+    "west-burton-13": {
+      "lat": 54.2758733,
+      "lng": -1.973851,
+      "image_x": 828,
+      "image_y": 1499
+    },
+    "west-burton-14": {
+      "lat": 54.2758044,
+      "lng": -1.9739798,
+      "image_x": 809,
+      "image_y": 1516
+    },
+    "west-burton-15": {
+      "lat": 54.275687,
+      "lng": -1.9741273,
+      "image_x": 788,
+      "image_y": 1545
+    },
+    "west-burton-16": {
+      "lat": 54.2756087,
+      "lng": -1.9742158,
+      "image_x": 776,
+      "image_y": 1564
+    },
+    "west-burton-17": {
+      "lat": 54.275557,
+      "lng": -1.9742802,
+      "image_x": 767,
+      "image_y": 1576
+    },
+    "west-burton-18": {
+      "lat": 54.2755194,
+      "lng": -1.9743767,
+      "image_x": 753,
+      "image_y": 1585
+    },
+    "west-burton-19": {
+      "lat": 54.275474,
+      "lng": -1.9744465,
+      "image_x": 743,
+      "image_y": 1597
+    },
+    "west-burton-20": {
+      "lat": 54.2754317,
+      "lng": -1.9745135,
+      "image_x": 733,
+      "image_y": 1607
+    },
+    "west-burton-21": {
+      "lat": 54.275355,
+      "lng": -1.9746691,
+      "image_x": 711,
+      "image_y": 1625
+    },
+    "west-burton-22": {
+      "lat": 54.2751843,
+      "lng": -1.9745216,
+      "image_x": 732,
+      "image_y": 1667
+    },
+    "west-burton-23": {
+      "lat": 54.2752923,
+      "lng": -1.9747442,
+      "image_x": 701,
+      "image_y": 1641
+    },
+    "west-burton-24": {
+      "lat": 54.2752469,
+      "lng": -1.9748113,
+      "image_x": 691,
+      "image_y": 1652
+    },
+    "west-burton-25": {
+      "lat": 54.2751388,
+      "lng": -1.9749293,
+      "image_x": 674,
+      "image_y": 1678
+    },
+    "west-burton-26": {
+      "lat": 54.2750715,
+      "lng": -1.9750741,
+      "image_x": 654,
+      "image_y": 1695
+    },
+    "west-burton-27": {
+      "lat": 54.2749384,
+      "lng": -1.9753289,
+      "image_x": 618,
+      "image_y": 1727
+    },
+    "west-burton-28": {
+      "lat": 54.2748084,
+      "lng": -1.9753745,
+      "image_x": 611,
+      "image_y": 1759
+    },
+    "west-burton-29": {
+      "lat": 54.2746079,
+      "lng": -1.9756562,
+      "image_x": 571,
+      "image_y": 1807
+    },
+    "west-burton-30": {
+      "lat": 54.2746815,
+      "lng": -1.9757071,
+      "image_x": 564,
+      "image_y": 1789
+    },
+    "west-burton-31": {
+      "lat": 54.2744732,
+      "lng": -1.9758359,
+      "image_x": 545,
+      "image_y": 1840
+    },
+    "west-burton-32": {
+      "lat": 54.274243,
+      "lng": -1.9755676,
+      "image_x": 584,
+      "image_y": 1896
+    },
+    "west-burton-33": {
+      "lat": 54.2741005,
+      "lng": -1.9755623,
+      "image_x": 584,
+      "image_y": 1931
+    },
+    "west-burton-34": {
+      "lat": 54.2727222,
+      "lng": -1.9762757,
+      "image_x": 483,
+      "image_y": 2267
+    },
+    "west-burton-35": {
+      "lat": 54.2743511,
+      "lng": -1.9760826,
+      "image_x": 510,
+      "image_y": 1870
+    },
+    "west-burton-36": {
+      "lat": 54.2742665,
+      "lng": -1.9764367,
+      "image_x": 460,
+      "image_y": 1891
+    },
+    "west-burton-37": {
+      "lat": 54.2741365,
+      "lng": -1.9764876,
+      "image_x": 453,
+      "image_y": 1922
+    },
+    "west-burton-38": {
+      "lat": 54.274088,
+      "lng": -1.9766083,
+      "image_x": 436,
+      "image_y": 1934
+    },
+    "west-burton-39": {
+      "lat": 54.273651,
+      "lng": -1.9777134,
+      "image_x": 279,
+      "image_y": 2040
+    },
+    "west-burton-40": {
+      "lat": 54.2735617,
+      "lng": -1.977877,
+      "image_x": 255,
+      "image_y": 2062
+    },
+    "west-burton-41": {
+      "lat": 54.2732344,
+      "lng": -1.9778126,
+      "image_x": 264,
+      "image_y": 2142
+    },
+    "west-burton-42": {
+      "lat": 54.2734662,
+      "lng": -1.9782525,
+      "image_x": 202,
+      "image_y": 2085
+    },
+    "west-burton-43": {
+      "lat": 54.273698,
+      "lng": -1.9782579,
+      "image_x": 201,
+      "image_y": 2029
+    },
+    "west-burton-44": {
+      "lat": 54.2737559,
+      "lng": -1.9781774,
+      "image_x": 213,
+      "image_y": 2015
+    },
+    "west-burton-45": {
+      "lat": 54.2738875,
+      "lng": -1.9779924,
+      "image_x": 239,
+      "image_y": 1983
+    },
+    "west-burton-46": {
+      "lat": 54.2740331,
+      "lng": -1.9777966,
+      "image_x": 267,
+      "image_y": 1947
+    },
+    "west-burton-47": {
+      "lat": 54.2740754,
+      "lng": -1.9774747,
+      "image_x": 312,
+      "image_y": 1937
+    },
+    "west-burton-48": {
+      "lat": 54.2741443,
+      "lng": -1.9773325,
+      "image_x": 333,
+      "image_y": 1920
+    },
+    "west-burton-49": {
+      "lat": 54.2743197,
+      "lng": -1.9774264,
+      "image_x": 319,
+      "image_y": 1878
+    },
+    "west-burton-50": {
+      "lat": 54.2744309,
+      "lng": -1.9772279,
+      "image_x": 348,
+      "image_y": 1850
+    },
+    "west-burton-51": {
+      "lat": 54.2745343,
+      "lng": -1.977185,
+      "image_x": 354,
+      "image_y": 1825
+    },
+    "west-burton-52": {
+      "lat": 54.2746894,
+      "lng": -1.9770804,
+      "image_x": 369,
+      "image_y": 1788
+    },
+    "west-burton-53": {
+      "lat": 54.2749039,
+      "lng": -1.9772172,
+      "image_x": 349,
+      "image_y": 1735
+    },
+    "west-burton-54": {
+      "lat": 54.2748601,
+      "lng": -1.9766003,
+      "image_x": 437,
+      "image_y": 1746
+    },
+    "west-burton-55": {
+      "lat": 54.2749556,
+      "lng": -1.9764286,
+      "image_x": 461,
+      "image_y": 1723
+    },
+    "west-burton-56": {
+      "lat": 54.2750261,
+      "lng": -1.9763535,
+      "image_x": 472,
+      "image_y": 1706
+    },
+    "west-burton-57": {
+      "lat": 54.2751827,
+      "lng": -1.9764286,
+      "image_x": 461,
+      "image_y": 1667
+    },
+    "west-burton-58": {
+      "lat": 54.2752406,
+      "lng": -1.9761363,
+      "image_x": 503,
+      "image_y": 1653
+    },
+    "west-burton-59": {
+      "lat": 54.275308,
+      "lng": -1.9760665,
+      "image_x": 513,
+      "image_y": 1637
+    },
+    "west-burton-60": {
+      "lat": 54.2753972,
+      "lng": -1.9759405,
+      "image_x": 531,
+      "image_y": 1615
+    },
+    "west-burton-61": {
+      "lat": 54.2756087,
+      "lng": -1.9760478,
+      "image_x": 515,
+      "image_y": 1564
+    },
+    "west-burton-62": {
+      "lat": 54.2756885,
+      "lng": -1.9758707,
+      "image_x": 540,
+      "image_y": 1544
+    },
+    "west-burton-63": {
+      "lat": 54.2755805,
+      "lng": -1.9756642,
+      "image_x": 570,
+      "image_y": 1571
+    },
+    "west-burton-64": {
+      "lat": 54.2753753,
+      "lng": -1.9756749,
+      "image_x": 568,
+      "image_y": 1621
+    },
+    "west-burton-65": {
+      "lat": 54.2754317,
+      "lng": -1.9756052,
+      "image_x": 578,
+      "image_y": 1607
+    },
+    "west-burton-66": {
+      "lat": 54.2752547,
+      "lng": -1.9753772,
+      "image_x": 611,
+      "image_y": 1650
+    },
+    "west-burton-67": {
+      "lat": 54.275189,
+      "lng": -1.9754818,
+      "image_x": 596,
+      "image_y": 1666
+    },
+    "west-burton-68": {
+      "lat": 54.275687,
+      "lng": -1.9756722,
+      "image_x": 569,
+      "image_y": 1545
+    },
+    "west-burton-69": {
+      "lat": 54.2757481,
+      "lng": -1.9756132,
+      "image_x": 577,
+      "image_y": 1530
+    },
+    "west-burton-70": {
+      "lat": 54.2757794,
+      "lng": -1.9755328,
+      "image_x": 589,
+      "image_y": 1522
+    },
+    "west-burton-71": {
+      "lat": 54.2758671,
+      "lng": -1.9754818,
+      "image_x": 596,
+      "image_y": 1501
+    },
+    "west-burton-72": {
+      "lat": 54.2759704,
+      "lng": -1.9756347,
+      "image_x": 574,
+      "image_y": 1476
+    },
+    "west-burton-73": {
+      "lat": 54.2760769,
+      "lng": -1.9755703,
+      "image_x": 583,
+      "image_y": 1450
+    },
+    "west-burton-74": {
+      "lat": 54.2761255,
+      "lng": -1.9753745,
+      "image_x": 611,
+      "image_y": 1438
+    },
+    "west-burton-75": {
+      "lat": 54.2762069,
+      "lng": -1.9753879,
+      "image_x": 609,
+      "image_y": 1418
+    },
+    "west-burton-76": {
+      "lat": 54.2762837,
+      "lng": -1.9754362,
+      "image_x": 602,
+      "image_y": 1399
+    },
+    "west-burton-77": {
+      "lat": 54.2763385,
+      "lng": -1.9754295,
+      "image_x": 603,
+      "image_y": 1386
+    },
+    "west-burton-78": {
+      "lat": 54.2763902,
+      "lng": -1.9754322,
+      "image_x": 603,
+      "image_y": 1373
+    },
+    "west-burton-79": {
+      "lat": 54.2766141,
+      "lng": -1.975514,
+      "image_x": 591,
+      "image_y": 1319
+    },
+    "west-burton-80": {
+      "lat": 54.2767112,
+      "lng": -1.9755837,
+      "image_x": 581,
+      "image_y": 1295
+    },
+    "west-burton-81": {
+      "lat": 54.2767942,
+      "lng": -1.9756159,
+      "image_x": 577,
+      "image_y": 1275
+    },
+    "west-burton-82": {
+      "lat": 54.2769806,
+      "lng": -1.9758198,
+      "image_x": 548,
+      "image_y": 1230
+    },
+    "west-burton-83": {
+      "lat": 54.2774144,
+      "lng": -1.9759431,
+      "image_x": 530,
+      "image_y": 1124
+    },
+    "west-burton-84": {
+      "lat": 54.2775114,
+      "lng": -1.9757661,
+      "image_x": 555,
+      "image_y": 1100
+    },
+    "west-burton-85": {
+      "lat": 54.2775788,
+      "lng": -1.9756615,
+      "image_x": 570,
+      "image_y": 1084
+    },
+    "west-burton-86": {
+      "lat": 54.2776383,
+      "lng": -1.975581,
+      "image_x": 582,
+      "image_y": 1069
+    },
+    "west-burton-87": {
+      "lat": 54.277679,
+      "lng": -1.9754925,
+      "image_x": 594,
+      "image_y": 1060
+    },
+    "west-burton-88": {
+      "lat": 54.2777542,
+      "lng": -1.9753316,
+      "image_x": 617,
+      "image_y": 1041
+    },
+    "west-burton-89": {
+      "lat": 54.2778059,
+      "lng": -1.9751841,
+      "image_x": 638,
+      "image_y": 1029
+    },
+    "west-burton-90": {
+      "lat": 54.2781629,
+      "lng": -1.9745538,
+      "image_x": 728,
+      "image_y": 942
+    },
+    "west-burton-91": {
+      "lat": 54.278213,
+      "lng": -1.9744036,
+      "image_x": 749,
+      "image_y": 930
+    },
+    "west-burton-92": {
+      "lat": 54.2784354,
+      "lng": -1.9740307,
+      "image_x": 802,
+      "image_y": 875
+    },
+    "west-burton-93": {
+      "lat": 54.278888,
+      "lng": -1.9736767,
+      "image_x": 852,
+      "image_y": 765
+    },
+    "west-burton-94": {
+      "lat": 54.2789569,
+      "lng": -1.9741273,
+      "image_x": 788,
+      "image_y": 748
+    },
+    "west-burton-95": {
+      "lat": 54.2791401,
+      "lng": -1.9734755,
+      "image_x": 881,
+      "image_y": 704
+    },
+    "west-burton-96": {
+      "lat": 54.2794298,
+      "lng": -1.9734943,
+      "image_x": 878,
+      "image_y": 633
+    },
+    "west-burton-97": {
+      "lat": 54.2797868,
+      "lng": -1.9735345,
+      "image_x": 873,
+      "image_y": 546
+    },
+    "west-burton-98": {
+      "lat": 54.2797226,
+      "lng": -1.9731483,
+      "image_x": 928,
+      "image_y": 562
+    },
+    "west-burton-99": {
+      "lat": 54.2796021,
+      "lng": -1.973159,
+      "image_x": 926,
+      "image_y": 591
+    },
+    "west-burton-100": {
+      "lat": 54.2800061,
+      "lng": -1.9716918,
+      "image_x": 1135,
+      "image_y": 493
+    },
+    "west-burton-101": {
+      "lat": 54.2776007,
+      "lng": -1.9741756,
+      "image_x": 782,
+      "image_y": 1079
+    },
+    "west-burton-102": {
+      "lat": 54.2774974,
+      "lng": -1.9741836,
+      "image_x": 780,
+      "image_y": 1104
+    },
+    "west-burton-103": {
+      "lat": 54.2774175,
+      "lng": -1.9741917,
+      "image_x": 779,
+      "image_y": 1123
+    },
+    "west-burton-104": {
+      "lat": 54.2773298,
+      "lng": -1.9741863,
+      "image_x": 780,
+      "image_y": 1145
+    },
+    "west-burton-105": {
+      "lat": 54.2772029,
+      "lng": -1.9741139,
+      "image_x": 790,
+      "image_y": 1176
+    },
+    "west-burton-106": {
+      "lat": 54.2769978,
+      "lng": -1.9741407,
+      "image_x": 786,
+      "image_y": 1225
+    },
+    "west-burton-107": {
+      "lat": 54.2768474,
+      "lng": -1.9739449,
+      "image_x": 814,
+      "image_y": 1262
+    },
+    "west-burton-108": {
+      "lat": 54.2766799,
+      "lng": -1.973682,
+      "image_x": 852,
+      "image_y": 1303
+    },
+    "west-burton-109": {
+      "lat": 54.2765828,
+      "lng": -1.9736418,
+      "image_x": 857,
+      "image_y": 1327
+    },
+    "west-burton-110": {
+      "lat": 54.2765358,
+      "lng": -1.9738349,
+      "image_x": 830,
+      "image_y": 1338
+    },
+    "west-burton-111": {
+      "lat": 54.276362,
+      "lng": -1.9739583,
+      "image_x": 812,
+      "image_y": 1380
+    },
+    "west-burton-112": {
+      "lat": 54.2762899,
+      "lng": -1.9740951,
+      "image_x": 793,
+      "image_y": 1398
+    },
+    "west-burton-113": {
+      "lat": 54.2762163,
+      "lng": -1.9742534,
+      "image_x": 770,
+      "image_y": 1416
+    },
+    "west-burton-114": {
+      "lat": 54.2761646,
+      "lng": -1.9744089,
+      "image_x": 748,
+      "image_y": 1428
+    },
+    "west-burton-115": {
+      "lat": 54.2761302,
+      "lng": -1.9744974,
+      "image_x": 736,
+      "image_y": 1437
+    },
+    "west-burton-116": {
+      "lat": 54.2761004,
+      "lng": -1.9746235,
+      "image_x": 718,
+      "image_y": 1444
+    },
+    "west-burton-117": {
+      "lat": 54.2760237,
+      "lng": -1.9748113,
+      "image_x": 691,
+      "image_y": 1463
+    },
+    "west-burton-118": {
+      "lat": 54.2758436,
+      "lng": -1.9750768,
+      "image_x": 653,
+      "image_y": 1507
+    },
+    "west-burton-119": {
+      "lat": 54.2760613,
+      "lng": -1.9750607,
+      "image_x": 656,
+      "image_y": 1454
+    },
+    "west-burton-120": {
+      "lat": 54.2761631,
+      "lng": -1.9751009,
+      "image_x": 650,
+      "image_y": 1429
+    },
+    "west-burton-121": {
+      "lat": 54.2762304,
+      "lng": -1.9751251,
+      "image_x": 647,
+      "image_y": 1412
+    },
+    "west-burton-122": {
+      "lat": 54.2762664,
+      "lng": -1.975176,
+      "image_x": 639,
+      "image_y": 1404
+    },
+    "west-burton-123": {
+      "lat": 54.2762257,
+      "lng": -1.9749159,
+      "image_x": 676,
+      "image_y": 1413
+    },
+    "west-burton-124": {
+      "lat": 54.2763541,
+      "lng": -1.9744813,
+      "image_x": 738,
+      "image_y": 1382
+    },
+    "west-burton-125": {
+      "lat": 54.2766235,
+      "lng": -1.9745296,
+      "image_x": 731,
+      "image_y": 1317
+    },
+    "west-burton-126": {
+      "lat": 54.277015,
+      "lng": -1.9752082,
+      "image_x": 635,
+      "image_y": 1221
+    },
+    "west-burton-127": {
+      "lat": 54.2770432,
+      "lng": -1.9749507,
+      "image_x": 671,
+      "image_y": 1214
+    },
+    "west-burton-128": {
+      "lat": 54.2773345,
+      "lng": -1.9750446,
+      "image_x": 658,
+      "image_y": 1143
+    },
+    "west-burton-129": {
+      "lat": 54.2773408,
+      "lng": -1.9755462,
+      "image_x": 587,
+      "image_y": 1142
+    },
+    "west-burton-130": {
+      "lat": 54.2775678,
+      "lng": -1.9753236,
+      "image_x": 618,
+      "image_y": 1087
+    }
+  }
+}

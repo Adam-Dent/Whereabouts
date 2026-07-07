@@ -1,0 +1,146 @@
+{
+  "sheet_id": "stanwick-st-john",
+  "pdf_hash": "f5de0497e7cb787814963c83251dd7d725a616f9fc20884bd252c44a67c50567",
+  "alignment": {
+    "corners": [
+      [
+        54.49997493620428,
+        -1.717736941791759
+      ],
+      [
+        54.49997493620428,
+        -1.710040348552478
+      ],
+      [
+        54.496816208042944,
+        -1.710040348552478
+      ],
+      [
+        54.496816208042944,
+        -1.717736941791759
+      ]
+    ],
+    "center": [
+      54.49839557212361,
+      -1.7138886451721185
+    ],
+    "mpp": 0.2127220925105808,
+    "zoom": 19
+  },
+  "houses": {
+    "stanwick-st-john-1": {
+      "lat": 54.4971813,
+      "lng": -1.7131162,
+      "image_x": 1404,
+      "image_y": 1462
+    },
+    "stanwick-st-john-2": {
+      "lat": 54.4973854,
+      "lng": -1.7137519,
+      "image_x": 1211,
+      "image_y": 1355
+    },
+    "stanwick-st-john-3": {
+      "lat": 54.4974804,
+      "lng": -1.7135829,
+      "image_x": 1262,
+      "image_y": 1305
+    },
+    "stanwick-st-john-4": {
+      "lat": 54.4978885,
+      "lng": -1.7136848,
+      "image_x": 1231,
+      "image_y": 1092
+    },
+    "stanwick-st-john-5": {
+      "lat": 54.4979492,
+      "lng": -1.7139316,
+      "image_x": 1156,
+      "image_y": 1060
+    },
+    "stanwick-st-john-6": {
+      "lat": 54.4979087,
+      "lng": -1.714645,
+      "image_x": 940,
+      "image_y": 1081
+    },
+    "stanwick-st-john-7": {
+      "lat": 54.4980302,
+      "lng": -1.7149052,
+      "image_x": 861,
+      "image_y": 1018
+    },
+    "stanwick-st-john-8": {
+      "lat": 54.498362,
+      "lng": -1.7145699,
+      "image_x": 962,
+      "image_y": 844
+    },
+    "stanwick-st-john-9": {
+      "lat": 54.4983028,
+      "lng": -1.7148381,
+      "image_x": 881,
+      "image_y": 875
+    },
+    "stanwick-st-john-10": {
+      "lat": 54.4979991,
+      "lng": -1.7156777,
+      "image_x": 626,
+      "image_y": 1034
+    },
+    "stanwick-st-john-11": {
+      "lat": 54.4983309,
+      "lng": -1.7158413,
+      "image_x": 576,
+      "image_y": 860
+    },
+    "stanwick-st-john-12": {
+      "lat": 54.4981548,
+      "lng": -1.7160934,
+      "image_x": 499,
+      "image_y": 952
+    },
+    "stanwick-st-john-13": {
+      "lat": 54.4978246,
+      "lng": -1.7165387,
+      "image_x": 364,
+      "image_y": 1125
+    },
+    "stanwick-st-john-14": {
+      "lat": 54.4981034,
+      "lng": -1.7169034,
+      "image_x": 253,
+      "image_y": 979
+    },
+    "stanwick-st-john-15": {
+      "lat": 54.4981268,
+      "lng": -1.7171797,
+      "image_x": 169,
+      "image_y": 967
+    },
+    "stanwick-st-john-16": {
+      "lat": 54.4984991,
+      "lng": -1.7162544,
+      "image_x": 451,
+      "image_y": 772
+    },
+    "stanwick-st-john-17": {
+      "lat": 54.4989056,
+      "lng": -1.7154309,
+      "image_x": 701,
+      "image_y": 560
+    },
+    "stanwick-st-john-18": {
+      "lat": 54.4995723,
+      "lng": -1.7146772,
+      "image_x": 930,
+      "image_y": 211
+    },
+    "stanwick-st-john-19": {
+      "lat": 54.4987499,
+      "lng": -1.7142829,
+      "image_x": 1050,
+      "image_y": 641
+    }
+  }
+}

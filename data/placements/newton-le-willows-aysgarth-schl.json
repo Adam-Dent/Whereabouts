@@ -1,0 +1,159 @@
+{
+  "sheet_id": "newton-le-willows-aysgarth-schl",
+  "pdf_hash": "fa2bf08d9af80441ca7f0336820aa716a1d259723c6648b7e5bd5d84b2907c51",
+  "alignment": {
+    "corners": [
+      [
+        54.30026121261446,
+        -1.6928042754753656
+      ],
+      [
+        54.30026121261446,
+        -1.6743121757880621
+      ],
+      [
+        54.29263449164337,
+        -1.6743121757880621
+      ],
+      [
+        54.29263449164337,
+        -1.6928042754753656
+      ]
+    ],
+    "center": [
+      54.296447852128914,
+      -1.6835582256317139
+    ],
+    "mpp": 0.5136155949797442,
+    "zoom": 18,
+    "stretched": false
+  },
+  "houses": {
+    "newton-le-willows-aysgarth-schl-1": {
+      "lat": 54.2945918,
+      "lng": -1.6902959,
+      "image_x": 317,
+      "image_y": 1229
+    },
+    "newton-le-willows-aysgarth-schl-2": {
+      "lat": 54.2948892,
+      "lng": -1.6901135,
+      "image_x": 340,
+      "image_y": 1164
+    },
+    "newton-le-willows-aysgarth-schl-3": {
+      "lat": 54.2981607,
+      "lng": -1.6801035,
+      "image_x": 1606,
+      "image_y": 455
+    },
+    "newton-le-willows-aysgarth-schl-4": {
+      "lat": 54.2984362,
+      "lng": -1.6791862,
+      "image_x": 1722,
+      "image_y": 396
+    },
+    "newton-le-willows-aysgarth-schl-5": {
+      "lat": 54.2983892,
+      "lng": -1.6788322,
+      "image_x": 1767,
+      "image_y": 406
+    },
+    "newton-le-willows-aysgarth-schl-6": {
+      "lat": 54.2959067,
+      "lng": -1.6756833,
+      "image_x": 2166,
+      "image_y": 944
+    },
+    "newton-le-willows-aysgarth-schl-7": {
+      "lat": 54.2955592,
+      "lng": -1.6764396,
+      "image_x": 2070,
+      "image_y": 1019
+    },
+    "newton-le-willows-aysgarth-schl-8": {
+      "lat": 54.2975596,
+      "lng": -1.6803181,
+      "image_x": 1579,
+      "image_y": 586
+    },
+    "newton-le-willows-aysgarth-schl-9": {
+      "lat": 54.2965172,
+      "lng": -1.6803718,
+      "image_x": 1573,
+      "image_y": 811
+    },
+    "newton-le-willows-aysgarth-schl-10": {
+      "lat": 54.2963606,
+      "lng": -1.6811335,
+      "image_x": 1476,
+      "image_y": 845
+    },
+    "newton-le-willows-aysgarth-schl-11": {
+      "lat": 54.2965547,
+      "lng": -1.6831291,
+      "image_x": 1224,
+      "image_y": 803
+    },
+    "newton-le-willows-aysgarth-schl-12": {
+      "lat": 54.2963951,
+      "lng": -1.683113,
+      "image_x": 1226,
+      "image_y": 838
+    },
+    "newton-le-willows-aysgarth-schl-13": {
+      "lat": 54.2962761,
+      "lng": -1.6832954,
+      "image_x": 1203,
+      "image_y": 864
+    },
+    "newton-le-willows-aysgarth-schl-14": {
+      "lat": 54.2944916,
+      "lng": -1.6817021,
+      "image_x": 1404,
+      "image_y": 1250
+    },
+    "newton-le-willows-aysgarth-schl-15": {
+      "lat": 54.2943319,
+      "lng": -1.6816968,
+      "image_x": 1405,
+      "image_y": 1285
+    },
+    "newton-le-willows-aysgarth-schl-16": {
+      "lat": 54.2941785,
+      "lng": -1.6812891,
+      "image_x": 1457,
+      "image_y": 1318
+    },
+    "newton-le-willows-aysgarth-schl-17": {
+      "lat": 54.2932612,
+      "lng": -1.6838318,
+      "image_x": 1135,
+      "image_y": 1517
+    },
+    "newton-le-willows-aysgarth-schl-18": {
+      "lat": 54.2949205,
+      "lng": -1.6847706,
+      "image_x": 1016,
+      "image_y": 1158
+    },
+    "newton-le-willows-aysgarth-schl-19": {
+      "lat": 54.2947577,
+      "lng": -1.6857684,
+      "image_x": 890,
+      "image_y": 1193
+    },
+    "newton-le-willows-aysgarth-schl-20": {
+      "lat": 54.2949236,
+      "lng": -1.6864175,
+      "image_x": 808,
+      "image_y": 1157
+    },
+    "newton-le-willows-aysgarth-schl-21": {
+      "lat": 54.2947421,
+      "lng": -1.6867447,
+      "image_x": 766,
+      "image_y": 1196
+    }
+  }
+}

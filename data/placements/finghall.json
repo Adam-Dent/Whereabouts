@@ -1,0 +1,393 @@
+{
+  "sheet_id": "finghall",
+  "pdf_hash": "732e6be1ddc12c1800c6099d5a2285bc6568c150e67fb84833c7973823ba5ec4",
+  "alignment": {
+    "corners": [
+      [
+        54.30370195786496,
+        -1.7263556198207768
+      ],
+      [
+        54.30370195786496,
+        -1.7165278716953365
+      ],
+      [
+        54.29964920140789,
+        -1.7165278716953365
+      ],
+      [
+        54.29964920140789,
+        -1.7263556198207768
+      ]
+    ],
+    "center": [
+      54.301675579636424,
+      -1.7214417457580566
+    ],
+    "mpp": 0.2729297330923779,
+    "zoom": 19,
+    "stretched": false
+  },
+  "houses": {
+    "finghall-1": {
+      "lat": 54.3029282,
+      "lng": -1.7251003,
+      "image_x": 299,
+      "image_y": 316
+    },
+    "finghall-2": {
+      "lat": 54.302925,
+      "lng": -1.7240971,
+      "image_x": 538,
+      "image_y": 317
+    },
+    "finghall-3": {
+      "lat": 54.3028875,
+      "lng": -1.723845,
+      "image_x": 598,
+      "image_y": 332
+    },
+    "finghall-4": {
+      "lat": 54.3028405,
+      "lng": -1.7235553,
+      "image_x": 666,
+      "image_y": 351
+    },
+    "finghall-5": {
+      "lat": 54.3028343,
+      "lng": -1.7230833,
+      "image_x": 779,
+      "image_y": 354
+    },
+    "finghall-6": {
+      "lat": 54.3028249,
+      "lng": -1.7227829,
+      "image_x": 850,
+      "image_y": 358
+    },
+    "finghall-7": {
+      "lat": 54.3028217,
+      "lng": -1.722461,
+      "image_x": 927,
+      "image_y": 359
+    },
+    "finghall-8": {
+      "lat": 54.3028061,
+      "lng": -1.7219675,
+      "image_x": 1044,
+      "image_y": 365
+    },
+    "finghall-9": {
+      "lat": 54.3027998,
+      "lng": -1.7216671,
+      "image_x": 1116,
+      "image_y": 368
+    },
+    "finghall-10": {
+      "lat": 54.3027717,
+      "lng": -1.7214686,
+      "image_x": 1163,
+      "image_y": 379
+    },
+    "finghall-11": {
+      "lat": 54.3027811,
+      "lng": -1.7208302,
+      "image_x": 1315,
+      "image_y": 376
+    },
+    "finghall-12": {
+      "lat": 54.3029157,
+      "lng": -1.7203313,
+      "image_x": 1434,
+      "image_y": 321
+    },
+    "finghall-13": {
+      "lat": 54.3031629,
+      "lng": -1.7195427,
+      "image_x": 1621,
+      "image_y": 220
+    },
+    "finghall-14": {
+      "lat": 54.302875,
+      "lng": -1.7180514,
+      "image_x": 1976,
+      "image_y": 337
+    },
+    "finghall-15": {
+      "lat": 54.3028437,
+      "lng": -1.7183143,
+      "image_x": 1914,
+      "image_y": 350
+    },
+    "finghall-16": {
+      "lat": 54.3027404,
+      "lng": -1.7186308,
+      "image_x": 1839,
+      "image_y": 392
+    },
+    "finghall-17": {
+      "lat": 54.3026715,
+      "lng": -1.7190841,
+      "image_x": 1731,
+      "image_y": 420
+    },
+    "finghall-18": {
+      "lat": 54.3026637,
+      "lng": -1.7191967,
+      "image_x": 1704,
+      "image_y": 423
+    },
+    "finghall-19": {
+      "lat": 54.3026605,
+      "lng": -1.7193282,
+      "image_x": 1673,
+      "image_y": 425
+    },
+    "finghall-20": {
+      "lat": 54.302648,
+      "lng": -1.7194515,
+      "image_x": 1643,
+      "image_y": 430
+    },
+    "finghall-21": {
+      "lat": 54.3026762,
+      "lng": -1.7196876,
+      "image_x": 1587,
+      "image_y": 418
+    },
+    "finghall-22": {
+      "lat": 54.3024743,
+      "lng": -1.7196205,
+      "image_x": 1603,
+      "image_y": 501
+    },
+    "finghall-23": {
+      "lat": 54.3024524,
+      "lng": -1.7197439,
+      "image_x": 1574,
+      "image_y": 510
+    },
+    "finghall-24": {
+      "lat": 54.3024446,
+      "lng": -1.7198405,
+      "image_x": 1551,
+      "image_y": 513
+    },
+    "finghall-25": {
+      "lat": 54.3024477,
+      "lng": -1.7199236,
+      "image_x": 1531,
+      "image_y": 512
+    },
+    "finghall-26": {
+      "lat": 54.302472,
+      "lng": -1.7200229,
+      "image_x": 1507,
+      "image_y": 502
+    },
+    "finghall-27": {
+      "lat": 54.3024743,
+      "lng": -1.7200953,
+      "image_x": 1490,
+      "image_y": 501
+    },
+    "finghall-28": {
+      "lat": 54.3026152,
+      "lng": -1.7204346,
+      "image_x": 1409,
+      "image_y": 443
+    },
+    "finghall-29": {
+      "lat": 54.302486,
+      "lng": -1.7206639,
+      "image_x": 1355,
+      "image_y": 496
+    },
+    "finghall-30": {
+      "lat": 54.3025142,
+      "lng": -1.7209429,
+      "image_x": 1288,
+      "image_y": 484
+    },
+    "finghall-31": {
+      "lat": 54.302508,
+      "lng": -1.7210917,
+      "image_x": 1253,
+      "image_y": 487
+    },
+    "finghall-32": {
+      "lat": 54.3025017,
+      "lng": -1.721313,
+      "image_x": 1200,
+      "image_y": 490
+    },
+    "finghall-33": {
+      "lat": 54.3024939,
+      "lng": -1.7214471,
+      "image_x": 1168,
+      "image_y": 493
+    },
+    "finghall-34": {
+      "lat": 54.3024657,
+      "lng": -1.7217126,
+      "image_x": 1105,
+      "image_y": 504
+    },
+    "finghall-35": {
+      "lat": 54.3023984,
+      "lng": -1.7218146,
+      "image_x": 1081,
+      "image_y": 532
+    },
+    "finghall-36": {
+      "lat": 54.3022317,
+      "lng": -1.721765,
+      "image_x": 1093,
+      "image_y": 600
+    },
+    "finghall-37": {
+      "lat": 54.3021511,
+      "lng": -1.7217757,
+      "image_x": 1090,
+      "image_y": 633
+    },
+    "finghall-38": {
+      "lat": 54.3019602,
+      "lng": -1.7216738,
+      "image_x": 1114,
+      "image_y": 710
+    },
+    "finghall-39": {
+      "lat": 54.3016221,
+      "lng": -1.721722,
+      "image_x": 1103,
+      "image_y": 848
+    },
+    "finghall-40": {
+      "lat": 54.3014906,
+      "lng": -1.7213425,
+      "image_x": 1193,
+      "image_y": 902
+    },
+    "finghall-41": {
+      "lat": 54.3014578,
+      "lng": -1.7209764,
+      "image_x": 1280,
+      "image_y": 915
+    },
+    "finghall-42": {
+      "lat": 54.3014452,
+      "lng": -1.7207685,
+      "image_x": 1330,
+      "image_y": 920
+    },
+    "finghall-43": {
+      "lat": 54.3014147,
+      "lng": -1.720444,
+      "image_x": 1407,
+      "image_y": 933
+    },
+    "finghall-44": {
+      "lat": 54.3008262,
+      "lng": -1.7217261,
+      "image_x": 1102,
+      "image_y": 1173
+    },
+    "finghall-45": {
+      "lat": 54.3021402,
+      "lng": -1.7223001,
+      "image_x": 965,
+      "image_y": 637
+    },
+    "finghall-46": {
+      "lat": 54.3022474,
+      "lng": -1.7221311,
+      "image_x": 1005,
+      "image_y": 593
+    },
+    "finghall-47": {
+      "lat": 54.3024422,
+      "lng": -1.7221203,
+      "image_x": 1008,
+      "image_y": 514
+    },
+    "finghall-48": {
+      "lat": 54.3024391,
+      "lng": -1.7223765,
+      "image_x": 947,
+      "image_y": 515
+    },
+    "finghall-49": {
+      "lat": 54.3024571,
+      "lng": -1.7225951,
+      "image_x": 895,
+      "image_y": 508
+    },
+    "finghall-50": {
+      "lat": 54.3022716,
+      "lng": -1.7225267,
+      "image_x": 911,
+      "image_y": 583
+    },
+    "finghall-51": {
+      "lat": 54.3024352,
+      "lng": -1.7228821,
+      "image_x": 827,
+      "image_y": 517
+    },
+    "finghall-52": {
+      "lat": 54.3025839,
+      "lng": -1.7230886,
+      "image_x": 778,
+      "image_y": 456
+    },
+    "finghall-53": {
+      "lat": 54.3025909,
+      "lng": -1.7233984,
+      "image_x": 704,
+      "image_y": 453
+    },
+    "finghall-54": {
+      "lat": 54.3024336,
+      "lng": -1.7233877,
+      "image_x": 706,
+      "image_y": 517
+    },
+    "finghall-55": {
+      "lat": 54.3025721,
+      "lng": -1.7237994,
+      "image_x": 608,
+      "image_y": 461
+    },
+    "finghall-56": {
+      "lat": 54.3024031,
+      "lng": -1.7241105,
+      "image_x": 534,
+      "image_y": 530
+    },
+    "finghall-57": {
+      "lat": 54.3025619,
+      "lng": -1.7248294,
+      "image_x": 363,
+      "image_y": 465
+    },
+    "finghall-58": {
+      "lat": 54.3025291,
+      "lng": -1.72506,
+      "image_x": 308,
+      "image_y": 478
+    },
+    "finghall-59": {
+      "lat": 54.3025494,
+      "lng": -1.7253336,
+      "image_x": 243,
+      "image_y": 470
+    },
+    "finghall-60": {
+      "lat": 54.3026809,
+      "lng": -1.725626,
+      "image_x": 174,
+      "image_y": 416
+    }
+  }
+}

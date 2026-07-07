@@ -1,0 +1,4 @@
+{
+  "_comment": "Per-house name corrections applied on top of the parsed legend (see SPEC 4). Key = house id, value = corrected names array. For rare parse artifacts not worth a parser change.",
+  "reeth-south-west-121": ["Wayside Cottage, 15 Silver Street"]
+}

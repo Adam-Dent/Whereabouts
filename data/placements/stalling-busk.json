@@ -1,0 +1,135 @@
+{
+  "sheet_id": "stalling-busk",
+  "pdf_hash": "c6f111058f84025a14dea060adecd9a9d35a5b20addd9e75f008d6514d047e01",
+  "alignment": {
+    "corners": [
+      [
+        54.27048920638175,
+        -2.1341183904771333
+      ],
+      [
+        54.27048920638175,
+        -2.124542879664469
+      ],
+      [
+        54.266537287140984,
+        -2.124542879664469
+      ],
+      [
+        54.266537287140984,
+        -2.1341183904771333
+      ]
+    ],
+    "center": [
+      54.268513246761366,
+      -2.1293306350708012
+    ],
+    "mpp": 0.26613892914809945,
+    "zoom": 18,
+    "stretched": false
+  },
+  "houses": {
+    "stalling-busk-1": {
+      "lat": 54.267508,
+      "lng": -2.1305323,
+      "image_x": 876,
+      "image_y": 1247
+    },
+    "stalling-busk-2": {
+      "lat": 54.2676803,
+      "lng": -2.1307361,
+      "image_x": 826,
+      "image_y": 1175
+    },
+    "stalling-busk-3": {
+      "lat": 54.2676771,
+      "lng": -2.1311063,
+      "image_x": 736,
+      "image_y": 1176
+    },
+    "stalling-busk-4": {
+      "lat": 54.2677429,
+      "lng": -2.1309721,
+      "image_x": 769,
+      "image_y": 1149
+    },
+    "stalling-busk-5": {
+      "lat": 54.2677805,
+      "lng": -2.130543,
+      "image_x": 873,
+      "image_y": 1133
+    },
+    "stalling-busk-6": {
+      "lat": 54.2679058,
+      "lng": -2.1302158,
+      "image_x": 953,
+      "image_y": 1081
+    },
+    "stalling-busk-7": {
+      "lat": 54.2680406,
+      "lng": -2.1300817,
+      "image_x": 986,
+      "image_y": 1024
+    },
+    "stalling-busk-8": {
+      "lat": 54.268346,
+      "lng": -2.1303123,
+      "image_x": 930,
+      "image_y": 896
+    },
+    "stalling-busk-9": {
+      "lat": 54.2688676,
+      "lng": -2.1302211,
+      "image_x": 952,
+      "image_y": 678
+    },
+    "stalling-busk-10": {
+      "lat": 54.2692247,
+      "lng": -2.1304947,
+      "image_x": 885,
+      "image_y": 529
+    },
+    "stalling-busk-11": {
+      "lat": 54.2694299,
+      "lng": -2.1295479,
+      "image_x": 1116,
+      "image_y": 443
+    },
+    "stalling-busk-12": {
+      "lat": 54.2692122,
+      "lng": -2.1296042,
+      "image_x": 1103,
+      "image_y": 534
+    },
+    "stalling-busk-13": {
+      "lat": 54.2689584,
+      "lng": -2.1299207,
+      "image_x": 1025,
+      "image_y": 640
+    },
+    "stalling-busk-14": {
+      "lat": 54.2688112,
+      "lng": -2.1297491,
+      "image_x": 1067,
+      "image_y": 702
+    },
+    "stalling-busk-15": {
+      "lat": 54.2686624,
+      "lng": -2.1301138,
+      "image_x": 978,
+      "image_y": 764
+    },
+    "stalling-busk-16": {
+      "lat": 54.2683695,
+      "lng": -2.1300682,
+      "image_x": 989,
+      "image_y": 887
+    },
+    "stalling-busk-17": {
+      "lat": 54.2683272,
+      "lng": -2.1298617,
+      "image_x": 1040,
+      "image_y": 904
+    }
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "sheet_id": "burtersett",
+  "pdf_hash": "fe87954020429f94dd9f7d4e1fc0fa1fc3428e5c32e29fd61751f8a8780e8c74",
+  "alignment": {
+    "corners": [
+      [
+        54.302014163439324,
+        -2.171430587768555
+      ],
+      [
+        54.30216441304601,
+        -2.159993648529053
+      ],
+      [
+        54.297387459228695,
+        -2.1599614620208745
+      ],
+      [
+        54.29740529576232,
+        -2.1714906561815877
+      ]
+    ],
+    "center": [
+      54.299742832869086,
+      -2.1657190886250177
+    ],
+    "mpp": 0.3078603440254745,
+    "zoom": 19,
+    "stretched": true
+  },
+  "houses": {
+    "burtersett-1": {
+      "lat": 54.2991875,
+      "lng": -2.1637595,
+      "image_x": 1587,
+      "image_y": 1028
+    },
+    "burtersett-2": {
+      "lat": 54.2990529,
+      "lng": -2.1643656,
+      "image_x": 1465,
+      "image_y": 1074
+    },
+    "burtersett-3": {
+      "lat": 54.2986365,
+      "lng": -2.1652883,
+      "image_x": 1279,
+      "image_y": 1219
+    },
+    "burtersett-4": {
+      "lat": 54.2991593,
+      "lng": -2.1661788,
+      "image_x": 1097,
+      "image_y": 1035
+    },
+    "burtersett-5": {
+      "lat": 54.2987899,
+      "lng": -2.1685311,
+      "image_x": 614,
+      "image_y": 1162
+    },
+    "burtersett-6": {
+      "lat": 54.2987571,
+      "lng": -2.1687108,
+      "image_x": 577,
+      "image_y": 1174
+    },
+    "burtersett-7": {
+      "lat": 54.2989026,
+      "lng": -2.1690193,
+      "image_x": 513,
+      "image_y": 1122
+    },
+    "burtersett-8": {
+      "lat": 54.2991875,
+      "lng": -2.1683916,
+      "image_x": 643,
+      "image_y": 1021
+    },
+    "burtersett-9": {
+      "lat": 54.2990904,
+      "lng": -2.1694538,
+      "image_x": 422,
+      "image_y": 1054
+    },
+    "burtersett-10": {
+      "lat": 54.2994317,
+      "lng": -2.1695852,
+      "image_x": 394,
+      "image_y": 933
+    },
+    "burtersett-11": {
+      "lat": 54.2994802,
+      "lng": -2.1693653,
+      "image_x": 440,
+      "image_y": 916
+    },
+    "burtersett-12": {
+      "lat": 54.3003943,
+      "lng": -2.1682763,
+      "image_x": 665,
+      "image_y": 593
+    },
+    "burtersett-13": {
+      "lat": 54.3007527,
+      "lng": -2.1678311,
+      "image_x": 756,
+      "image_y": 467
+    },
+    "burtersett-14": {
+      "lat": 54.3004709,
+      "lng": -2.168448,
+      "image_x": 629,
+      "image_y": 565
+    },
+    "burtersett-15": {
+      "lat": 54.299945,
+      "lng": -2.1691856,
+      "image_x": 476,
+      "image_y": 751
+    },
+    "burtersett-16": {
+      "lat": 54.2997024,
+      "lng": -2.1695504,
+      "image_x": 401,
+      "image_y": 836
+    },
+    "burtersett-17": {
+      "lat": 54.2997776,
+      "lng": -2.169545,
+      "image_x": 402,
+      "image_y": 810
+    },
+    "burtersett-18": {
+      "lat": 54.299859,
+      "lng": -2.1696228,
+      "image_x": 386,
+      "image_y": 780
+    },
+    "burtersett-19": {
+      "lat": 54.2998433,
+      "lng": -2.1698615,
+      "image_x": 336,
+      "image_y": 785
+    },
+    "burtersett-20": {
+      "lat": 54.2999435,
+      "lng": -2.1696818,
+      "image_x": 373,
+      "image_y": 750
+    },
+    "burtersett-21": {
+      "lat": 54.3002096,
+      "lng": -2.1695423,
+      "image_x": 402,
+      "image_y": 655
+    },
+    "burtersett-22": {
+      "lat": 54.2996398,
+      "lng": -2.1698776,
+      "image_x": 333,
+      "image_y": 858
+    },
+    "burtersett-23": {
+      "lat": 54.2994019,
+      "lng": -2.170119,
+      "image_x": 283,
+      "image_y": 942
+    },
+    "burtersett-24": {
+      "lat": 54.2994301,
+      "lng": -2.1698669,
+      "image_x": 335,
+      "image_y": 933
+    },
+    "burtersett-25": {
+      "lat": 54.2993518,
+      "lng": -2.1698374,
+      "image_x": 342,
+      "image_y": 961
+    },
+    "burtersett-26": {
+      "lat": 54.2992391,
+      "lng": -2.1698239,
+      "image_x": 345,
+      "image_y": 1001
+    },
+    "burtersett-27": {
+      "lat": 54.2990748,
+      "lng": -2.1697462,
+      "image_x": 361,
+      "image_y": 1060
+    },
+    "burtersett-28": {
+      "lat": 54.2989809,
+      "lng": -2.1697059,
+      "image_x": 370,
+      "image_y": 1093
+    },
+    "burtersett-29": {
+      "lat": 54.2987821,
+      "lng": -2.1696898,
+      "image_x": 374,
+      "image_y": 1164
+    },
+    "burtersett-30": {
+      "lat": 54.298743,
+      "lng": -2.1698186,
+      "image_x": 347,
+      "image_y": 1178
+    },
+    "burtersett-31": {
+      "lat": 54.2985536,
+      "lng": -2.1697864,
+      "image_x": 354,
+      "image_y": 1245
+    },
+    "burtersett-32": {
+      "lat": 54.2984659,
+      "lng": -2.1699715,
+      "image_x": 316,
+      "image_y": 1276
+    },
+    "burtersett-33": {
+      "lat": 54.2983798,
+      "lng": -2.1699312,
+      "image_x": 324,
+      "image_y": 1307
+    },
+    "burtersett-34": {
+      "lat": 54.2983063,
+      "lng": -2.1700358,
+      "image_x": 303,
+      "image_y": 1333
+    },
+    "burtersett-35": {
+      "lat": 54.2983047,
+      "lng": -2.1702504,
+      "image_x": 258,
+      "image_y": 1333
+    },
+    "burtersett-36": {
+      "lat": 54.2987492,
+      "lng": -2.1705213,
+      "image_x": 200,
+      "image_y": 1175
+    },
+    "burtersett-37": {
+      "lat": 54.2988776,
+      "lng": -2.1705857,
+      "image_x": 186,
+      "image_y": 1129
+    },
+    "burtersett-38": {
+      "lat": 54.2987336,
+      "lng": -2.170929,
+      "image_x": 115,
+      "image_y": 1180
+    },
+    "burtersett-39": {
+      "lat": 54.2981247,
+      "lng": -2.1702504,
+      "image_x": 258,
+      "image_y": 1397
+    },
+    "burtersett-40": {
+      "lat": 54.2980198,
+      "lng": -2.1705857,
+      "image_x": 188,
+      "image_y": 1434
+    },
+    "burtersett-41": {
+      "lat": 54.2977475,
+      "lng": -2.1699849,
+      "image_x": 314,
+      "image_y": 1531
+    }
+  }
+}
