@@ -181,7 +181,7 @@ Uses `pdfplumber`. Each sheet has three zones of integer text:
 A FastAPI app (`place_tool.py`) serving a Leaflet page. The village drawing is overlaid as a semi-transparent image on Esri satellite imagery.
 
 **Controls:**
-- District dropdown, then Village dropdown, cascading — District lists the three priority districts for placement first (`DISTRICT_PRIORITY` in `place_tool.py`: Wensleydale, Swaledale and Arkengarthdale, Hambleton (West)), then the rest alphabetically. Village dropdown is sorted by count of non-numbered houses descending within the selected district, so the most useful villages come first. Last-viewed district/village is remembered per-browser via `localStorage`.
+- County dropdown, then District, then Village, cascading. County groups districts by Colin's county hierarchy (one county, North Yorkshire, for now; extend `_COUNTY_BY_DISTRICT` in `place_tool.py` as other counties are processed). District lists the three priority districts for placement first (`DISTRICT_PRIORITY` in `place_tool.py`: Wensleydale, Swaledale and Arkengarthdale, Hambleton (West)), then the rest alphabetically. Village dropdown is sorted by count of non-numbered houses descending within the selected district, so the most useful villages come first. Last-viewed district/village is remembered per-browser via `localStorage`.
 - Three percent-complete stat boxes above the dropdowns: **Overall** (all districts), **Area** (the selected district, labelled with its name), **This map** (the currently open sheet, live — updates on every click, not just on Save). Overall/Area reflect the last-*saved* state; This map is live including unsaved in-progress placements.
 - Drag the overlay to position it over the village
 - Scale with a single resize handle (bottom-right corner) or scroll wheel
@@ -389,6 +389,10 @@ Building the Expo app before the data was complete would have meant testing with
 
 The source code is released under the MIT Licence (see `LICENSE`). This covers only the software, not the underlying map data or derived coordinates.
 
+### House coordinates (data)
+
+The hand-placed house coordinates (`docs/houses.json`, `data/placements/`) are licensed under **CC BY-SA 4.0**: free to reuse including commercially, with attribution to "Adam Dent, Whereabouts", and any adapted dataset kept under the same licence. This is the deliberate split, MIT for the replaceable code and share-alike for the irreplaceable placements. Stated in `LICENSE`, `README.md`, `CONTRIBUTING.md`, the app's ⓘ panel, and the how-it-works and privacy pages.
+
 ### Map drawings
 
 Colin Day's maps are published "available for copying without charge". Attribution is displayed in the app and in the repository.
@@ -405,18 +409,31 @@ Esri World Imagery is used during the placement process. Esri's standard terms a
 
 ### Disclaimer
 
-The app is a navigation aid only — not a clinical tool. This is stated in the app, the README, and the LICENSE file. Before deploying in any NHS clinical workflow, seek information governance review from the relevant trust.
+The app is a navigation aid only, not a clinical tool. It is deliberately framed for a general audience (delivery drivers, emergency and care workers, visitors, anyone finding a named house), not as NHS or clinical software; that framing keeps it out of medical-device scope. A plain, audience-neutral accuracy caveat sits in the app's ⓘ panel ("A note on accuracy"), and a public `privacy.html` page sets out that no personal data is held. Any organisation adopting it into a workflow should run its own governance review.
 
 ---
 
 ## 11. Open questions
 
-- **Hosting.** Resolved: static PWA deployed to Cloudflare Pages at whereabouts-app.pages.dev (July 2026; the previous Surge deployment at whereabouts-app.surge.sh was torn down on 2 July 2026 — that URL is dead). Incremental deploys (only changed files upload), CDN cache headers via `_headers`. No server required. Note the GitHub repo is currently **private**; what the site serves (app shell, dataset, images) is public by nature of being a website — see section 10 for licensing.
+- **Hosting.** Resolved: static PWA on Cloudflare Pages at whereabouts-app.pages.dev. Incremental deploys, CDN cache headers via `_headers`, no server. Deploy is a double-click (`Publish App Update.command`) using the local wrangler session, or by hand with `wrangler pages deploy docs/`.
+- **Open source.** The GitHub repo (github.com/Adam-Dent/Whereabouts) went **public on 7 July 2026** with a fresh single-commit history (the old 91 commits were squashed to purge a Cloudflare account id, a personal email, and early wife/nurse/patient framing). CI (`.github/workflows/ci.yml`) runs ruff, an em-dash guard, and a page-generation check on push/PR; it does not deploy (see Roadmap: continuous deployment). Reminder for a future session: the user-facing pages are generated from raw-string constants in `pwa.py` (`_PWA_PAGE`, `_HOW_PAGE`, `_PRIVACY_PAGE`, `_SW_JS`), not edited in `docs/` directly. Accessibility: Lighthouse a11y 100 after a WCAG 2.1 AA pass. Note the app version scheme (`1.<app-change commits>.<placement commits since>`) restarted at the fresh history, so it now climbs from ~1.3.0, not the old 1.44.x (cosmetic only).
 - **Coverage target.** How many houses need to be placed before the app is useful enough? Prioritising non-numbered houses in the most-visited villages may get to a useful threshold faster than full coverage.
 - **Feedback loop.** A "report wrong location" feature would let users flag errors without needing a developer. Placeholder removed for now; plan is to route through a Google Form with responses to a Sheet.
-- **Additional districts.** Richmondshire validated; rolling out the rest of North Yorkshire one district at a time (§8 Phase 8, `data/dist/coverage.md`). Counties outside North Yorkshire are out of scope for now — the app is specifically a North Yorkshire tool; revisit only as a deliberate rescope decision.
+- **Beyond North Yorkshire.** The near-term app is North Yorkshire only, and the copy says so (ⓘ panel: "Whereabouts covers North Yorkshire for now"). Expansion to Colin's other counties is now a planned direction, not a non-goal. He organises his catalogue by county, then district/dale, then village, and the placement tool already has a County dropdown (one county for now; extend `_COUNTY_BY_DISTRICT` in `place_tool.py`). See the roadmap below.
 - **PWA deploy scope.** Resolved (v1.5): all districts ship, but nothing bulk-downloads. Images are cached only on view or by explicit per-district "save offline" packs, so shipping all 865 sheets costs users nothing until they ask for an area. Unplaced houses are now searchable (grey dot, centroid fallback), so partial districts are useful the day their first villages are placed.
 - **Village centroid quality.** Nominatim geocoding can pick a same-named village elsewhere in the country (e.g. Angram, Swaledale geocoded to the Angram near York). Only affects the navigation fallback for unplaced houses. Worth a sanity pass: flag centroids that fall outside a district bounding box.
 - **Shareable links.** Each house already has a stable URL hash (`#/detail/<id>`). Verify a texted link opens correctly (including from a home-screen install), then consider a share button on the detail view.
 - **Recent searches.** A localStorage-backed list on the empty search screen — users often revisit the same places, so the last few houses viewed are the likeliest next search.
 - **Analytics.** Interest in usage data (visits, most-searched areas) without cookies/consent banners. GoatCounter (current) is already cookieless; Cloudflare Web Analytics is a cookieless complement. Caution before logging house-level searches: a log of searched houses can be sensitive (it can reveal who someone is visiting), so aggregate to village/district level or don't collect it.
+
+---
+
+## 12. Roadmap (next up, after the open-source release)
+
+Picked up in a future session. Rough order:
+
+1. **All-county expansion.** Add Colin's other county index URLs to `discover.py`'s `DISTRICT_INDEXES`, then discover/parse/render county by county (the pipeline is built to widen, see §5.1). Emit a `county` field on each sheet (currently derived only in the placement tool via `_COUNTY_BY_DISTRICT`) so the data carries it. Then give the user-facing app a high-level county dropdown mirroring the placement tool's.
+2. **New/updated map detection.** Colin's maps index has a "Latest additions and revisions:" section tagging each entry "(new map)" or "(revised)". Scrape it and, with the existing SHA-256 `pdf_hash` (§7.5), pull only changed maps to re-tag, rather than re-downloading the whole catalogue each time.
+3. **Overall completion %.** Once discovery spans all counties, extend `coverage.md` and the ⓘ payload to an all-catalogue placed/total figure (today's totals are North-Yorkshire-only).
+4. **Continuous deployment (optional).** Have CI re-render images from the committed PDFs (17 MB, fully reproducible; cache by pdf hash) and deploy to Cloudflare Pages on push to main, using a scoped `CLOUDFLARE_API_TOKEN` repo secret. Preferred over committing the ~125 MB of WebP images or using Git LFS.
+5. **Report a wrong location.** A no-PII feedback path (a form, per §11) matters more now the repo and app are public.
