@@ -2,7 +2,7 @@
 
 A finder for named rural properties in North Yorkshire.
 
-**Live app:** [whereabouts-app.pages.dev](https://whereabouts-app.pages.dev)
+**Live app:** [whereabouts.adamdent.uk](https://whereabouts.adamdent.uk)
 
 ---
 

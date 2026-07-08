@@ -2,7 +2,7 @@
 # Whereabouts — publishes your latest placement work to the live app.
 #
 #   HOW TO USE: double-click this file in Finder after a placement session.
-#   It rebuilds the app's data and sends it to whereabouts-app.pages.dev.
+#   It rebuilds the app's data and sends it to whereabouts.adamdent.uk.
 #   Phones pick the update up automatically the next time they open the app.
 #
 #   Safe to run any time: if nothing has changed, it publishes nothing new.
@@ -40,7 +40,7 @@ if ! (cd etl && uv run whereabouts-build-pwa); then
 fi
 
 echo ""
-echo "  Step 2 of 2: publishing to whereabouts-app.pages.dev..."
+echo "  Step 2 of 2: publishing to whereabouts.adamdent.uk..."
 echo ""
 if ! npx wrangler pages deploy docs/ --project-name whereabouts-app --branch main; then
   echo ""
@@ -51,6 +51,6 @@ if ! npx wrangler pages deploy docs/ --project-name whereabouts-app --branch mai
 fi
 
 echo ""
-echo "  ✓ Done. Your latest work is live at https://whereabouts-app.pages.dev"
+echo "  ✓ Done. Your latest work is live at https://whereabouts.adamdent.uk"
 echo "  Phones will pick it up the next time the app opens with signal."
 finish 0
