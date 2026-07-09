@@ -41,3 +41,6 @@ notes/
 # Wrangler local cache (contains Cloudflare account id/name; not needed in repo)
 .wrangler/
 etl/.wrangler/
+
+# Claude Code personal working journal (private, do not commit)
+CLAUDE.local.md
