@@ -633,18 +633,18 @@ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--
       <button class="sheet-close" id="sheet-close-btn" aria-label="Close">&#215;</button>
     </div>
     <div class="sheet-body">
-      <p class="about-lead">Whereabouts helps you find a house by name in the villages of North Yorkshire, the kind of address a satnav struggles with. It stands on the maps of <a href="https://colinday.co.uk/maps/" target="_blank" rel="noopener">Dr&nbsp;A&nbsp;Colin&nbsp;Day</a>, who has spent years recording the names of the houses in the county&#8217;s villages and gives his work away free. The app adds a search box over those maps and passes the directions to your phone.</p>
+      <p class="about-lead">Whereabouts finds a house by name in the villages of North Yorkshire, the kind of address a satnav struggles with. It is built on the maps of <a href="https://colinday.co.uk/maps/" target="_blank" rel="noopener">Dr&nbsp;A&nbsp;Colin&nbsp;Day</a>, who has spent years recording village house names and gives his work away free. Search a name, and the app points you to the door.</p>
       <p class="about-lead">You can read more about how this project works <a href="./how-it-works.html">here</a>.</p>
       <div class="sheet-h">A note on accuracy</div>
-      <p>Every house here is placed by hand, so now and then a pin sits on the wrong roof, and some houses are only pinned to the middle of their village for now. Glance at the map before you set off, and take extra care where the same name turns up more than once.</p>
+      <p>I&#8217;m placing every house by hand, one at a time. In the search results a green dot means a house is pinned to its exact spot; a grey dot means I haven&#8217;t reached it yet, so &#8220;Get directions&#8221; takes you to the centre of the village instead. The bars below show each area&#8217;s progress.</p>
+      <p>Every effort has been made to keep this accurate, but it can&#8217;t be guaranteed, so do glance at the map before you set off.</p>
       <div class="sheet-h">Coverage</div>
       <p style="font-size:13px;color:var(--muted);margin-bottom:8px">Whereabouts covers North Yorkshire for now. Colin&#8217;s maps reach right across the north of England, so more counties may follow.</p>
       <p id="area-sum"></p>
       <div id="areas"></div>
       <button class="dl-all-btn" id="dl-all-btn"></button>
-      <div class="sheet-h">Offline use &amp; updates</div>
-      <p>Whereabouts is built for places where signal comes and goes. Any map you open stays on your phone by itself; to make a whole area work with no signal at all, save it above. Tap a saved area if you ever want its maps off your phone again. And for one-tap access, add this page to your home screen: it opens like any other app, even in a dead spot.</p>
-      <p>You never need to think about updates. The app fetches the newest houses whenever it opens with signal and gives itself a fresh start each morning. If an area you saved gains new or revised maps, its button changes to &#8220;Update&#8221;: one tap brings it in line. Saved maps stay on your phone through all of this.</p>
+      <div class="sheet-h">Offline use</div>
+      <p>To use the maps where there&#8217;s no signal, save the areas you need while you&#8217;re online, using the buttons above. Once saved, their maps work offline, alongside search and directions. For saved maps to stay put, add Whereabouts to your home screen first: this installs it properly and stops your phone clearing them to free up space.</p>
       <div class="sheet-h">Thank you, Dr Day</div>
       <p>Every village drawing in this app is the work of Dr&nbsp;A&nbsp;Colin&nbsp;Day, who has spent more than twenty years mapping villages house by house and name by name, and giving the results away free, still updated by his own hand today. Long before this app existed, his maps were finding front doors for delivery drivers, healthcare professionals and anyone else a satnav had given up on. Colin has given this project his full support to build on his foundations. If it ever finds you the right door, the thanks belongs to him.</p>
       <div class="sheet-divider"></div>
@@ -903,6 +903,23 @@ function positionDetailRing() {
 }
 document.getElementById('map-img').onload = positionDetailRing;
 
+// Map images are served only by the service worker's cache. If the worker
+// isn't controlling the page on a cold offline launch, the <img> request hits
+// the network and fails even though the map is saved. Mirror the houses.json
+// fallback: on error, read the image straight from Cache Storage and swap in a
+// blob URL, so saved maps always render offline. The blob: guard stops a loop
+// if a cached blob itself fails to decode.
+async function imgCacheFallback(imgEl, file) {
+  if (!('caches' in window) || !file || imgEl.src.startsWith('blob:')) return;
+  try {
+    const hit = await caches.match('./images/' + file);
+    if (!hit) return;
+    imgEl.src = URL.createObjectURL(await hit.blob());
+  } catch (_) {}
+}
+document.getElementById('map-img').onerror =
+  () => imgCacheFallback(document.getElementById('map-img'), (sheetOf(_detailH) || {}).img);
+
 const mapWrapEl = document.getElementById('map-wrap');
 mapWrapEl.addEventListener('click', () => { if (_detailH) openMapFS(_detailH); });
 mapWrapEl.addEventListener('keydown', e => {
@@ -942,6 +959,7 @@ function openMapFS(h) {
   document.getElementById('map-fs-close').focus();
   const imgFile = (sheetOf(h) || {}).img || '';
   fsImg.onload = () => { fitFS(); placeRingFS(); };
+  fsImg.onerror = () => imgCacheFallback(fsImg, imgFile);
   if (imgFile && fsImg.src.endsWith(imgFile) && fsImg.complete && fsImg.naturalWidth) {
     setTimeout(() => { fitFS(); placeRingFS(); }, 30);
   } else {
