@@ -1,0 +1,267 @@
+{
+  "sheet_id": "fremington",
+  "pdf_hash": "446aa67e5e039ca96484de52ef5ab75bb96d81dd670e62f1a847a8c924cba5a5",
+  "alignment": {
+    "corners": [
+      [
+        54.388712373887095,
+        -1.9362072228459621
+      ],
+      [
+        54.388712373887095,
+        -1.923749041649888
+      ],
+      [
+        54.383585429320526,
+        -1.923749041649888
+      ],
+      [
+        54.383585429320526,
+        -1.9362072228459621
+      ]
+    ],
+    "center": [
+      54.38614890160381,
+      -1.929978132247925
+    ],
+    "mpp": 0.34527009628023947,
+    "zoom": 18,
+    "stretched": false
+  },
+  "houses": {
+    "fremington-1": {
+      "lat": 54.3852122,
+      "lng": -1.9299272,
+      "image_x": 1179,
+      "image_y": 1129
+    },
+    "fremington-2": {
+      "lat": 54.385534,
+      "lng": -1.929726,
+      "image_x": 1217,
+      "image_y": 1025
+    },
+    "fremington-3": {
+      "lat": 54.3857448,
+      "lng": -1.9298252,
+      "image_x": 1198,
+      "image_y": 957
+    },
+    "fremington-4": {
+      "lat": 54.3857667,
+      "lng": -1.9300908,
+      "image_x": 1148,
+      "image_y": 950
+    },
+    "fremington-5": {
+      "lat": 54.3857932,
+      "lng": -1.9302195,
+      "image_x": 1124,
+      "image_y": 941
+    },
+    "fremington-6": {
+      "lat": 54.385851,
+      "lng": -1.9303429,
+      "image_x": 1101,
+      "image_y": 923
+    },
+    "fremington-7": {
+      "lat": 54.3857714,
+      "lng": -1.9305843,
+      "image_x": 1056,
+      "image_y": 948
+    },
+    "fremington-8": {
+      "lat": 54.3860838,
+      "lng": -1.9308954,
+      "image_x": 997,
+      "image_y": 848
+    },
+    "fremington-9": {
+      "lat": 54.3862306,
+      "lng": -1.9308767,
+      "image_x": 1001,
+      "image_y": 800
+    },
+    "fremington-10": {
+      "lat": 54.3862946,
+      "lng": -1.931102,
+      "image_x": 959,
+      "image_y": 780
+    },
+    "fremington-11": {
+      "lat": 54.3862821,
+      "lng": -1.9313005,
+      "image_x": 921,
+      "image_y": 784
+    },
+    "fremington-12": {
+      "lat": 54.3862087,
+      "lng": -1.9314426,
+      "image_x": 895,
+      "image_y": 807
+    },
+    "fremington-13": {
+      "lat": 54.3862072,
+      "lng": -1.9321695,
+      "image_x": 758,
+      "image_y": 808
+    },
+    "fremington-14": {
+      "lat": 54.3863415,
+      "lng": -1.9324055,
+      "image_x": 714,
+      "image_y": 764
+    },
+    "fremington-15": {
+      "lat": 54.386354,
+      "lng": -1.9326121,
+      "image_x": 675,
+      "image_y": 760
+    },
+    "fremington-16": {
+      "lat": 54.3863993,
+      "lng": -1.9328266,
+      "image_x": 635,
+      "image_y": 746
+    },
+    "fremington-17": {
+      "lat": 54.3865133,
+      "lng": -1.9348356,
+      "image_x": 258,
+      "image_y": 709
+    },
+    "fremington-18": {
+      "lat": 54.3865773,
+      "lng": -1.9346935,
+      "image_x": 284,
+      "image_y": 688
+    },
+    "fremington-19": {
+      "lat": 54.3866663,
+      "lng": -1.9345137,
+      "image_x": 318,
+      "image_y": 660
+    },
+    "fremington-20": {
+      "lat": 54.3867429,
+      "lng": -1.9343904,
+      "image_x": 341,
+      "image_y": 635
+    },
+    "fremington-21": {
+      "lat": 54.386632,
+      "lng": -1.9324324,
+      "image_x": 709,
+      "image_y": 671
+    },
+    "fremington-22": {
+      "lat": 54.3866991,
+      "lng": -1.9321051,
+      "image_x": 770,
+      "image_y": 649
+    },
+    "fremington-23": {
+      "lat": 54.3869069,
+      "lng": -1.9326845,
+      "image_x": 661,
+      "image_y": 582
+    },
+    "fremington-24": {
+      "lat": 54.3869162,
+      "lng": -1.9325101,
+      "image_x": 694,
+      "image_y": 579
+    },
+    "fremington-25": {
+      "lat": 54.387035,
+      "lng": -1.9322848,
+      "image_x": 736,
+      "image_y": 541
+    },
+    "fremington-26": {
+      "lat": 54.3870802,
+      "lng": -1.9321507,
+      "image_x": 762,
+      "image_y": 526
+    },
+    "fremington-27": {
+      "lat": 54.3871474,
+      "lng": -1.9308284,
+      "image_x": 1010,
+      "image_y": 505
+    },
+    "fremington-28": {
+      "lat": 54.3876269,
+      "lng": -1.9308445,
+      "image_x": 1007,
+      "image_y": 350
+    },
+    "fremington-29": {
+      "lat": 54.3878643,
+      "lng": -1.9306594,
+      "image_x": 1042,
+      "image_y": 273
+    },
+    "fremington-30": {
+      "lat": 54.3873333,
+      "lng": -1.9299594,
+      "image_x": 1173,
+      "image_y": 445
+    },
+    "fremington-31": {
+      "lat": 54.3868803,
+      "lng": -1.9295356,
+      "image_x": 1253,
+      "image_y": 591
+    },
+    "fremington-32": {
+      "lat": 54.3872333,
+      "lng": -1.9296214,
+      "image_x": 1236,
+      "image_y": 477
+    },
+    "fremington-33": {
+      "lat": 54.3874067,
+      "lng": -1.929372,
+      "image_x": 1283,
+      "image_y": 421
+    },
+    "fremington-34": {
+      "lat": 54.3873817,
+      "lng": -1.929203,
+      "image_x": 1315,
+      "image_y": 429
+    },
+    "fremington-35": {
+      "lat": 54.3871521,
+      "lng": -1.9290581,
+      "image_x": 1342,
+      "image_y": 503
+    },
+    "fremington-36": {
+      "lat": 54.3870178,
+      "lng": -1.9287014,
+      "image_x": 1409,
+      "image_y": 546
+    },
+    "fremington-37": {
+      "lat": 54.3869631,
+      "lng": -1.9285861,
+      "image_x": 1431,
+      "image_y": 564
+    },
+    "fremington-38": {
+      "lat": 54.3868054,
+      "lng": -1.9282722,
+      "image_x": 1490,
+      "image_y": 615
+    },
+    "fremington-39": {
+      "lat": 54.3863087,
+      "lng": -1.9265717,
+      "image_x": 1809,
+      "image_y": 775
+    }
+  }
+}
