@@ -1540,7 +1540,7 @@ a{color:var(--accent)}
 
     <details class="hood">
       <summary><span class="tw">&#9656;</span> Under the hood</summary>
-      <p>The app is a single web page in plain JavaScript, with no accounts and no login. <b>Fuse.js</b> handles the tolerant search, a <b>service worker</b> keeps everything on the phone for offline use, and the directions button opens Google or Apple Maps depending on the device. Nothing runs on a server while you use it, which is also why it keeps working when there is no server to reach.</p>
+      <p>The app is a single web page in plain JavaScript, with no accounts and no login. <b>Fuse.js</b> handles the tolerant search, a <b>service worker</b> keeps everything on the phone for offline use, and the directions button opens Google or Apple Maps depending on the device. The app itself runs on your phone, not on a server, which is why it keeps working when there is no server to reach.</p>
     </details>
 
     <hr class="rule"/>
@@ -1656,13 +1656,13 @@ footer a{color:var(--accent)}
 
   <div class="chips">
     <div class="chip"><b>No personal data</b><span>No names, no accounts, no sign-in, nothing about you is collected or stored.</span></div>
-    <div class="chip"><b>Nothing you type leaves the phone</b><span>Searching happens entirely on your device. No cookies, no tracking.</span></div>
+    <div class="chip"><b>Nothing you type leaves the phone</b><span>Searching happens entirely on your device. No cookies, and your searches are never recorded.</span></div>
     <div class="chip"><b>No server to breach</b><span>A static web page on a content network. There is no database behind it.</span></div>
   </div>
 
   <section>
     <h2>What it holds, and what it does not</h2>
-    <p class="first">Whereabouts contains one fixed, public reference set: house names taken from published village maps, a latitude and longitude for each house, and the map drawings as images. You type a house name and read the result. What you type is never recorded, never sent to a server, and never shared. There is no login, and there are no cookies.</p>
+    <p class="first">Whereabouts contains one fixed, public reference set: house names taken from published village maps, a latitude and longitude for each house, and the map drawings as images. You type a house name and read the result. What you type is never recorded, never sent to a server, and never shared. There is no login, and there are no cookies. To see which areas are most used, the app keeps an anonymous count of which village maps get opened. That count is not tied to you and never includes what you searched for.</p>
     <div class="note">Some of what people look up could be sensitive to them, so the app is built so that a search never becomes a record. The whole search runs on the device itself. Any usage counting is anonymous and aggregated, and it never captures which house anyone searched for.</div>
   </section>
 
