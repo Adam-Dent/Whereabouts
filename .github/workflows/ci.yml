@@ -24,7 +24,9 @@ jobs:
 
       - name: Lint (ruff)
         working-directory: etl
-        run: uvx ruff check .
+        # Use the lockfile-pinned ruff (via uv run), not uvx which floats to
+        # the latest release and silently breaks CI when ruff changes its rules.
+        run: uv run ruff check .
 
       - name: No em dashes in user-facing pages
         run: |
