@@ -259,13 +259,18 @@ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--
 <script src="./fuse.min.js"></script>
 <script>
 'use strict';
-const VERSION = '1.7.23';
+const VERSION = '1.8.0';
 let houses = [], sheets = {}, districts = {}, fuse = null, dataGenerated = '';
 const byId = new Map();
 const qEl   = document.getElementById('q');
 const resEl = document.getElementById('results');
 
 document.getElementById('about-ver').textContent = 'v' + VERSION;
+
+// Analytics: queue map/landing views until the Counterscale module (a deferred
+// module script, so it runs after this classic script) is ready; it then drains
+// the queue and replaces waTrack with the real sender. No-op if not configured.
+window.waTrack = window.waTrack || function (p) { (window.__waq = window.__waq || []).push(p); };
 
 // Same normalisation the ETL applies to names (SPEC 7.3), done client-side so
 // the payload doesn't ship a names_normalized duplicate of every name.
@@ -275,6 +280,14 @@ function norm(s) {
 }
 // house id is "<sheet_id>-<map_number>"
 function sheetOf(h) { return sheets[h.id.slice(0, h.id.lastIndexOf('-'))]; }
+
+// Readable, stable slug for analytics paths: "Muker" -> "muker".
+function vslug(s) {
+  // NFKD then drop everything non-alphanumeric: accents' combining marks
+  // fall away with the punctuation, so no explicit \u0300-\u036f range.
+  return (s || 'unknown').normalize('NFKD').toLowerCase()
+         .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'unknown';
+}
 
 // Load the house list. Try the network, but if that fails (offline, or the
 // service worker isn't intercepting yet on an iOS cold launch) fall back to
@@ -446,6 +459,9 @@ function showDetail(id) {
   if (!h) { go('#/'); return; }
   const sh = sheetOf(h) || {};
   _detailH = h;
+  // Record which village map was opened, aggregated by district/village only
+  // (no house ids, no personal data), so we can see the most-used maps.
+  window.waTrack('/village/' + ([sh.district, sh.village].filter(Boolean).map(vslug).join('/') || 'unknown'));
   document.getElementById('s-search').classList.add('off');
   document.getElementById('s-detail').classList.remove('off');
   document.getElementById('d-name').textContent  = h.n.join(' / ');
@@ -737,7 +753,7 @@ async function downloadAllMaps(btn) {
   }
   // The list and the app shell too, so the whole app works with no signal.
   try { await (await caches.open(DATA_CACHE)).add('./houses.json'); } catch (_) {}
-  try { await (await caches.open(SHELL_CACHE)).addAll(['./', './index.html', './fuse.min.js']); } catch (_) {}
+  try { await (await caches.open(SHELL_CACHE)).addAll(['./', './index.html', './fuse.min.js', './counterscale.min.js']); } catch (_) {}
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist();
   if (failed) {
     btn.textContent = 'Retry: ' + failed + ' maps failed';
@@ -808,7 +824,7 @@ async function downloadArea(btn, name, ss, bytes) {
   } catch (_) { /* keep the images even if the list refetch fails */ }
   try {
     const shell = await caches.open(SHELL_CACHE);
-    await shell.addAll(['./', './index.html', './fuse.min.js']);
+    await shell.addAll(['./', './index.html', './fuse.min.js', './counterscale.min.js']);
   } catch (_) {}
   // ask the browser to protect the cache from storage-pressure eviction
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist();
@@ -914,6 +930,12 @@ function esc(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 </script>
-<script data-goatcounter="https://whereabouts-app.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script type="module">
+import * as Counterscale from './counterscale.min.js';
+Counterscale.init({ siteId: 'whereabouts', reporterUrl: 'https://counterscale.adam-wc-sweepstake.workers.dev/collect', autoTrackPageviews: false });
+const send = p => { try { Counterscale.trackPageview(p ? { url: p } : undefined); } catch (_) {} };
+(window.__waq || []).forEach(send); window.__waq = null; window.waTrack = send;
+send();
+</script>
 </body>
 </html>

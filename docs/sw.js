@@ -15,6 +15,7 @@ self.addEventListener('install', e => {
       './',
       './index.html',
       './fuse.min.js',
+      './counterscale.min.js',
     ]).catch(() => {}))
   );
   self.skipWaiting();
@@ -32,7 +33,8 @@ self.addEventListener('activate', e => {
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
   const url = new URL(e.request.url);
-  if (url.pathname.includes('/images/') || url.pathname.endsWith('fuse.min.js')) {
+  if (url.pathname.includes('/images/') || url.pathname.endsWith('fuse.min.js')
+      || url.pathname.endsWith('counterscale.min.js')) {
     e.respondWith(cacheFirst(e.request, IMG_CACHE));
     return;
   }

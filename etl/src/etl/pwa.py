@@ -74,9 +74,39 @@ def _app_version() -> str:
     return f"1.{minor}.{patch}"
 
 
+# ── Analytics (Counterscale, self-hosted on Cloudflare) ──────────────────────
+# Privacy-friendly, cookieless, self-hosted on Adam's own Cloudflare account.
+# Both values below come from `npx @counterscale/cli install`: the site id you
+# choose, and the https://<subdomain>.workers.dev base URL it prints. Leave
+# either empty and NO analytics snippet is emitted (nothing tracks).
+_COUNTERSCALE_SITE_ID = "whereabouts"
+_COUNTERSCALE_URL     = "https://counterscale.adam-wc-sweepstake.workers.dev"
+
+
+def _analytics_snippet() -> str:
+    """Counterscale tracker: initial pageview (referrers) plus manual per-village
+    pageviews fired from the app on each map open. Emitted only when configured."""
+    sid  = _COUNTERSCALE_SITE_ID.strip()
+    base = _COUNTERSCALE_URL.strip().rstrip("/")
+    if not (sid and base):
+        return ""
+    return (
+        '<script type="module">\n'
+        "import * as Counterscale from './counterscale.min.js';\n"
+        f"Counterscale.init({{ siteId: '{sid}', reporterUrl: '{base}/collect', "
+        "autoTrackPageviews: false });\n"
+        "const send = p => { try { Counterscale.trackPageview(p ? { url: p } : undefined); } "
+        "catch (_) {} };\n"
+        "(window.__waq || []).forEach(send); window.__waq = null; window.waTrack = send;\n"
+        "send();\n"
+        "</script>"
+    )
+
+
 def _page_html() -> str:
-    """The PWA page with the build-time version stamped in."""
-    return _PWA_PAGE.replace("__WW_VERSION__", _app_version())
+    """The PWA page with the build-time version and analytics snippet stamped in."""
+    html = _PWA_PAGE.replace("__WW_VERSION__", _app_version())
+    return html.replace("__WW_ANALYTICS__", _analytics_snippet())
 
 
 def _load_json(path: Path, default):
@@ -266,6 +296,18 @@ def build_static(out_dir: Path) -> None:
     else:
         print("  fuse.min.js  : already present")
 
+    # 3b. Bundle the Counterscale tracker locally (self-hosted analytics, no CDN
+    #     at runtime). Pinned ESM module build; imported by _analytics_snippet().
+    cs_dst = out_dir / "counterscale.min.js"
+    if not cs_dst.exists():
+        urllib.request.urlretrieve(
+            "https://cdn.jsdelivr.net/npm/@counterscale/tracker@3.4.1/dist/module/index.js",
+            cs_dst,
+        )
+        print("  counterscale.min.js : downloaded")
+    else:
+        print("  counterscale.min.js : already present")
+
     # 4. Write app files
     (out_dir / "manifest.json").write_text(json.dumps(_MANIFEST, indent=2))
     (out_dir / "sw.js").write_text(_SW_JS)
@@ -338,6 +380,7 @@ self.addEventListener('install', e => {
       './',
       './index.html',
       './fuse.min.js',
+      './counterscale.min.js',
     ]).catch(() => {}))
   );
   self.skipWaiting();
@@ -355,7 +398,8 @@ self.addEventListener('activate', e => {
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
   const url = new URL(e.request.url);
-  if (url.pathname.includes('/images/') || url.pathname.endsWith('fuse.min.js')) {
+  if (url.pathname.includes('/images/') || url.pathname.endsWith('fuse.min.js')
+      || url.pathname.endsWith('counterscale.min.js')) {
     e.respondWith(cacheFirst(e.request, IMG_CACHE));
     return;
   }
@@ -669,6 +713,11 @@ const resEl = document.getElementById('results');
 
 document.getElementById('about-ver').textContent = 'v' + VERSION;
 
+// Analytics: queue map/landing views until the Counterscale module (a deferred
+// module script, so it runs after this classic script) is ready; it then drains
+// the queue and replaces waTrack with the real sender. No-op if not configured.
+window.waTrack = window.waTrack || function (p) { (window.__waq = window.__waq || []).push(p); };
+
 // Same normalisation the ETL applies to names (SPEC 7.3), done client-side so
 // the payload doesn't ship a names_normalized duplicate of every name.
 function norm(s) {
@@ -677,6 +726,14 @@ function norm(s) {
 }
 // house id is "<sheet_id>-<map_number>"
 function sheetOf(h) { return sheets[h.id.slice(0, h.id.lastIndexOf('-'))]; }
+
+// Readable, stable slug for analytics paths: "Muker" -> "muker".
+function vslug(s) {
+  // NFKD then drop everything non-alphanumeric: accents' combining marks
+  // fall away with the punctuation, so no explicit \u0300-\u036f range.
+  return (s || 'unknown').normalize('NFKD').toLowerCase()
+         .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'unknown';
+}
 
 // Load the house list. Try the network, but if that fails (offline, or the
 // service worker isn't intercepting yet on an iOS cold launch) fall back to
@@ -848,6 +905,9 @@ function showDetail(id) {
   if (!h) { go('#/'); return; }
   const sh = sheetOf(h) || {};
   _detailH = h;
+  // Record which village map was opened, aggregated by district/village only
+  // (no house ids, no personal data), so we can see the most-used maps.
+  window.waTrack('/village/' + ([sh.district, sh.village].filter(Boolean).map(vslug).join('/') || 'unknown'));
   document.getElementById('s-search').classList.add('off');
   document.getElementById('s-detail').classList.remove('off');
   document.getElementById('d-name').textContent  = h.n.join(' / ');
@@ -1139,7 +1199,7 @@ async function downloadAllMaps(btn) {
   }
   // The list and the app shell too, so the whole app works with no signal.
   try { await (await caches.open(DATA_CACHE)).add('./houses.json'); } catch (_) {}
-  try { await (await caches.open(SHELL_CACHE)).addAll(['./', './index.html', './fuse.min.js']); } catch (_) {}
+  try { await (await caches.open(SHELL_CACHE)).addAll(['./', './index.html', './fuse.min.js', './counterscale.min.js']); } catch (_) {}
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist();
   if (failed) {
     btn.textContent = 'Retry: ' + failed + ' maps failed';
@@ -1210,7 +1270,7 @@ async function downloadArea(btn, name, ss, bytes) {
   } catch (_) { /* keep the images even if the list refetch fails */ }
   try {
     const shell = await caches.open(SHELL_CACHE);
-    await shell.addAll(['./', './index.html', './fuse.min.js']);
+    await shell.addAll(['./', './index.html', './fuse.min.js', './counterscale.min.js']);
   } catch (_) {}
   // ask the browser to protect the cache from storage-pressure eviction
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist();
@@ -1316,7 +1376,7 @@ function esc(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 </script>
-<script data-goatcounter="https://whereabouts-app.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+__WW_ANALYTICS__
 </body>
 </html>"""
 
