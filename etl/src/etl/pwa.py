@@ -85,7 +85,13 @@ _COUNTERSCALE_URL     = "https://counterscale.adam-wc-sweepstake.workers.dev"
 
 def _analytics_snippet() -> str:
     """Counterscale tracker: initial pageview (referrers) plus manual per-village
-    pageviews fired from the app on each map open. Emitted only when configured."""
+    pageviews fired from the app on each map open. Emitted only when configured.
+
+    The village pageviews pass referrer=location.origin, which the tracker reads
+    as a self-referral and records as empty. Without it every map open repeats
+    the page's document.referrer (that value never changes within a session, as
+    we navigate by hash), so one arrival from a link was counted once per map
+    the visitor then opened. Only the landing hit should report a referrer."""
     sid  = _COUNTERSCALE_SITE_ID.strip()
     base = _COUNTERSCALE_URL.strip().rstrip("/")
     if not (sid and base):
@@ -95,7 +101,8 @@ def _analytics_snippet() -> str:
         "import * as Counterscale from './counterscale.min.js';\n"
         f"Counterscale.init({{ siteId: '{sid}', reporterUrl: '{base}/collect', "
         "autoTrackPageviews: false });\n"
-        "const send = p => { try { Counterscale.trackPageview(p ? { url: p } : undefined); } "
+        "const send = p => { try { Counterscale.trackPageview(p ? "
+        "{ url: p, referrer: location.origin } : undefined); } "
         "catch (_) {} };\n"
         "(window.__waq || []).forEach(send); window.__waq = null; window.waTrack = send;\n"
         "send();\n"

@@ -259,7 +259,7 @@ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--
 <script src="./fuse.min.js"></script>
 <script>
 'use strict';
-const VERSION = '1.9.0';
+const VERSION = '1.11.0';
 let houses = [], sheets = {}, districts = {}, fuse = null, dataGenerated = '';
 const byId = new Map();
 const qEl   = document.getElementById('q');
@@ -933,7 +933,7 @@ function esc(s) {
 <script type="module">
 import * as Counterscale from './counterscale.min.js';
 Counterscale.init({ siteId: 'whereabouts', reporterUrl: 'https://counterscale.adam-wc-sweepstake.workers.dev/collect', autoTrackPageviews: false });
-const send = p => { try { Counterscale.trackPageview(p ? { url: p } : undefined); } catch (_) {} };
+const send = p => { try { Counterscale.trackPageview(p ? { url: p, referrer: location.origin } : undefined); } catch (_) {} };
 (window.__waq || []).forEach(send); window.__waq = null; window.waTrack = send;
 send();
 </script>
