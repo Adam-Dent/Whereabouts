@@ -82,6 +82,11 @@ def _app_version() -> str:
 _COUNTERSCALE_SITE_ID = "whereabouts"
 _COUNTERSCALE_URL     = "https://counterscale.adam-wc-sweepstake.workers.dev"
 
+# Hostname our own devices report under, so the private dashboard can separate
+# testing from real usage. Never resolved or requested; it is only a label in
+# the analytics payload. Must match INTERNAL_HOST in analytics-dashboard.
+_INTERNAL_HOST = "https://internal.whereabouts.adamdent.uk"
+
 
 def _analytics_snippet() -> str:
     """Counterscale tracker: initial pageview (referrers) plus manual per-village
@@ -97,17 +102,73 @@ def _analytics_snippet() -> str:
     if not (sid and base):
         return ""
     return (
-        '<script type="module">\n'
-        "import * as Counterscale from './counterscale.min.js';\n"
-        f"Counterscale.init({{ siteId: '{sid}', reporterUrl: '{base}/collect', "
-        "autoTrackPageviews: false });\n"
-        "const send = p => { try { Counterscale.trackPageview(p ? "
-        "{ url: p, referrer: location.origin } : undefined); } "
-        "catch (_) {} };\n"
-        "(window.__waq || []).forEach(send); window.__waq = null; window.waTrack = send;\n"
-        "send();\n"
-        "</script>"
+        _ANALYTICS_JS.replace("__WW_SITE_ID__", sid)
+        .replace("__WW_BASE__", base)
+        .replace("__WW_INTERNAL_HOST__", _INTERNAL_HOST)
     )
+
+
+# Kept as one readable block rather than concatenated fragments: the referrer
+# and internal-marker logic below is subtle enough that it needs to be legible.
+_ANALYTICS_JS = """<script type="module">
+import * as Counterscale from './counterscale.min.js';
+
+// Hidden internal-device marker. Visiting #internal toggles this browser
+// between internal and normal. There is no visible control and nothing is
+// shown to anyone who has not typed it, so visitors never see this.
+//
+// Flagged devices still report, but under a separate hostname, which is the
+// only exact way to tell our own testing from real usage: Counterscale stores
+// no IP and no device id, and modern user agents are frozen per platform
+// ('Android 10; K' is every Android Chrome), so they identify a device class
+// rather than a device.
+const KEY = 'wa_internal';
+const INTERNAL_HOST = '__WW_INTERNAL_HOST__';
+let internal = false;
+try { internal = localStorage.getItem(KEY) === '1'; } catch (_) {}
+
+// Handled on hashchange as well as at load: this is a hash-routed app, so
+// typing the address while it is already open changes the hash without
+// reloading, and a load-only check would look broken exactly when it is used.
+function toggleInternal() {
+  if (location.hash !== '#internal') return;
+  try {
+    internal = localStorage.getItem(KEY) !== '1';
+    if (internal) localStorage.setItem(KEY, '1'); else localStorage.removeItem(KEY);
+  } catch (_) { return; }
+  history.replaceState(null, '', location.pathname + location.search);
+  if (typeof toast === 'function') {
+    toast(internal
+      ? 'This device is marked as internal. Its visits will not count as real usage.'
+      : 'This device is no longer marked as internal.');
+  }
+}
+window.addEventListener('hashchange', toggleInternal);
+toggleInternal();
+
+Counterscale.init({ siteId: '__WW_SITE_ID__', reporterUrl: '__WW_BASE__/collect', autoTrackPageviews: false });
+
+// Read per hit, not captured once, so toggling mid-session takes effect at once.
+const host = () => internal ? INTERNAL_HOST : location.origin;
+// Absolute URL, so the hostname we report carries the marker.
+const abs = p => host() + (p || location.pathname + location.search || '/');
+
+// A village hit is same-page navigation, so it must not claim a referrer:
+// document.referrer does not change within a page session, so repeating it
+// counted one referred arrival once per map the visitor then opened. Passing
+// our own host makes the tracker read it as a self-referral and store nothing.
+// The landing hit keeps its real referrer, unless that referrer is us.
+const selfRef = () => {
+  try { return document.referrer.indexOf(location.origin) === 0 ? host() : undefined; }
+  catch (_) { return undefined; }
+};
+const send = p => {
+  try { Counterscale.trackPageview({ url: abs(p), referrer: p ? host() : selfRef() }); }
+  catch (_) {}
+};
+(window.__waq || []).forEach(send); window.__waq = null; window.waTrack = send;
+send();
+</script>"""
 
 
 def _page_html() -> str:
