@@ -42,7 +42,7 @@ notes/
 .wrangler/
 etl/.wrangler/
 
-# Claude Code personal working journal (private, do not commit)
+# Personal working journal (private, do not commit)
 CLAUDE.local.md
 map-stats.py
 analytics-dashboard/

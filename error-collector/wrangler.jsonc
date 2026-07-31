@@ -1,0 +1,16 @@
+{
+  // Receives the app's field-failure reports and writes them to Analytics
+  // Engine. Deliberately part of the public repo: this is the code that
+  // receives the reports, so anyone reading the privacy page can check exactly
+  // what it accepts and what it stores.
+  //
+  // Deploy:  cd error-collector && npx wrangler deploy
+  // No secrets. The Analytics Engine binding below is the only resource.
+  "name": "whereabouts-errors",
+  "main": "worker.js",
+  "compatibility_date": "2024-12-01",
+  "account_id": "972187e127c276c160453b9203de87b9",
+  "workers_dev": true,
+  "observability": { "enabled": true },
+  "analytics_engine_datasets": [{ "binding": "ERRORS", "dataset": "whereabouts_errors" }]
+}

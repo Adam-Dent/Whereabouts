@@ -87,6 +87,11 @@ _COUNTERSCALE_URL     = "https://counterscale.adam-wc-sweepstake.workers.dev"
 # the analytics payload. Must match INTERNAL_HOST in analytics-dashboard.
 _INTERNAL_HOST = "https://internal.whereabouts.adamdent.uk"
 
+# Field-failure collector (see error-collector/ in this repo, which is the code
+# that receives these). Set to "" to switch reporting off entirely: the app then
+# never contacts it and queues nothing.
+_ERROR_URL = "https://whereabouts-errors.adam-wc-sweepstake.workers.dev/report"
+
 
 def _analytics_snippet() -> str:
     """Counterscale tracker: initial pageview (referrers) plus manual per-village
@@ -174,6 +179,7 @@ send();
 def _page_html() -> str:
     """The PWA page with the build-time version and analytics snippet stamped in."""
     html = _PWA_PAGE.replace("__WW_VERSION__", _app_version())
+    html = html.replace("__WW_ERR_URL__", _ERROR_URL.strip())
     return html.replace("__WW_ANALYTICS__", _analytics_snippet())
 
 
@@ -786,6 +792,71 @@ document.getElementById('about-ver').textContent = 'v' + VERSION;
 // the queue and replaces waTrack with the real sender. No-op if not configured.
 window.waTrack = window.waTrack || function (p) { (window.__waq = window.__waq || []).push(p); };
 
+// ── Field failure reporting ──────────────────────────────────────────────────
+// This app runs offline, on phones, in places with no signal, which is exactly
+// where the failures worth knowing about happen and exactly where nothing can
+// be sent. Reports are therefore QUEUED in localStorage and flushed on the next
+// load that has signal. Without the queue this would systematically miss the
+// one class of bug it exists to catch.
+//
+// Only the fixed codes below are ever sent: no message text, no stack trace, no
+// search term, no house name, no map id. The collector re-checks the same
+// closed list and rejects anything else, so the promise does not depend on this
+// file staying correct.
+const ERR_URL = '__WW_ERR_URL__';
+const ERR_KEY = 'wa_err_q';
+const ERR_MAX = 20;      // bound the queue: a broken phone must not grow it forever
+const ERR_PER_CODE = 3;  // and one looping failure must not drown everything else
+const _errSeen = {};
+
+// Counts are bucketed, never exact.
+function errBucket(n) {
+  if (n <= 1) return '1';
+  if (n <= 5) return '2-5';
+  if (n <= 20) return '6-20';
+  if (n <= 100) return '21-100';
+  return '100+';
+}
+
+function _errRead() {
+  try { return JSON.parse(localStorage.getItem(ERR_KEY) || '[]'); } catch (_) { return []; }
+}
+function _errWrite(q) {
+  try { localStorage.setItem(ERR_KEY, JSON.stringify(q.slice(-ERR_MAX))); } catch (_) {}
+}
+
+function wwErr(code, opts) {
+  if (!ERR_URL) return;
+  _errSeen[code] = (_errSeen[code] || 0) + 1;
+  if (_errSeen[code] > ERR_PER_CODE) return;
+  const o = opts || {};
+  const q = _errRead();
+  q.push({ c: code, n: o.count ? errBucket(o.count) : '', o: navigator.onLine === false ? 'off' : 'on' });
+  _errWrite(q);
+  errFlush();
+}
+
+async function errFlush() {
+  if (!ERR_URL || navigator.onLine === false) return;
+  const queued = _errRead();
+  if (!queued.length) return;
+  _errWrite([]); // cleared first, so a slow flush cannot send the same report twice
+  const left = [];
+  for (const e of queued) {
+    const p = new URLSearchParams({ c: e.c, v: VERSION, q: e.n || '', o: e.o || 'on' });
+    try { if (localStorage.getItem('wa_internal') === '1') p.set('i', '1'); } catch (_) {}
+    try {
+      const r = await fetch(ERR_URL + '?' + p.toString(), { keepalive: true, mode: 'cors' });
+      // Requeue only genuine server faults. A 4xx means the collector rejected
+      // the report, so retrying it forever would achieve nothing.
+      if (r.status >= 500) left.push(e);
+    } catch (_) { left.push(e); }
+  }
+  if (left.length) _errWrite(left);
+}
+
+window.addEventListener('online', errFlush);
+
 // Same normalisation the ETL applies to names (SPEC 7.3), done client-side so
 // the payload doesn't ship a names_normalized duplicate of every name.
 function norm(s) {
@@ -834,11 +905,14 @@ async function loadHousesText() {
 }
 
 (async () => {
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');
+  if ('serviceWorker' in navigator)
+    navigator.serviceWorker.register('./sw.js').catch(() => wwErr('sw-register-failed'));
+  errFlush(); // anything queued while this phone was offline last time
   showIOSHint();
   route();
   const text = await loadHousesText();
   if (text === null) {
+    wwErr('houses-json-unavailable');
     resEl.innerHTML = '<div class="hint-msg hint-err">The house list isn&#8217;t saved on this phone yet. Open the app once with signal and it will be ready to use offline from then on. Any maps you have saved are still here.</div>';
     return;
   }
@@ -851,6 +925,7 @@ async function loadHousesText() {
     setupFuse();
   } catch (e) {
     console.error('Whereabouts load error:', e);
+    wwErr('houses-json-parse-failed');
     resEl.innerHTML = '<div class="hint-msg hint-err">The house list couldn&#8217;t be read. Open the app once with signal to repair it.</div>';
     return;
   }
@@ -1041,9 +1116,18 @@ async function imgCacheFallback(imgEl, file) {
   if (!('caches' in window) || !file || imgEl.src.startsWith('blob:')) return;
   try {
     const hit = await caches.match('./images/' + file);
-    if (!hit) return;
+    if (!hit) {
+      // Offline with no cached copy is simply a map the user never saved, which
+      // is expected and not worth reporting. Online, the image genuinely failed.
+      if (navigator.onLine !== false) wwErr('map-image-missing-online');
+      return;
+    }
     imgEl.src = URL.createObjectURL(await hit.blob());
-  } catch (_) {}
+    // The map WAS saved and the direct load still failed, so the worker was not
+    // controlling the page: the cold-launch bug from 2026-07-22. The fallback
+    // rescues the user, but if this keeps arriving it is papering over the cause.
+    wwErr('map-image-recovered');
+  } catch (_) { wwErr('map-image-fallback-failed'); }
 }
 document.getElementById('map-img').onerror =
   () => imgCacheFallback(document.getElementById('map-img'), (sheetOf(_detailH) || {}).img);
@@ -1255,11 +1339,15 @@ async function downloadAllMaps(btn) {
       + 'That is about ' + fmtMB(bytes) + ', so it is best done on wi-fi.')) return;
   btn.disabled = true;
   const cache = await caches.open(IMG_CACHE);
-  let done = 0, failed = 0;
+  let done = 0, failed = 0, quota = false;
   for (const s of all) {
     const url = './images/' + s.img;
     if (!(await cache.match(url))) {
-      try { await cache.add(url); } catch (_) { failed++; }
+      // Distinguish "the browser refused to store any more" from an ordinary
+      // network failure: the first is a storage problem the user cannot fix by
+      // retrying, and until now nothing detected it at all.
+      try { await cache.add(url); }
+      catch (e) { failed++; if (e && e.name === 'QuotaExceededError') quota = true; }
     }
     done++;
     if (done % 4 === 0 || done === all.length)
@@ -1270,6 +1358,7 @@ async function downloadAllMaps(btn) {
   try { await (await caches.open(SHELL_CACHE)).addAll(['./', './index.html', './fuse.min.js', './counterscale.min.js']); } catch (_) {}
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist();
   if (failed) {
+    wwErr(quota ? 'quota-exceeded' : 'area-save-failed', { count: failed });
     btn.textContent = 'Retry: ' + failed + ' maps failed';
     btn.disabled = false;
     btn.onclick = () => downloadAllMaps(btn);
@@ -1315,15 +1404,17 @@ async function removeArea(btn, name, ss, bytes) {
 async function downloadArea(btn, name, ss, bytes) {
   btn.disabled = true;
   const cache = await caches.open(IMG_CACHE);
-  let done = 0, failed = 0;
+  let done = 0, failed = 0, quota = false;
   for (const s of ss) {
     const url = './images/' + s.img;
     if (!(await cache.match(url))) {
-      try { await cache.add(url); } catch (_) { failed++; }
+      try { await cache.add(url); }
+      catch (e) { failed++; if (e && e.name === 'QuotaExceededError') quota = true; }
     }
     btn.textContent = 'Saving\u2026 ' + (++done) + ' / ' + ss.length;
   }
   if (failed) {
+    wwErr(quota ? 'quota-exceeded' : 'area-save-failed', { count: failed });
     btn.textContent = 'Retry: ' + failed + ' maps failed';
     btn.disabled = false;
     btn.onclick = () => downloadArea(btn, name, ss, bytes);
