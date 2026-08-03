@@ -995,7 +995,7 @@ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--
       <p class="about-lead">Whereabouts finds the residences that most mapping apps cannot: the countless rural houses known by a name rather than a number. It is built on the maps of <a href="https://colinday.co.uk/maps/" target="_blank" rel="noopener">Dr&nbsp;A&nbsp;Colin&nbsp;Day</a>, who has spent decades recording village house names and giving his work away free. This website makes that work easier to reach, and hands the location on to Google or Apple Maps for directions. There is <a href="./how-it-works.html">more on how it works</a> if you would like the detail.</p>
       <div class="sheet-h">A note on accuracy</div>
       <p>Reading Colin&#8217;s maps into searchable data is automated as far as it sensibly can be, but pinning each house to its exact spot is not: I do that by hand, one house at a time, against satellite imagery. In the search results a green dot means a house is pinned precisely; a grey dot means I have not reached it yet, so &#8220;Get directions&#8221; takes you to the centre of the village instead.</p>
-      <p>Every effort is made to keep this accurate, but it cannot be guaranteed.</p>
+      <p>Every effort is made to keep this information accurate and up to date, though errors may remain.</p>
       <div class="sheet-h">Coverage</div>
       <p style="font-size:13px;color:var(--muted);margin-bottom:8px">Whereabouts covers North Yorkshire for now. Colin&#8217;s maps reach right across the north of England, so more counties may follow.</p>
       <p id="area-sum"></p>
@@ -1009,9 +1009,9 @@ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--
         </div>
       </details>
       <div class="sheet-h">Thank you, Dr Day</div>
-      <p>Every village drawing in this app is the work of Dr&nbsp;A&nbsp;Colin&nbsp;Day, who has spent more than twenty years mapping villages house by house and name by name, giving the results away free and still updating them by his own hand today. Long before this app existed, his maps were finding front doors for delivery drivers, healthcare professionals and anyone else a satnav had given up on. Colin has given this project his full support to build on his foundations. If it ever finds you the right door, the thanks belongs to him.</p>
+      <p>Every village drawing in this app is the work of Dr&nbsp;A&nbsp;Colin&nbsp;Day, who has spent more than twenty years mapping villages house by house and name by name, giving the results away free and still updating them by his own hand today. Long before this app existed, delivery drivers, healthcare professionals and many others were using his maps to find addresses a satnav could not. Colin has given this project his full support to build on his foundations. If it ever finds you the right door, the thanks belongs to him.</p>
       <div class="sheet-h">Contact</div>
-      <p>Corrections, houses that are missing or wrongly placed, and anything that goes wrong with the app are all welcome at <a href="mailto:whereabouts@adamdent.uk">whereabouts@adamdent.uk</a>.</p>
+      <p>For corrections, questions, or anything else, contact <a href="mailto:whereabouts@adamdent.uk">whereabouts@adamdent.uk</a>.</p>
       <div class="sheet-divider"></div>
       <div class="sheet-attr">
         Made by <a href="https://adamdent.uk" target="_blank" rel="noopener">Adam Dent</a><br/>

@@ -173,6 +173,16 @@ test('saving an area stores all of its maps and remembers it', async ({ page, co
   await page.click('#info-btn');
   await page.evaluate(() => document.querySelector('details.fold').setAttribute('open', ''));
 
+  // renderAreas fills the buttons only after it has finished asking the cache
+  // what is already stored, so reading their labels too early gets a blank and
+  // picks the wrong district. Wait for a label to appear rather than assume.
+  await page.locator('.area-row .area-btn').first().waitFor();
+  await page.waitForFunction(
+    () => [...document.querySelectorAll('.area-btn')].some(b => /\d+\s+maps/.test(b.textContent)),
+    null,
+    { timeout: 15000 },
+  );
+
   // Pick the district with the fewest maps, so the test stays quick.
   const target = await page.evaluate(() => {
     const rows = [...document.querySelectorAll('.area-row')]
