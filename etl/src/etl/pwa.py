@@ -669,6 +669,15 @@ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--
 .sheet-divider{height:1px;background:var(--border);margin:14px 0}
 .sheet-attr{font-size:12px;color:var(--muted);line-height:1.8}
 .sheet-attr a{color:var(--muted)}
+/* The per-area list is long (11 districts, each with a save button), so it sits
+   behind a disclosure rather than pushing everything else off the sheet. */
+.fold{border:1px solid var(--border);border-radius:12px;background:var(--paper);margin:10px 0 4px}
+.fold>summary{list-style:none;cursor:pointer;padding:11px 14px;font-size:13.5px;font-weight:600;color:var(--hdr);display:flex;align-items:center;justify-content:space-between;gap:10px}
+.fold>summary::-webkit-details-marker{display:none}
+.fold>summary::after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);flex-shrink:0}
+.fold[open]>summary::after{transform:translateY(1px) rotate(-135deg)}
+.fold-body{padding:0 14px 14px}
+.fold-body .sheet-h{margin-top:18px}
 </style>
 </head>
 <body>
@@ -751,23 +760,29 @@ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--
       <button class="sheet-close" id="sheet-close-btn" aria-label="Close">&#215;</button>
     </div>
     <div class="sheet-body">
-      <p class="about-lead">Whereabouts finds a house by name in the villages of North Yorkshire, the kind of address a satnav struggles with. It is built on the maps of <a href="https://colinday.co.uk/maps/" target="_blank" rel="noopener">Dr&nbsp;A&nbsp;Colin&nbsp;Day</a>, who has spent years recording village house names and gives his work away free. Search a name, and the app points you to the door.</p>
-      <p class="about-lead">You can read more about how this project works <a href="./how-it-works.html">here</a>.</p>
+      <p class="about-lead">Whereabouts finds the residences that most mapping apps cannot: the countless rural houses known by a name rather than a number. It is built on the maps of <a href="https://colinday.co.uk/maps/" target="_blank" rel="noopener">Dr&nbsp;A&nbsp;Colin&nbsp;Day</a>, who has spent decades recording village house names and giving his work away free. This website makes that work easier to reach, and hands the location on to Google or Apple Maps for directions. There is <a href="./how-it-works.html">more on how it works</a> if you would like the detail.</p>
       <div class="sheet-h">A note on accuracy</div>
-      <p>I&#8217;m placing every house by hand, one at a time. In the search results a green dot means a house is pinned to its exact spot; a grey dot means I haven&#8217;t reached it yet, so &#8220;Get directions&#8221; takes you to the centre of the village instead. The bars below show each area&#8217;s progress.</p>
-      <p>Every effort has been made to keep this accurate, but it can&#8217;t be guaranteed, so do glance at the map before you set off.</p>
+      <p>Reading Colin&#8217;s maps into searchable data is automated as far as it sensibly can be, but pinning each house to its exact spot is not: I do that by hand, one house at a time, against satellite imagery. In the search results a green dot means a house is pinned precisely; a grey dot means I have not reached it yet, so &#8220;Get directions&#8221; takes you to the centre of the village instead.</p>
+      <p>Every effort is made to keep this accurate, but it cannot be guaranteed, so do glance at the map before you set off.</p>
       <div class="sheet-h">Coverage</div>
       <p style="font-size:13px;color:var(--muted);margin-bottom:8px">Whereabouts covers North Yorkshire for now. Colin&#8217;s maps reach right across the north of England, so more counties may follow.</p>
       <p id="area-sum"></p>
-      <div id="areas"></div>
-      <button class="dl-all-btn" id="dl-all-btn"></button>
-      <div class="sheet-h">Offline use</div>
-      <p>To use the maps where there&#8217;s no signal, save the areas you need while you&#8217;re online, using the buttons above. Once saved, their maps work offline, alongside search and directions. For saved maps to stay put, add Whereabouts to your home screen first: this installs it properly and stops your phone clearing them to free up space.</p>
+      <details class="fold">
+        <summary>Areas covered and offline use</summary>
+        <div class="fold-body">
+          <div id="areas"></div>
+          <button class="dl-all-btn" id="dl-all-btn"></button>
+          <div class="sheet-h">Offline use</div>
+          <p>Any map you open is kept on the device automatically. To prepare for places with no signal, save the areas you need while you still have one, using the buttons above. A saved area keeps its maps, search and directions available offline. Add Whereabouts to your home screen before saving: this installs it properly, and stops the phone clearing saved maps to reclaim space.</p>
+        </div>
+      </details>
       <div class="sheet-h">Thank you, Dr Day</div>
-      <p>Every village drawing in this app is the work of Dr&nbsp;A&nbsp;Colin&nbsp;Day, who has spent more than twenty years mapping villages house by house and name by name, and giving the results away free, still updated by his own hand today. Long before this app existed, his maps were finding front doors for delivery drivers, healthcare professionals and anyone else a satnav had given up on. Colin has given this project his full support to build on his foundations. If it ever finds you the right door, the thanks belongs to him.</p>
+      <p>Every village drawing in this app is the work of Dr&nbsp;A&nbsp;Colin&nbsp;Day, who has spent more than twenty years mapping villages house by house and name by name, giving the results away free and still updating them by his own hand today. Long before this app existed, his maps were finding front doors for delivery drivers, healthcare professionals and anyone else a satnav had given up on. Colin has given this project his full support to build on his foundations. If it ever finds you the right door, the thanks belongs to him.</p>
+      <div class="sheet-h">Contact</div>
+      <p>Corrections, houses that are missing or wrongly placed, and anything that goes wrong with the app are all welcome at <a href="mailto:whereabouts@adamdent.uk">whereabouts@adamdent.uk</a>.</p>
       <div class="sheet-divider"></div>
       <div class="sheet-attr">
-        Made by Adam Dent<br/>
+        Made by <a href="https://adamdent.uk" target="_blank" rel="noopener">Adam Dent</a><br/>
         Maps by <a href="https://colinday.co.uk/maps/" target="_blank">Dr&nbsp;A&nbsp;Colin&nbsp;Day</a>, shown in full with their own attributions<br/>
         App code is open source (MIT); the house locations are shared under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC&nbsp;BY-SA&nbsp;4.0</a>
       </div>
@@ -1279,7 +1294,7 @@ async function renderAreas() {
     : '';
   document.getElementById('area-sum').innerHTML =
     placedAll.toLocaleString() + ' of the ' + totalAll.toLocaleString() +
-    ' houses on <a href="https://colinday.co.uk/maps/" target="_blank" rel="noopener">Colin Day&#8217;s maps</a> pinned so far, each one placed by hand on satellite imagery. The green bars show how far each area has come.' + fresh;
+    ' houses on <a href="https://colinday.co.uk/maps/" target="_blank" rel="noopener">Colin Day&#8217;s maps</a> pinned so far, each one placed by hand on satellite imagery. Progress by area is listed below.' + fresh;
   const names = Object.keys(districts).sort((a, b) => {
     const pa = districts[a].placed / (districts[a].total || 1);
     const pb = districts[b].placed / (districts[b].total || 1);
@@ -1844,7 +1859,7 @@ footer a{color:var(--accent)}
 
   <footer>
     <a href="./how-it-works.html">How Whereabouts works</a> &nbsp;&middot;&nbsp; <a href="./">Open the app</a><br/>
-    Made by Adam Dent. Maps by Dr A Colin Day, shown in full with their own attributions.
+    Made by <a href="https://adamdent.uk" target="_blank" rel="noopener">Adam Dent</a>. Maps by Dr A Colin Day, shown in full with their own attributions.
   </footer>
 
 </div>
