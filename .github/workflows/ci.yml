@@ -46,6 +46,14 @@ jobs:
           npm ci
           npx playwright install --with-deps chromium
 
+      - name: Stand-in map images
+        working-directory: etl
+        # The 865 rendered maps are 129 MB and not in the repository, so without
+        # these the offline and save-for-offline tests cannot run at all, and
+        # those are the ones worth having. Real 1x1 images at the real paths, so
+        # the code under test is the real code path.
+        run: uv run whereabouts-placeholder-images ../docs
+
       - name: Browser tests
         # Includes the accessibility scan (axe-core, WCAG 2.1 AA) and the
         # Content-Security-Policy check, which applies the generated policy to
