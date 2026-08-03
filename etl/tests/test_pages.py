@@ -231,9 +231,9 @@ def test_csp_hashes_match_the_scripts_actually_in_the_page() -> None:
     is checked at build time rather than discovered on the live site."""
     from conftest import REPO
 
-    built = REPO / "docs" / "_headers"
+    built = REPO / "functions" / "_middleware.js"
     if not built.exists():
-        pytest.skip("docs/_headers not built")
+        pytest.skip("functions/_middleware.js not built")
     headers = built.read_text()
 
     for path, html in (
@@ -242,7 +242,7 @@ def test_csp_hashes_match_the_scripts_actually_in_the_page() -> None:
         ("/privacy.html", pwa._PRIVACY_PAGE),
     ):
         for h in pwa._inline_script_hashes(html):
-            assert h in headers, f"{path}: script hash {h} missing from _headers"
+            assert h in headers, f"{path}: script hash {h} missing from the middleware"
 
 
 def test_every_inline_script_is_covered_by_a_hash() -> None:
@@ -252,25 +252,22 @@ def test_every_inline_script_is_covered_by_a_hash() -> None:
         assert len(pwa._inline_script_hashes(html)) == len(inline)
 
 
-def test_the_policy_never_allows_unsafe_inline_scripts() -> None:
-    """'unsafe-inline' in script-src would silently void the entire policy: it
-    is ignored when hashes are present in modern browsers, but not in all, and
-    it signals the wrong intent to anyone reading."""
-    headers = pwa._security_headers()
-    for line in headers.splitlines():
-        if "Content-Security-Policy" not in line:
-            continue
-        script_src = line.split("script-src")[1].split(";")[0]
-        assert "unsafe-inline" not in script_src
-        assert "unsafe-eval" not in script_src
+@pytest.mark.parametrize("name", sorted(PAGES))
+def test_the_policy_never_allows_unsafe_inline_scripts(name: str) -> None:
+    """'unsafe-inline' in script-src would silently void the whole policy: it is
+    ignored when hashes are present in modern browsers, but not in all, and it
+    signals the wrong intent to anyone reading it."""
+    if name == "sw.js":
+        pytest.skip("not an HTML page")
+    script_src = pwa._csp_for(PAGES[name]()).split("script-src")[1].split(";")[0]
+    assert "unsafe-inline" not in script_src
+    assert "unsafe-eval" not in script_src
 
 
 def test_connect_src_lists_exactly_the_two_endpoints_the_app_uses() -> None:
     """The privacy page says the app talks to its own origin, the usage counter
     and the failure collector, and nothing else. This is that claim as policy."""
-    headers = pwa._security_headers()
-    line = next(ln for ln in headers.splitlines() if "Content-Security-Policy" in ln)
-    connect = line.split("connect-src")[1].split(";")[0]
+    connect = pwa._csp_for(pwa._page_html()).split("connect-src")[1].split(";")[0]
     assert "'self'" in connect
     assert pwa._COUNTERSCALE_URL in connect
     assert _ERROR_ORIGIN in connect
@@ -281,16 +278,17 @@ _ERROR_ORIGIN = "https://whereabouts-errors.adam-wc-sweepstake.workers.dev"
 
 
 def test_clickjacking_and_sniffing_are_closed_off() -> None:
-    headers = pwa._security_headers()
-    assert "X-Content-Type-Options: nosniff" in headers
-    assert "X-Frame-Options: DENY" in headers
-    assert "frame-ancestors 'none'" in headers
-    assert "object-src 'none'" in headers
-    assert "base-uri 'none'" in headers
+    middleware = pwa._middleware_js()
+    assert '"X-Content-Type-Options": "nosniff"' in middleware
+    assert '"X-Frame-Options": "DENY"' in middleware
+    csp = pwa._csp_for(pwa._page_html())
+    assert "frame-ancestors 'none'" in csp
+    assert "object-src 'none'" in csp
+    assert "base-uri 'none'" in csp
 
 
 def test_referrer_policy_does_not_leak_the_app_to_the_maps_provider() -> None:
     """Pressing "Get directions" hands off to Google or Apple. no-referrer means
     they are not also told which app sent the user, which is the same promise the
     privacy page makes about everything else."""
-    assert "Referrer-Policy: no-referrer" in pwa._security_headers()
+    assert '"Referrer-Policy": "no-referrer"' in pwa._middleware_js()

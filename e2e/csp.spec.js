@@ -17,15 +17,16 @@ import { dirname, join } from 'path';
 import { isolate } from './isolation.js';
 
 const REPO = dirname(dirname(fileURLToPath(import.meta.url)));
-const headers = readFileSync(join(REPO, 'docs', '_headers'), 'utf8');
+const middleware = readFileSync(join(REPO, 'functions', '_middleware.js'), 'utf8');
+// The generated middleware embeds the policies as a JSON object.
+const CSP = JSON.parse(middleware.slice(middleware.indexOf('const CSP = ') + 12,
+                                       middleware.indexOf('};\n\nconst COMMON') + 1));
 const data = JSON.parse(readFileSync(join(REPO, 'docs', 'houses.json'), 'utf8'));
 const placed = data.houses.find((h) => h.lat != null && h.n[0].length > 4);
 
 /** The CSP the deployed site sends for a given path. */
 function policyFor(path) {
-  const block = headers.split(/^(?=\/)/m).find((b) => b.split('\n')[0].trim() === path);
-  const line = block.split('\n').find((l) => l.includes('Content-Security-Policy:'));
-  return line.split('Content-Security-Policy:')[1].trim();
+  return CSP[path];
 }
 
 /** Serve the page with its production CSP attached. */
@@ -86,6 +87,6 @@ test('every generated page carries the security headers', () => {
     expect(policy, path).toContain("frame-ancestors 'none'");
     expect(policy, `${path} must not weaken script-src`).not.toContain("script-src 'self' 'unsafe-inline'");
   }
-  expect(headers).toContain('X-Content-Type-Options: nosniff');
-  expect(headers).toContain('Referrer-Policy: no-referrer');
+  expect(middleware).toContain('"X-Content-Type-Options": "nosniff"');
+  expect(middleware).toContain('"Referrer-Policy": "no-referrer"');
 });
