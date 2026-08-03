@@ -114,21 +114,7 @@ test('directions point at the house, not just the village', async ({ page }) => 
   expectNoAnalytics(net, expect);
 });
 
-// KNOWN BROKEN, and left failing on purpose: this is a real defect in the app,
-// not a flaw in the test. On a cold launch with no network the app shows "The
-// house list couldn't be read" because fuse.min.js is not in the cache the
-// fetch handler reads it from, so Fuse is undefined and search cannot start.
-//
-// Two causes of this were found and fixed while writing this test: the install
-// precache used addAll with a duplicate entry, so it rejected every time and
-// the `.catch(() => {})` hid it; and the assets were being written into a
-// different cache from the one the fetch handler reads. A third cause remains:
-// the IMG_CACHE precache still comes back empty at install, while the
-// houses.json precache immediately after it succeeds. Not yet isolated.
-//
-// Change to test() once fixed. Do not delete: this is the failure that made
-// saved maps unusable in the field in July, in a different guise.
-test.fixme('the app still works on a cold launch with no network', async ({ page, context }) => {
+test('the app still works on a cold launch with no network', async ({ page, context }) => {
   // The regression this exists for: on 22 July, saved maps failed to render on
   // a cold offline launch because images were served only by the service
   // worker, and the worker is not controlling the page on the first load after
@@ -144,10 +130,9 @@ test.fixme('the app still works on a cold launch with no network', async ({ page
   // at a duration. A fixed sleep is what makes this kind of test flaky, and it
   // would let the test pass for the wrong reason.
   //
-  // Controller-is-set is not enough: the worker calls skipWaiting() outside
-  // waitUntil, so it claims the page while the 3.4 MB house list is still
-  // downloading. The real precondition is the house list being in the cache,
-  // because that is what "ready offline" means to a user.
+  // Controller-is-set is not enough on its own: the real precondition is the
+  // house list being in the cache, because that is what "ready offline" means
+  // to a user, and it is the last and largest thing the install fetches.
   await page.waitForFunction(
     async () => {
       if (!navigator.serviceWorker.controller) return false;

@@ -458,15 +458,13 @@ const NET_TIMEOUT = 3000;
 // one bad entry can no longer take the rest down with it.
 self.addEventListener('install', e => {
   e.waitUntil((async () => {
-    // Each asset must be precached into the SAME bucket the fetch handler
-    // below reads it from, or it is cached somewhere nothing looks and the
-    // offline launch fails anyway. fuse.min.js and counterscale.min.js are
-    // served cache-first from IMG_CACHE, not from the shell.
+    // Every asset must be precached into the SAME bucket the fetch handler
+    // below reads it from, or it is cached where nothing looks for it and the
+    // offline launch fails anyway. The two libraries are app shell, not map
+    // images, so they belong here and the fetch handler serves them from here.
     const c = await caches.open(SHELL_CACHE);
-    await Promise.all(['./', './index.html'].map(u => c.add(u).catch(() => {})));
-    const assets = await caches.open(IMG_CACHE);
-    const libs = ['./fuse.min.js', './counterscale.min.js'];
-    await Promise.all(libs.map(u => assets.add(u).catch(() => {})));
+    const shell = ['./', './index.html', './fuse.min.js', './counterscale.min.js'];
+    await Promise.all(shell.map(u => c.add(u).catch(() => {})));
     // houses.json is precached too, despite its size (about 3.4 MB), because
     // the app is inert without it: it is the list that search runs against.
     // Leaving it to the fetch handler meant it was cached only once the worker
@@ -476,8 +474,13 @@ self.addEventListener('install', e => {
     // it; putting it in the shell would cache it somewhere nothing reads.
     const data = await caches.open(DATA_CACHE);
     await data.add('./houses.json').catch(() => {});
+    // Inside the waitUntil, and last. Called outside it, skipWaiting activates
+    // the worker while the precache is still running, and the browser is then
+    // free to abandon the rest of the install: the shell entries landed and
+    // everything after them did not. Promoting the worker only once the
+    // precache is done is what makes "installed" mean "usable offline".
+    await self.skipWaiting();
   })());
-  self.skipWaiting();
 });
 
 self.addEventListener('activate', e => {
@@ -492,9 +495,18 @@ self.addEventListener('activate', e => {
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
   const url = new URL(e.request.url);
-  if (url.pathname.includes('/images/') || url.pathname.endsWith('fuse.min.js')
-      || url.pathname.endsWith('counterscale.min.js')) {
+  if (url.pathname.includes('/images/')) {
     e.respondWith(cacheFirst(e.request, IMG_CACHE));
+    return;
+  }
+  // The two libraries are cache-first like the images (they are versioned and
+  // never change under a given deploy), but they live in the shell cache with
+  // the rest of the app, which is where the install precaches them. They used
+  // to be read from IMG_CACHE while being precached into the shell, so on a
+  // cold offline launch fuse.min.js was never found, Fuse was undefined and
+  // search could not start at all.
+  if (url.pathname.endsWith('fuse.min.js') || url.pathname.endsWith('counterscale.min.js')) {
+    e.respondWith(cacheFirst(e.request, SHELL_CACHE));
     return;
   }
   if (url.pathname.endsWith('houses.json')) {
@@ -1463,13 +1475,10 @@ async function downloadArea(btn, name, ss, bytes) {
     await dc.add('./houses.json');
   } catch (_) { /* keep the images even if the list refetch fails */ }
   try {
-    // Same split as the service worker's install handler: the two libraries are
-    // served cache-first from IMG_CACHE, so caching them into the shell would
-    // put them where nothing looks for them.
+    // Same list as the service worker's install handler, and the same cache the
+    // fetch handler reads them back from.
     const shell = await caches.open(SHELL_CACHE);
-    await shell.addAll(['./', './index.html']);
-    const assets = await caches.open(IMG_CACHE);
-    await assets.addAll(['./fuse.min.js', './counterscale.min.js']);
+    await shell.addAll(['./', './index.html', './fuse.min.js', './counterscale.min.js']);
   } catch (_) {}
   // ask the browser to protect the cache from storage-pressure eviction
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist();
