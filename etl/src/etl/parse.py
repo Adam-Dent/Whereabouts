@@ -297,6 +297,32 @@ def _parse_cross_reference(chars: list[dict]) -> dict[int, list[str]]:
     return xref
 
 
+def _acceptable_alias(alias: str) -> bool:
+    """Whether a cross-reference alias is a real name rather than merge garbage.
+
+    Dense or grid-set cross-references reconstruct into runs of several entries
+    joined together, so the shape of the string is the only signal available.
+    A real name carries at most one integer token, and only as a leading house
+    number; it is short (at most 3 words, under 40 characters), because the real
+    aliases in this dataset look like "Church", "St Mary's Church" or
+    "1 Eryholme Lane". Longer ones are almost always two dot-leader lines merged
+    by tight row spacing on densely-set sheets (Carlton, Ivelet), producing
+    garbage like "2 Baygante Carlton Boarding Kennels" or "11 Thirley Cottage
+    Satron Farm". Dropping those loses a synonym at worst; keeping them shows
+    nonsense text next to a correct primary name.
+    """
+    tokens = alias.split()
+    if not tokens:
+        return False
+    ints = [t for t in tokens if t.isdigit()]
+    if len(ints) > 1 or (ints and not tokens[0].isdigit()) or len(alias) > 40:
+        return False
+    # Concatenated number+name, where the space was lost ("59MoorRoad", "6ScotsDyke").
+    if any(re.search(r"\d[A-Z][a-z]", t) for t in tokens):
+        return False
+    return len(tokens) <= 3
+
+
 def _cross_ref_name_left(dot_lines: list[list[dict]]) -> float:
     """Left edge of the cross-reference name column (mode of line-start x0)."""
     starts: list[float] = []
@@ -500,20 +526,7 @@ def parse_sheet(pdf_path: Path, sheet_id: str) -> ParseResult:
         if num not in names:
             continue
         for alias in aliases:
-            tokens = alias.split()
-            ints = [t for t in tokens if t.isdigit()]
-            if len(ints) > 1 or (ints and not tokens[0].isdigit()) or len(alias) > 40:
-                continue
-            # Reject tokens that look like concatenated number+name ("59MoorRoad", "6ScotsDyke")
-            if any(re.search(r"\d[A-Z][a-z]", t) for t in tokens):
-                continue
-            # A real alias is short ("Church", "St Mary's Church", "1 Eryholme Lane": at
-            # most 3 words). Longer ones are almost always two dot-leader lines merged by
-            # tight row spacing (densely-set sheets like Carlton, Ivelet), producing
-            # garbage like "2 Baygante Carlton Boarding Kennels" or "11 Thirley Cottage
-            # Satron Farm". Dropping these loses a synonym at worst; keeping them shows
-            # nonsense text next to a correct primary name.
-            if len(tokens) > 3:
+            if not _acceptable_alias(alias):
                 continue
             if alias not in names[num]:
                 names[num].append(alias)

@@ -447,16 +447,36 @@ const ALL_CACHES  = [IMG_CACHE, DATA_CACHE, SHELL_CACHE];
 // splash screen. If the network hasn't answered by this, we serve the cache.
 const NET_TIMEOUT = 3000;
 
+// Added one URL at a time rather than with addAll, which is all-or-nothing in
+// two ways that both bit here: it rejects the whole batch if any single request
+// fails, and it rejects outright if the list contains duplicates. The list used
+// to carry both `self.registration.scope` and './', which resolve to the same
+// URL, so the precache rejected every time and the `.catch(() => {})` swallowed
+// it. The shell was therefore never precached at install, and a launch that
+// went offline before the fetch handler had cached anything showed "Offline and
+// not cached yet" instead of the app. Failures are still tolerated per URL, but
+// one bad entry can no longer take the rest down with it.
 self.addEventListener('install', e => {
-  e.waitUntil(
-    caches.open(SHELL_CACHE).then(c => c.addAll([
-      self.registration.scope,
-      './',
-      './index.html',
-      './fuse.min.js',
-      './counterscale.min.js',
-    ]).catch(() => {}))
-  );
+  e.waitUntil((async () => {
+    // Each asset must be precached into the SAME bucket the fetch handler
+    // below reads it from, or it is cached somewhere nothing looks and the
+    // offline launch fails anyway. fuse.min.js and counterscale.min.js are
+    // served cache-first from IMG_CACHE, not from the shell.
+    const c = await caches.open(SHELL_CACHE);
+    await Promise.all(['./', './index.html'].map(u => c.add(u).catch(() => {})));
+    const assets = await caches.open(IMG_CACHE);
+    const libs = ['./fuse.min.js', './counterscale.min.js'];
+    await Promise.all(libs.map(u => assets.add(u).catch(() => {})));
+    // houses.json is precached too, despite its size (about 3.4 MB), because
+    // the app is inert without it: it is the list that search runs against.
+    // Leaving it to the fetch handler meant it was cached only once the worker
+    // was already controlling the page, which is never true on a first visit,
+    // so offline use quietly required a SECOND online visit before it worked.
+    // It goes in DATA_CACHE because that is where the fetch handler looks for
+    // it; putting it in the shell would cache it somewhere nothing reads.
+    const data = await caches.open(DATA_CACHE);
+    await data.add('./houses.json').catch(() => {});
+  })());
   self.skipWaiting();
 });
 
@@ -1443,8 +1463,13 @@ async function downloadArea(btn, name, ss, bytes) {
     await dc.add('./houses.json');
   } catch (_) { /* keep the images even if the list refetch fails */ }
   try {
+    // Same split as the service worker's install handler: the two libraries are
+    // served cache-first from IMG_CACHE, so caching them into the shell would
+    // put them where nothing looks for them.
     const shell = await caches.open(SHELL_CACHE);
-    await shell.addAll(['./', './index.html', './fuse.min.js', './counterscale.min.js']);
+    await shell.addAll(['./', './index.html']);
+    const assets = await caches.open(IMG_CACHE);
+    await assets.addAll(['./fuse.min.js', './counterscale.min.js']);
   } catch (_) {}
   // ask the browser to protect the cache from storage-pressure eviction
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist();

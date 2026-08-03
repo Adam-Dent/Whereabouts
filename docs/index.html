@@ -274,7 +274,7 @@ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--
 <script src="./fuse.min.js"></script>
 <script>
 'use strict';
-const VERSION = '1.16.0';
+const VERSION = '1.17.0';
 let houses = [], sheets = {}, districts = {}, fuse = null, dataGenerated = '';
 const byId = new Map();
 const qEl   = document.getElementById('q');
@@ -923,8 +923,13 @@ async function downloadArea(btn, name, ss, bytes) {
     await dc.add('./houses.json');
   } catch (_) { /* keep the images even if the list refetch fails */ }
   try {
+    // Same split as the service worker's install handler: the two libraries are
+    // served cache-first from IMG_CACHE, so caching them into the shell would
+    // put them where nothing looks for them.
     const shell = await caches.open(SHELL_CACHE);
-    await shell.addAll(['./', './index.html', './fuse.min.js', './counterscale.min.js']);
+    await shell.addAll(['./', './index.html']);
+    const assets = await caches.open(IMG_CACHE);
+    await assets.addAll(['./fuse.min.js', './counterscale.min.js']);
   } catch (_) {}
   // ask the browser to protect the cache from storage-pressure eviction
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist();

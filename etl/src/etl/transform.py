@@ -10,11 +10,16 @@ from .models import ControlPointsFile, PagePos
 
 
 # North Yorkshire approximate bounding box for sanity checks
+# The ceremonial county's real extent, with a small margin. The earlier values
+# (53.9 to 54.7, -2.7 to -0.5) were drawn around Richmondshire, the first
+# district processed, and excluded a good deal of the county: Selby reaches
+# south of 53.65 and the Scarborough and Filey coast sits east of -0.25, so
+# valid coordinates in both were being reported as out-of-county.
 NY_BOUNDS = {
-    "lat_min": 53.9,
-    "lat_max": 54.7,
-    "lng_min": -2.7,
-    "lng_max": -0.5,
+    "lat_min": 53.5,
+    "lat_max": 54.75,
+    "lng_min": -2.65,
+    "lng_max": -0.15,
 }
 
 # Max allowed RMS residual (metres) before we flag the sheet
