@@ -41,6 +41,10 @@ jobs:
           npx playwright install --with-deps chromium
 
       - name: Browser tests
+        # Includes the accessibility scan (axe-core, WCAG 2.1 AA) and the
+        # Content-Security-Policy check, which applies the generated policy to
+        # the real page: a wrong script hash breaks the live site silently
+        # otherwise, because the dev server never sends the header.
         working-directory: e2e
         # Runs against docs/ as committed. Network is blackholed inside the
         # browser (see e2e/playwright.config.js), so CI can never appear in the

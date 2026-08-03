@@ -396,6 +396,73 @@ def _build_images(out_images: Path) -> dict[str, dict]:
     return mapping
 
 
+def _inline_script_hashes(html: str) -> list[str]:
+    """CSP sha256 hashes for every inline <script> in a generated page."""
+    import base64
+    import hashlib
+
+    out = []
+    for body in re.findall(r"<script(?![^>]*\ssrc=)[^>]*>(.*?)</script>", html, re.S):
+        digest = hashlib.sha256(body.encode()).digest()
+        out.append("'sha256-" + base64.b64encode(digest).decode() + "'")
+    return out
+
+
+def _security_headers() -> str:
+    """Security headers for Cloudflare Pages, including a hash-based CSP.
+
+    Worth having specifically because of how this app renders results: house
+    names from the dataset are written into the page with innerHTML, escaped by
+    hand. If that escaping were ever wrong, a name containing a script tag would
+    execute. A content policy that names the exact scripts allowed to run turns
+    that from a hole into a blocked request.
+
+    The hashes are computed from the generated pages, so they cannot drift out
+    of date the way a hand-maintained list would; get one wrong and the app does
+    not start, which the browser tests catch.
+
+    script-src takes no 'unsafe-inline': the hashes are the whole point. style-src
+    does, because the pages carry a couple of style attributes and CSP has no way
+    to hash those. Styles are not an execution path, so that is a fair trade.
+    Everything else is closed: the app talks to its own origin and nowhere else,
+    which is exactly what the privacy page claims, so connect-src proves it
+    rather than asserting it.
+    """
+    common = (
+        "  X-Content-Type-Options: nosniff\n"
+        "  Referrer-Policy: no-referrer\n"
+        "  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=()\n"
+        "  X-Frame-Options: DENY\n"
+    )
+    pages = {
+        "/": _page_html(),
+        "/index.html": _page_html(),
+        "/how-it-works.html": _HOW_PAGE,
+        "/privacy.html": _PRIVACY_PAGE,
+    }
+    out = []
+    for path, html in pages.items():
+        csp = (
+            "default-src 'self'; "
+            "script-src 'self' " + " ".join(_inline_script_hashes(html)) + "; "
+            "style-src 'self' 'unsafe-inline'; "
+            "img-src 'self' blob: data:; "
+            "font-src 'self'; "
+            "connect-src 'self' " + _ERROR_URL.rsplit("/", 1)[0] + " " + _COUNTERSCALE_URL + "; "
+            "manifest-src 'self'; "
+            "worker-src 'self'; "
+            "base-uri 'none'; "
+            "form-action 'none'; "
+            "frame-ancestors 'none'; "
+            "object-src 'none'"
+        )
+        out.append(f"{path}\n{common}  Content-Security-Policy: {csp}\n")
+    # Everything else (images, json, the worker) gets the cheap headers only:
+    # a CSP on a woff2 or a webp does nothing.
+    out.append("/*\n" + common)
+    return "".join(out)
+
+
 def build_static(out_dir: Path) -> None:
     """Write a self-contained static site to out_dir, ready for Cloudflare Pages or any CDN."""
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -457,7 +524,8 @@ def build_static(out_dir: Path) -> None:
     # Cloudflare Pages cache headers: hashed images are immutable; the mutable
     # entry points must revalidate so updates roll out on next visit.
     (out_dir / "_headers").write_text(
-        "/images/*\n  Cache-Control: public, max-age=31536000, immutable\n"
+        _security_headers()
+        + "/images/*\n  Cache-Control: public, max-age=31536000, immutable\n"
         "/houses.json\n  Cache-Control: no-cache\n"
         "/sw.js\n  Cache-Control: no-cache\n"
         "/index.html\n  Cache-Control: no-cache\n"
