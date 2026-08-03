@@ -195,3 +195,29 @@ def test_built_docs_match_what_the_generator_produces() -> None:
         "docs/index.html differs from the generator. Either it was hand-edited "
         "(edit etl/src/etl/pwa.py instead) or the build has not been re-run."
     )
+
+
+def test_every_font_face_points_at_a_file_that_exists() -> None:
+    """The fonts are self-hosted, so a typo in a filename is a silently ugly
+    page rather than a build error."""
+    from conftest import REPO
+
+    for page in (pwa._page_html(), pwa._HOW_PAGE, pwa._PRIVACY_PAGE):
+        for name in re.findall(r"url\(\./([\w.-]+\.woff2)\)", page):
+            assert (REPO / "docs" / name).exists(), f"missing font file: {name}"
+
+
+def test_the_fonts_are_precached_and_served_from_the_same_cache() -> None:
+    """Three lists have to agree for the font to survive offline: the build's
+    _FONT_FILES, the service worker's precache, and the page's own save-an-area
+    path. The service worker bugs found in this suite were all one list not
+    matching another, so these are checked rather than trusted."""
+    for name in pwa._FONT_FILES:
+        assert name in pwa._SW_JS, f"{name} is not precached by the service worker"
+        assert name in pwa._PWA_PAGE, f"{name} is missing from the page's shell list"
+
+
+def test_no_page_still_reaches_for_google_fonts() -> None:
+    for page in (pwa._page_html(), pwa._HOW_PAGE, pwa._PRIVACY_PAGE):
+        assert "fonts.gstatic.com" not in page
+        assert "https://fonts.googleapis.com/css2" not in page

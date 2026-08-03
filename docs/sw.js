@@ -24,7 +24,8 @@ self.addEventListener('install', e => {
     // offline launch fails anyway. The two libraries are app shell, not map
     // images, so they belong here and the fetch handler serves them from here.
     const c = await caches.open(SHELL_CACHE);
-    const shell = ['./', './index.html', './fuse.min.js', './counterscale.min.js'];
+    const shell = ['./', './index.html', './fuse.min.js', './counterscale.min.js',
+                   './playfair-normal-latin.woff2', './playfair-normal-latin-ext.woff2', './playfair-italic-latin.woff2', './playfair-italic-latin-ext.woff2'];
     await Promise.all(shell.map(u => c.add(u).catch(() => {})));
     // houses.json is precached too, despite its size (about 3.4 MB), because
     // the app is inert without it: it is the list that search runs against.
@@ -66,7 +67,8 @@ self.addEventListener('fetch', e => {
   // to be read from IMG_CACHE while being precached into the shell, so on a
   // cold offline launch fuse.min.js was never found, Fuse was undefined and
   // search could not start at all.
-  if (url.pathname.endsWith('fuse.min.js') || url.pathname.endsWith('counterscale.min.js')) {
+  if (url.pathname.endsWith('fuse.min.js') || url.pathname.endsWith('counterscale.min.js')
+      || url.pathname.endsWith('.woff2')) {
     e.respondWith(cacheFirst(e.request, SHELL_CACHE));
     return;
   }

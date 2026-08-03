@@ -189,25 +189,19 @@ test('a field failure is queued while offline and sent once there is signal', as
   expectNoAnalytics(net, expect);
 });
 
-test('the app contacts nothing except the known font host', async ({ page }) => {
-  // The guarantee itself, asserted rather than assumed. If a future change adds
-  // an endpoint or a CDN script, this is what notices.
+test('the app contacts nothing outside itself, at all', async ({ page }) => {
+  // The guarantee, asserted rather than assumed. If a change adds an endpoint,
+  // a CDN script or a webfont, this is what notices.
   //
-  // The one permitted exception today is Google Fonts, which the page loads for
-  // Playfair Display. That is a third-party request on every page load and it
-  // hands the visitor's IP to Google, which sits badly beside a privacy page
-  // that self-hosts its own analytics precisely to avoid that. It also means
-  // the app falls back to a system serif when offline. Self-hosting the font,
-  // as fuse.js and the analytics tracker already are, would let this list drop
-  // to empty; when it does, tighten this test to toEqual([]).
-  const ALLOWED = ['fonts.googleapis.com', 'fonts.gstatic.com'];
-
+  // This was briefly non-empty: the pages loaded Playfair Display from
+  // fonts.googleapis.com, so every visit told Google who was reading, on a site
+  // whose privacy page says it hands data to nobody. The font is self-hosted
+  // now, so the correct expectation is zero. Keep it at zero.
   const net = await isolate(page);
   await page.goto('/');
   await page.fill('#q', placed.n[0]);
   await page.locator('.ri', { hasText: placed.n[0] }).first().click();
   await page.waitForTimeout(1000);
 
-  const unexpected = net.other().filter((u) => !ALLOWED.includes(new URL(u).hostname));
-  expect(unexpected, `unexpected outbound requests: ${unexpected.join(', ')}`).toEqual([]);
+  expect(net.other(), `unexpected outbound requests: ${net.other().join(', ')}`).toEqual([]);
 });

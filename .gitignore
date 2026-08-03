@@ -43,3 +43,6 @@ etl/.wrangler/
 CLAUDE.local.md
 map-stats.py
 analytics-dashboard/
+
+# Personal Claude Code config (permissions etc), not for contributors
+.claude/settings.local.json

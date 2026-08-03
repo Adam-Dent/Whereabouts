@@ -92,6 +92,16 @@ _INTERNAL_HOST = "https://internal.whereabouts.adamdent.uk"
 # never contacts it and queues nothing.
 _ERROR_URL = "https://whereabouts-errors.adam-wc-sweepstake.workers.dev/report"
 
+# Self-hosted Playfair Display subsets, committed in docs/. Referenced by the
+# @font-face rules in the pages and precached by the service worker, so the
+# three lists have to agree; the page tests check that they do.
+_FONT_FILES = (
+    "playfair-normal-latin.woff2",
+    "playfair-normal-latin-ext.woff2",
+    "playfair-italic-latin.woff2",
+    "playfair-italic-latin-ext.woff2",
+)
+
 
 def _analytics_snippet() -> str:
     """Counterscale tracker: initial pageview (referrers) plus manual per-village
@@ -428,6 +438,16 @@ def build_static(out_dir: Path) -> None:
     else:
         print("  counterscale.min.js : already present")
 
+    # 3c. Playfair Display, self-hosted. These are committed rather than
+    #     downloaded on demand: they are a licensed asset (SIL OFL) that belongs
+    #     in the repo, and fetching them at build time would put a Google
+    #     dependency back into the one place this change removed it from.
+    missing = [f.name for f in (out_dir / n for n in _FONT_FILES) if not f.exists()]
+    if missing:
+        print(f"  WARNING: missing font files, headings will fall back: {missing}")
+    else:
+        print(f"  fonts        : {len(_FONT_FILES)} woff2 present")
+
     # 4. Write app files
     (out_dir / "manifest.json").write_text(json.dumps(_MANIFEST, indent=2))
     (out_dir / "sw.js").write_text(_SW_JS)
@@ -509,7 +529,8 @@ self.addEventListener('install', e => {
     // offline launch fails anyway. The two libraries are app shell, not map
     // images, so they belong here and the fetch handler serves them from here.
     const c = await caches.open(SHELL_CACHE);
-    const shell = ['./', './index.html', './fuse.min.js', './counterscale.min.js'];
+    const shell = ['./', './index.html', './fuse.min.js', './counterscale.min.js',
+                   './playfair-normal-latin.woff2', './playfair-normal-latin-ext.woff2', './playfair-italic-latin.woff2', './playfair-italic-latin-ext.woff2'];
     await Promise.all(shell.map(u => c.add(u).catch(() => {})));
     // houses.json is precached too, despite its size (about 3.4 MB), because
     // the app is inert without it: it is the list that search runs against.
@@ -551,7 +572,8 @@ self.addEventListener('fetch', e => {
   // to be read from IMG_CACHE while being precached into the shell, so on a
   // cold offline launch fuse.min.js was never found, Fuse was undefined and
   // search could not start at all.
-  if (url.pathname.endsWith('fuse.min.js') || url.pathname.endsWith('counterscale.min.js')) {
+  if (url.pathname.endsWith('fuse.min.js') || url.pathname.endsWith('counterscale.min.js')
+      || url.pathname.endsWith('.woff2')) {
     e.respondWith(cacheFirst(e.request, SHELL_CACHE));
     return;
   }
@@ -608,10 +630,20 @@ _PWA_PAGE = r"""<!doctype html>
 <link rel="manifest" href="./manifest.json"/>
 <link rel="icon" href="./favicon.ico" sizes="32x32"/>
 <link rel="apple-touch-icon" href="./icon-180.png"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
 <title>Whereabouts</title>
+<style>
+/* Playfair Display, self-hosted. It used to come from fonts.googleapis.com,
+   which meant a request to Google carrying the visitor's IP on every page load,
+   on a site whose privacy page says it hands data to nobody, and a typeface
+   that vanished the moment the phone lost signal. Four woff2 subsets, 96 KB in
+   total, served from the same origin as everything else and precached with the
+   rest of the shell. The variable font covers 600 to 800 in one file per
+   subset. */
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600 800;font-display:swap;src:url(./playfair-normal-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600 800;font-display:swap;src:url(./playfair-normal-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:600 800;font-display:swap;src:url(./playfair-italic-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:600 800;font-display:swap;src:url(./playfair-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
 <style>
 :root{
   --hdr:#0f4c5c;
@@ -1524,7 +1556,8 @@ async function downloadArea(btn, name, ss, bytes) {
     // Same list as the service worker's install handler, and the same cache the
     // fetch handler reads them back from.
     const shell = await caches.open(SHELL_CACHE);
-    await shell.addAll(['./', './index.html', './fuse.min.js', './counterscale.min.js']);
+    await shell.addAll(['./', './index.html', './fuse.min.js', './counterscale.min.js',
+                        './playfair-normal-latin.woff2', './playfair-normal-latin-ext.woff2', './playfair-italic-latin.woff2', './playfair-italic-latin-ext.woff2']);
   } catch (_) {}
   // ask the browser to protect the cache from storage-pressure eviction
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist();
@@ -1647,9 +1680,19 @@ _HOW_PAGE = r"""<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
 <meta name="theme-color" content="#0f4c5c"/>
 <title>How Whereabouts Works</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet"/>
+<style>
+/* Playfair Display, self-hosted. It used to come from fonts.googleapis.com,
+   which meant a request to Google carrying the visitor's IP on every page load,
+   on a site whose privacy page says it hands data to nobody, and a typeface
+   that vanished the moment the phone lost signal. Four woff2 subsets, 96 KB in
+   total, served from the same origin as everything else and precached with the
+   rest of the shell. The variable font covers 600 to 800 in one file per
+   subset. */
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600 800;font-display:swap;src:url(./playfair-normal-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600 800;font-display:swap;src:url(./playfair-normal-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:600 800;font-display:swap;src:url(./playfair-italic-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:600 800;font-display:swap;src:url(./playfair-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
 <style>
 :root{
   --hdr:#0f4c5c;
@@ -1830,9 +1873,19 @@ _PRIVACY_PAGE = r"""<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
 <meta name="theme-color" content="#0f4c5c"/>
 <title>Whereabouts: Privacy and data</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet"/>
+<style>
+/* Playfair Display, self-hosted. It used to come from fonts.googleapis.com,
+   which meant a request to Google carrying the visitor's IP on every page load,
+   on a site whose privacy page says it hands data to nobody, and a typeface
+   that vanished the moment the phone lost signal. Four woff2 subsets, 96 KB in
+   total, served from the same origin as everything else and precached with the
+   rest of the shell. The variable font covers 600 to 800 in one file per
+   subset. */
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600 800;font-display:swap;src:url(./playfair-normal-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600 800;font-display:swap;src:url(./playfair-normal-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:600 800;font-display:swap;src:url(./playfair-italic-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:600 800;font-display:swap;src:url(./playfair-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
 <style>
 :root{
   --hdr:#0f4c5c;
