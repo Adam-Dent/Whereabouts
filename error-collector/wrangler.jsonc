@@ -9,7 +9,6 @@
   "name": "whereabouts-errors",
   "main": "worker.js",
   "compatibility_date": "2024-12-01",
-  "account_id": "972187e127c276c160453b9203de87b9",
   "workers_dev": true,
   "observability": { "enabled": true },
   "analytics_engine_datasets": [{ "binding": "ERRORS", "dataset": "whereabouts_errors" }]

@@ -188,3 +188,74 @@ test('a second visit shows the area as already saved', async ({ page }) => {
     'a saved area must not invite the user to download it all over again',
   ).toHaveClass(/saved/, { timeout: 20000 });
 });
+
+// ── The whole-county download, and removal ──────────────────────────────────
+//
+// Both of these used to call the browser's own confirm(), which blocks the page
+// and cannot be driven by a test, so the largest download in the app and the
+// only destructive action in it were the two paths with no coverage at all.
+// They ask in the page now, so they can be checked.
+
+test('the save-everything button asks before starting, and backing out changes nothing', async ({
+  page,
+}) => {
+  await isolate(page);
+  await page.goto('/');
+  await readyOffline(page);
+  await page.click('#info-btn');
+  await page.evaluate(() => document.querySelector('details.fold').setAttribute('open', ''));
+
+  const all = page.locator('#dl-all-btn');
+  await expect(all).toHaveText(/Save all \d+ maps/);
+  await all.click();
+
+  // It must say how big it is before committing someone's data allowance.
+  const confirmBox = page.locator('.confirm-all');
+  await expect(confirmBox).toBeVisible();
+  await expect(confirmBox).toContainText(/MB/);
+  await expect(confirmBox).toContainText(/wi-fi/);
+
+  await confirmBox.locator('.confirm-no').click();
+  await expect(confirmBox).toBeHidden();
+  await expect(all, 'backing out must leave the button as it was').toHaveText(
+    /Save all \d+ maps/,
+  );
+  expect(
+    await page.evaluate(async () => (await (await caches.open('whereabouts-images-v2')).keys()).length),
+    'nothing may be downloaded before the user agrees',
+  ).toBe(0);
+});
+
+test('removing a saved area asks first, then really deletes the maps', async ({ page }) => {
+  await isolate(page);
+  await page.goto('/');
+  await readyOffline(page);
+
+  const row = await openCoverage(page);
+  await row.locator('.area-btn').click();
+  await expect(row.locator('.area-btn')).toHaveClass(/saved/, { timeout: 120000 });
+  const savedCount = await page.evaluate(
+    async () => (await (await caches.open('whereabouts-images-v2')).keys()).length,
+  );
+  expect(savedCount).toBe(sheets.length);
+
+  await row.locator('.area-btn').click();
+  const confirmBox = page.locator('.confirm-all');
+  await expect(confirmBox).toBeVisible();
+  await expect(confirmBox).toContainText(/free up/);
+
+  // Cancelling must not delete anything.
+  await confirmBox.locator('.confirm-no').click();
+  expect(
+    await page.evaluate(async () => (await (await caches.open('whereabouts-images-v2')).keys()).length),
+    'cancelling a removal must not delete maps',
+  ).toBe(savedCount);
+
+  await row.locator('.area-btn').click();
+  await page.locator('.confirm-all .confirm-yes').click();
+  await expect(row.locator('.area-btn')).not.toHaveClass(/saved/, { timeout: 30000 });
+  expect(
+    await page.evaluate(async () => (await (await caches.open('whereabouts-images-v2')).keys()).length),
+    'confirming a removal must actually free the space',
+  ).toBe(0);
+});

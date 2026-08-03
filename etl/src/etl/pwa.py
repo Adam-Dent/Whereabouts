@@ -825,6 +825,11 @@ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--
 .dl-all-btn:active{background:var(--paper)}
 .dl-all-btn:disabled{opacity:.7;cursor:default}
 .dl-all-btn.saved{color:var(--placed);border-color:#cbe8cf;background:#eaf6ec}
+.confirm-all{margin-top:12px;padding:13px 14px;border:1.5px solid var(--hdr);border-radius:10px;background:var(--card)}
+.confirm-all p{font-size:13.5px;line-height:1.55;color:var(--ink);margin-bottom:10px}
+.confirm-all button{font-size:13.5px;font-weight:600;padding:9px 14px;border-radius:9px;cursor:pointer;-webkit-appearance:none;margin-right:8px}
+.confirm-yes{border:none;background:var(--hdr);color:#fff}
+.confirm-no{border:1.5px solid var(--border);background:var(--paper);color:var(--ink)}
 #results{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;background:var(--paper)}
 .intro{padding:16vh 36px 24px;text-align:center}
 .intro-head{font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:700;color:var(--ink);line-height:1.35;margin-bottom:10px}
@@ -1580,11 +1585,45 @@ function setDlAllBtn(total, cached, bytes) {
   btn.onclick = () => downloadAllMaps(btn);
 }
 
+// Two-step confirmation, used wherever the app needs a yes before doing
+// something slow or destructive. Returns a promise that
+// resolves true if the user goes ahead. Restores the button exactly as it was
+// on cancel, so backing out leaves no trace.
+function confirmInline(btn, message, yesLabel) {
+  return new Promise(resolve => {
+    const previous = { html: btn.innerHTML, disabled: btn.disabled, onclick: btn.onclick };
+    const wrap = document.createElement('div');
+    wrap.className = 'confirm-all';
+    wrap.innerHTML =
+      '<p>' + esc(message) + '</p>' +
+      '<button type="button" class="confirm-yes">' + esc(yesLabel) + '</button>' +
+      '<button type="button" class="confirm-no">Not now</button>';
+    btn.after(wrap);
+    btn.style.display = 'none';
+    const done = (answer) => {
+      wrap.remove();
+      btn.style.display = '';
+      btn.innerHTML = previous.html;
+      btn.disabled = previous.disabled;
+      btn.onclick = previous.onclick;
+      resolve(answer);
+    };
+    wrap.querySelector('.confirm-yes').onclick = () => done(true);
+    wrap.querySelector('.confirm-no').onclick = () => done(false);
+    wrap.querySelector('.confirm-yes').focus();
+  });
+}
+
 async function downloadAllMaps(btn) {
   const all = Object.values(sheets).filter(s => s.img && s.bytes);
   const bytes = all.reduce((t, s) => t + (s.bytes || 0), 0);
-  if (!confirm('Save all ' + all.length + ' maps on this phone for offline use? '
-      + 'That is about ' + fmtMB(bytes) + ', so it is best done on wi-fi.')) return;
+  // An in-page confirmation rather than confirm(). A native dialog blocks the
+  // whole page, cannot be styled to look like it belongs, and is the one thing
+  // that cannot be driven by a test, which left the largest download in the app
+  // as the only path with no coverage at all.
+  if (!(await confirmInline(btn,
+      'Save all ' + all.length + ' maps on this phone? That is about ' + fmtMB(bytes) +
+      ', so it is best done on wi-fi.', 'Save them all'))) return;
   btn.disabled = true;
   const cache = await caches.open(IMG_CACHE);
   let done = 0, failed = 0, quota = false;
@@ -1637,8 +1676,11 @@ function setAreaBtn(btn, name, ss, cachedN, bytes) {
 }
 
 async function removeArea(btn, name, ss, bytes) {
-  if (!confirm('Remove ' + name + '\u2019s offline maps from this phone? They free up ' +
-               fmtMB(bytes) + ' and can be saved again any time.')) return;
+  // Same in-page confirmation as the whole-county save: a native dialog blocks
+  // the page and cannot be exercised by a test, and this one deletes things.
+  if (!(await confirmInline(btn,
+      'Remove ' + name + '\u2019s offline maps from this phone? They free up ' +
+      fmtMB(bytes) + ' and can be saved again any time.', 'Remove them'))) return;
   btn.disabled = true;
   const cache = await caches.open(IMG_CACHE);
   for (const s of ss) await cache.delete('./images/' + s.img);

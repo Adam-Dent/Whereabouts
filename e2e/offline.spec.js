@@ -336,3 +336,57 @@ test('the caches the worker writes are exactly the ones it cleans up', async ({ 
     expect(known, `${n} is written but the worker would delete it`).toContain(n);
   }
 });
+
+// ── Taking over from an older version ───────────────────────────────────────
+
+test('a new version takes over from an old one without stranding the phone', async ({
+  page,
+  context,
+}) => {
+  // The remaining risk once people have the app installed: a deploy lands, the
+  // phone is already running an older worker, and it either keeps serving stale
+  // code forever or breaks. The worker calls skipWaiting and claim, so a new
+  // one should take control on the next load rather than waiting for every tab
+  // to close. This checks that, and that the caches survive the handover.
+  await isolate(page);
+  await page.goto('/');
+  await readyOffline(page);
+
+  const before = await page.evaluate(async () => ({
+    controller: !!navigator.serviceWorker.controller,
+    shell: (await (await caches.open('whereabouts-shell-v1')).keys()).length,
+  }));
+  expect(before.controller).toBe(true);
+
+  // Force the worker to be re-fetched and re-installed, which is what a deploy
+  // looks like from the page's point of view.
+  await page.evaluate(async () => {
+    const reg = await navigator.serviceWorker.getRegistration();
+    await reg.update();
+  });
+  await page.reload();
+  await readyOffline(page);
+
+  const after = await page.evaluate(async () => ({
+    controller: !!navigator.serviceWorker.controller,
+    shell: (await (await caches.open('whereabouts-shell-v1')).keys()).length,
+    caches: await caches.keys(),
+  }));
+  expect(after.controller, 'the page must still be controlled after an update').toBe(true);
+  expect(after.shell, 'the shell must not be emptied by an update').toBeGreaterThanOrEqual(
+    before.shell,
+  );
+  // The activate handler deletes caches it does not recognise. A rename without
+  // a migration would silently bin every map the user had saved.
+  expect(after.caches.sort()).toEqual(
+    ['whereabouts-data-v1', 'whereabouts-images-v2', 'whereabouts-shell-v1'].filter((c) =>
+      after.caches.includes(c),
+    ).sort(),
+  );
+
+  // And it must still work offline afterwards.
+  await context.setOffline(true);
+  await page.reload();
+  await expect(await search(page, placed.n[0])).toBeVisible({ timeout: 15000 });
+  await context.setOffline(false);
+});
