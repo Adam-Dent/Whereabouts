@@ -79,25 +79,37 @@ footer a{color:var(--accent)}
 
   <div class="masthead">
     <div class="kicker">Privacy and data</div>
-    <h1>What Whereabouts knows about you: nothing</h1>
-    <p class="intro">Whereabouts is a free finder for named houses. It holds no personal information, keeps no accounts, and records nothing about who uses it or what they look up. Here is exactly how that works, for anyone who wants to check before relying on it or recommending it.</p>
+    <h1>Nothing you search for leaves your phone</h1>
+    <p class="intro">Whereabouts has no accounts, no sign-in and no cookies, and it never records what anyone looks up. It does count how the app is used, anonymously and in aggregate, so that I can see which areas people rely on and what is failing in the field. This page sets out precisely what that means.</p>
   </div>
 
   <div class="chips">
-    <div class="chip"><b>No personal data</b><span>No names, no accounts, no sign-in, nothing about you is collected or stored.</span></div>
-    <div class="chip"><b>Nothing you type leaves the phone</b><span>Searching happens entirely on your device. No cookies, and your searches are never recorded.</span></div>
-    <div class="chip"><b>No server to breach</b><span>A static web page on a content network. There is no database behind it.</span></div>
+    <div class="chip"><b>No accounts, no cookies</b><span>Nothing is stored on your device to identify you, and there is nothing to sign in to.</span></div>
+    <div class="chip"><b>Searching stays on the device</b><span>Your phone holds the house list and does the work. What you type is never transmitted.</span></div>
+    <div class="chip"><b>Counted, never identified</b><span>Usage figures carry no IP address and no visitor id, so they lead back to nobody.</span></div>
   </div>
 
   <section>
-    <h2>What it holds, and what it does not</h2>
-    <p class="first">Whereabouts contains one fixed, public reference set: house names taken from published village maps, a latitude and longitude for each house, and the map drawings as images. You type a house name and read the result. What you type is never recorded, never sent to a server, and never shared. There is no login, and there are no cookies. To see which areas are most used, the app keeps an anonymous count of which village maps get opened. That count is not tied to you and never includes what you searched for.</p>
-    <div class="note">Some of what people look up could be sensitive to them, so the app is built so that a search never becomes a record. The whole search runs on the device itself. Any usage counting is anonymous and aggregated, and it never captures which house anyone searched for.</div>
+    <h2>What stays on your device</h2>
+    <p class="first">Whereabouts is built from a fixed and public reference set of house names taken from published village maps, a latitude and longitude for each house, and the map drawings as images. Your phone downloads those files and searches them itself. What you type is never recorded, never sent anywhere and never shared.</p>
+    <div class="note">The address someone is looking for can be private in itself, so the search deliberately never leaves the device. No usage figure on this page can contain a search term, because no search term is ever transmitted to have been counted.</div>
+  </section>
+
+  <section>
+    <h2>What is measured, and why</h2>
+    <p class="first">Usage figures tell me which areas are actually being used, which is how I decide where to place houses next. The measurement is self-hosted on my own Cloudflare account rather than handed to an analytics company, and it is cookieless: nothing is written to your device to follow you, so there is no consent banner because there is nothing to consent to. A usage record holds which page or village map was opened, the site you arrived from on the first request only, the country reported by the network serving the site, whether the device is a phone or a desktop, and whether that request began a new visit.</p>
+    <p>It holds no IP address, no device or visitor identifier, and nothing about what was searched for. Since there is no identifier, the figures count visits and map openings rather than people, and one person&#8217;s visits cannot be joined up. Nothing is sold, shared or passed to advertisers, and there are no third-party trackers on any page.</p>
+  </section>
+
+  <section>
+    <h2>When something goes wrong</h2>
+    <p class="first">The app is built to work with no signal, in places where nobody is going to stop and email me about a map that will not open. So when the app hits one of eight known problems it sends a short code naming which one, together with the app version, whether the device was online, a rough count and whether it is running on iOS, Android or neither. If there is no signal the report waits on the device and goes with the next one.</p>
+    <p>A report carries no free text, no error message, no stack trace, no house name and no search term. The collector that receives them accepts those eight codes and rejects anything else outright, and its code is published alongside the app, so this is enforced rather than promised.</p>
   </section>
 
   <section>
     <h2>How it is built and hosted</h2>
-    <p class="first">The app is a single web page served over a secure connection (HTTPS) from a content delivery network. There is no application running on a server while you use it, and no store of personal data anywhere, so there is nothing to be breached and nothing for anyone to log in to. The code is open source, which means anyone can read it and confirm for themselves that no information is sent away. Once the page has loaded, it works with no signal at all, which is the point in places where coverage drops but GPS keeps going.</p>
+    <p class="first">The app is a set of static files served over a secure connection (HTTPS) from Cloudflare&#8217;s network. Nothing runs on a server while you search, and there is no database of users anywhere, so there is no store of personal data to breach and nothing for anyone to log in to. The source code is public, so anyone can check exactly what does and does not leave the phone. Once loaded, the app keeps working with no signal at all, which is the point in country where coverage drops but GPS carries on.</p>
   </section>
 
   <section>
@@ -107,7 +119,12 @@ footer a{color:var(--accent)}
 
   <section>
     <h2>A word on accuracy</h2>
-    <p class="first">Every location is placed by hand, so occasionally one can be wrong, and some houses are only pinned to the centre of their village so far. A house pinned to an exact spot shows a solid red ring; one not yet placed shows an amber dashed ring and sends directions to the village centre, so the two are never mistaken. Where a name appears more than once in a village, the app says so. Treat it as a strong guide rather than a guarantee, and glance at the map before setting off. It is a navigation aid, not a substitute for local knowledge.</p>
+    <p class="first">Every location is placed by hand, so one can occasionally be wrong, and some houses are still pinned only to the centre of their village. A house placed exactly shows a solid red ring; one not yet placed shows an amber dashed ring and sends directions to the village centre, so the two are never mistaken. Where a name appears more than once in a village, the app says so. Treat it as a strong guide rather than a guarantee and glance at the map before setting off. It is a navigation aid, not a substitute for local knowledge.</p>
+  </section>
+
+  <section>
+    <h2>Questions and corrections</h2>
+    <p class="first">Anything on this page, and anything wrong in the data, is welcome at <a href="mailto:whereabouts@adamdent.uk">whereabouts@adamdent.uk</a>.</p>
   </section>
 
   <hr class="rule"/>
