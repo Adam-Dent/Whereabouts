@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import time
 from pathlib import Path
 from typing import Optional
@@ -10,6 +11,7 @@ from typing import Optional
 import requests
 
 from . import USER_AGENT
+from .transform import coords_in_north_yorkshire
 
 
 _NOMINATIM = "https://nominatim.openstreetmap.org/search"
@@ -31,17 +33,34 @@ def _save_cache() -> None:
     _CACHE_FILE.write_text(json.dumps({k: list(v) if v else None for k, v in _cache.items()}, indent=2))
 
 
-def geocode_village(village_name: str) -> Optional[tuple[float, float]]:
-    """
-    Geocode '<village_name>, North Yorkshire' via Nominatim.
-    Returns (lat, lng) or None. Results are cached.
+def geocode_village(
+    village_name: str, district: str | None = None
+) -> Optional[tuple[float, float]]:
+    """Geocode a village via Nominatim. Returns (lat, lng) or None, cached.
+
+    `district` matters more than it looks. North Yorkshire has several villages
+    called Carlton, and more than one Dalton, Angram, Melmerby, Hornby,
+    Newbiggin and Grinton. Asking for the name alone returns whichever ranks
+    first and there is no way to tell it apart from the right one, which put
+    Carlton's centroid 98km from Carlton. Because the cache is keyed on the
+    query, two different villages sharing a name also shared a single answer,
+    so getting one wrong got both wrong.
+
+    The result is also checked against the county bounds before it is accepted:
+    a lookup that lands outside North Yorkshire is wrong by definition here, and
+    a null centroid is safer than a confidently wrong one, because the app can
+    tell the user it has no location but cannot tell that a location is a lie.
     """
     global _last_request
 
     if not _cache:
         _load_cache()
 
-    query = f"{village_name}, North Yorkshire"
+    # Dale names ("Wensleydale") disambiguate well because Nominatim knows them;
+    # administrative districts ("Hambleton (West)") less so, but the bracketed
+    # qualifier is noise either way, so it is dropped.
+    place = re.sub(r"\s*\([^)]*\)", "", district).strip() if district else ""
+    query = f"{village_name}, {place}, North Yorkshire" if place else f"{village_name}, North Yorkshire"
     if query in _cache:
         return _cache[query]
 
@@ -60,10 +79,13 @@ def geocode_village(village_name: str) -> Optional[tuple[float, float]]:
     resp.raise_for_status()
 
     results = resp.json()
+    result = None
     if results:
-        result = (float(results[0]["lat"]), float(results[0]["lon"]))
-    else:
-        result = None
+        lat, lng = float(results[0]["lat"]), float(results[0]["lon"])
+        if coords_in_north_yorkshire(lat, lng):
+            result = (lat, lng)
+        else:
+            print(f"  geocode rejected: {query} -> {lat},{lng} is outside North Yorkshire")
 
     _cache[query] = result
     _save_cache()

@@ -160,7 +160,7 @@ def run_pipeline(
                 )
 
         # ── 6. Build House objects ─────────────────────────────────────────
-        geo_ok = geocode_village(sheet.village_name)
+        geo_ok = geocode_village(sheet.village_name, sheet.district)
         if geo_ok:
             centroid = LatLng(lat=geo_ok[0], lng=geo_ok[1])
 
@@ -217,7 +217,7 @@ def run_pipeline(
     for sheet in sheets:
         vid = sheet.village_id
         if vid not in village_map:
-            geo = geocode_village(sheet.village_name)
+            geo = geocode_village(sheet.village_name, sheet.district)
             centroid = {"lat": geo[0], "lng": geo[1]} if geo else None
             village_map[vid] = {
                 "id": vid,

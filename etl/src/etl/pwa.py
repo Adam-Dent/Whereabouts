@@ -269,9 +269,55 @@ def _pwa_payload(images: dict[str, dict] | None = None) -> dict:
         if x is not None:
             rec["x"], rec["y"] = round(x), round(y)
         houses.append(rec)
+
+    _correct_centroids_from_placements(out_sheets, houses)
+
     from datetime import date
     return {"v": 2, "generated": date.today().isoformat(),
             "sheets": out_sheets, "districts": districts, "houses": houses}
+
+
+# Enough placed houses to trust their middle over a name lookup. Below this a
+# handful of outlying farms could drag the centre off the village itself.
+_CENTROID_MIN_PLACED = 5
+
+
+def _correct_centroids_from_placements(
+    sheets: dict[str, dict], houses: list[dict]
+) -> None:
+    """Replace geocoded village centroids with the middle of the placed houses.
+
+    The centroid is the directions fallback for every house not yet placed by
+    hand, so a wrong one silently sends people to a different village. They come
+    from Nominatim, looked up by village name, and North Yorkshire is full of
+    repeated names: Carlton, Dalton, Angram, Melmerby, Hornby, Newbiggin and
+    Grinton were all landing on the wrong village, Carlton by 98km. Worse, the
+    geocode cache is keyed on the query string alone, so two genuinely different
+    villages sharing a name also shared one answer.
+
+    Where a sheet has hand-placed houses, those houses are better evidence of
+    where the village is than any name lookup, so they win. The median is used
+    rather than the mean because it ignores the outlying farm at the end of a
+    long lane, which is exactly the kind of entry that would drag a mean out of
+    the village.
+
+    This cannot help a sheet with no placements yet, which is most of the county.
+    geocode.py disambiguates by district for those; see the note there.
+    """
+    from statistics import median
+
+    by_sheet: dict[str, list[tuple[float, float]]] = {}
+    for h in houses:
+        if h.get("lat") is None:
+            continue
+        by_sheet.setdefault(h["id"].rsplit("-", 1)[0], []).append((h["lat"], h["lng"]))
+
+    for sid, pts in by_sheet.items():
+        sheet = sheets.get(sid)
+        if sheet is None or len(pts) < _CENTROID_MIN_PLACED:
+            continue
+        sheet["clat"] = round(median(p[0] for p in pts), 6)
+        sheet["clng"] = round(median(p[1] for p in pts), 6)
 
 
 # ── FastAPI routes ─────────────────────────────────────────────────────────────

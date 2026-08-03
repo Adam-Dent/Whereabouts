@@ -93,7 +93,7 @@ async def georeference_page(sheet_id: str) -> str:
         return HTMLResponse(f"Sheet {sheet_id} not found", status_code=404)
 
     village_name = sheet["village_name"]
-    geocoded = geocode_village(village_name)
+    geocoded = geocode_village(village_name, sheet.get("district"))
     centre_lat = geocoded[0] if geocoded else 54.35
     centre_lng = geocoded[1] if geocoded else -1.72
 

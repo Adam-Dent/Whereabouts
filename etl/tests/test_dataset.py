@@ -168,24 +168,22 @@ def test_village_centroids_agree_with_the_houses_placed_on_that_sheet(
     """The centroid is the directions fallback for every unplaced house, so a
     wrong one silently sends people to a different village.
 
-    Centroids come from Nominatim, looked up by village name alone, and North
-    Yorkshire is full of repeated village names (Carlton, Dalton, Angram,
-    Newbiggin). Where a sheet has enough hand-placed houses, those houses are
-    ground truth and the centroid can be checked against them. Sheets with few
-    placements are skipped because a handful of outlying farms is not a reliable
-    centre.
+    Centroids came from Nominatim looked up by village name alone, and North
+    Yorkshire is full of repeated village names, so eight sheets pointed at the
+    wrong village, Carlton by 98km. The build now takes the median of the placed
+    houses instead wherever there are enough of them, and this test is what says
+    that correction is still working.
 
-    KNOWN_BAD records the sheets already known to be wrong (see
-    CLAUDE.local.md). They are listed rather than tolerated silently, so this
-    test fails both when a new one appears and when a listed one is fixed
-    without the list being updated.
+    It cannot check a sheet with no placements, which is most of the county, so
+    it is a regression guard rather than a proof. Sheets with few placements are
+    skipped: a handful of outlying farms is not a reliable centre.
     """
     import statistics as st
 
-    KNOWN_BAD = {
-        "carlton", "carlton-wensleydale", "angram", "dalton",
-        "melmerby-wensleydale", "hornby", "newbiggin-wensleydale", "grinton",
-    }
+    # Empty, and it should stay that way: the build now derives the centroid
+    # from the placed houses whenever there are enough of them, so any sheet
+    # appearing here means that correction has stopped working.
+    KNOWN_BAD: set[str] = set()
     MAX_M = 3000.0
 
     sheets = shipped["sheets"]
