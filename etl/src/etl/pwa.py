@@ -995,7 +995,7 @@ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--
       <p class="about-lead">Whereabouts finds the residences that most mapping apps cannot: the countless rural houses known by a name rather than a number. It is built on the maps of <a href="https://colinday.co.uk/maps/" target="_blank" rel="noopener">Dr&nbsp;A&nbsp;Colin&nbsp;Day</a>, who has spent decades recording village house names and giving his work away free. This website makes that work easier to reach, and hands the location on to Google or Apple Maps for directions. There is <a href="./how-it-works.html">more on how it works</a> if you would like the detail.</p>
       <div class="sheet-h">A note on accuracy</div>
       <p>Reading Colin&#8217;s maps into searchable data is automated as far as it sensibly can be, but pinning each house to its exact spot is not: I do that by hand, one house at a time, against satellite imagery. In the search results a green dot means a house is pinned precisely; a grey dot means I have not reached it yet, so &#8220;Get directions&#8221; takes you to the centre of the village instead.</p>
-      <p>Every effort is made to keep this accurate, but it cannot be guaranteed, so do glance at the map before you set off.</p>
+      <p>Every effort is made to keep this accurate, but it cannot be guaranteed.</p>
       <div class="sheet-h">Coverage</div>
       <p style="font-size:13px;color:var(--muted);margin-bottom:8px">Whereabouts covers North Yorkshire for now. Colin&#8217;s maps reach right across the north of England, so more counties may follow.</p>
       <p id="area-sum"></p>
