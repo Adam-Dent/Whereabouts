@@ -31,6 +31,13 @@ DIST_DIR = DATA_DIR / "dist"
 PLACEMENTS_DIR = DATA_DIR / "placements"
 
 app = FastAPI(title="Whereabouts: House Placement Tool")
+# Created if absent rather than assumed. The rendered maps are large and
+# regenerable, so they are not in the repo, which meant importing this module at
+# all raised on a fresh clone: StaticFiles refuses to mount a directory that
+# does not exist. An empty mount serves nothing, which is the correct behaviour
+# before the ETL has run, and is a great deal better than the tool being
+# unimportable until it has.
+(DIST_DIR / "images").mkdir(parents=True, exist_ok=True)
 app.mount("/images", StaticFiles(directory=str(DIST_DIR / "images")), name="images")
 
 from .pwa import router as _pwa_router  # noqa: E402

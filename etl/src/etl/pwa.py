@@ -746,6 +746,7 @@ _PWA_PAGE = r"""<!doctype html>
 <link rel="manifest" href="./manifest.json"/>
 <link rel="icon" href="./favicon.ico" sizes="32x32"/>
 <link rel="apple-touch-icon" href="./icon-180.png"/>
+<meta name="wa-version" content="__WW_VERSION__"/>
 <title>Whereabouts</title>
 <style>
 /* Playfair Display, self-hosted. It used to come from fonts.googleapis.com,
@@ -1020,7 +1021,13 @@ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--
 <script src="./fuse.min.js"></script>
 <script>
 'use strict';
-const VERSION = '__WW_VERSION__';
+// Read from a meta tag rather than written in here as a literal. The version
+// changes with every commit, and this script is covered by a Content-Security-
+// Policy hash: baking the version into the script body made that hash change on
+// every commit too, so committing without rebuilding produced a policy that
+// blocked the whole app. The meta tag moves the changing part outside the
+// hashed region.
+const VERSION = document.querySelector('meta[name="wa-version"]').content;
 let houses = [], sheets = {}, districts = {}, fuse = null, dataGenerated = '';
 const byId = new Map();
 const qEl   = document.getElementById('q');

@@ -60,7 +60,10 @@ def test_tags_are_balanced_enough_to_render(name: str) -> None:
 def test_version_is_stamped_into_the_page() -> None:
     html = pwa._page_html()
     assert "__WW_VERSION__" not in html, "version placeholder left unreplaced"
-    assert re.search(r"const VERSION = '\d+\.\d+\.\d+'", html)
+    # In a meta tag, not the script body: the script is covered by a CSP hash,
+    # so anything inside it that changes per commit breaks the policy.
+    assert re.search(r'<meta name="wa-version" content="\d+\.\d+\.\d+"', html)
+    assert "const VERSION = '" not in html, "the version must stay out of the hashed script"
 
 
 def test_analytics_placeholders_are_all_replaced() -> None:

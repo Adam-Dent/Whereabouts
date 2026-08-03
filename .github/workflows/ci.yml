@@ -12,6 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history: the app version is derived by counting commits, and a
+          # shallow clone computes 1.1.0 instead of the real number. That is
+          # stamped into the page, so every hash taken over the page (the CSP
+          # script hashes in particular) then disagrees with the committed one.
+          fetch-depth: 0
 
       - name: Install uv
         uses: astral-sh/setup-uv@v5
