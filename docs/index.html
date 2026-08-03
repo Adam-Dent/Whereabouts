@@ -284,7 +284,7 @@ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--
 <script src="./fuse.min.js"></script>
 <script>
 'use strict';
-const VERSION = '1.23.0';
+const VERSION = '1.24.0';
 let houses = [], sheets = {}, districts = {}, fuse = null, dataGenerated = '';
 const byId = new Map();
 const qEl   = document.getElementById('q');
@@ -936,7 +936,8 @@ async function downloadArea(btn, name, ss, bytes) {
     // Same list as the service worker's install handler, and the same cache the
     // fetch handler reads them back from.
     const shell = await caches.open(SHELL_CACHE);
-    await shell.addAll(['./', './index.html', './fuse.min.js', './counterscale.min.js',
+    await shell.addAll(['./', './index.html', './how-it-works.html', './privacy.html',
+                        './fuse.min.js', './counterscale.min.js',
                         './playfair-normal-latin.woff2', './playfair-normal-latin-ext.woff2', './playfair-italic-latin.woff2', './playfair-italic-latin-ext.woff2']);
   } catch (_) {}
   // ask the browser to protect the cache from storage-pressure eviction

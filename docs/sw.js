@@ -24,7 +24,12 @@ self.addEventListener('install', e => {
     // offline launch fails anyway. The two libraries are app shell, not map
     // images, so they belong here and the fetch handler serves them from here.
     const c = await caches.open(SHELL_CACHE);
-    const shell = ['./', './index.html', './fuse.min.js', './counterscale.min.js',
+    // how-it-works and privacy are precached too. They are small, and a
+    // privacy page you can only read while online is not much of a
+    // privacy page: the moment someone wants to check what the app does
+    // with their data is exactly when they may have no signal.
+    const shell = ['./', './index.html', './how-it-works.html', './privacy.html',
+                   './fuse.min.js', './counterscale.min.js',
                    './playfair-normal-latin.woff2', './playfair-normal-latin-ext.woff2', './playfair-italic-latin.woff2', './playfair-italic-latin-ext.woff2'];
     await Promise.all(shell.map(u => c.add(u).catch(() => {})));
     // houses.json is precached too, despite its size (about 3.4 MB), because

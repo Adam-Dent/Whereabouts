@@ -292,3 +292,40 @@ def test_referrer_policy_does_not_leak_the_app_to_the_maps_provider() -> None:
     they are not also told which app sent the user, which is the same promise the
     privacy page makes about everything else."""
     assert '"Referrer-Policy": "no-referrer"' in pwa._middleware_js()
+
+
+def test_every_page_is_precached_so_it_works_offline() -> None:
+    """A privacy page you can only read with a signal is not much of a privacy
+    page: the moment someone wants to check what the app does with their data
+    is exactly when they may have none. These were reachable offline only if
+    the visitor happened to have opened them earlier."""
+    for page in ("./index.html", "./how-it-works.html", "./privacy.html"):
+        assert page in pwa._SW_JS, f"{page} is not precached by the service worker"
+
+
+def test_precached_urls_all_correspond_to_real_files() -> None:
+    """A typo in the precache list is silent: the install tolerates a failed
+    add so one bad entry cannot take the rest down, which also means it never
+    complains."""
+    from conftest import DOCS
+
+    if not DOCS.exists():
+        pytest.skip("docs/ not built")
+    block = re.search(r"const shell = \[(.*?)\];", pwa._SW_JS, re.S)
+    assert block, "could not find the shell precache list"
+    for rel in re.findall(r"'\./([^']+)'", block.group(1)):
+        assert (DOCS / rel).exists(), f"precached {rel} does not exist"
+
+
+def test_assets_are_precached_into_the_cache_they_are_read_from() -> None:
+    """Every offline bug this project has had was a precache written into one
+    cache and read back from another, so the two sides are compared directly.
+    """
+    shell = re.search(r"const shell = \[(.*?)\];", pwa._SW_JS, re.S).group(1)
+    shell_names = set(re.findall(r"'\./([^']+)'", shell))
+
+    # Whatever the fetch handler routes to SHELL_CACHE must be precached there.
+    for asset in ("fuse.min.js", "counterscale.min.js"):
+        assert asset in shell_names, f"{asset} is served from the shell but not precached there"
+    assert "houses.json" not in shell_names, "houses.json belongs in the data cache"
+    assert not any("images/" in n for n in shell_names), "maps must never be precached"
