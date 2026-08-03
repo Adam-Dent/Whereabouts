@@ -25,11 +25,8 @@ docs/images/
 # Control points are SOURCE OF TRUTH: do NOT ignore
 # data/control_points/ is intentionally tracked
 
-# Expo / Node
-app/node_modules/
-app/.expo/
-app/dist/
-app/.env*
+# Node
+node_modules/
 
 # Personal notes (not committed: correspondence, drafts, scratch)
 notes/

@@ -47,7 +47,7 @@ Several villages required specific fixes:
 
 After parsing, the pipeline renders each PDF page to a PNG at 200 DPI using `pymupdf`, geocodes the village centroid via Nominatim, and emits the full dataset.
 
-**Outcome:** 865 sheets, 42,336 houses across all 11 North Yorkshire districts, all parsed and rendered (Richmondshire was the first and most heavily hardened: 56 sheets, 3,225 houses, 44 villages).
+**Outcome:** 865 sheets across all 11 North Yorkshire districts, all parsed and rendered (Richmondshire was the first and most heavily hardened: 56 sheets, 44 villages). The parse yields 42,496 records, of which 42,444 ship: the 52 dropped are legend gaps with no name against them, which nothing could search for. Live counts are in [`data/dist/coverage.md`](data/dist/coverage.md).
 
 **Running the pipeline:**
 

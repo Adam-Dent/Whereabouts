@@ -9,6 +9,7 @@ from urllib.parse import urljoin, urlparse
 
 import requests
 
+from . import USER_AGENT
 from .models import Sheet, ImageSize
 from .slugs import slugify
 
@@ -34,7 +35,7 @@ DISTRICT_INDEXES: dict[str, str] = {
 }
 
 _SESSION = requests.Session()
-_SESSION.headers["User-Agent"] = "Whereabouts-ETL/0.1 (github placeholder)"
+_SESSION.headers["User-Agent"] = USER_AGENT
 
 CACHE_DIR = Path(__file__).parent.parent.parent.parent / "data" / ".cache" / "pdfs"
 

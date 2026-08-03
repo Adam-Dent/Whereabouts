@@ -9,6 +9,8 @@ from typing import Optional
 
 import requests
 
+from . import USER_AGENT
+
 
 _NOMINATIM = "https://nominatim.openstreetmap.org/search"
 _CACHE_FILE = Path(__file__).parent.parent.parent.parent / "data" / ".cache" / "geocode.json"
@@ -51,7 +53,7 @@ def geocode_village(village_name: str) -> Optional[tuple[float, float]]:
     resp = requests.get(
         _NOMINATIM,
         params={"q": query, "format": "json", "limit": 1},
-        headers={"User-Agent": "Whereabouts-ETL/0.1 (github placeholder)"},
+        headers={"User-Agent": USER_AGENT},
         timeout=10,
     )
     _last_request = time.time()

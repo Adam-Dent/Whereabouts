@@ -24,6 +24,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
+from . import USER_AGENT
+
 DATA_DIR = Path(__file__).parent.parent.parent.parent / "data"
 DIST_DIR = DATA_DIR / "dist"
 PLACEMENTS_DIR = DATA_DIR / "placements"
@@ -126,7 +128,7 @@ def api_search(q: str) -> JSONResponse:
     resp = requests.get(
         "https://nominatim.openstreetmap.org/search",
         params={"q": q, "format": "json", "limit": 6, "countrycodes": "gb"},
-        headers={"User-Agent": "Whereabouts-PlaceTool/0.1"},
+        headers={"User-Agent": USER_AGENT},
         timeout=10,
     )
     resp.raise_for_status()

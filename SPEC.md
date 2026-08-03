@@ -170,7 +170,7 @@ Uses `pdfplumber`. Each sheet has three zones of integer text:
 - Section-header rows in table-style legends (bare street names with no house number) are removed by checking if the name appears as a suffix of ten or more sibling entries.
 - Raster PDFs (zero extractable characters) fall back to `data/fixtures/<sheet_id>.json` if present.
 
-**Current state:** 865 sheets, 42,336 houses across all 11 North Yorkshire districts (see §8 Phase 8). Richmondshire alone (the original, most-hardened district) is 56 sheets, 3,225 houses, 44 villages, 11 sheets with label/legend mismatches. Stapleton uses a manually-transcribed fixture. Two more parser fixes (thin/missing legends, over-long cross-reference aliases) landed during the Swaledale pass; see §8 progress notes. Per-district sheet/house counts and parse-quality notes: `data/dist/coverage.md` and `data/dist/report.md`.
+**Current state:** 865 sheets, 42,496 parsed records across all 11 North Yorkshire districts (see §8 Phase 8), of which 42,444 are searchable and ship; the rest are legend gaps carrying no name. Richmondshire alone (the original, most-hardened district) is 56 sheets, 3,225 houses, 44 villages, 11 sheets with label/legend mismatches. Stapleton uses a manually-transcribed fixture. Two more parser fixes (thin/missing legends, over-long cross-reference aliases) landed during the Swaledale pass; see §8 progress notes. Per-district sheet/house counts and parse-quality notes: `data/dist/coverage.md` and `data/dist/report.md`.
 
 ### 5.3 Rendering [done]
 
@@ -339,7 +339,7 @@ Richmondshire first, now expanding to the rest of North Yorkshire district by di
 - [x] Selby: 59 sheets, 3,471 houses; parsed, not yet placed
 - [x] Wensleydale: 63 sheets, 3,633 houses; ~44% placed
 
-All 11 North Yorkshire districts discovered, parsed and rendered: **865 sheets, 42,336 houses** total (4,780 placed: Richmondshire complete, Wensleydale ~44%). Remaining work is placement: the manual, per-house pass in the placement tool, district by district via the dropdown.
+All 11 North Yorkshire districts discovered, parsed and rendered: **865 sheets, 42,444 searchable houses** total (7,972 placed: Richmondshire, Swaledale and Arkengarthdale, and Wensleydale all complete). Remaining work is placement: the manual, per-house pass in the placement tool, district by district via the dropdown.
 
 **Placement priority** (distinct from the processing order above; this is the order the actual manual placement work should happen in, most-needed areas first):
 
