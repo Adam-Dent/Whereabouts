@@ -192,7 +192,7 @@ def test_built_docs_match_what_the_generator_produces() -> None:
     # the built file is legitimately behind between a commit and the next build.
     # Normalising it out keeps this test about hand-edits, which is its purpose.
     def strip_version(s: str) -> str:
-        return re.sub(r"const VERSION = '[\d.]+'", "VERSION", s)
+        return re.sub(r'<meta name="wa-version" content="[\d.]+"/>', "VERSION", s)
 
     assert strip_version(built.read_text()) == strip_version(pwa._page_html()), (
         "docs/index.html differs from the generator. Either it was hand-edited "
